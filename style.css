@@ -346,20 +346,109 @@ blockquote {
   font: 20px/23px;
 }
 
-/* line 1, assets/sass/_layout.scss */
-nav {
-  position: fixed;
-  width: 10%;
-  height: 100%;
-  background-color: #FFF;
-  top: 0px;
-  left: 0px;
-  z-index: 100;
-  overflow: hidden;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+/*
+nav{
+	position: fixed; 
+	width: 20%; 
+	height: 100%; 
+	background-color: #FFF; 
+	top: 0px; 
+	left: 0px;
+	z-index:100;
+	overflow: hidden;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}*/
+/* line 16, assets/sass/_layout.scss */
+#navWrap, #contentWrap {
+  transition: 0.2s  all;
+  -webkit-transition: 0.2s  all;
+  -moz-transition: 0.2s  all;
+  -ms-transition: 0.2s  all;
+  -o-transition: 0.2s  all;
 }
 
-/* line 13, assets/sass/_layout.scss */
+/* line 17, assets/sass/_layout.scss */
+#navWrap {
+  background: #2c3e50;
+  position: absolute;
+  z-index: 2;
+  width: 75%;
+  height: 100%;
+  color: #ecf0f1;
+}
+
+/* line 18, assets/sass/_layout.scss */
+#navWrap #close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* line 19, assets/sass/_layout.scss */
+#contentWrap {
+  background: #bdc3c7;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 20, assets/sass/_layout.scss */
+#contentWrap #open {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* line 23, assets/sass/_layout.scss */
+#mobileMenuTrigger, #mobileSearchTrigger, #mobileWrap {
+  display: block;
+}
+
+/* line 25, assets/sass/_layout.scss */
+#mobileWrap {
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  -webkit-transform: translateX(-100%);
+  transition: 0.3s all;
+  background: #0397d6;
+}
+/* line 26, assets/sass/_layout.scss */
+#mobileWrap.active {
+  -webkit-transform: translateX(0);
+}
+
+/* line 29, assets/sass/_layout.scss */
+#contentWrap {
+  height: 100%;
+  transition: 0.3s all;
+}
+/* line 30, assets/sass/_layout.scss */
+#contentWrap.active {
+  overflow: hidden;
+  -webkit-transform: translateX(80%);
+  position: fixed;
+}
+
+/* slide */
+/* line 34, assets/sass/_layout.scss */
+#navWrap.gl-slide {
+  -webkit-transform: translateX(-100%);
+  width: 75%;
+}
+
+/* line 35, assets/sass/_layout.scss */
+#navWrap.gl-slide.active {
+  -webkit-transform: translateX(0);
+}
+
+/* line 36, assets/sass/_layout.scss */
+#contentWrap.gl-slide.active {
+  -webkit-transform: translateX(75%);
+}
+
+/* line 38, assets/sass/_layout.scss */
 .panel {
   position: absolute;
   width: 100%;
@@ -368,28 +457,33 @@ nav {
   overflow: auto;
 }
 
-/* line 21, assets/sass/_layout.scss */
+/* line 46, assets/sass/_layout.scss */
+#open {
+  z-index: 200;
+}
+
+/* line 48, assets/sass/_layout.scss */
 #section1 {
   left: 0;
   background: #28bdb3;
   color: #fff;
 }
 
-/* line 26, assets/sass/_layout.scss */
+/* line 53, assets/sass/_layout.scss */
 #section2 {
   left: 100%;
   background: #f05135;
   color: #fff;
 }
 
-/* line 31, assets/sass/_layout.scss */
+/* line 58, assets/sass/_layout.scss */
 #section3 {
   left: 200%;
   background: #565656;
   color: #fff;
 }
 
-/* line 36, assets/sass/_layout.scss */
+/* line 63, assets/sass/_layout.scss */
 #section4 {
   left: 300%;
   background: #0397d6;

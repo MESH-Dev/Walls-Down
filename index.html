@@ -8,6 +8,7 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="assets/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	
 	<!-- <script type="text/javascript" src="//use.typekit.net/gka0dvw.js"></script> 
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
@@ -18,16 +19,11 @@
 
 </head>
 <body>
-
-<div class="nav-menu-button template-icon">
-	hamburger
-</div>
+ 
  
  <!--Pullout Nav -->
-<nav>
-	<div class="nav-story-title">
-		<a href="#">Walls Down</a>
-	</div>
+<nav id="navWrap" class="gl-slide">
+	<div id="close" class="fa fa-lg fa-times"></div>
 	<ol>
 		<li><a href="#section1">Article 1</a></li>
 		<li><a href="#section2">Article 2</a></li>
@@ -37,9 +33,12 @@
 </nav>
  
 
+<div id="contentWrap" class="gl-slide">
+	<div id="open" class="fa fa-lg fa-bars"> </div>
 
+<section id="section1" class="panel  ">
+	
 
-<section id="section1" class="panel">
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur suscipit a sequi tempore, incidunt minima aspernatur dicta dolores itaque facere esse unde enim rerum pariatur animi neque impedit ad deleniti.</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur suscipit a sequi tempore, incidunt minima aspernatur dicta dolores itaque facere esse unde enim rerum pariatur animi neque impedit ad deleniti.</p>
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur suscipit a sequi tempore, incidunt minima aspernatur dicta dolores itaque facere esse unde enim rerum pariatur animi neque impedit ad deleniti.</p>
@@ -73,6 +72,7 @@
 	
 </section>
 
-	<script type="text/javascript" src="assets/prod/walls-down.js"></script>
+</div>
+<script type="text/javascript" src="assets/prod/walls-down.js"></script>
 </body>
 </html>

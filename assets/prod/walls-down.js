@@ -523,7 +523,8 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
 
 (function() {
  
-  // http://www.zachstronaut.com/posts/2009/01/18/jquery-smooth-scroll-bugs.html
+  
+  /*------------------PANEL SCROLLING-----------------*/
   var scrollElement = 'html, body';
   var $scrollElement;
 
@@ -561,27 +562,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
     });
   });
 
-  /* Panel waypoints for setting high-level location classes on body. 
-  $(function() {
-    var $body = $('body');
-
-    $('.panel')
-      .waypoint(function(direction) {
-        $body.toggleClass(this.id + '-visible', direction === 'right');
-      }, {
-        offset: '50%',
-        horizontal: true
-      })
-      .waypoint(function(direction) {
-        $body.toggleClass(this.id + '-visible', direction === 'left');
-      }, {
-        offset: '-50%',
-        horizontal: true
-      });
-  });
-  */
-
-  /* Force snap to panel on resize. */
+  /* Force snap to panel on resize.*/
   $(function() {
     var $window = $(window);
     var timer;
@@ -597,7 +578,7 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
       }, 100);
     });
   });
-
+ 
   /* Fix scroll snapping during browser finds */
   $(function() {
     var $window = $(window);
@@ -639,6 +620,57 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/licenses.txt
       timer = window.setTimeout(scrollToClosestPanel, 50);
     }).bind('load', scrollToClosestPanel);
   });
+	
+
+/*------------------MOBILE MENU-----------------*/
+$(function() {
+
+  $(document).on('touchstart', function() {
+      documentClick = true;
+  });
+  $(document).on('touchmove', function() {
+      documentClick = false;
+  });
+
+  $('#contentWrap #open').on("touchend",function(e){
+    if (event.type == "click") documentClick = true;
+    if (documentClick){
+        if($('#contentWrap').hasClass('active') || $('#contentWrap').hasClass('reverse')){
+          $('#contentWrap').toggleClass('reverse');
+        }
+        if($('#navWrap').hasClass('active') || $('#navWrap').hasClass('reverse')){
+          $('#navWrap').toggleClass('reverse');
+        }
+        $('#contentWrap').toggleClass('active');
+        $('#navWrap').toggleClass('active');
+    }
+  });
+
+  $('#navWrap #close').on("touchend",function(e){
+    if (event.type == "click") documentClick = true;
+    if (documentClick){
+        $('#navWrap').toggleClass('active');
+        if($('#contentWrap').hasClass('active') || $('#contentWrap').hasClass('reverse')){
+          $('#contentWrap').toggleClass('reverse');
+        }
+        if($('#navWrap').hasClass('active') || $('#navWrap').hasClass('reverse')){
+          $('#navWrap').toggleClass('reverse');
+        }
+        $('#contentWrap').toggleClass('active');
+    }
+  });
+
+  $('#contentWrap.active').on("touchend",function(e){
+    if($('#contentWrap').hasClass('active') || $('#contentWrap').hasClass('reverse')){
+      $('#contentWrap').toggleClass('reverse');
+    }
+    if($('#navWrap').hasClass('active') || $('#navWrap').hasClass('reverse')){
+      $('#navWrap').toggleClass('reverse');
+    }
+    $('#contentWrap').toggleClass('active');
+    $('#navWrap').toggleClass('active');
+  });
+	});
  
 
  
