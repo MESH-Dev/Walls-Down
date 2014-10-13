@@ -66,290 +66,36 @@ table {
 ================================================= */
 /* VARIABLES
 ================================================= */
-/* line 50, assets/sass/_base.scss */
-.KCPL_background-blue {
-  background: #137cc1;
-}
-
-/* line 51, assets/sass/_base.scss */
-.KCPL_background-green {
-  background: #65a893;
-}
-
-/* line 52, assets/sass/_base.scss */
-.KCPL_background-red {
-  background: #f65446;
-}
-
-/* line 53, assets/sass/_base.scss */
-.KCPL_background-grey {
-  background: #76849a;
-}
-
-/* line 54, assets/sass/_base.scss */
-.KCPL_background-yellow {
-  background: #ffa751;
-}
-
-/* line 57, assets/sass/_base.scss */
-.KCPL_color-blue {
-  color: #137cc1;
-}
-
-/* line 58, assets/sass/_base.scss */
-.KCPL_color-green {
-  color: #65a893;
-}
-
-/* line 59, assets/sass/_base.scss */
-.KCPL_color-red {
-  color: #f65446;
-}
-
-/* line 60, assets/sass/_base.scss */
-.KCPL_color-grey {
-  color: #76849a;
-}
-
-/* line 61, assets/sass/_base.scss */
-.KCPL_color-yellow {
-  color: #ffa751;
-}
-
-/* line 64, assets/sass/_base.scss */
-.KCPL_font-minion {
-  font-family: "minion-pro";
-}
-
-/* line 65, assets/sass/_base.scss */
-.KCPL_font-nimbus {
-  font-family: "nimbus-sans";
-}
-
-/* line 66, assets/sass/_base.scss */
-.KCPL_font-nimbus-condensed {
-  font-family: "nimbus-sans-condensed";
-}
-
-/* line 69, assets/sass/_base.scss */
-.KCPL_sprite-book {
-  background: url(assets/img/sprites.png) 0 -8px no-repeat;
-  height: 31px;
-  width: 43px;
-}
-
-/* line 70, assets/sass/_base.scss */
-.KCPL_sprite-headphones {
-  background: url(assets/img/sprites.png) -53px -7px no-repeat;
-  height: 32px;
-  width: 34px;
-}
-
-/* line 71, assets/sass/_base.scss */
-.KCPL_sprite-document {
-  background: url(assets/img/sprites.png) -99px -5px no-repeat;
-  height: 37px;
-  width: 28px;
-}
-
-/* line 72, assets/sass/_base.scss */
-.KCPL_sprite-periodical {
-  background: url(assets/img/sprites.png) -140px -3px no-repeat;
-  height: 37px;
-  width: 28px;
-}
-
-/* line 73, assets/sass/_base.scss */
-.KCPL_sprite-video {
-  background: url(assets/img/sprites.png) -180px -8px no-repeat;
-  height: 29px;
-  width: 39px;
-}
-
-/* line 74, assets/sass/_base.scss */
-.KCPL_sprite-tablet {
-  background: url(assets/img/sprites.png) -230px -5px no-repeat;
-  height: 36px;
-  width: 29px;
-}
-
-/* line 75, assets/sass/_base.scss */
-.KCPL_sprite-audiobook {
-  background: url(assets/img/sprites.png) -270px -8px no-repeat;
-  height: 31px;
-  width: 37px;
-}
-
-/* line 76, assets/sass/_base.scss */
-.KCPL_sprite-download {
-  background: url(assets/img/sprites.png) -322px -8px no-repeat;
-  height: 32px;
-  width: 29px;
-}
-
-/* line 77, assets/sass/_base.scss */
-.KCPL_sprite-kids {
-  background: url(assets/img/sprites.png) -365px 0 no-repeat;
-  height: 40px;
-  width: 39px;
-}
-
-/* line 78, assets/sass/_base.scss */
-.KCPL_sprite-teens {
-  background: url(assets/img/sprites.png) -413px 0 no-repeat;
-  height: 40px;
-  width: 39px;
-}
-
-/* line 79, assets/sass/_base.scss */
-.KCPL_sprite-adult {
-  background: url(assets/img/sprites.png) -461px 0 no-repeat;
-  height: 40px;
-  width: 39px;
-}
-
-/* line 81, assets/sass/_base.scss */
-.KCPL_sprite-facebook {
-  background: url(assets/img/sprites.png) 0px -50px no-repeat;
-  height: 35px;
-  width: 35px;
-}
-
-/* line 82, assets/sass/_base.scss */
-.KCPL_sprite-pinterest {
-  background: url(assets/img/sprites.png) -41px -50px no-repeat;
-  height: 35px;
-  width: 35px;
-}
-
-/* line 83, assets/sass/_base.scss */
-.KCPL_sprite-tumblr {
-  background: url(assets/img/sprites.png) -82px -50px no-repeat;
-  height: 35px;
-  width: 35px;
-}
-
-/* line 84, assets/sass/_base.scss */
-.KCPL_sprite-instagram {
-  background: url(assets/img/sprites.png) -123px -50px no-repeat;
-  height: 35px;
-  width: 35px;
-}
-
-/* line 85, assets/sass/_base.scss */
-.KCPL_sprite-twitter {
-  background: url(assets/img/sprites.png) -164px -50px no-repeat;
-  height: 35px;
-  width: 35px;
-}
-
-/* line 86, assets/sass/_base.scss */
-.KCPL_sprite-googleplus {
-  background: url(assets/img/sprites.png) -205px -50px no-repeat;
-  height: 35px;
-  width: 35px;
-}
-
-/* line 87, assets/sass/_base.scss */
-.KCPL_sprite-mail {
-  background: url(assets/img/sprites.png) -247px -58px no-repeat;
-  height: 27px;
-  width: 33px;
-}
-
-/* line 88, assets/sass/_base.scss */
-.KCPL_sprite-search {
-  background: url(assets/img/sprites.png) -289px -58px no-repeat;
-  height: 25px;
-  width: 24px;
-}
-
-/* line 89, assets/sass/_base.scss */
-.KCPL_sprite-mute {
-  background: url(assets/img/sprites.png) -323px -56px no-repeat;
-  height: 28px;
-  width: 30px;
-}
-
-/* line 90, assets/sass/_base.scss */
-.KCPL_sprite-calendar {
-  background: url(assets/img/sprites.png) -364px -54px no-repeat;
-  height: 30px;
-  width: 26px;
-}
-
-/* line 91, assets/sass/_base.scss */
-.KCPL_sprite-learn {
-  background: url(assets/img/sprites.png) -400px -56px no-repeat;
-  height: 29px;
-  width: 32px;
-}
-
-/* line 92, assets/sass/_base.scss */
-.KCPL_sprite-thumbsup {
-  background: url(assets/img/sprites.png) -444px -54px no-repeat;
-  height: 27px;
-  width: 28px;
-}
-
-/* line 93, assets/sass/_base.scss */
-.KCPL_sprite-thumbsdown {
-  background: url(assets/img/sprites.png) -482px -54px no-repeat;
-  height: 27px;
-  width: 28px;
-}
-
-/* line 94, assets/sass/_base.scss */
-.KCPL_sprite-plus {
-  background: url(assets/img/sprites.png) -520px -61px no-repeat;
-  height: 12px;
-  width: 12px;
-}
-
-/* line 95, assets/sass/_base.scss */
-.KCPL_sprite-minus {
-  background: url(assets/img/sprites.png) -538px -66px no-repeat;
-  height: 4px;
-  width: 12px;
-}
-
-/* line 96, assets/sass/_base.scss */
-.KCPL_sprite-create {
-  background: url(assets/img/sprites.png) -564px -58px no-repeat;
-  height: 21px;
-  width: 21px;
-}
-
 /* #Basic Styles
 ================================================== */
-/* line 101, assets/sass/_base.scss */
+/* line 42, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 105, assets/sass/_base.scss */
+/* line 46, assets/sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 106, assets/sass/_base.scss */
+/* line 47, assets/sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 107, assets/sass/_base.scss */
+/* line 48, assets/sass/_base.scss */
 em {
   text-style: italic;
 }
 
-/* line 109, assets/sass/_base.scss */
+/* line 50, assets/sass/_base.scss */
 .hide {
   display: none;
 }
 
-/* line 110, assets/sass/_base.scss */
+/* line 51, assets/sass/_base.scss */
 .show {
   display: block;
 }
@@ -360,7 +106,7 @@ em {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 130, assets/sass/_base.scss */
+/* line 71, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -368,60 +114,60 @@ img {
 
 /* WordPress Image Styles
    ========================================================================== */
-/* line 135, assets/sass/_base.scss */
+/* line 76, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 136, assets/sass/_base.scss */
+/* line 77, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 137, assets/sass/_base.scss */
+/* line 78, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 138, assets/sass/_base.scss */
+/* line 79, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 139, assets/sass/_base.scss */
+/* line 80, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 140, assets/sass/_base.scss */
+/* line 81, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 141, assets/sass/_base.scss */
+/* line 82, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 142, assets/sass/_base.scss */
+/* line 83, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 143, assets/sass/_base.scss */
+/* line 84, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 144, assets/sass/_base.scss */
+/* line 85, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -430,22 +176,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 145, assets/sass/_base.scss */
+/* line 86, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 146, assets/sass/_base.scss */
+/* line 87, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 147, assets/sass/_base.scss */
+/* line 88, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 148, assets/sass/_base.scss */
+/* line 89, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -455,7 +201,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 149, assets/sass/_base.scss */
+/* line 90, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -465,968 +211,187 @@ a img.aligncenter {
 
 /* line 2, assets/sass/_typography.scss */
 html, body {
-  font: 14px/18px "minion-pro";
-  color: #323333;
+  font: 14px/18px;
+  color: #565656;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-/* line 5, assets/sass/_typography.scss */
+/* line 7, assets/sass/_typography.scss */
 h1 {
-  font: bold 40px/42px "nimbus-sans-condensed";
+  font: bold 40px/42px;
   margin: 0 0 0.3em;
   text-transform: uppercase;
 }
 
-/* line 6, assets/sass/_typography.scss */
+/* line 8, assets/sass/_typography.scss */
 h2 {
-  font: italic 25px/29px "minion-pro";
+  font: italic 25px/29px;
   margin: 0 0 0.25em;
 }
 
-/* line 7, assets/sass/_typography.scss */
+/* line 9, assets/sass/_typography.scss */
 h3 {
-  font: bold 23px/25px "nimbus-sans-condensed";
+  font: bold 23px/25px;
   margin: 0 0 0.2em;
   text-transform: uppercase;
 }
 
-/* line 8, assets/sass/_typography.scss */
-h4 {
-  font: bold 18px/23px "nimbus-sans";
-  margin: 0 0 0;
-  text-transform: uppercase;
-}
-
-/* line 9, assets/sass/_typography.scss */
-h5 {
-  font: bold 18px/23px "nimbus-sans-condensed";
-  margin: 0 0 0;
-  text-transform: uppercase;
-}
-
 /* line 10, assets/sass/_typography.scss */
+h4 {
+  font: bold 18px/23px;
+  margin: 0 0 0;
+  text-transform: uppercase;
+}
+
+/* line 11, assets/sass/_typography.scss */
+h5 {
+  font: bold 18px/23px;
+  margin: 0 0 0;
+  text-transform: uppercase;
+}
+
+/* line 12, assets/sass/_typography.scss */
 h6 {
-  font: 18px/22px "minion-pro";
+  font: 18px/22px;
   margin: 0 0 0;
 }
 
-/* line 13, assets/sass/_typography.scss */
+/* line 15, assets/sass/_typography.scss */
 p {
   margin: 0 0 .6em;
   word-wrap: break-word;
 }
 
-/* line 17, assets/sass/_typography.scss */
-.KCPL_date-time {
-  font: bold 14px/18px "nimbus-sans";
+/* line 19, assets/sass/_typography.scss */
+#date-time {
+  font: bold 14px/18px;
   margin: 0;
 }
 
-/* line 18, assets/sass/_typography.scss */
-.KCPL_subtitle {
-  font: 14px/18px "nimbus-sans";
+/* line 20, assets/sass/_typography.scss */
+#subtitle {
+  font: 14px/18px;
   margin: 0 0 1.25em;
 }
 
-/* line 19, assets/sass/_typography.scss */
-.KCPL_readmore {
-  font: italic bold 14px/18px "minion-pro";
+/* line 21, assets/sass/_typography.scss */
+#readmore {
+  font: italic bold 14px/18px;
   margin: 0 0 1.6em;
 }
 
-/* line 20, assets/sass/_typography.scss */
-.KCPL_meta-small {
-  font: bold 11px/18px "nimbus-sans";
+/* line 22, assets/sass/_typography.scss */
+#meta-small {
+  font: bold 11px/18px;
   margin: 0 0 .3em;
 }
 
-/* line 23, assets/sass/_typography.scss */
-.KCPL_caption-minion, .wp-caption-text {
-  font: 12px/16px "minion-pro";
-  margin: 0 0 .1em;
-}
-
-/* line 24, assets/sass/_typography.scss */
-.KCPL_caption-minion-italicbold {
-  font: italic bold 12px/18px "minion-pro";
-  margin: 0 0 .1em;
-}
-
 /* line 25, assets/sass/_typography.scss */
-.KCPL_caption-nimbus-condensed {
-  font: 12px/18px "nimbus-sans-condensed";
+#caption-minion, .wp-caption-text {
+  font: 12px/16px;
   margin: 0 0 .1em;
 }
 
-/* line 28, assets/sass/_typography.scss */
+/* line 26, assets/sass/_typography.scss */
+#caption-minion-italicbold {
+  font: italic bold 12px/18px;
+  margin: 0 0 .1em;
+}
+
+/* line 27, assets/sass/_typography.scss */
+#caption-nimbus-condensed {
+  font: 12px/18px;
+  margin: 0 0 .1em;
+}
+
+/* line 30, assets/sass/_typography.scss */
 a {
-  color: #137cc1;
+  color: #0397d6;
   text-decoration: none;
 }
 
-/* line 29, assets/sass/_typography.scss */
+/* line 31, assets/sass/_typography.scss */
 a:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 
-/* line 32, assets/sass/_typography.scss */
+/* line 34, assets/sass/_typography.scss */
 ul {
   list-style: disc inside;
   margin: 0 0 .6em;
 }
 
-/* line 33, assets/sass/_typography.scss */
+/* line 35, assets/sass/_typography.scss */
 ul li {
   margin: 2px 0;
 }
 
-/* line 34, assets/sass/_typography.scss */
+/* line 36, assets/sass/_typography.scss */
 ol {
   list-style: decimal inside;
   margin: 0 0 .6em;
 }
 
-/* line 35, assets/sass/_typography.scss */
+/* line 37, assets/sass/_typography.scss */
 ol li {
   margin: 2px 0;
 }
 
-/* line 38, assets/sass/_typography.scss */
+/* line 40, assets/sass/_typography.scss */
 blockquote {
   margin: 0 10%;
-  font: 20px/23px "nimbus-sans-condensed";
-}
-
-/* Table of Contents
-==================================================
-    #Import Base Style
-    #Variables & Mixins
-    #Base 960 Grid
-    #Tablet (Portrait)
-    #Mobile (Portrait)
-    #Mobile (Landscape)
-    #Clearing
-    #Import Custom Layout */
-/* #Variables & Mixins
-================================================== */
-/* #Breakpoint Mixins
-================================================== */
-/* #Base 960 Grid
-================================================== */
-/* line 76, assets/sass/_grid.scss */
-.container {
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
-  width: 996px;
-  /* Offsets */
-}
-/* line 79, assets/sass/_grid.scss */
-.container .row {
-  margin-bottom: 20px;
-}
-/* line 80, assets/sass/_grid.scss */
-.container .column, .container .columns {
-  float: left;
-  display: inline;
-  margin-left: 13px;
-  margin-right: 13px;
-  /* Base Grid */
-}
-/* line 86, assets/sass/_grid.scss */
-.container .column.alpha, .container .columns.alpha {
-  margin-left: 0;
-}
-/* line 87, assets/sass/_grid.scss */
-.container .column.omega, .container .columns.omega {
-  margin-right: 0;
-}
-/* line 90, assets/sass/_grid.scss */
-.container .column.one, .container .columns.one {
-  width: 57px;
-}
-/* line 91, assets/sass/_grid.scss */
-.container .column.two, .container .columns.two {
-  width: 140px;
-}
-/* line 92, assets/sass/_grid.scss */
-.container .column.three, .container .columns.three {
-  width: 223px;
-}
-/* line 93, assets/sass/_grid.scss */
-.container .column.four, .container .columns.four {
-  width: 306px;
-}
-/* line 94, assets/sass/_grid.scss */
-.container .column.five, .container .columns.five {
-  width: 389px;
-}
-/* line 95, assets/sass/_grid.scss */
-.container .column.six, .container .columns.six {
-  width: 472px;
-}
-/* line 96, assets/sass/_grid.scss */
-.container .column.seven, .container .columns.seven {
-  width: 555px;
-}
-/* line 97, assets/sass/_grid.scss */
-.container .column.eight, .container .columns.eight {
-  width: 638px;
-}
-/* line 98, assets/sass/_grid.scss */
-.container .column.nine, .container .columns.nine {
-  width: 721px;
-}
-/* line 99, assets/sass/_grid.scss */
-.container .column.ten, .container .columns.ten {
-  width: 804px;
-}
-/* line 100, assets/sass/_grid.scss */
-.container .column.eleven, .container .columns.eleven {
-  width: 887px;
-}
-/* line 101, assets/sass/_grid.scss */
-.container .column.twelve, .container .columns.twelve {
-  width: 970px;
-}
-/* line 102, assets/sass/_grid.scss */
-.container .column.thirteen, .container .columns.thirteen {
-  width: 1053px;
-}
-/* line 103, assets/sass/_grid.scss */
-.container .column.fourteen, .container .columns.fourteen {
-  width: 1136px;
-}
-/* line 104, assets/sass/_grid.scss */
-.container .column.fifteen, .container .columns.fifteen {
-  width: 1219px;
-}
-/* line 105, assets/sass/_grid.scss */
-.container .column.sixteen, .container .columns.sixteen {
-  width: 1302px;
-}
-/* line 107, assets/sass/_grid.scss */
-.container .column.one-third, .container .columns.one-third {
-  width: 306px;
-}
-/* line 108, assets/sass/_grid.scss */
-.container .column.two-thirds, .container .columns.two-thirds {
-  width: 638px;
-}
-/* line 112, assets/sass/_grid.scss */
-.container .column img, .container .columns img {
-  max-width: 100%;
-}
-/* line 115, assets/sass/_grid.scss */
-.container .offset-by-one {
-  padding-left: 83px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 115, assets/sass/_grid.scss */
-  .container .offset-by-one {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 115, assets/sass/_grid.scss */
-  .container .offset-by-one {
-    padding-left: 0px;
-  }
-}
-/* line 116, assets/sass/_grid.scss */
-.container .offset-by-two {
-  padding-left: 166px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 116, assets/sass/_grid.scss */
-  .container .offset-by-two {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 116, assets/sass/_grid.scss */
-  .container .offset-by-two {
-    padding-left: 0px;
-  }
-}
-/* line 117, assets/sass/_grid.scss */
-.container .offset-by-three {
-  padding-left: 249px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 117, assets/sass/_grid.scss */
-  .container .offset-by-three {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 117, assets/sass/_grid.scss */
-  .container .offset-by-three {
-    padding-left: 0px;
-  }
-}
-/* line 118, assets/sass/_grid.scss */
-.container .offset-by-four {
-  padding-left: 332px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 118, assets/sass/_grid.scss */
-  .container .offset-by-four {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 118, assets/sass/_grid.scss */
-  .container .offset-by-four {
-    padding-left: 0px;
-  }
-}
-/* line 119, assets/sass/_grid.scss */
-.container .offset-by-five {
-  padding-left: 415px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 119, assets/sass/_grid.scss */
-  .container .offset-by-five {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 119, assets/sass/_grid.scss */
-  .container .offset-by-five {
-    padding-left: 0px;
-  }
-}
-/* line 120, assets/sass/_grid.scss */
-.container .offset-by-six {
-  padding-left: 498px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 120, assets/sass/_grid.scss */
-  .container .offset-by-six {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 120, assets/sass/_grid.scss */
-  .container .offset-by-six {
-    padding-left: 0px;
-  }
-}
-/* line 121, assets/sass/_grid.scss */
-.container .offset-by-seven {
-  padding-left: 581px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 121, assets/sass/_grid.scss */
-  .container .offset-by-seven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 121, assets/sass/_grid.scss */
-  .container .offset-by-seven {
-    padding-left: 0px;
-  }
-}
-/* line 122, assets/sass/_grid.scss */
-.container .offset-by-eight {
-  padding-left: 664px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 122, assets/sass/_grid.scss */
-  .container .offset-by-eight {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 122, assets/sass/_grid.scss */
-  .container .offset-by-eight {
-    padding-left: 0px;
-  }
-}
-/* line 123, assets/sass/_grid.scss */
-.container .offset-by-nine {
-  padding-left: 747px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 123, assets/sass/_grid.scss */
-  .container .offset-by-nine {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 123, assets/sass/_grid.scss */
-  .container .offset-by-nine {
-    padding-left: 0px;
-  }
-}
-/* line 124, assets/sass/_grid.scss */
-.container .offset-by-ten {
-  padding-left: 830px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 124, assets/sass/_grid.scss */
-  .container .offset-by-ten {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 124, assets/sass/_grid.scss */
-  .container .offset-by-ten {
-    padding-left: 0px;
-  }
-}
-/* line 125, assets/sass/_grid.scss */
-.container .offset-by-eleven {
-  padding-left: 913px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 125, assets/sass/_grid.scss */
-  .container .offset-by-eleven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 125, assets/sass/_grid.scss */
-  .container .offset-by-eleven {
-    padding-left: 0px;
-  }
-}
-/* line 126, assets/sass/_grid.scss */
-.container .offset-by-twelve {
-  padding-left: 996px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 126, assets/sass/_grid.scss */
-  .container .offset-by-twelve {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 126, assets/sass/_grid.scss */
-  .container .offset-by-twelve {
-    padding-left: 0px;
-  }
-}
-/* line 127, assets/sass/_grid.scss */
-.container .offset-by-thirteen {
-  padding-left: 1079px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 127, assets/sass/_grid.scss */
-  .container .offset-by-thirteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 127, assets/sass/_grid.scss */
-  .container .offset-by-thirteen {
-    padding-left: 0px;
-  }
-}
-/* line 128, assets/sass/_grid.scss */
-.container .offset-by-fourteen {
-  padding-left: 1162px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 128, assets/sass/_grid.scss */
-  .container .offset-by-fourteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 128, assets/sass/_grid.scss */
-  .container .offset-by-fourteen {
-    padding-left: 0px;
-  }
-}
-/* line 129, assets/sass/_grid.scss */
-.container .offset-by-fifteen {
-  padding-left: 1245px;
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 129, assets/sass/_grid.scss */
-  .container .offset-by-fifteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  /* line 129, assets/sass/_grid.scss */
-  .container .offset-by-fifteen {
-    padding-left: 0px;
-  }
-}
-
-/* #Tablet (Portrait)
-================================================== */
-/* Note: Design for a width of 768px */
-@media only screen and (max-width: 1023px) {
-  /* line 139, assets/sass/_grid.scss */
-  .container {
-    position: relative;
-    margin: 0 auto;
-    padding: 0;
-    width: 792px;
-    /* Offsets */
-  }
-  /* line 142, assets/sass/_grid.scss */
-  .container .row {
-    margin-bottom: 20px;
-  }
-  /* line 143, assets/sass/_grid.scss */
-  .container .column, .container .columns {
-    /* Base Grid */
-  }
-  /* line 146, assets/sass/_grid.scss */
-  .container .column.one, .container .columns.one {
-    width: 40px;
-  }
-  /* line 147, assets/sass/_grid.scss */
-  .container .column.two, .container .columns.two {
-    width: 106px;
-  }
-  /* line 148, assets/sass/_grid.scss */
-  .container .column.three, .container .columns.three {
-    width: 172px;
-  }
-  /* line 149, assets/sass/_grid.scss */
-  .container .column.four, .container .columns.four {
-    width: 238px;
-  }
-  /* line 150, assets/sass/_grid.scss */
-  .container .column.five, .container .columns.five {
-    width: 304px;
-  }
-  /* line 151, assets/sass/_grid.scss */
-  .container .column.six, .container .columns.six {
-    width: 370px;
-  }
-  /* line 152, assets/sass/_grid.scss */
-  .container .column.seven, .container .columns.seven {
-    width: 436px;
-  }
-  /* line 153, assets/sass/_grid.scss */
-  .container .column.eight, .container .columns.eight {
-    width: 502px;
-  }
-  /* line 154, assets/sass/_grid.scss */
-  .container .column.nine, .container .columns.nine {
-    width: 568px;
-  }
-  /* line 155, assets/sass/_grid.scss */
-  .container .column.ten, .container .columns.ten {
-    width: 634px;
-  }
-  /* line 156, assets/sass/_grid.scss */
-  .container .column.eleven, .container .columns.eleven {
-    width: 700px;
-  }
-  /* line 157, assets/sass/_grid.scss */
-  .container .column.twelve, .container .columns.twelve {
-    width: 766px;
-  }
-  /* line 158, assets/sass/_grid.scss */
-  .container .column.thirteen, .container .columns.thirteen {
-    width: 832px;
-  }
-  /* line 159, assets/sass/_grid.scss */
-  .container .column.fourteen, .container .columns.fourteen {
-    width: 898px;
-  }
-  /* line 160, assets/sass/_grid.scss */
-  .container .column.fifteen, .container .columns.fifteen {
-    width: 964px;
-  }
-  /* line 161, assets/sass/_grid.scss */
-  .container .column.sixteen, .container .columns.sixteen {
-    width: 1030px;
-  }
-  /* line 163, assets/sass/_grid.scss */
-  .container .column.one-third, .container .columns.one-third {
-    width: 238px;
-  }
-  /* line 164, assets/sass/_grid.scss */
-  .container .column.two-thirds, .container .columns.two-thirds {
-    width: 502px;
-  }
-  /* line 169, assets/sass/_grid.scss */
-  .container .offset-by-one {
-    padding-left: 66px;
-  }
-  /* line 170, assets/sass/_grid.scss */
-  .container .offset-by-two {
-    padding-left: 132px;
-  }
-  /* line 171, assets/sass/_grid.scss */
-  .container .offset-by-three {
-    padding-left: 198px;
-  }
-  /* line 172, assets/sass/_grid.scss */
-  .container .offset-by-four {
-    padding-left: 264px;
-  }
-  /* line 173, assets/sass/_grid.scss */
-  .container .offset-by-five {
-    padding-left: 330px;
-  }
-  /* line 174, assets/sass/_grid.scss */
-  .container .offset-by-six {
-    padding-left: 396px;
-  }
-  /* line 175, assets/sass/_grid.scss */
-  .container .offset-by-seven {
-    padding-left: 462px;
-  }
-  /* line 176, assets/sass/_grid.scss */
-  .container .offset-by-eight {
-    padding-left: 528px;
-  }
-  /* line 177, assets/sass/_grid.scss */
-  .container .offset-by-nine {
-    padding-left: 594px;
-  }
-  /* line 178, assets/sass/_grid.scss */
-  .container .offset-by-ten {
-    padding-left: 660px;
-  }
-  /* line 179, assets/sass/_grid.scss */
-  .container .offset-by-eleven {
-    padding-left: 726px;
-  }
-  /* line 180, assets/sass/_grid.scss */
-  .container .offset-by-twelve {
-    padding-left: 792px;
-  }
-  /* line 181, assets/sass/_grid.scss */
-  .container .offset-by-thirteen {
-    padding-left: 858px;
-  }
-  /* line 182, assets/sass/_grid.scss */
-  .container .offset-by-fourteen {
-    padding-left: 924px;
-  }
-  /* line 183, assets/sass/_grid.scss */
-  .container .offset-by-fifteen {
-    padding-left: 990px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 169, assets/sass/_grid.scss */
-  .container .offset-by-one {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 169, assets/sass/_grid.scss */
-  .container .offset-by-one {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 170, assets/sass/_grid.scss */
-  .container .offset-by-two {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 170, assets/sass/_grid.scss */
-  .container .offset-by-two {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 171, assets/sass/_grid.scss */
-  .container .offset-by-three {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 171, assets/sass/_grid.scss */
-  .container .offset-by-three {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 172, assets/sass/_grid.scss */
-  .container .offset-by-four {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 172, assets/sass/_grid.scss */
-  .container .offset-by-four {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 173, assets/sass/_grid.scss */
-  .container .offset-by-five {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 173, assets/sass/_grid.scss */
-  .container .offset-by-five {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 174, assets/sass/_grid.scss */
-  .container .offset-by-six {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 174, assets/sass/_grid.scss */
-  .container .offset-by-six {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 175, assets/sass/_grid.scss */
-  .container .offset-by-seven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 175, assets/sass/_grid.scss */
-  .container .offset-by-seven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 176, assets/sass/_grid.scss */
-  .container .offset-by-eight {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 176, assets/sass/_grid.scss */
-  .container .offset-by-eight {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 177, assets/sass/_grid.scss */
-  .container .offset-by-nine {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 177, assets/sass/_grid.scss */
-  .container .offset-by-nine {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 178, assets/sass/_grid.scss */
-  .container .offset-by-ten {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 178, assets/sass/_grid.scss */
-  .container .offset-by-ten {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 179, assets/sass/_grid.scss */
-  .container .offset-by-eleven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 179, assets/sass/_grid.scss */
-  .container .offset-by-eleven {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 180, assets/sass/_grid.scss */
-  .container .offset-by-twelve {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 180, assets/sass/_grid.scss */
-  .container .offset-by-twelve {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 181, assets/sass/_grid.scss */
-  .container .offset-by-thirteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 181, assets/sass/_grid.scss */
-  .container .offset-by-thirteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 182, assets/sass/_grid.scss */
-  .container .offset-by-fourteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 182, assets/sass/_grid.scss */
-  .container .offset-by-fourteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (min-width: 480px) and (max-width: 767px) {
-  /* line 183, assets/sass/_grid.scss */
-  .container .offset-by-fifteen {
-    padding-left: 0px;
-  }
-}
-@media only screen and (max-width: 1023px) and (max-width: 479px) {
-  /* line 183, assets/sass/_grid.scss */
-  .container .offset-by-fifteen {
-    padding-left: 0px;
-  }
-}
-
-/*  #Mobile (Portrait)
-================================================== */
-/* Note: Design for a width of 320px */
-@media only screen and (max-device-width: 767px) {
-  /* line 194, assets/sass/_grid.scss */
-  .container {
-    width: 300px;
-  }
-  /* line 196, assets/sass/_grid.scss */
-  .container .columns, .container .column {
-    margin-left: 0px;
-    margin-right: 0px;
-    /* Offsets */
-  }
-  /* line 215, assets/sass/_grid.scss */
-  .container .columns.one, .container .columns.two, .container .columns.three, .container .columns.four, .container .columns.five, .container .columns.six, .container .columns.seven, .container .columns.eight, .container .columns.nine, .container .columns.ten, .container .columns.eleven, .container .columns.twelve, .container .columns.thirteen, .container .columns.fourteen, .container .columns.fifteen, .container .columns.sixteen, .container .columns.one-third, .container .columns.two-thirds, .container .column.one, .container .column.two, .container .column.three, .container .column.four, .container .column.five, .container .column.six, .container .column.seven, .container .column.eight, .container .column.nine, .container .column.ten, .container .column.eleven, .container .column.twelve, .container .column.thirteen, .container .column.fourteen, .container .column.fifteen, .container .column.sixteen, .container .column.one-third, .container .column.two-thirds {
-    width: 300px;
-  }
-  /* line 232, assets/sass/_grid.scss */
-  .container .columns .offset-by-one,
-  .container .columns .offset-by-two,
-  .container .columns .offset-by-three,
-  .container .columns .offset-by-four,
-  .container .columns .offset-by-five,
-  .container .columns .offset-by-six,
-  .container .columns .offset-by-seven,
-  .container .columns .offset-by-eight,
-  .container .columns .offset-by-nine,
-  .container .columns .offset-by-ten,
-  .container .columns .offset-by-eleven,
-  .container .columns .offset-by-twelve,
-  .container .columns .offset-by-thirteen,
-  .container .columns .offset-by-fourteen,
-  .container .columns .offset-by-fifteen, .container .column .offset-by-one,
-  .container .column .offset-by-two,
-  .container .column .offset-by-three,
-  .container .column .offset-by-four,
-  .container .column .offset-by-five,
-  .container .column .offset-by-six,
-  .container .column .offset-by-seven,
-  .container .column .offset-by-eight,
-  .container .column .offset-by-nine,
-  .container .column .offset-by-ten,
-  .container .column .offset-by-eleven,
-  .container .column .offset-by-twelve,
-  .container .column .offset-by-thirteen,
-  .container .column .offset-by-fourteen,
-  .container .column .offset-by-fifteen {
-    padding-left: 0;
-  }
-}
-/* #Mobile (Landscape)
-================================================== */
-    /* Note: Design for a width of 480px  LOLJK DESIGNING FOR PIXEL WIDTHS ON MOBILE IS STUPID =D
-
-    @media only screen and (min-width: 480px) and (max-width: 767px) {
-        .container { width: 420px;
-
-            .columns, .column {margin-left: 0px;  margin-right: 0px;
-
-                &.one,
-                &.two,
-                &.three,
-                &.four,
-                &.five,
-                &.six,
-                &.seven,
-                &.eight,
-                &.nine,
-                &.ten,
-                &.eleven,
-                &.twelve,
-                &.thirteen,
-                &.fourteen,
-                &.fifteen,
-                &.sixteen,
-                &.one-third,
-                &.two-thirds { width: 420px; }
-
-            } // .column, .columns
-        } // .container
-    }
-
-*/
-/* #Clearing
-================================================== */
-/* Self Clearing Goodness */
-/* line 279, assets/sass/_grid.scss */
-.container:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-/* Use clearfix class on parent to clear nested columns,
-or wrap each row of columns in a <div class="row"> */
-/* line 286, assets/sass/_grid.scss */
-.clearfix:before,
-.clearfix:after,
-.row:before,
-.row:after {
-  content: '\0020';
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-/* line 294, assets/sass/_grid.scss */
-.row:after,
-.clearfix:after {
-  clear: both;
-}
-
-/* line 297, assets/sass/_grid.scss */
-.row,
-.clearfix {
-  zoom: 1;
-}
-
-/* You can also use a <br class="clear" /> to clear columns */
-/* line 301, assets/sass/_grid.scss */
-.clear {
-  clear: both;
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
+  font: 20px/23px;
 }
 
 /* line 1, assets/sass/_layout.scss */
-p {
-  margin-top: 20px;
+nav {
+  position: fixed;
+  width: 10%;
+  height: 100%;
+  background-color: #FFF;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  overflow: hidden;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* line 13, assets/sass/_layout.scss */
+.panel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  overflow: auto;
+}
+
+/* line 21, assets/sass/_layout.scss */
+#section1 {
+  left: 0;
+  background: #28bdb3;
+  color: #fff;
+}
+
+/* line 26, assets/sass/_layout.scss */
+#section2 {
+  left: 100%;
+  background: #f05135;
+  color: #fff;
+}
+
+/* line 31, assets/sass/_layout.scss */
+#section3 {
+  left: 200%;
+  background: #565656;
+  color: #fff;
+}
+
+/* line 36, assets/sass/_layout.scss */
+#section4 {
+  left: 300%;
+  background: #0397d6;
+  color: #fff;
 }

@@ -20,80 +20,21 @@
 /* VARIABLES
 ================================================= */
 //namespace
-$namespace: KCPL_;
+ 
 
 //colors
-$blue : #137cc1;
-$l-blue : #61a2d7;
-$green : #65a893;
-$l-green : #8ed2bc;
-$red : #f65446;
-$l-red : #ff856f;
-$grey : #76849a;
-$l-grey : #9dabc3;
-$yellow : #ffa751;
-$l-yellow : #ffc46d;
-
-//greys
-$d-grey : #323333;
-$m-grey : #7c7d7d;
-$s-grey : #e2e2e2;
+$gray : #565656;
+$teal: #28BDB3;
+$red: #F05135;
+$blue: #0397D6;
+ 
+ 
 
 //fonts
-$minion:"minion-pro";
-$nimbus:"nimbus-sans";
-$nimbus-c:"nimbus-sans-condensed";
-
+ 
 
 // KCPL specific classes
-	//backgrounds
-	.#{$namespace}background-blue{background:$blue;}
-	.#{$namespace}background-green{background:$green;}
-	.#{$namespace}background-red{background:$red;}
-	.#{$namespace}background-grey{background:$grey;}
-	.#{$namespace}background-yellow{background:$yellow;}
-
-	//colors
-	.#{$namespace}color-blue{color:$blue;}
-	.#{$namespace}color-green{color:$green;}
-	.#{$namespace}color-red{color:$red;}
-	.#{$namespace}color-grey{color:$grey;}
-	.#{$namespace}color-yellow{color:$yellow;}
-
-	//fonts
-	.#{$namespace}font-minion{font-family:$minion;}
-	.#{$namespace}font-nimbus{font-family:$nimbus;}
-	.#{$namespace}font-nimbus-condensed{font-family:$nimbus-c;}
-
-	//sprites - base icon, positioning is up to you
-	.#{$namespace}sprite-book{background: url(assets/img/sprites.png) 0 -8px no-repeat;height:31px;width: 43px;}
-	.#{$namespace}sprite-headphones{background: url(assets/img/sprites.png) -53px -7px no-repeat;height:32px;width: 34px;}
-	.#{$namespace}sprite-document{background: url(assets/img/sprites.png) -99px -5px no-repeat;height:37px;width: 28px;}
-	.#{$namespace}sprite-periodical{background: url(assets/img/sprites.png) -140px -3px no-repeat;height:37px;width: 28px;}
-	.#{$namespace}sprite-video{background: url(assets/img/sprites.png) -180px -8px no-repeat;height:29px;width: 39px;}
-	.#{$namespace}sprite-tablet{background: url(assets/img/sprites.png) -230px -5px no-repeat;height: 36px;width: 29px;}
-	.#{$namespace}sprite-audiobook{background: url(assets/img/sprites.png) -270px -8px no-repeat;height: 31px;width: 37px;}
-	.#{$namespace}sprite-download{background: url(assets/img/sprites.png) -322px -8px no-repeat;height: 32px;width: 29px;}
-	.#{$namespace}sprite-kids{background: url(assets/img/sprites.png) -365px 0 no-repeat;height: 40px;width: 39px;}
-	.#{$namespace}sprite-teens{background: url(assets/img/sprites.png) -413px 0 no-repeat;height: 40px;width: 39px;}
-	.#{$namespace}sprite-adult{background: url(assets/img/sprites.png) -461px 0 no-repeat;height: 40px;width: 39px;}
-
-	.#{$namespace}sprite-facebook{background: url(assets/img/sprites.png) 0px -50px no-repeat;height: 35px;width: 35px;}
-	.#{$namespace}sprite-pinterest{background: url(assets/img/sprites.png) -41px -50px no-repeat;height: 35px;width: 35px;}
-	.#{$namespace}sprite-tumblr{background: url(assets/img/sprites.png) -82px -50px no-repeat;height: 35px;width: 35px;}
-	.#{$namespace}sprite-instagram{background: url(assets/img/sprites.png) -123px -50px no-repeat;height: 35px;width: 35px;}
-	.#{$namespace}sprite-twitter{background: url(assets/img/sprites.png) -164px -50px no-repeat;height: 35px;width: 35px;}
-	.#{$namespace}sprite-googleplus{background: url(assets/img/sprites.png) -205px -50px no-repeat;height: 35px;width: 35px;}
-	.#{$namespace}sprite-mail{background: url(assets/img/sprites.png) -247px -58px no-repeat;height: 27px;width: 33px;}
-	.#{$namespace}sprite-search{background: url(assets/img/sprites.png) -289px -58px no-repeat;height: 25px;width: 24px;}
-	.#{$namespace}sprite-mute{background: url(assets/img/sprites.png) -323px -56px no-repeat;height: 28px;width: 30px;}
-	.#{$namespace}sprite-calendar{background: url(assets/img/sprites.png) -364px -54px no-repeat;height: 30px;width: 26px;}
-	.#{$namespace}sprite-learn{background: url(assets/img/sprites.png) -400px -56px no-repeat;height: 29px;width: 32px;}
-	.#{$namespace}sprite-thumbsup{background: url(assets/img/sprites.png) -444px -54px no-repeat;height: 27px;width: 28px;}
-	.#{$namespace}sprite-thumbsdown{background: url(assets/img/sprites.png) -482px -54px no-repeat;height: 27px;width: 28px;}
-	.#{$namespace}sprite-plus{background: url(assets/img/sprites.png) -520px -61px no-repeat;height: 12px;width: 12px;}
-	.#{$namespace}sprite-minus{background: url(assets/img/sprites.png) -538px -66px no-repeat;height: 4px;width: 12px;}
-	.#{$namespace}sprite-create{background: url(assets/img/sprites.png) -564px -58px no-repeat;height: 21px;width: 21px;}
+ 
 
 
 /* #Basic Styles

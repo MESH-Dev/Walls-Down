@@ -35,11 +35,11 @@ module.exports = function (grunt) {
           jsconcat:{
             files: ['assets/js/jquery-1.11.1.min.js','assets/js/waypoints.js','assets/js/scripts.js'],
             tasks: ['concat']
-          },
+          } /*,
           jsuglify:{
             files: ['prod/*.js'],
             tasks: ['uglify']
-          },
+          }*/,
           css: {
             files: 'assets/sass/*.scss',
             tasks: ['compass']
