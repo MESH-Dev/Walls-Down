@@ -106,31 +106,54 @@ $(function() {
     var $togglePushLeft = $(".toggle-push-left" );
     var $pushMenuLeft = $( ".push-menu-left" );
     var activeNav;
+    var activeCredits;
 
    
     /* push menu left */
     $(".toggle-push-left").click(function(){
         $('body').addClass("pml-open");
-        $('body').append("<div class='mask'></div>");
+ 
         activeNav = "pml-open";
-         
+
     });
 
     $(".mask").click(function(){
         $('body').removeClass(activeNav);
         activeNav = "";
-        $("div").remove(".mask");
+ 
     } );
  
-
     /* hide active menu if close menu button is clicked */
-    [].slice.call(document.querySelectorAll(".close-menu")).forEach(function(el,i){
-        el.addEventListener( "click", function(){
-            $('body').removeClass(activeNav);
-            activeNav = "";
-             $("div").remove(".mask");
-        } );
+    $(".close-menu").click(function(){
+        $('body').removeClass(activeNav);
+        $('body').removeClass(activeCredits);
+        activeNav = "";
+ 
     });
 
-   
+
+    //CREDITS MENU --------------
+    /* push menu left */
+    $("#credit-link").click(function(){
+        $('body').addClass("credits-open");
+ 
+        activeCredits = "credits-open";
+
+    });
+
+    $(".mask").click(function(){
+        $('body').removeClass(activeCredits);
+        activeCredits = "";
+ 
+    } );
+ 
+    /* hide active menu if close menu button is clicked */
+    $(".close-credits-menu").click(function(){
+        $('body').removeClass(activeCredits);
+        activeCredits = "";
+ 
+    });
+
+
+
 });

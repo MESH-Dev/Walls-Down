@@ -29,7 +29,26 @@ $red: #F05135;
 $blue: #0397D6;
  
  
+/* #Breakpoint Mixins
+================================================== */
 
+@mixin breakpoint($point) {
+  @if $point == widescreen {
+    @media only screen and (min-width: 1400px){ @content; }
+  }
+  @if $point == smallscreen {
+    @media only screen and (min-width: 768px) and (max-width: 1399px){ @content; }
+  }
+  @else if $point == tablet  {
+    @media only screen and (max-width: 767px){ @content; }
+  }
+  @else if $point == landscape {
+    @media only screen and (min-width: 480px) and (max-width: 767px)  { @content; }
+  }
+  @else if $point == portrait{
+    @media only screen and (max-width: 479px) { @content; }
+  }
+}
 //fonts
  
 

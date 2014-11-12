@@ -58,36 +58,38 @@ table {
 ================================================= */
 /* VARIABLES
 ================================================= */
+/* #Breakpoint Mixins
+================================================== */
 /* #Basic Styles
 ================================================== */
-/* line 42, assets/sass/_base.scss */
+/* line 61, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 46, assets/sass/_base.scss */
+/* line 65, assets/sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 47, assets/sass/_base.scss */
+/* line 66, assets/sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 48, assets/sass/_base.scss */
+/* line 67, assets/sass/_base.scss */
 em {
   text-style: italic;
 }
 
-/* line 50, assets/sass/_base.scss */
+/* line 69, assets/sass/_base.scss */
 .hide {
   display: none;
 }
 
-/* line 51, assets/sass/_base.scss */
+/* line 70, assets/sass/_base.scss */
 .show {
   display: block;
 }
@@ -98,7 +100,7 @@ em {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 71, assets/sass/_base.scss */
+/* line 90, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -106,60 +108,60 @@ img {
 
 /* WordPress Image Styles
    ========================================================================== */
-/* line 76, assets/sass/_base.scss */
+/* line 95, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 77, assets/sass/_base.scss */
+/* line 96, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 78, assets/sass/_base.scss */
+/* line 97, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 79, assets/sass/_base.scss */
+/* line 98, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 80, assets/sass/_base.scss */
+/* line 99, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 81, assets/sass/_base.scss */
+/* line 100, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 82, assets/sass/_base.scss */
+/* line 101, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 83, assets/sass/_base.scss */
+/* line 102, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 84, assets/sass/_base.scss */
+/* line 103, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 85, assets/sass/_base.scss */
+/* line 104, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -168,22 +170,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 86, assets/sass/_base.scss */
+/* line 105, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 87, assets/sass/_base.scss */
+/* line 106, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 88, assets/sass/_base.scss */
+/* line 107, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 89, assets/sass/_base.scss */
+/* line 108, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -193,7 +195,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 90, assets/sass/_base.scss */
+/* line 109, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -343,7 +345,7 @@ body {
   overflow-x: hidden;
 }
 
-/* line 7, assets/sass/_layout.scss */
+/* line 8, assets/sass/_layout.scss */
 nav.menu {
   position: fixed;
   z-index: 20;
@@ -356,46 +358,78 @@ nav.menu {
   transition: all 0.3s;
 }
 
-/* line 19, assets/sass/_layout.scss */
+/* line 20, assets/sass/_layout.scss */
 nav.push-menu-left {
   top: 0;
-  width: 300px;
   height: 100%;
+  width: 300px;
 }
 
-/* line 25, assets/sass/_layout.scss */
+/* line 26, assets/sass/_layout.scss */
 nav.push-menu-left {
-  left: -300px;
+  left: -200px;
 }
 
-/* line 28, assets/sass/_layout.scss */
+/* line 30, assets/sass/_layout.scss */
 body.pml-open nav.push-menu-left {
   left: 0;
 }
 
-/* line 34, assets/sass/_layout.scss */
+/* line 35, assets/sass/_layout.scss */
+body.pml-open .panel-wrap {
+  margin-left: 300px;
+}
+
+/* line 39, assets/sass/_layout.scss */
+.credits-menu-left {
+  position: fixed;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #000;
+  left: -300px;
+  z-index: 10;
+}
+
+/* line 54, assets/sass/_layout.scss */
+body.credits-open .credits-menu-left {
+  left: 300px;
+}
+
+/* line 60, assets/sass/_layout.scss */
 .mask {
   position: fixed;
   top: 0;
   left: 300px;
-  z-index: 15;
   width: 100%;
   height: 100%;
 }
 
-/* line 45, assets/sass/_layout.scss */
+/* line 72, assets/sass/_layout.scss */
+#open {
+  z-index: 200;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* line 74, assets/sass/_layout.scss */
 .panel {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   overflow: auto;
-  left: 10%;
 }
 
-/* line 54, assets/sass/_layout.scss */
+/* line 84, assets/sass/_layout.scss */
 .panel-wrap {
-  padding: 20px 30px 20px 30px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -403,41 +437,79 @@ body.pml-open nav.push-menu-left {
   transition: all 0.3s;
 }
 
-/* line 62, assets/sass/_layout.scss */
-body.pml-open .panel-wrap {
-  padding-left: 330px;
+/* line 95, assets/sass/_layout.scss */
+#timeline .panel-wrap {
+  height: 5500px;
+  background: url("assets/img/timeline-bg.jpg") top left no-repeat;
+  color: #000;
+  background-color: #ffcc00;
+}
+@media only screen and (min-width: 1400px) {
+  /* line 95, assets/sass/_layout.scss */
+  #timeline .panel-wrap {
+    background-color: #ff0000;
+  }
+}
+/* line 105, assets/sass/_layout.scss */
+#timeline .panel-wrap .block {
+  position: relative;
+}
+/* line 108, assets/sass/_layout.scss */
+#timeline .panel-wrap .timeline-title {
+  top: 70px;
+  left: 200px;
+  width: 450px;
+  height: 200px;
+  background-color: #ccc;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+/* line 116, assets/sass/_layout.scss */
+#timeline .panel-wrap .timeline-one {
+  top: 200px;
+  left: 200px;
+  width: 560px;
+  height: 300px;
+  background-color: #ccc;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+/* line 125, assets/sass/_layout.scss */
+#timeline .panel-wrap .timeline-two {
+  top: 500px;
+  left: 200px;
+  width: 560px;
+  height: 300px;
+  background-color: #ccc;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+}
+/* line 133, assets/sass/_layout.scss */
+#timeline .panel-wrap .timeline-three {
+  top: 1000px;
+  left: 200px;
+  width: 560px;
+  height: 300px;
+  background-color: #ccc;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
 }
 
-/* line 66, assets/sass/_layout.scss */
-#open {
-  z-index: 200;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-}
-
-/* line 68, assets/sass/_layout.scss */
-#section1 {
-  left: 0;
-  background: #28bdb3;
-  color: #fff;
-}
-
-/* line 73, assets/sass/_layout.scss */
+/* line 144, assets/sass/_layout.scss */
 #section2 {
   left: 100%;
   background: #f05135;
   color: #fff;
 }
 
-/* line 78, assets/sass/_layout.scss */
+/* line 149, assets/sass/_layout.scss */
 #section3 {
   left: 200%;
   background: #565656;
   color: #fff;
 }
 
-/* line 83, assets/sass/_layout.scss */
+/* line 154, assets/sass/_layout.scss */
 #section4 {
   left: 300%;
   background: #0397d6;

@@ -4,6 +4,7 @@ body {
 }
 
 
+//NAVIGATION MENU
 nav.menu {
     position: fixed;
     z-index: 20;
@@ -18,29 +19,57 @@ nav.menu {
 
 nav.push-menu-left {
     top: 0;
-    width: 300px;
     height: 100%;
+    width: 300px;
 }
 
 nav.push-menu-left {
-    left: -300px
+    left: -200px;
+ 
 }
 body.pml-open nav.push-menu-left {
     left: 0
 }
 
+body.pml-open{
+  .panel-wrap{margin-left: 300px;}
+}
+
+//CREDITS MENU 
+.credits-menu-left{
+    position: fixed;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #000;
+    left: -300px;
+    z-index: 10;
+}
+body.credits-open .credits-menu-left{
+    left: 300px;
+}
 
 
+ 
 .mask {
     position: fixed;
     top: 0;
     left: 300px;
-    z-index: 15;
+    //z-index: 15;
     width: 100%;
     height: 100%;
     //background: rgba(0, 0, 0, 0.8);
 }
  
+
+
+#open{z-index: 200; position: absolute; top: 20px; right: 20px;}
 
 .panel {
   position: absolute;
@@ -48,27 +77,69 @@ body.pml-open nav.push-menu-left {
   height:100%;
   top: 0;
   overflow: auto; 
-  left: 10%;
+ 
+   
 }
 
 .panel-wrap{
-  padding: 20px 30px 20px 30px; -webkit-transition: all 0.3s;
+   -webkit-transition: all 0.3s;
    -moz-transition: all 0.3s;
    -ms-transition: all 0.3s;
    -o-transition: all 0.3s;
    transition: all 0.3s;
-}
-body.pml-open{
-  .panel-wrap{  padding-left: 330px;}
+ 
 }
 
+ 
 
-#open{z-index: 200; position: fixed; top: 20px; right: 20px;}
+#timeline .panel-wrap{
+  height: 5500px;
+  background: url('assets/img/timeline-bg.jpg') top left no-repeat;
+  color: #000; 
+  background-color: #ffcc00;
 
-#section1 {
-  left: 0;
-  background: $teal;
-  color: #fff; }
+  @include breakpoint(widescreen){
+    background-color: #ff0000;
+  }
+
+  .block{
+    position:relative;
+  }
+  .timeline-title{
+    top: 70px;
+    left: 200px;
+    width: 450px;
+    height: 200px;
+    background-color: #ccc;
+    @include opacity(0.6);
+  }
+  .timeline-one{
+    top: 200px;
+    left: 200px;
+    width: 560px;
+    height: 300px;
+    background-color: #ccc;
+    @include opacity(0.6);
+  }
+
+  .timeline-two{
+    top: 500px;
+    left: 200px;
+    width: 560px;
+    height: 300px;
+    background-color: #ccc;
+    @include opacity(0.6);
+  }
+  .timeline-three{
+    top: 1000px;
+    left: 200px;
+    width: 560px;
+    height: 300px;
+    background-color: #ccc;
+    @include opacity(0.6);
+  }
+
+}
 
 #section2 {
   left: 100%;

@@ -54,8 +54,11 @@ $sk-tablet-col: 40px;   //column width for tablet portrait
 ================================================== */
 
 @mixin breakpoint($point) {
+  @if $point == widescreen {
+    @media only screen and (min-width: 1400px){ @content; }
+  }
   @if $point == smallscreen {
-    @media only screen and (min-width: 768px) and (max-width: 1023px){ @content; }
+    @media only screen and (min-width: 768px) and (max-width: 1399px){ @content; }
   }
   @else if $point == tablet  {
     @media only screen and (max-width: 767px){ @content; }
