@@ -97,59 +97,40 @@
       timer = window.setTimeout(scrollToClosestPanel, 50);
     }).bind('load', scrollToClosestPanel);
   });
-	
+})();
+
 
 /*------------------MOBILE MENU-----------------*/
 $(function() {
+ 
+    var $togglePushLeft = $(".toggle-push-left" );
+    var $pushMenuLeft = $( ".push-menu-left" );
+    var activeNav;
 
-  $(document).on('touchstart', function() {
-      documentClick = true;
-  });
-  $(document).on('touchmove', function() {
-      documentClick = false;
-  });
+   
+    /* push menu left */
+    $(".toggle-push-left").click(function(){
+        $('body').addClass("pml-open");
+        $('body').append("<div class='mask'></div>");
+        activeNav = "pml-open";
+         
+    });
 
-  $('#contentWrap #open').on("touchend",function(e){
-    if (event.type == "click") documentClick = true;
-    if (documentClick){
-        if($('#contentWrap').hasClass('active') || $('#contentWrap').hasClass('reverse')){
-          $('#contentWrap').toggleClass('reverse');
-        }
-        if($('#navWrap').hasClass('active') || $('#navWrap').hasClass('reverse')){
-          $('#navWrap').toggleClass('reverse');
-        }
-        $('#contentWrap').toggleClass('active');
-        $('#navWrap').toggleClass('active');
-    }
-  });
-
-  $('#navWrap #close').on("touchend",function(e){
-    if (event.type == "click") documentClick = true;
-    if (documentClick){
-        $('#navWrap').toggleClass('active');
-        if($('#contentWrap').hasClass('active') || $('#contentWrap').hasClass('reverse')){
-          $('#contentWrap').toggleClass('reverse');
-        }
-        if($('#navWrap').hasClass('active') || $('#navWrap').hasClass('reverse')){
-          $('#navWrap').toggleClass('reverse');
-        }
-        $('#contentWrap').toggleClass('active');
-    }
-  });
-
-  $('#contentWrap.active').on("touchend",function(e){
-    if($('#contentWrap').hasClass('active') || $('#contentWrap').hasClass('reverse')){
-      $('#contentWrap').toggleClass('reverse');
-    }
-    if($('#navWrap').hasClass('active') || $('#navWrap').hasClass('reverse')){
-      $('#navWrap').toggleClass('reverse');
-    }
-    $('#contentWrap').toggleClass('active');
-    $('#navWrap').toggleClass('active');
-  });
-	});
+    $(".mask").click(function(){
+        $('body').removeClass(activeNav);
+        activeNav = "";
+        $("div").remove(".mask");
+    } );
  
 
- 
- 
-})();
+    /* hide active menu if close menu button is clicked */
+    [].slice.call(document.querySelectorAll(".close-menu")).forEach(function(el,i){
+        el.addEventListener( "click", function(){
+            $('body').removeClass(activeNav);
+            activeNav = "";
+             $("div").remove(".mask");
+        } );
+    });
+
+   
+});
