@@ -322,11 +322,11 @@ nav.menu {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 16, assets/sass/_layout.scss */
+/* line 18, assets/sass/_layout.scss */
 nav.menu #logo img {
   margin: 30px 10px 15px 20px;
 }
-/* line 17, assets/sass/_layout.scss */
+/* line 19, assets/sass/_layout.scss */
 nav.menu .tagline {
   color: white;
   font-size: 11px;
@@ -335,11 +335,11 @@ nav.menu .tagline {
   font-weight: bold;
   margin-left: 20px;
 }
-/* line 19, assets/sass/_layout.scss */
+/* line 21, assets/sass/_layout.scss */
 nav.menu .main-menu {
   margin-top: 50px;
 }
-/* line 22, assets/sass/_layout.scss */
+/* line 24, assets/sass/_layout.scss */
 nav.menu .menu-item {
   margin-bottom: -40px;
   margin-left: 20px;
@@ -352,14 +352,14 @@ nav.menu .menu-item {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 24, assets/sass/_layout.scss */
+/* line 26, assets/sass/_layout.scss */
 nav.menu .menu-item .text {
   width: 130px;
   position: relative;
   top: -60px;
   z-index: 12;
 }
-/* line 25, assets/sass/_layout.scss */
+/* line 27, assets/sass/_layout.scss */
 nav.menu .menu-item span.num {
   display: inline-block;
   width: 20px;
@@ -367,7 +367,7 @@ nav.menu .menu-item span.num {
   color: white;
   padding-left: 10px;
 }
-/* line 26, assets/sass/_layout.scss */
+/* line 28, assets/sass/_layout.scss */
 nav.menu .menu-item span.title {
   display: inline-block;
   width: 70px;
@@ -377,7 +377,7 @@ nav.menu .menu-item span.title {
   color: white;
   padding-left: 10px;
 }
-/* line 27, assets/sass/_layout.scss */
+/* line 29, assets/sass/_layout.scss */
 nav.menu .menu-item img {
   position: relative;
   z-index: 2;
@@ -389,25 +389,25 @@ nav.menu .menu-item img {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 28, assets/sass/_layout.scss */
+/* line 30, assets/sass/_layout.scss */
 nav.menu .menu-item:hover {
   cursor: pointer;
 }
-/* line 30, assets/sass/_layout.scss */
+/* line 32, assets/sass/_layout.scss */
 nav.menu .menu-item:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
-/* line 34, assets/sass/_layout.scss */
+/* line 36, assets/sass/_layout.scss */
 nav.menu .secondary-menu {
   position: fixed;
   bottom: 0px;
 }
-/* line 36, assets/sass/_layout.scss */
+/* line 38, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul {
   margin: 20px 0px 20px 0px;
 }
-/* line 38, assets/sass/_layout.scss */
+/* line 40, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul li {
   list-style-type: none;
   font-size: 14px;
@@ -417,48 +417,56 @@ nav.menu .secondary-menu ul li {
   padding: 3px 0px 3px 20px;
   width: 140px;
 }
-/* line 40, assets/sass/_layout.scss */
+/* line 42, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul li a {
   color: white;
 }
-/* line 41, assets/sass/_layout.scss */
+/* line 43, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul li a:hover {
   text-decoration: underline;
 }
-/* line 42, assets/sass/_layout.scss */
+/* line 44, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul li:hover {
   background-color: #d29c0e;
 }
-/* line 45, assets/sass/_layout.scss */
+/* line 47, assets/sass/_layout.scss */
 nav.menu .secondary-menu img {
   margin: 20px 0px 20px 20px;
 }
 
-/* line 51, assets/sass/_layout.scss */
+/* line 53, assets/sass/_layout.scss */
 nav.push-menu-left {
   top: 0;
   height: 100%;
   width: 80px;
+  overflow: hidden;
   border-right: 1px solid white;
 }
+/* line 59, assets/sass/_layout.scss */
+nav.push-menu-left .wrapper {
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  padding-right: 15px;
+}
 
-/* line 58, assets/sass/_layout.scss */
+/* line 62, assets/sass/_layout.scss */
 nav.push-menu-left {
   left: 0px;
 }
 
-/* line 62, assets/sass/_layout.scss */
+/* line 66, assets/sass/_layout.scss */
 body.pml-open nav.push-menu-left {
   left: 0;
   width: 160px;
 }
 
-/* line 68, assets/sass/_layout.scss */
+/* line 72, assets/sass/_layout.scss */
 body.pml-open .panel-wrap {
   margin-left: 160px;
 }
 
-/* line 75, assets/sass/_layout.scss */
+/* line 79, assets/sass/_layout.scss */
 .credits-menu-left {
   position: fixed;
   overflow: hidden;
@@ -475,12 +483,12 @@ body.pml-open .panel-wrap {
   z-index: 10;
 }
 
-/* line 86, assets/sass/_layout.scss */
+/* line 90, assets/sass/_layout.scss */
 body.credits-open .credits-menu-left {
   left: 160px;
 }
 
-/* line 92, assets/sass/_layout.scss */
+/* line 96, assets/sass/_layout.scss */
 .mask {
   position: fixed;
   top: 0;
@@ -489,7 +497,7 @@ body.credits-open .credits-menu-left {
   height: 100%;
 }
 
-/* line 104, assets/sass/_layout.scss */
+/* line 108, assets/sass/_layout.scss */
 #open {
   z-index: 200;
   position: fixed;
@@ -497,7 +505,7 @@ body.credits-open .credits-menu-left {
   right: 20px;
 }
 
-/* line 105, assets/sass/_layout.scss */
+/* line 109, assets/sass/_layout.scss */
 #close {
   z-index: 200;
   position: fixed;
@@ -505,7 +513,7 @@ body.credits-open .credits-menu-left {
   right: 20px;
 }
 
-/* line 107, assets/sass/_layout.scss */
+/* line 111, assets/sass/_layout.scss */
 .panel {
   position: absolute;
   width: 100%;
@@ -514,7 +522,7 @@ body.credits-open .credits-menu-left {
   overflow: auto;
 }
 
-/* line 117, assets/sass/_layout.scss */
+/* line 121, assets/sass/_layout.scss */
 .panel-wrap {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -523,17 +531,17 @@ body.credits-open .credits-menu-left {
   transition: all 0.3s;
 }
 
-/* line 124, assets/sass/_layout.scss */
+/* line 128, assets/sass/_layout.scss */
 #timeline .panel-wrap {
   height: 5500px;
   background: url("assets/img/timeline-bg.jpg") top left no-repeat;
   color: #000;
 }
-/* line 133, assets/sass/_layout.scss */
+/* line 137, assets/sass/_layout.scss */
 #timeline .panel-wrap .block {
   position: relative;
 }
-/* line 136, assets/sass/_layout.scss */
+/* line 140, assets/sass/_layout.scss */
 #timeline .panel-wrap .timeline-title {
   top: 70px;
   left: 200px;
@@ -543,7 +551,7 @@ body.credits-open .credits-menu-left {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 144, assets/sass/_layout.scss */
+/* line 148, assets/sass/_layout.scss */
 #timeline .panel-wrap .timeline-one {
   top: 200px;
   left: 200px;
@@ -553,7 +561,7 @@ body.credits-open .credits-menu-left {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 153, assets/sass/_layout.scss */
+/* line 157, assets/sass/_layout.scss */
 #timeline .panel-wrap .timeline-two {
   top: 500px;
   left: 200px;
@@ -563,7 +571,7 @@ body.credits-open .credits-menu-left {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 161, assets/sass/_layout.scss */
+/* line 165, assets/sass/_layout.scss */
 #timeline .panel-wrap .timeline-three {
   top: 1000px;
   left: 200px;
@@ -574,21 +582,21 @@ body.credits-open .credits-menu-left {
   opacity: 0.6;
 }
 
-/* line 172, assets/sass/_layout.scss */
+/* line 176, assets/sass/_layout.scss */
 #section2 {
   left: 100%;
   background: white;
   color: #fff;
 }
 
-/* line 177, assets/sass/_layout.scss */
+/* line 181, assets/sass/_layout.scss */
 #section3 {
   left: 200%;
   background: #c2c2c2;
   color: #fff;
 }
 
-/* line 182, assets/sass/_layout.scss */
+/* line 186, assets/sass/_layout.scss */
 #section4 {
   left: 300%;
   background: #d29c0e;

@@ -10,7 +10,9 @@ nav.menu {
     z-index: 20;
     background-color: $black;
     overflow: hidden;
+
     @include animate(0.3s);
+
   
    
     #logo img{margin: 30px 10px 15px 20px; }
@@ -52,7 +54,9 @@ nav.push-menu-left {
     top: 0;
     height: 100%;
     width: 80px;
+    overflow: hidden;
     border-right:1px solid $white;
+    .wrapper {overflow-y:auto;height: 100%; width:100%; padding-right: 15px;  }
 }
 
 nav.push-menu-left {
