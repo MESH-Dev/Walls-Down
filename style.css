@@ -1,5 +1,6 @@
 /* #Reset  (Inspired by E. Meyers)
 ================================================== */
+@import url("http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic");
 /* line 3, assets/sass/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -58,38 +59,40 @@ table {
 ================================================= */
 /* VARIABLES
 ================================================= */
+ /* #CSS Animation Mixins
+================================================== */
 /* #Breakpoint Mixins
 ================================================== */
 /* #Basic Styles
 ================================================== */
-/* line 61, assets/sass/_base.scss */
+/* line 69, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 65, assets/sass/_base.scss */
+/* line 73, assets/sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 66, assets/sass/_base.scss */
+/* line 74, assets/sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 67, assets/sass/_base.scss */
+/* line 75, assets/sass/_base.scss */
 em {
   text-style: italic;
 }
 
-/* line 69, assets/sass/_base.scss */
+/* line 77, assets/sass/_base.scss */
 .hide {
   display: none;
 }
 
-/* line 70, assets/sass/_base.scss */
+/* line 78, assets/sass/_base.scss */
 .show {
   display: block;
 }
@@ -100,68 +103,68 @@ em {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 90, assets/sass/_base.scss */
+/* line 98, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* WordPress Image Styles
+/*  Image Styles
    ========================================================================== */
-/* line 95, assets/sass/_base.scss */
+/* line 103, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 96, assets/sass/_base.scss */
+/* line 104, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 97, assets/sass/_base.scss */
+/* line 105, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 98, assets/sass/_base.scss */
+/* line 106, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 99, assets/sass/_base.scss */
+/* line 107, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 100, assets/sass/_base.scss */
+/* line 108, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 101, assets/sass/_base.scss */
+/* line 109, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 102, assets/sass/_base.scss */
+/* line 110, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 103, assets/sass/_base.scss */
+/* line 111, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 104, assets/sass/_base.scss */
+/* line 112, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -170,22 +173,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 105, assets/sass/_base.scss */
+/* line 113, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 106, assets/sass/_base.scss */
+/* line 114, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 107, assets/sass/_base.scss */
+/* line 115, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 108, assets/sass/_base.scss */
+/* line 116, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -195,7 +198,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 109, assets/sass/_base.scss */
+/* line 117, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -205,139 +208,101 @@ a img.aligncenter {
 
 /* line 2, assets/sass/_typography.scss */
 html, body {
-  font: 14px/18px;
-  color: #565656;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
+/* line 6, assets/sass/_typography.scss */
+html {
+  font-size: 1em;
+}
+
 /* line 7, assets/sass/_typography.scss */
+body {
+  color: #020202;
+  font-family: "Georgia, Times, 'Times New Roman', serif";
+}
+
+/* line 14, assets/sass/_typography.scss */
 h1 {
-  font: bold 40px/42px;
-  margin: 0 0 0.3em;
-  text-transform: uppercase;
-}
-
-/* line 8, assets/sass/_typography.scss */
-h2 {
-  font: italic 25px/29px;
-  margin: 0 0 0.25em;
-}
-
-/* line 9, assets/sass/_typography.scss */
-h3 {
-  font: bold 23px/25px;
-  margin: 0 0 0.2em;
-  text-transform: uppercase;
-}
-
-/* line 10, assets/sass/_typography.scss */
-h4 {
-  font: bold 18px/23px;
-  margin: 0 0 0;
-  text-transform: uppercase;
-}
-
-/* line 11, assets/sass/_typography.scss */
-h5 {
-  font: bold 18px/23px;
-  margin: 0 0 0;
-  text-transform: uppercase;
-}
-
-/* line 12, assets/sass/_typography.scss */
-h6 {
-  font: 18px/22px;
-  margin: 0 0 0;
+  font: "Georgia, Times, 'Times New Roman', serif" 54px/60px;
+  color: #020202;
 }
 
 /* line 15, assets/sass/_typography.scss */
+h2 {
+  font: "Georgia, Times, 'Times New Roman', serif" 32px/36px;
+  color: #020202;
+}
+
+/* line 16, assets/sass/_typography.scss */
+h3 {
+  font: "'Cabin', sans-serif" bold 24px/30px;
+  color: #d29c0e;
+  text-transform: uppercase;
+}
+
+/* line 17, assets/sass/_typography.scss */
+h4 {
+  font: "'Cabin', sans-serif" bold 14px/17px;
+  color: #020202;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* line 18, assets/sass/_typography.scss */
+h5 {
+  font: "'Cabin', sans-serif" bold 10px/17px;
+  color: #d29c0e;
+  text-transform: uppercase;
+}
+
+/* line 23, assets/sass/_typography.scss */
 p {
-  margin: 0 0 .6em;
-  word-wrap: break-word;
-}
-
-/* line 19, assets/sass/_typography.scss */
-#date-time {
-  font: bold 14px/18px;
-  margin: 0;
-}
-
-/* line 20, assets/sass/_typography.scss */
-#subtitle {
-  font: 14px/18px;
-  margin: 0 0 1.25em;
-}
-
-/* line 21, assets/sass/_typography.scss */
-#readmore {
-  font: italic bold 14px/18px;
-  margin: 0 0 1.6em;
-}
-
-/* line 22, assets/sass/_typography.scss */
-#meta-small {
-  font: bold 11px/18px;
-  margin: 0 0 .3em;
-}
-
-/* line 25, assets/sass/_typography.scss */
-#caption-minion, .wp-caption-text {
-  font: 12px/16px;
-  margin: 0 0 .1em;
+  font: "Georgia, Times, 'Times New Roman', serif" 14px/20px italic;
+  margin-bottom: 20px;
+  color: #020202;
 }
 
 /* line 26, assets/sass/_typography.scss */
-#caption-minion-italicbold {
-  font: italic bold 12px/18px;
-  margin: 0 0 .1em;
+blockquote {
+  margin: 0% 10% 4% 10%;
+  font: 22px/26px;
 }
 
-/* line 27, assets/sass/_typography.scss */
-#caption-nimbus-condensed {
-  font: 12px/18px;
-  margin: 0 0 .1em;
-}
-
-/* line 30, assets/sass/_typography.scss */
+/* line 33, assets/sass/_typography.scss */
 a {
-  color: #0397d6;
+  color: #d29c0e;
   text-decoration: none;
 }
 
-/* line 31, assets/sass/_typography.scss */
+/* line 34, assets/sass/_typography.scss */
 a:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 
-/* line 34, assets/sass/_typography.scss */
+/* line 37, assets/sass/_typography.scss */
 ul {
   list-style: disc inside;
   margin: 0 0 .6em;
 }
 
-/* line 35, assets/sass/_typography.scss */
+/* line 38, assets/sass/_typography.scss */
 ul li {
   margin: 2px 0;
 }
 
-/* line 36, assets/sass/_typography.scss */
+/* line 39, assets/sass/_typography.scss */
 ol {
   list-style: decimal inside;
   margin: 0 0 .6em;
 }
 
-/* line 37, assets/sass/_typography.scss */
+/* line 40, assets/sass/_typography.scss */
 ol li {
   margin: 2px 0;
-}
-
-/* line 40, assets/sass/_typography.scss */
-blockquote {
-  margin: 0 10%;
-  font: 20px/23px;
 }
 
 /* line 2, assets/sass/_layout.scss */
@@ -349,7 +314,7 @@ body {
 nav.menu {
   position: fixed;
   z-index: 20;
-  background-color: #67b5d1;
+  background-color: #020202;
   overflow: hidden;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -357,30 +322,143 @@ nav.menu {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+/* line 16, assets/sass/_layout.scss */
+nav.menu #logo img {
+  margin: 30px 10px 15px 20px;
+}
+/* line 17, assets/sass/_layout.scss */
+nav.menu .tagline {
+  color: white;
+  font-size: 11px;
+  line-height: 16px;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 20px;
+}
+/* line 19, assets/sass/_layout.scss */
+nav.menu .main-menu {
+  margin-top: 50px;
+}
+/* line 22, assets/sass/_layout.scss */
+nav.menu .menu-item {
+  margin-bottom: -40px;
+  margin-left: 20px;
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 24, assets/sass/_layout.scss */
+nav.menu .menu-item .text {
+  width: 130px;
+  position: relative;
+  top: -60px;
+  z-index: 12;
+}
+/* line 25, assets/sass/_layout.scss */
+nav.menu .menu-item span.num {
+  display: inline-block;
+  width: 20px;
+  font-size: 48px;
+  color: white;
+  padding-left: 10px;
+}
+/* line 26, assets/sass/_layout.scss */
+nav.menu .menu-item span.title {
+  display: inline-block;
+  width: 70px;
+  font-size: 14px;
+  color: white;
+  line-height: 18px;
+  color: white;
+  padding-left: 10px;
+}
+/* line 27, assets/sass/_layout.scss */
+nav.menu .menu-item img {
+  position: relative;
+  z-index: 2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 28, assets/sass/_layout.scss */
+nav.menu .menu-item:hover {
+  cursor: pointer;
+}
+/* line 30, assets/sass/_layout.scss */
+nav.menu .menu-item:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 34, assets/sass/_layout.scss */
+nav.menu .secondary-menu {
+  position: fixed;
+  bottom: 0px;
+}
+/* line 36, assets/sass/_layout.scss */
+nav.menu .secondary-menu ul {
+  margin: 20px 0px 20px 0px;
+}
+/* line 38, assets/sass/_layout.scss */
+nav.menu .secondary-menu ul li {
+  list-style-type: none;
+  font-size: 14px;
+  color: white;
+  line-height: 18px;
+  color: white;
+  padding: 3px 0px 3px 20px;
+  width: 140px;
+}
+/* line 40, assets/sass/_layout.scss */
+nav.menu .secondary-menu ul li a {
+  color: white;
+}
+/* line 41, assets/sass/_layout.scss */
+nav.menu .secondary-menu ul li a:hover {
+  text-decoration: underline;
+}
+/* line 42, assets/sass/_layout.scss */
+nav.menu .secondary-menu ul li:hover {
+  background-color: #d29c0e;
+}
+/* line 45, assets/sass/_layout.scss */
+nav.menu .secondary-menu img {
+  margin: 20px 0px 20px 20px;
+}
 
-/* line 20, assets/sass/_layout.scss */
+/* line 51, assets/sass/_layout.scss */
 nav.push-menu-left {
   top: 0;
   height: 100%;
-  width: 300px;
+  width: 80px;
+  border-right: 1px solid white;
 }
 
-/* line 26, assets/sass/_layout.scss */
+/* line 58, assets/sass/_layout.scss */
 nav.push-menu-left {
-  left: -200px;
+  left: 0px;
 }
 
-/* line 30, assets/sass/_layout.scss */
+/* line 62, assets/sass/_layout.scss */
 body.pml-open nav.push-menu-left {
   left: 0;
+  width: 160px;
 }
 
-/* line 35, assets/sass/_layout.scss */
+/* line 68, assets/sass/_layout.scss */
 body.pml-open .panel-wrap {
-  margin-left: 300px;
+  margin-left: 160px;
 }
 
-/* line 39, assets/sass/_layout.scss */
+/* line 75, assets/sass/_layout.scss */
 .credits-menu-left {
   position: fixed;
   overflow: hidden;
@@ -390,19 +468,19 @@ body.pml-open .panel-wrap {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   top: 0;
-  width: 300px;
+  width: 210px;
   height: 100%;
-  background-color: #000;
-  left: -300px;
+  background-color: #3a3a3a;
+  left: -150px;
   z-index: 10;
 }
 
-/* line 54, assets/sass/_layout.scss */
+/* line 86, assets/sass/_layout.scss */
 body.credits-open .credits-menu-left {
-  left: 300px;
+  left: 160px;
 }
 
-/* line 60, assets/sass/_layout.scss */
+/* line 92, assets/sass/_layout.scss */
 .mask {
   position: fixed;
   top: 0;
@@ -411,15 +489,23 @@ body.credits-open .credits-menu-left {
   height: 100%;
 }
 
-/* line 72, assets/sass/_layout.scss */
+/* line 104, assets/sass/_layout.scss */
 #open {
   z-index: 200;
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
 }
 
-/* line 74, assets/sass/_layout.scss */
+/* line 105, assets/sass/_layout.scss */
+#close {
+  z-index: 200;
+  position: fixed;
+  top: 50px;
+  right: 20px;
+}
+
+/* line 107, assets/sass/_layout.scss */
 .panel {
   position: absolute;
   width: 100%;
@@ -428,7 +514,7 @@ body.credits-open .credits-menu-left {
   overflow: auto;
 }
 
-/* line 84, assets/sass/_layout.scss */
+/* line 117, assets/sass/_layout.scss */
 .panel-wrap {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -437,24 +523,17 @@ body.credits-open .credits-menu-left {
   transition: all 0.3s;
 }
 
-/* line 95, assets/sass/_layout.scss */
+/* line 124, assets/sass/_layout.scss */
 #timeline .panel-wrap {
   height: 5500px;
   background: url("assets/img/timeline-bg.jpg") top left no-repeat;
   color: #000;
-  background-color: #ffcc00;
 }
-@media only screen and (min-width: 1400px) {
-  /* line 95, assets/sass/_layout.scss */
-  #timeline .panel-wrap {
-    background-color: #ff0000;
-  }
-}
-/* line 105, assets/sass/_layout.scss */
+/* line 133, assets/sass/_layout.scss */
 #timeline .panel-wrap .block {
   position: relative;
 }
-/* line 108, assets/sass/_layout.scss */
+/* line 136, assets/sass/_layout.scss */
 #timeline .panel-wrap .timeline-title {
   top: 70px;
   left: 200px;
@@ -464,7 +543,7 @@ body.credits-open .credits-menu-left {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 116, assets/sass/_layout.scss */
+/* line 144, assets/sass/_layout.scss */
 #timeline .panel-wrap .timeline-one {
   top: 200px;
   left: 200px;
@@ -474,7 +553,7 @@ body.credits-open .credits-menu-left {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 125, assets/sass/_layout.scss */
+/* line 153, assets/sass/_layout.scss */
 #timeline .panel-wrap .timeline-two {
   top: 500px;
   left: 200px;
@@ -484,7 +563,7 @@ body.credits-open .credits-menu-left {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6;
 }
-/* line 133, assets/sass/_layout.scss */
+/* line 161, assets/sass/_layout.scss */
 #timeline .panel-wrap .timeline-three {
   top: 1000px;
   left: 200px;
@@ -495,23 +574,23 @@ body.credits-open .credits-menu-left {
   opacity: 0.6;
 }
 
-/* line 144, assets/sass/_layout.scss */
+/* line 172, assets/sass/_layout.scss */
 #section2 {
   left: 100%;
-  background: #f05135;
+  background: white;
   color: #fff;
 }
 
-/* line 149, assets/sass/_layout.scss */
+/* line 177, assets/sass/_layout.scss */
 #section3 {
   left: 200%;
-  background: #565656;
+  background: #c2c2c2;
   color: #fff;
 }
 
-/* line 154, assets/sass/_layout.scss */
+/* line 182, assets/sass/_layout.scss */
 #section4 {
   left: 300%;
-  background: #0397d6;
+  background: #d29c0e;
   color: #fff;
 }

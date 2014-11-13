@@ -16,18 +16,29 @@
 /* COMPASS IMPORTS
 ================================================= */
 @import "compass/css3";
+@import url("http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic");
 
 /* VARIABLES
 ================================================= */
-//namespace
- 
+$georgia: "Georgia, Times, 'Times New Roman', serif";
+$cabin: "'Cabin', sans-serif";
 
 //colors
-$gray : #565656;
-$teal: #28BDB3;
-$red: #F05135;
-$blue: #0397D6;
+$black: #020202;
+$gold: #d29c0e;
+$gray: #c2c2c2;
+$darkgray: #3a3a3a;
+$white: #ffffff;
  
+ /* #CSS Animation Mixins
+================================================== */
+@mixin animate($time){
+	-webkit-transition: all $time;
+    -moz-transition: all $time;
+    -ms-transition: all $time;
+    -o-transition: all $time;
+    transition: all $time; 
+}
  
 /* #Breakpoint Mixins
 ================================================== */
@@ -50,9 +61,6 @@ $blue: #0397D6;
   }
 }
 //fonts
- 
-
-// KCPL specific classes
  
 
 
@@ -90,7 +98,7 @@ input[type="submit"]{}
 img{max-width:100%;height:auto;}
 
 
-/* WordPress Image Styles
+/*  Image Styles
    ========================================================================== */
 .alignnone {margin: 5px 20px 20px 0;}
 .aligncenter,div.aligncenter {display: block;margin: 5px auto 5px auto;}

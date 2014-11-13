@@ -8,51 +8,83 @@ body {
 nav.menu {
     position: fixed;
     z-index: 20;
-    background-color: #67b5d1;
+    background-color: $black;
     overflow: hidden;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    @include animate(0.3s);
+  
+   
+    #logo img{margin: 30px 10px 15px 20px; }
+    .tagline{color: $white; font-size:11px; line-height:16px; font-style: italic; font-weight: bold; margin-left: 20px; }
+    
+    .main-menu{
+      margin-top:50px;
+    }
+    .menu-item{
+      margin-bottom: -40px; margin-left: 20px;  position:relative; height: 120px; overflow: hidden; @include animate(0.3s);
+      .text{width: 130px; position:relative; top: -60px;  z-index:12; }
+      span.num{display: inline-block; width: 20px; font-size: 48px; color: $white; padding-left:10px; }
+      span.title{display: inline-block; width: 70px; font-size: 14px; color: $white; line-height: 18px; color: $white; padding-left:10px; }
+      img{position: relative; z-index:2; @include opacity(0.5);  @include animate(0.3s);}
+      &:hover{
+        cursor: pointer;
+        img{  @include opacity(0.8);}
+      }
+    }
+    
+    .secondary-menu{
+      position: fixed; bottom: 0px;
+      ul{
+        margin: 20px 0px 20px 0px;
+        li{
+          list-style-type: none; font-size: 14px; color: $white; line-height: 18px; color: $white; padding: 3px 0px 3px 20px; width: 140px;
+          a{color: $white} 
+          a:hover{text-decoration: underline;}
+          &:hover{background-color: $gold;}
+        }
+      }
+      img{margin: 20px 0px 20px 20px }
+
+    }
+
 }
 
 nav.push-menu-left {
     top: 0;
     height: 100%;
-    width: 300px;
+    width: 80px;
+    border-right:1px solid $white;
 }
 
 nav.push-menu-left {
-    left: -200px;
+    left: 0px;
  
 }
 body.pml-open nav.push-menu-left {
-    left: 0
+    left: 0;
+    width: 160px;
 }
 
 body.pml-open{
-  .panel-wrap{margin-left: 300px;}
+  .panel-wrap{margin-left: 160px;}
 }
+
+
+
 
 //CREDITS MENU 
 .credits-menu-left{
     position: fixed;
     overflow: hidden;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    @include animate(0.3s);
     top: 0;
-    width: 300px;
+    width: 210px;
     height: 100%;
-    background-color: #000;
-    left: -300px;
+    background-color: $darkgray;
+    left: -150px;
     z-index: 10;
 }
 body.credits-open .credits-menu-left{
-    left: 300px;
+    left: 160px;
 }
 
 
@@ -69,7 +101,8 @@ body.credits-open .credits-menu-left{
  
 
 
-#open{z-index: 200; position: absolute; top: 20px; right: 20px;}
+#open{z-index: 200; position: fixed; top: 20px; right: 20px;}
+#close{z-index: 200; position: fixed; top: 50px; right: 20px;}
 
 .panel {
   position: absolute;
@@ -82,11 +115,7 @@ body.credits-open .credits-menu-left{
 }
 
 .panel-wrap{
-   -webkit-transition: all 0.3s;
-   -moz-transition: all 0.3s;
-   -ms-transition: all 0.3s;
-   -o-transition: all 0.3s;
-   transition: all 0.3s;
+   @include animate(0.3s);
  
 }
 
@@ -96,10 +125,9 @@ body.credits-open .credits-menu-left{
   height: 5500px;
   background: url('assets/img/timeline-bg.jpg') top left no-repeat;
   color: #000; 
-  background-color: #ffcc00;
-
+ 
   @include breakpoint(widescreen){
-    background-color: #ff0000;
+     
   }
 
   .block{
@@ -143,7 +171,7 @@ body.credits-open .credits-menu-left{
 
 #section2 {
   left: 100%;
-  background: $red;
+  background: $white;
   color: #fff; }
 
 #section3 {
@@ -153,5 +181,5 @@ body.credits-open .credits-menu-left{
 
 #section4 {
   left: 300%;
-  background: $blue;
+  background: $gold;
   color: #fff; }
