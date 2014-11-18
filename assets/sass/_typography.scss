@@ -11,16 +11,16 @@ body{color: $black; font-family:$georgia;}
 
 
 //headings
-h1{font:$georgia 54px/60px; color: $black; }
-h2{font:$georgia 32px/36px; color: $black; }
-h3{font:$cabin bold 24px/30px; color: $gold; text-transform:uppercase;}
-h4{font:$cabin bold 14px/17px; color: $black; letter-spacing: 0.2em; text-transform:uppercase;}
-h5{font:$cabin bold 10px/17px; color: $gold;  text-transform:uppercase;}
+h1{font:54px/60px $georgia ; color: $black; }
+h2{font:32px/36px $georgia ; color: $black; }
+h3{font:24px/30px $cabin ; color: $gold; text-transform:uppercase;}
+h4{font:14px/17px $cabin ; color: $black; letter-spacing: 0.2em; text-transform:uppercase;}
+h5{font:10px/17px $cabin ; color: $gold;  text-transform:uppercase;}
  
  
 
 //paragraphs
-p{font: $georgia 14px/20px italic; margin-bottom: 20px; color: $black; }
+p{font:14px/20px  $georgia; padding-bottom: 20px; color: $black; }
 
 //blockquotes
 blockquote{margin: 0% 10% 4% 10%; font: 22px/26px;}

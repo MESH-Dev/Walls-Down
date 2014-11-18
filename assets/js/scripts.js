@@ -112,7 +112,6 @@ $(function() {
     /* push menu left */
     $(".toggle-push-left").click(function(){
         $('body').addClass("pml-open");
- 
         activeNav = "pml-open";
 
     });
@@ -130,6 +129,14 @@ $(function() {
         activeNav = "";
  
     });
+
+     $pushMenuLeft.hover(function(){
+        $('body').addClass('pml-open');
+      }, function(){
+        $('body').removeClass('pml-open');
+     });
+ 
+
 
 
     //CREDITS MENU --------------

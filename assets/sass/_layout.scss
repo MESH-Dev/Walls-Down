@@ -5,6 +5,8 @@ body {
 
 
 //NAVIGATION MENU
+
+/* --- Small Menu Desktop --- */
 nav.menu {
     position: fixed;
     z-index: 20;
@@ -13,9 +15,42 @@ nav.menu {
 
     @include animate(0.3s);
 
-  
-   
-    #logo img{margin: 30px 10px 15px 20px; }
+    #logo img{margin: 30px 10px 15px 15px; width:70% }
+    .tagline{display: none;}
+    
+    .main-menu{
+      margin-top:50px;
+    }
+    .menu-item{
+      margin-bottom: 20px; padding: 3px 5px 3px 10px;  position:relative;  overflow: hidden; @include animate(0.3s); 
+      .text{width: 80px; position:relative; top: 0px;  z-index:12; }
+      span.num{display: none; @include animate(0.3s)}
+      span.title{display: inline-block; width: 65px; font-size: 13px; color: $white; line-height: 15px; color: $white;  }
+      img{display:none; @include animate(0.3s);}
+      &:hover{background-color:$gold;}
+    }
+    
+    .secondary-menu{
+      position: fixed; bottom: 0px;
+      ul{
+        margin: 20px 0px 20px 0px;
+        li{
+          list-style-type: none; font-size: 13px; color: $white; line-height: 15px; color: $white;padding: 3px 5px 3px 10px; width: 65px;  @include animate(0.3s);
+          a{color: $white} 
+          a:hover{text-decoration: none;}
+          &:hover{background-color: $gold;}
+        }
+      }
+      img{margin: 20px 0px 20px 10px;  @include animate(0.3s); }
+
+
+    }
+ 
+}
+
+/* --- Open Menu Desktop --- */
+body.pml-open nav.menu{
+  #logo img{margin: 30px 10px 15px 20px; }
     .tagline{color: $white; font-size:11px; line-height:16px; font-style: italic; font-weight: bold; margin-left: 20px; }
     
     .main-menu{
@@ -24,11 +59,12 @@ nav.menu {
     .menu-item{
       margin-bottom: -40px; margin-left: 20px;  position:relative; height: 120px; overflow: hidden; @include animate(0.3s);
       .text{width: 130px; position:relative; top: -60px;  z-index:12; }
-      span.num{display: inline-block; width: 20px; font-size: 48px; color: $white; padding-left:10px; }
+      span.num{display: block; display: inline-block; width: 20px; font-size: 48px; color: $white; padding-left:10px; }
       span.title{display: inline-block; width: 70px; font-size: 14px; color: $white; line-height: 18px; color: $white; padding-left:10px; }
-      img{position: relative; z-index:2; @include opacity(0.5);  @include animate(0.3s);}
+      img{display: block; position: relative; z-index:2; @include opacity(0.5);  @include animate(0.3s);}
       &:hover{
-        cursor: pointer;
+        cursor: pointer; 
+        background-color: transparent;
         img{  @include opacity(0.8);}
       }
     }
@@ -40,14 +76,13 @@ nav.menu {
         li{
           list-style-type: none; font-size: 14px; color: $white; line-height: 18px; color: $white; padding: 3px 0px 3px 20px; width: 140px;
           a{color: $white} 
-          a:hover{text-decoration: underline;}
+          a:hover{text-decoration: none;}
           &:hover{background-color: $gold;}
         }
       }
       img{margin: 20px 0px 20px 20px }
 
     }
-
 }
 
 nav.push-menu-left {
@@ -114,76 +149,203 @@ body.credits-open .credits-menu-left{
   height:100%;
   top: 0;
   overflow: auto; 
- 
    
 }
 
 .panel-wrap{
    @include animate(0.3s);
+   margin-left: 80px; 
  
 }
 
- 
-
-#timeline .panel-wrap{
-  height: 5500px;
-  background: url('assets/img/timeline-bg.jpg') top left no-repeat;
-  color: #000; 
- 
-  @include breakpoint(widescreen){
-     
-  }
-
-  .block{
-    position:relative;
-  }
-  .timeline-title{
-    top: 70px;
-    left: 200px;
-    width: 450px;
-    height: 200px;
-    background-color: #ccc;
-    @include opacity(0.6);
-  }
-  .timeline-one{
-    top: 200px;
-    left: 200px;
-    width: 560px;
-    height: 300px;
-    background-color: #ccc;
-    @include opacity(0.6);
-  }
-
-  .timeline-two{
-    top: 500px;
-    left: 200px;
-    width: 560px;
-    height: 300px;
-    background-color: #ccc;
-    @include opacity(0.6);
-  }
-  .timeline-three{
-    top: 1000px;
-    left: 200px;
-    width: 560px;
-    height: 300px;
-    background-color: #ccc;
-    @include opacity(0.6);
-  }
+/* ----------- Home ------------- */
+#home .panel-wrap{
+  background: url('assets/img/cover-large.jpg')top left no-repeat;
+  @include background-size(cover);
+  height: 100%;
+  overflow: hidden;
+  left: 0;
 
 }
 
-#section2 {
+.left-nav{position: relative; background-color: $black; width: 50%; float:left; a{position: relative;  left: 7%;}
+  .fa{font-size: 45px; position:relative; top: 8px; right: 5px;}
+  
+ }
+.right-nav{width: 50%; float: right; a{float: right; position: relative;  right: 10%;}
+  .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}}
+
+/* ----------- GRADY ------------- */
+#grady{
   left: 100%;
-  background: $white;
-  color: #fff; }
+  .intro{
+    background-color: $black;
+    h1{font-size: 81px; line-height: 88px; color: $white; padding: 250px 0px 0px 210px; text-transform:uppercase; width: 640px; }
+    .teal-line{
+      padding: 20px 0px 0px 0px; 
+      margin-left:190px;
+      height: 20px; 
+      border-left: 3px solid $teal;
+      border-right: 3px solid $teal;
+      width: 680px; 
+      hr {color: $teal; background-color: $teal; border:none;  width: 100%; height: 3px;position: relative; top: -10px}
+    }
 
-#section3 {
+    h2{color: $white; padding: 20px 0px 240px 210px; width: 610px; font-style: italic;}
+  }
+
+  .bg-black{
+    background-color: $black;
+    margin-bottom: 0px;
+    p {color: $white; }
+  }
+
+  .bg-white{
+    background-color: $white; 
+    margin: 0;
+    p {color: $black; }
+  }
+  
+  .text-container{
+    width:500px;
+    padding-left: 200px;
+  }
+
+  .transition-one{
+    background: url('assets/img/grady-transition-one.jpg')top left no-repeat;
+    @include background-size(cover);
+    height: 300px;
+    margin-top: 0px; margin-bottom:0px;
+  }
+
+
+
+}
+
+
+/* ----------- TIMELINE ------------- */
+#timeline{
+
   left: 200%;
-  background: $gray;
-  color: #fff; }  
 
-#section4 {
+  .panel-wrap{
+    height: 5500px;
+    background: url('assets/img/timeline-bg.jpg') top left no-repeat;
+    @include background-size(cover);
+
+    color: #000; 
+ 
+    .block{position:relative; }
+    .timeline-title{
+      top: 70px;
+      left: 200px;
+      width: 450px;
+      height: 200px;
+      //background-color: #ccc;
+      //@include opacity(0.6);
+    }
+    .timeline-one{
+      top: 200px;
+      left: 200px;
+      width: 560px;
+      height: 300px;
+      //background-color: #ccc;
+      //@include opacity(0.6);
+    }
+
+    .timeline-two{
+      top: 500px;
+      left: 200px;
+      width: 560px;
+      height: 300px;
+      //background-color: #ccc;
+      //@include opacity(0.6);
+    }
+    .timeline-three{
+      top: 1000px;
+      left: 200px;
+      width: 560px;
+      height: 300px;
+      background-color: #ccc;
+      @include opacity(0.6);
+    }
+
+    @include breakpoint(widescreen){
+       
+    }
+
+  }
+}
+
+
+/* ----------- INTERACTIVE MAP ------------- */
+#map {
   left: 300%;
-  background: $gold;
-  color: #fff; }
+  background: $gray;
+ }
+
+
+/* ----------- NICU ------------- */
+#nicu {
+  left: 400%;
+  .panel-wrap{
+    background: url('assets/img/nicu-bg.jpg') top left no-repeat;
+    @include background-size(cover);
+    height: 9000px
+  }
+  h1{font:48px/50px $georgia ; color: $white; width: 600px; padding: 120px 0px 30px 120px; text-transform: uppercase; }
+
+  .panel-one{
+    background: url('assets/img/nicu-1.jpg') top right no-repeat;
+    //@include background-size(cover);
+    background-color: $black;
+    p{color: $gray; font-style: italic; width: 330px; padding: 0px 0px 20px 120px;}
+    p:last-child{padding-bottom: 150px;}
+    margin-bottom: 80px;
+  }
+
+
+ }  
+
+
+/* ----------- CEO LETTER ------------- */
+#ceo-letter {
+  left: 500%;
+ 
+ }
+
+/* ----------- EDITOR LETTER ------------- */
+#editor-letter {
+  left: 600%;
+ }
+
+ /* ----------- LETTER ------------- */
+.letter{
+  .panel-wrap{
+    background: url('assets/img/letter-bg.jpg') top left no-repeat;
+    @include background-size(cover);
+    background-color: $black;
+  }
+
+  p.fl::first-letter{
+    text-transform: uppercase; font-size:36px;  
+  }
+  
+  //background-position-x: 79px;
+  h1{
+    font:26px/30px bold $cabin, sans-serif; 
+    color: $gold; 
+    text-transform:uppercase; 
+    width: 300px;
+    font-weight: bold;
+    padding: 0px 0px 40px 0px;
+  }
+  .text-container{
+    width:500px;
+    padding-left: 200px;
+    padding-top: 90px;
+  }
+
+}
+
+
