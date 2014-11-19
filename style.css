@@ -211,6 +211,17 @@ a img.aligncenter {
   padding: 0 4px 5px;
 }
 
+/* You can also use a <br class="clear" /> to clear columns */
+/* line 122, assets/sass/_base.scss */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 /* line 2, assets/sass/_typography.scss */
 html, body {
   width: 100%;
@@ -227,6 +238,11 @@ html {
 body {
   color: #020202;
   font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+/* line 10, assets/sass/_typography.scss */
+span.underline {
+  text-decoration: underline;
 }
 
 /* line 14, assets/sass/_typography.scss */
@@ -272,8 +288,9 @@ p {
 
 /* line 26, assets/sass/_typography.scss */
 blockquote {
-  margin: 0% 10% 4% 10%;
-  font: 22px/26px;
+  margin: 0px 0px 20px 50px;
+  font: 18px/26px Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
 }
 
 /* line 33, assets/sass/_typography.scss */
@@ -339,19 +356,14 @@ nav.menu .tagline {
 }
 /* line 21, assets/sass/_layout.scss */
 nav.menu .main-menu {
-  margin-top: 50px;
+  margin-top: 90px;
 }
 /* line 24, assets/sass/_layout.scss */
 nav.menu .menu-item {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 3px 5px 3px 10px;
   position: relative;
   overflow: hidden;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
 /* line 26, assets/sass/_layout.scss */
 nav.menu .menu-item .text {
@@ -363,11 +375,6 @@ nav.menu .menu-item .text {
 /* line 27, assets/sass/_layout.scss */
 nav.menu .menu-item span.num {
   display: none;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
 /* line 28, assets/sass/_layout.scss */
 nav.menu .menu-item span.title {
@@ -381,11 +388,6 @@ nav.menu .menu-item span.title {
 /* line 29, assets/sass/_layout.scss */
 nav.menu .menu-item img {
   display: none;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
 /* line 30, assets/sass/_layout.scss */
 nav.menu .menu-item:hover {
@@ -841,11 +843,11 @@ body.credits-open .credits-menu-left {
 }
 
 /* ----------- NICU ------------- */
-/* line 289, assets/sass/_layout.scss */
+/* line 2, assets/sass/_nicu.scss */
 #nicu {
   left: 400%;
 }
-/* line 291, assets/sass/_layout.scss */
+/* line 5, assets/sass/_nicu.scss */
 #nicu .panel-wrap {
   background: url("assets/img/nicu-bg.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -854,7 +856,25 @@ body.credits-open .credits-menu-left {
   background-size: cover;
   height: 9000px;
 }
-/* line 296, assets/sass/_layout.scss */
+/* line 11, assets/sass/_nicu.scss */
+#nicu .panel-left, #nicu .panel-right {
+  display: inline;
+  float: left;
+}
+/* line 12, assets/sass/_nicu.scss */
+#nicu .sub-panel {
+  width: 100%;
+  position: relative;
+}
+/* line 13, assets/sass/_nicu.scss */
+#nicu .sub-panel:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 15, assets/sass/_nicu.scss */
 #nicu h1 {
   font: 48px/50px Georgia, Times, "Times New Roman", serif;
   color: white;
@@ -862,38 +882,288 @@ body.credits-open .credits-menu-left {
   padding: 120px 0px 30px 120px;
   text-transform: uppercase;
 }
-/* line 298, assets/sass/_layout.scss */
+/* line 16, assets/sass/_nicu.scss */
+#nicu h2 {
+  font: 32px/36px Georgia, Times, "Times New Roman", serif;
+  color: #020202;
+}
+/* line 17, assets/sass/_nicu.scss */
+#nicu h3 {
+  font: 12px/17px "Cabin", sans-serif;
+  color: #d29c0e;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+/* line 19, assets/sass/_nicu.scss */
 #nicu .panel-one {
   background: url("assets/img/nicu-1.jpg") top right no-repeat;
-  background-color: #020202;
+  background-color: #171711;
   margin-bottom: 80px;
 }
-/* line 302, assets/sass/_layout.scss */
+/* line 23, assets/sass/_nicu.scss */
 #nicu .panel-one p {
   color: #c2c2c2;
   font-style: italic;
   width: 330px;
   padding: 0px 0px 20px 120px;
 }
-/* line 303, assets/sass/_layout.scss */
+/* line 24, assets/sass/_nicu.scss */
 #nicu .panel-one p:last-child {
   padding-bottom: 150px;
 }
+/* line 28, assets/sass/_nicu.scss */
+#nicu .panel-two {
+  background: url("assets/img/nicu-2.jpg") top right no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+/* line 31, assets/sass/_nicu.scss */
+#nicu .panel-two .panel-text {
+  width: 390px;
+  padding: 450px 0px 80px 45px;
+}
+/* line 32, assets/sass/_nicu.scss */
+#nicu .panel-two .panel-text h2 {
+  color: white;
+}
+/* line 36, assets/sass/_nicu.scss */
+#nicu .panel-two .panel-text p {
+  color: white;
+}
+/* line 41, assets/sass/_nicu.scss */
+#nicu .panel-three {
+  margin-bottom: 80px;
+}
+/* line 42, assets/sass/_nicu.scss */
+#nicu .panel-three .panel-left {
+  padding: 0px 0px 0px 45px;
+  width: 380px;
+}
+/* line 46, assets/sass/_nicu.scss */
+#nicu .panel-three .panel-right {
+  padding: 40px 0px 20px 70px;
+  width: 380px;
+}
+/* line 54, assets/sass/_nicu.scss */
+#nicu .panel-four {
+  margin-bottom: 20px;
+}
+/* line 55, assets/sass/_nicu.scss */
+#nicu .panel-four .panel-left {
+  padding: 0px 0px 10px 45px;
+  width: 380px;
+}
+/* line 59, assets/sass/_nicu.scss */
+#nicu .panel-four .panel-right {
+  padding: 90px 0px 0px 50px;
+  width: 600px;
+}
+/* line 62, assets/sass/_nicu.scss */
+#nicu .panel-four .panel-right .panel-text {
+  padding: 30px 0px 180px 20px;
+  width: 380px;
+}
+/* line 72, assets/sass/_nicu.scss */
+#nicu .panel-five {
+  background: url("assets/img/nicu-5.jpg") top left no-repeat;
+}
+/* line 75, assets/sass/_nicu.scss */
+#nicu .panel-five .panel-text {
+  width: 390px;
+  padding: 615px 0px 80px 530px;
+  overflow-y: visible;
+}
+/* line 85, assets/sass/_nicu.scss */
+#nicu .panel-six {
+  margin-bottom: 80px;
+}
+/* line 86, assets/sass/_nicu.scss */
+#nicu .panel-six .panel-left {
+  padding: 0px 0px 10px 45px;
+  width: 420px;
+}
+/* line 89, assets/sass/_nicu.scss */
+#nicu .panel-six .panel-left .panel-text {
+  width: 380px;
+}
+/* line 92, assets/sass/_nicu.scss */
+#nicu .panel-six .panel-left .panel-text p.small-italic {
+  font-size: 12px;
+  line-height: 20px;
+  font-style: italic;
+}
+/* line 94, assets/sass/_nicu.scss */
+#nicu .panel-six .panel-left img {
+  margin: -10px 0px 0px 30px;
+}
+/* line 97, assets/sass/_nicu.scss */
+#nicu .panel-six .panel-right {
+  width: 400px;
+  padding: 220px 0px 0px 45px;
+}
+/* line 105, assets/sass/_nicu.scss */
+#nicu .panel-seven {
+  background: url("assets/img/nicu-7.jpg") top right no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+/* line 108, assets/sass/_nicu.scss */
+#nicu .panel-seven .panel-text {
+  width: 390px;
+  padding: 50px 0px 80px 45px;
+}
+/* line 109, assets/sass/_nicu.scss */
+#nicu .panel-seven .panel-text h2 {
+  color: white;
+}
+/* line 113, assets/sass/_nicu.scss */
+#nicu .panel-seven .panel-text p {
+  color: white;
+}
+/* line 114, assets/sass/_nicu.scss */
+#nicu .panel-seven .panel-text blockquote {
+  color: #d29c0e;
+}
+/* line 120, assets/sass/_nicu.scss */
+#nicu .panel-eight {
+  margin-bottom: 150px;
+}
+/* line 121, assets/sass/_nicu.scss */
+#nicu .panel-eight .panel-left {
+  padding: 100px 0px 10px 45px;
+  width: 420px;
+}
+/* line 124, assets/sass/_nicu.scss */
+#nicu .panel-eight .panel-left .panel-text {
+  width: 380px;
+  padding: 30px 0px 0px 0px;
+}
+/* line 127, assets/sass/_nicu.scss */
+#nicu .panel-eight .panel-left .panel-text p.small-italic {
+  font-size: 12px;
+  line-height: 20px;
+  font-style: italic;
+}
+/* line 129, assets/sass/_nicu.scss */
+#nicu .panel-eight .panel-left img {
+  margin: -10px 0px 0px 30px;
+}
+/* line 132, assets/sass/_nicu.scss */
+#nicu .panel-eight .panel-right {
+  width: 400px;
+  padding: 00px 0px 0px 45px;
+}
+/* line 140, assets/sass/_nicu.scss */
+#nicu .panel-nine {
+  background: url("assets/img/nicu-9.jpg") top right no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 130px;
+}
+/* line 144, assets/sass/_nicu.scss */
+#nicu .panel-nine .panel-full1 {
+  padding: 30px 0px 0px 600px;
+  width: 380px;
+}
+/* line 150, assets/sass/_nicu.scss */
+#nicu .panel-nine .panel-full2 {
+  padding: 80px 0px 80px 45px;
+  width: 380px;
+}
+/* line 151, assets/sass/_nicu.scss */
+#nicu .panel-nine .panel-full2 blockquote {
+  color: #d29c0e;
+}
+/* line 152, assets/sass/_nicu.scss */
+#nicu .panel-nine .panel-full2 p {
+  color: white;
+}
+/* line 161, assets/sass/_nicu.scss */
+#nicu .panel-ten {
+  margin-bottom: 150px;
+}
+/* line 162, assets/sass/_nicu.scss */
+#nicu .panel-ten .panel-left {
+  padding: 50px 0px 10px 45px;
+  width: 460px;
+}
+/* line 166, assets/sass/_nicu.scss */
+#nicu .panel-ten .panel-right {
+  padding: 0px 0px 10px 15px;
+  width: 400px;
+}
+/* line 174, assets/sass/_nicu.scss */
+#nicu .panel-eleven {
+  background: url("assets/img/nicu-11.jpg") top right no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+/* line 177, assets/sass/_nicu.scss */
+#nicu .panel-eleven .panel-left {
+  padding: 130px 0px 30px 45px;
+  width: 360px;
+}
+/* line 178, assets/sass/_nicu.scss */
+#nicu .panel-eleven .panel-left blockquote {
+  color: #d29c0e;
+}
+/* line 179, assets/sass/_nicu.scss */
+#nicu .panel-eleven .panel-left p {
+  color: white;
+}
+/* line 183, assets/sass/_nicu.scss */
+#nicu .panel-eleven .panel-right {
+  padding: 650px 0px 30px 45px;
+  width: 380px;
+}
+/* line 184, assets/sass/_nicu.scss */
+#nicu .panel-eleven .panel-right h2 {
+  color: white;
+}
+/* line 185, assets/sass/_nicu.scss */
+#nicu .panel-eleven .panel-right p {
+  color: white;
+}
+/* line 192, assets/sass/_nicu.scss */
+#nicu .panel-twelve {
+  margin-bottom: 50px;
+}
+/* line 193, assets/sass/_nicu.scss */
+#nicu .panel-twelve .panel-left {
+  padding: 0px 0px 0px 45px;
+  width: 380px;
+}
+/* line 197, assets/sass/_nicu.scss */
+#nicu .panel-twelve .panel-right {
+  padding: 0px 0px 10px 45px;
+  width: 580px;
+}
 
 /* ----------- CEO LETTER ------------- */
-/* line 312, assets/sass/_layout.scss */
+/* line 298, assets/sass/_layout.scss */
 #ceo-letter {
   left: 500%;
 }
 
 /* ----------- EDITOR LETTER ------------- */
-/* line 318, assets/sass/_layout.scss */
+/* line 304, assets/sass/_layout.scss */
 #editor-letter {
   left: 600%;
 }
 
 /* ----------- LETTER ------------- */
-/* line 324, assets/sass/_layout.scss */
+/* line 310, assets/sass/_layout.scss */
 .letter .panel-wrap {
   background: url("assets/img/letter-bg.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -902,12 +1172,12 @@ body.credits-open .credits-menu-left {
   background-size: cover;
   background-color: #020202;
 }
-/* line 330, assets/sass/_layout.scss */
+/* line 316, assets/sass/_layout.scss */
 .letter p.fl::first-letter {
   text-transform: uppercase;
   font-size: 36px;
 }
-/* line 335, assets/sass/_layout.scss */
+/* line 321, assets/sass/_layout.scss */
 .letter h1 {
   font: 26px/30px bold "Cabin", sans-serif, sans-serif;
   color: #d29c0e;
@@ -916,7 +1186,7 @@ body.credits-open .credits-menu-left {
   font-weight: bold;
   padding: 0px 0px 40px 0px;
 }
-/* line 343, assets/sass/_layout.scss */
+/* line 329, assets/sass/_layout.scss */
 .letter .text-container {
   width: 500px;
   padding-left: 200px;

@@ -1,0 +1,206 @@
+/* ----------- NICU ------------- */
+#nicu {
+  left: 400%;
+
+  .panel-wrap{
+    background: url('assets/img/nicu-bg.jpg') top left no-repeat;
+    @include background-size(cover);
+    height: 9000px;
+  }
+
+  .panel-left, .panel-right{display:inline; float:left;}
+  .sub-panel{width:100%; position:relative; }
+  .sub-panel:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+  h1{font:48px/50px $georgia ; color: $white; width: 600px; padding: 120px 0px 30px 120px; text-transform: uppercase; }
+  h2{font:32px/36px $georgia ; color: $black; }
+  h3{font:12px/17px $cabin ; color: $gold; text-transform:uppercase; padding-bottom:20px;}
+
+  .panel-one{
+    background: url('assets/img/nicu-1.jpg') top right no-repeat;
+    //@include background-size(cover);
+    background-color: #171711;
+    p{color: $gray; font-style: italic; width: 330px; padding: 0px 0px 20px 120px;}
+    p:last-child{padding-bottom: 150px;}
+    margin-bottom: 80px;
+  }
+
+  .panel-two{
+    background: url('assets/img/nicu-2.jpg') top right no-repeat;
+    @include background-size(cover);
+    .panel-text{
+      h2{
+      color: $white;}
+      width: 390px;
+      padding: 450px 0px 80px 45px; 
+      p{color: $white;} 
+    }
+    margin-bottom: 80px;
+  }
+
+  .panel-three{
+    .panel-left{
+      padding: 0px 0px 0px 45px; 
+      width: 380px
+    }
+    .panel-right{
+      padding: 40px 0px 20px 70px; 
+      width: 380px;
+    }
+    margin-bottom: 80px;
+    //height:640px;
+ 
+  }
+  .panel-four{
+    .panel-left{
+      padding: 0px 0px 10px 45px; 
+      width: 380px;
+    }
+    .panel-right{
+      padding: 90px 0px 0px 50px; 
+      width: 600px;
+      .panel-text{
+          padding: 30px 0px 180px 20px; 
+          width: 380px;
+      }
+
+    }
+    margin-bottom: 20px;
+    //height:800px;
+  }
+
+  .panel-five{
+    background: url('assets/img/nicu-5.jpg') top left no-repeat;
+    //@include background-size(cover);
+    .panel-text{
+      width: 390px;
+      padding: 615px 0px 80px 530px; 
+      overflow-y: visible;
+ 
+    }
+ 
+ 
+  }
+
+  .panel-six{
+    .panel-left{
+      padding: 0px 0px 10px 45px; 
+      width: 420px;
+      .panel-text{
+        width: 380px;
+ 
+        p.small-italic{font-size:12px; line-height:20px; font-style:italic;}
+      }
+      img{margin: -10px 0px 0px 30px;}
+
+    }
+    .panel-right{
+      width: 400px;
+      padding: 220px 0px 0px 45px; 
+    }
+    margin-bottom: 80px;
+   
+  }
+
+  .panel-seven{
+    background: url('assets/img/nicu-7.jpg') top right no-repeat;
+    @include background-size(cover);
+    .panel-text{
+      h2{
+      color: $white;}
+      width: 390px;
+      padding: 50px 0px 80px 45px; 
+      p{color: $white;}
+      blockquote{color: $gold;}
+    }
+    margin-bottom: 80px;
+ 
+  }
+
+  .panel-eight{
+    .panel-left{
+      padding: 100px 0px 10px 45px; 
+      width: 420px;
+      .panel-text{
+        width: 380px;
+        padding: 30px 0px 0px 0px ;
+        p.small-italic{font-size:12px; line-height:20px; font-style:italic;}
+      }
+      img{margin: -10px 0px 0px 30px;}
+
+    }
+    .panel-right{
+      width: 400px;
+      padding: 00px 0px 0px 45px; 
+    }
+    margin-bottom: 150px;
+   
+  }
+
+  .panel-nine{
+    background: url('assets/img/nicu-9.jpg') top right no-repeat;
+    @include background-size(cover);
+
+    .panel-full1{
+     
+      padding: 30px 0px 0px 600px; 
+      width: 380px;
+    }
+
+    .panel-full2{
+       blockquote{color: $gold;}
+      p{color: $white;}
+      padding: 80px 0px 80px 45px; 
+      width: 380px;
+    }
+ 
+    margin-bottom: 130px;
+ 
+  }
+
+  .panel-ten{
+    .panel-left{
+      padding: 50px 0px 10px 45px; 
+      width: 460px;
+    }
+    .panel-right{
+      padding: 0px 0px 10px 15px; 
+      width: 400px;
+    }
+    margin-bottom: 150px;
+ 
+  }
+
+  .panel-eleven{
+    background: url('assets/img/nicu-11.jpg') top right no-repeat;
+    @include background-size(cover);
+    .panel-left{
+      blockquote{color: $gold;}
+      p{color: $white;}
+      padding: 130px 0px 30px 45px; 
+      width: 360px;
+    }
+    .panel-right{
+      h2{color: $white;}
+      p{color: $white;}
+      padding: 650px 0px 30px 45px; 
+      width: 380px;
+    }
+    margin-bottom: 80px;
+  }
+
+  .panel-twelve{
+    .panel-left{
+      padding: 0px 0px 0px 45px; 
+      width: 380px;
+    }
+    .panel-right{
+      padding: 0px 0px 10px 45px; 
+      width: 580px;
+    }
+    margin-bottom: 50px;
+  }
+
+
+
+ }  

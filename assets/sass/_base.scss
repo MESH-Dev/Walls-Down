@@ -116,3 +116,14 @@ a img.aligncenter {display: block;margin-left: auto;margin-right: auto}
 .wp-caption.alignright {margin: 5px 0 20px 20px;}
 .wp-caption img {border: 0 none;height: auto;margin: 0;max-width: 98.5%;padding: 0;width: auto;}
 .wp-caption p.wp-caption-text {font-size: 11px;line-height: 17px;margin: 0;padding: 0 4px 5px;}
+
+
+/* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }

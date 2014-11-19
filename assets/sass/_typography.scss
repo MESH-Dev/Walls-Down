@@ -7,7 +7,7 @@ html{font-size: 1em; }
 body{color: $black; font-family:$georgia;}
 
 
-
+span.underline{text-decoration: underline;}
 
 
 //headings
@@ -20,10 +20,10 @@ h5{font:10px/17px $cabin ; color: $gold;  text-transform:uppercase;}
  
 
 //paragraphs
-p{font:14px/20px  $georgia; padding-bottom: 20px; color: $black; }
+p{font:14px/20px $georgia; padding-bottom: 20px; color: $black; }
 
 //blockquotes
-blockquote{margin: 0% 10% 4% 10%; font: 22px/26px;}
+blockquote{margin: 0px 0px 20px 50px; font: 18px/26px $georgia; font-style: italic;}
 
  
 //captions

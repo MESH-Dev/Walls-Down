@@ -13,20 +13,20 @@ nav.menu {
     background-color: $black;
     overflow: hidden;
 
-    @include animate(0.3s);
+    @include animate(.3s);
 
     #logo img{margin: 30px 10px 15px 15px; width:70% }
     .tagline{display: none;}
     
     .main-menu{
-      margin-top:50px;
+      margin-top:90px;
     }
     .menu-item{
-      margin-bottom: 20px; padding: 3px 5px 3px 10px;  position:relative;  overflow: hidden; @include animate(0.3s); 
+      margin-bottom: 30px; padding: 3px 5px 3px 10px;  position:relative;  overflow: hidden; ; 
       .text{width: 80px; position:relative; top: 0px;  z-index:12; }
-      span.num{display: none; @include animate(0.3s)}
+      span.num{display: none; }
       span.title{display: inline-block; width: 65px; font-size: 13px; color: $white; line-height: 15px; color: $white;  }
-      img{display:none; @include animate(0.3s);}
+      img{display:none; ;}
       &:hover{background-color:$gold;}
     }
     
@@ -285,27 +285,13 @@ body.credits-open .credits-menu-left{
  }
 
 
-/* ----------- NICU ------------- */
-#nicu {
-  left: 400%;
-  .panel-wrap{
-    background: url('assets/img/nicu-bg.jpg') top left no-repeat;
-    @include background-size(cover);
-    height: 9000px
-  }
-  h1{font:48px/50px $georgia ; color: $white; width: 600px; padding: 120px 0px 30px 120px; text-transform: uppercase; }
-
-  .panel-one{
-    background: url('assets/img/nicu-1.jpg') top right no-repeat;
-    //@include background-size(cover);
-    background-color: $black;
-    p{color: $gray; font-style: italic; width: 330px; padding: 0px 0px 20px 120px;}
-    p:last-child{padding-bottom: 150px;}
-    margin-bottom: 80px;
-  }
+@import "nicu";
 
 
- }  
+
+
+
+
 
 
 /* ----------- CEO LETTER ------------- */
@@ -347,5 +333,7 @@ body.credits-open .credits-menu-left{
   }
 
 }
+
+
 
 
