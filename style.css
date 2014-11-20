@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* #Reset  (Inspired by E. Meyers)
 ================================================== */
 @import url("http://fonts.googleapis.com/css?family=Cabin:400,700,400italic,700italic");
@@ -114,62 +115,69 @@ img {
   height: auto;
 }
 
+/* line 101, assets/sass/_base.scss */
+a img:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 /*  Image Styles
    ========================================================================== */
-/* line 104, assets/sass/_base.scss */
+/* line 106, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 105, assets/sass/_base.scss */
+/* line 107, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 106, assets/sass/_base.scss */
+/* line 108, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 107, assets/sass/_base.scss */
+/* line 109, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 108, assets/sass/_base.scss */
+/* line 110, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 109, assets/sass/_base.scss */
+/* line 111, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 110, assets/sass/_base.scss */
+/* line 112, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 111, assets/sass/_base.scss */
+/* line 113, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 112, assets/sass/_base.scss */
+/* line 114, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 113, assets/sass/_base.scss */
+/* line 115, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -178,22 +186,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 114, assets/sass/_base.scss */
+/* line 116, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 115, assets/sass/_base.scss */
+/* line 117, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 116, assets/sass/_base.scss */
+/* line 118, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 117, assets/sass/_base.scss */
+/* line 119, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -203,7 +211,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 118, assets/sass/_base.scss */
+/* line 120, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -212,7 +220,7 @@ a img.aligncenter {
 }
 
 /* You can also use a <br class="clear" /> to clear columns */
-/* line 122, assets/sass/_base.scss */
+/* line 124, assets/sass/_base.scss */
 .clear {
   clear: both;
   display: block;
@@ -653,8 +661,48 @@ body.credits-open .credits-menu-left {
   margin-left: 80px;
 }
 
+/* ------END OF STORY NAV ---------*/
+/* line 163, assets/sass/_layout.scss */
+.left-nav {
+  position: relative;
+  background-color: #020202;
+  width: 50%;
+  float: left;
+}
+/* line 163, assets/sass/_layout.scss */
+.left-nav a {
+  position: relative;
+  left: 7%;
+}
+/* line 164, assets/sass/_layout.scss */
+.left-nav .fa {
+  font-size: 45px;
+  position: relative;
+  top: 8px;
+  right: 5px;
+}
+
+/* line 167, assets/sass/_layout.scss */
+.right-nav {
+  width: 50%;
+  float: right;
+}
+/* line 167, assets/sass/_layout.scss */
+.right-nav a {
+  float: right;
+  position: relative;
+  right: 10%;
+}
+/* line 168, assets/sass/_layout.scss */
+.right-nav .fa {
+  font-size: 45px;
+  position: relative;
+  top: 8px;
+  left: 5px;
+}
+
 /* ----------- Home ------------- */
-/* line 162, assets/sass/_layout.scss */
+/* line 171, assets/sass/_layout.scss */
 #home .panel-wrap {
   background: url("assets/img/cover-large.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -666,55 +714,17 @@ body.credits-open .credits-menu-left {
   left: 0;
 }
 
-/* line 171, assets/sass/_layout.scss */
-.left-nav {
-  position: relative;
-  background-color: #020202;
-  width: 50%;
-  float: left;
-}
-/* line 171, assets/sass/_layout.scss */
-.left-nav a {
-  position: relative;
-  left: 7%;
-}
-/* line 172, assets/sass/_layout.scss */
-.left-nav .fa {
-  font-size: 45px;
-  position: relative;
-  top: 8px;
-  right: 5px;
-}
-
-/* line 175, assets/sass/_layout.scss */
-.right-nav {
-  width: 50%;
-  float: right;
-}
-/* line 175, assets/sass/_layout.scss */
-.right-nav a {
-  float: right;
-  position: relative;
-  right: 10%;
-}
-/* line 176, assets/sass/_layout.scss */
-.right-nav .fa {
-  font-size: 45px;
-  position: relative;
-  top: 8px;
-  left: 5px;
-}
-
+/* --------- PANEL IMPORTS --------------*/
 /* ----------- GRADY ------------- */
-/* line 179, assets/sass/_layout.scss */
+/* line 2, assets/sass/_grady.scss */
 #grady {
   left: 100%;
 }
-/* line 181, assets/sass/_layout.scss */
+/* line 4, assets/sass/_grady.scss */
 #grady .intro {
   background-color: #020202;
 }
-/* line 183, assets/sass/_layout.scss */
+/* line 6, assets/sass/_grady.scss */
 #grady .intro h1 {
   font-size: 81px;
   line-height: 88px;
@@ -723,7 +733,7 @@ body.credits-open .credits-menu-left {
   text-transform: uppercase;
   width: 640px;
 }
-/* line 184, assets/sass/_layout.scss */
+/* line 7, assets/sass/_grady.scss */
 #grady .intro .teal-line {
   padding: 20px 0px 0px 0px;
   margin-left: 190px;
@@ -732,7 +742,7 @@ body.credits-open .credits-menu-left {
   border-right: 3px solid #4b7a82;
   width: 680px;
 }
-/* line 191, assets/sass/_layout.scss */
+/* line 14, assets/sass/_grady.scss */
 #grady .intro .teal-line hr {
   color: #4b7a82;
   background-color: #4b7a82;
@@ -742,37 +752,37 @@ body.credits-open .credits-menu-left {
   position: relative;
   top: -10px;
 }
-/* line 194, assets/sass/_layout.scss */
+/* line 17, assets/sass/_grady.scss */
 #grady .intro h2 {
   color: white;
   padding: 20px 0px 240px 210px;
   width: 610px;
   font-style: italic;
 }
-/* line 197, assets/sass/_layout.scss */
+/* line 20, assets/sass/_grady.scss */
 #grady .bg-black {
   background-color: #020202;
   margin-bottom: 0px;
 }
-/* line 200, assets/sass/_layout.scss */
+/* line 23, assets/sass/_grady.scss */
 #grady .bg-black p {
   color: white;
 }
-/* line 203, assets/sass/_layout.scss */
+/* line 26, assets/sass/_grady.scss */
 #grady .bg-white {
   background-color: white;
   margin: 0;
 }
-/* line 206, assets/sass/_layout.scss */
+/* line 29, assets/sass/_grady.scss */
 #grady .bg-white p {
   color: #020202;
 }
-/* line 209, assets/sass/_layout.scss */
+/* line 32, assets/sass/_grady.scss */
 #grady .text-container {
   width: 500px;
   padding-left: 200px;
 }
-/* line 214, assets/sass/_layout.scss */
+/* line 37, assets/sass/_grady.scss */
 #grady .transition-one {
   background: url("assets/img/grady-transition-one.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -782,64 +792,6 @@ body.credits-open .credits-menu-left {
   height: 300px;
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
-/* ----------- TIMELINE ------------- */
-/* line 227, assets/sass/_layout.scss */
-#timeline {
-  left: 200%;
-}
-/* line 231, assets/sass/_layout.scss */
-#timeline .panel-wrap {
-  height: 5500px;
-  background: url("assets/img/timeline-bg.jpg") top left no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #000;
-}
-/* line 238, assets/sass/_layout.scss */
-#timeline .panel-wrap .block {
-  position: relative;
-}
-/* line 239, assets/sass/_layout.scss */
-#timeline .panel-wrap .timeline-title {
-  top: 70px;
-  left: 200px;
-  width: 450px;
-  height: 200px;
-}
-/* line 247, assets/sass/_layout.scss */
-#timeline .panel-wrap .timeline-one {
-  top: 200px;
-  left: 200px;
-  width: 560px;
-  height: 300px;
-}
-/* line 256, assets/sass/_layout.scss */
-#timeline .panel-wrap .timeline-two {
-  top: 500px;
-  left: 200px;
-  width: 560px;
-  height: 300px;
-}
-/* line 264, assets/sass/_layout.scss */
-#timeline .panel-wrap .timeline-three {
-  top: 1000px;
-  left: 200px;
-  width: 560px;
-  height: 300px;
-  background-color: #ccc;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-}
-
-/* ----------- INTERACTIVE MAP ------------- */
-/* line 282, assets/sass/_layout.scss */
-#map {
-  left: 300%;
-  background: #c2c2c2;
 }
 
 /* ----------- NICU ------------- */
@@ -1150,20 +1102,131 @@ body.credits-open .credits-menu-left {
   width: 580px;
 }
 
+/* ----------- TIMELINE ------------- */
+/* line 3, assets/sass/_timeline.scss */
+#timeline {
+  left: 200%;
+}
+/* line 6, assets/sass/_timeline.scss */
+#timeline .panel-wrap {
+  height: 5500px;
+  background: url("assets/img/timeline-bg.jpg") top left no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 12, assets/sass/_timeline.scss */
+#timeline h1 {
+  padding: 75px 0px 10px 0px;
+  width: 390px;
+}
+/* line 13, assets/sass/_timeline.scss */
+#timeline h3 {
+  font: 14px/20px Georgia, Times, "Times New Roman", serif;
+  color: #020202;
+  font-style: italic;
+  width: 350px;
+  text-transform: none;
+}
+/* line 15, assets/sass/_timeline.scss */
+#timeline .time-block {
+  width: 550px;
+  padding: 0px 0px 0px 100px;
+}
+/* line 18, assets/sass/_timeline.scss */
+#timeline .time-block h2 {
+  font: 24px/40px "Cabin", sans-serif;
+  color: #d29c0e;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+}
+/* line 19, assets/sass/_timeline.scss */
+#timeline .time-block h4 {
+  text-align: center;
+}
+/* line 20, assets/sass/_timeline.scss */
+#timeline .time-block h5 {
+  font: 14px/20px "Cabin", sans-serif;
+  color: #d29c0e;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+  padding: 0px 0px 0px 0px;
+}
+/* line 23, assets/sass/_timeline.scss */
+#timeline .even {
+  padding-left: 340px;
+}
+/* line 25, assets/sass/_timeline.scss */
+#timeline .even .vertical-line {
+  margin: 10px 0px 10px 20px;
+}
+/* line 31, assets/sass/_timeline.scss */
+#timeline .odd .vertical-line {
+  margin: 10px 0px 10px 540px;
+}
+/* line 35, assets/sass/_timeline.scss */
+#timeline .line-title {
+  background: url("assets/img/line-2.png") top left no-repeat;
+  height: 183px;
+  margin: 10px 0px 10px 280px;
+}
+/* line 36, assets/sass/_timeline.scss */
+#timeline .line-1 {
+  background: url("assets/img/line-1.png") top left no-repeat;
+  height: 91px;
+}
+/* line 37, assets/sass/_timeline.scss */
+#timeline .line-2 {
+  background: url("assets/img/line-2.png") top left no-repeat;
+  height: 183px;
+}
+/* line 38, assets/sass/_timeline.scss */
+#timeline .line-3 {
+  background: url("assets/img/line-3.png") top left no-repeat;
+  height: 74px;
+}
+/* line 39, assets/sass/_timeline.scss */
+#timeline .line-4 {
+  background: url("assets/img/line-4.png") top left no-repeat;
+  height: 116px;
+}
+/* line 41, assets/sass/_timeline.scss */
+#timeline .callout h3 {
+  font: 20px/30px Georgia, Times, "Times New Roman", serif;
+  color: #020202;
+  font-style: italic;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 550px;
+}
+
+/* ----------- INTERACTIVE MAP ------------- */
+/* line 2, assets/sass/_map.scss */
+#map {
+  left: 300%;
+  background: #c2c2c2;
+}
+
 /* ----------- CEO LETTER ------------- */
-/* line 298, assets/sass/_layout.scss */
+/* line 2, assets/sass/_letters.scss */
 #ceo-letter {
   left: 500%;
 }
 
 /* ----------- EDITOR LETTER ------------- */
-/* line 304, assets/sass/_layout.scss */
+/* line 8, assets/sass/_letters.scss */
 #editor-letter {
   left: 600%;
 }
 
 /* ----------- LETTER ------------- */
-/* line 310, assets/sass/_layout.scss */
+/* line 14, assets/sass/_letters.scss */
 .letter .panel-wrap {
   background: url("assets/img/letter-bg.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1172,12 +1235,12 @@ body.credits-open .credits-menu-left {
   background-size: cover;
   background-color: #020202;
 }
-/* line 316, assets/sass/_layout.scss */
+/* line 20, assets/sass/_letters.scss */
 .letter p.fl::first-letter {
   text-transform: uppercase;
   font-size: 36px;
 }
-/* line 321, assets/sass/_layout.scss */
+/* line 25, assets/sass/_letters.scss */
 .letter h1 {
   font: 26px/30px bold "Cabin", sans-serif, sans-serif;
   color: #d29c0e;
@@ -1186,9 +1249,126 @@ body.credits-open .credits-menu-left {
   font-weight: bold;
   padding: 0px 0px 40px 0px;
 }
-/* line 329, assets/sass/_layout.scss */
+/* line 33, assets/sass/_letters.scss */
 .letter .text-container {
   width: 500px;
   padding-left: 200px;
   padding-top: 90px;
+}
+
+/* --------- FOR MODAL BOX --------------*/
+/* line 189, assets/sass/_layout.scss */
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+
+/**
+ * Featherlight - ultra slim jQuery lightbox
+ * Version 1.0.1 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2014, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+@media all {
+  /* line 8, assets/sass/_featherlight.scss */
+  .featherlight {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #333;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  /* line 8, assets/sass/_featherlight.scss */
+  .featherlight:last-of-type {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  /* line 8, assets/sass/_featherlight.scss */
+  .featherlight:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -.25em;
+  }
+
+  /* line 8, assets/sass/_featherlight.scss */
+  .featherlight .featherlight-content {
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: auto;
+    padding: 25px 25px 0;
+    border-bottom: 25px solid transparent;
+    min-width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-height: 95%;
+    background: #000;
+    cursor: auto;
+    white-space: normal;
+  }
+
+  /* line 8, assets/sass/_featherlight.scss */
+  .featherlight .featherlight-inner {
+    display: block;
+  }
+
+  /* line 8, assets/sass/_featherlight.scss */
+  .featherlight .featherlight-close-icon {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    line-height: 25px;
+    width: 25px;
+    cursor: pointer;
+    text-align: center;
+    font: Arial,sans-serif;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+  }
+
+  /* line 8, assets/sass/_featherlight.scss */
+  .featherlight .featherlight-image {
+    width: 100%;
+  }
+
+  /* line 8, assets/sass/_featherlight.scss */
+  .featherlight-iframe .featherlight-content {
+    border-bottom: 0;
+    padding: 0;
+  }
+
+  /* line 8, assets/sass/_featherlight.scss */
+  .featherlight iframe {
+    border: 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* line 8, assets/sass/_featherlight.scss */
+  .featherlight .featherlight-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 98%;
+    padding: 10px 10px 0;
+    border-bottom: 10px solid transparent;
+  }
 }

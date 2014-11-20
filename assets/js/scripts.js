@@ -1,6 +1,4 @@
 (function() {
- 
-  
   /*------------------PANEL SCROLLING-----------------*/
   var scrollElement = 'html, body';
   var $scrollElement;
@@ -97,6 +95,17 @@
       timer = window.setTimeout(scrollToClosestPanel, 50);
     }).bind('load', scrollToClosestPanel);
   });
+
+/*------------------MODAL BOXES-----------------*/
+  $(function() {
+    
+
+  });
+
+
+
+
+
 })();
 
 

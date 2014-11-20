@@ -1,0 +1,39 @@
+/* ----------- CEO LETTER ------------- */
+#ceo-letter {
+  left: 500%;
+ 
+ }
+
+/* ----------- EDITOR LETTER ------------- */
+#editor-letter {
+  left: 600%;
+ }
+
+ /* ----------- LETTER ------------- */
+.letter{
+  .panel-wrap{
+    background: url('assets/img/letter-bg.jpg') top left no-repeat;
+    @include background-size(cover);
+    background-color: $black;
+  }
+
+  p.fl::first-letter{
+    text-transform: uppercase; font-size:36px;  
+  }
+  
+  //background-position-x: 79px;
+  h1{
+    font:26px/30px bold $cabin, sans-serif; 
+    color: $gold; 
+    text-transform:uppercase; 
+    width: 300px;
+    font-weight: bold;
+    padding: 0px 0px 40px 0px;
+  }
+  .text-container{
+    width:500px;
+    padding-left: 200px;
+    padding-top: 90px;
+  }
+
+}
