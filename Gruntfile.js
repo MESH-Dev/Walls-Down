@@ -14,7 +14,7 @@ module.exports = function (grunt) {
         concat: {
           js: {
             // add/remove/edit files and order to project needs
-            src: ['assets/js/jquery-1.11.1.min.js','assets/js/featherlight.min.js','assets/js/scripts.js'],
+            src: ['assets/js/jquery-1.11.1.min.js','assets/js/featherlight.min.js','assets/js/impress.js','assets/js/scripts.js'],
             dest: 'assets/prod/<%= pkg.name %>.js'
           }
         },
@@ -33,7 +33,7 @@ module.exports = function (grunt) {
             tasks: ['concat']
           },
           jsconcat:{
-            files: ['assets/js/jquery-1.11.1.min.js','assets/js/featherlight.min.js','assets/js/scripts.js'],
+            files: ['assets/js/jquery-1.11.1.min.js','assets/js/featherlight.min.js','assets/js/impress.js','assets/js/scripts.js'],
             tasks: ['concat']
           } /*,
           jsuglify:{

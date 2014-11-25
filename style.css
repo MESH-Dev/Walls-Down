@@ -346,7 +346,6 @@ nav.menu {
   position: fixed;
   z-index: 20;
   background-color: #020202;
-  overflow: hidden;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -403,14 +402,13 @@ nav.menu .menu-item:hover {
 }
 /* line 33, assets/sass/_layout.scss */
 nav.menu .secondary-menu {
-  position: fixed;
-  bottom: 0px;
+  margin-top: 200px;
 }
-/* line 35, assets/sass/_layout.scss */
+/* line 36, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul {
   margin: 20px 0px 20px 0px;
 }
-/* line 37, assets/sass/_layout.scss */
+/* line 38, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul li {
   list-style-type: none;
   font-size: 13px;
@@ -425,21 +423,22 @@ nav.menu .secondary-menu ul li {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 39, assets/sass/_layout.scss */
+/* line 40, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul li a {
   color: white;
 }
-/* line 40, assets/sass/_layout.scss */
+/* line 41, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul li a:hover {
   text-decoration: none;
 }
-/* line 41, assets/sass/_layout.scss */
+/* line 42, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul li:hover {
   background-color: #d29c0e;
 }
-/* line 44, assets/sass/_layout.scss */
+/* line 45, assets/sass/_layout.scss */
 nav.menu .secondary-menu img {
-  margin: 20px 0px 20px 10px;
+  width: 80%;
+  margin: 20px 10px 20px 10px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -447,155 +446,7 @@ nav.menu .secondary-menu img {
   transition: all 0.3s;
 }
 
-/* --- Open Menu Desktop --- */
 /* line 53, assets/sass/_layout.scss */
-body.pml-open nav.menu #logo img {
-  margin: 30px 10px 15px 20px;
-}
-/* line 54, assets/sass/_layout.scss */
-body.pml-open nav.menu .tagline {
-  color: white;
-  font-size: 11px;
-  line-height: 16px;
-  font-style: italic;
-  font-weight: bold;
-  margin-left: 20px;
-}
-/* line 56, assets/sass/_layout.scss */
-body.pml-open nav.menu .main-menu {
-  margin-top: 50px;
-}
-/* line 59, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item {
-  margin-bottom: -40px;
-  margin-left: 20px;
-  position: relative;
-  height: 120px;
-  overflow: hidden;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-/* line 61, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item .text {
-  width: 130px;
-  position: relative;
-  top: -60px;
-  z-index: 12;
-}
-/* line 62, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item span.num {
-  display: block;
-  display: inline-block;
-  width: 20px;
-  font-size: 48px;
-  color: white;
-  padding-left: 10px;
-}
-/* line 63, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item span.title {
-  display: inline-block;
-  width: 70px;
-  font-size: 14px;
-  color: white;
-  line-height: 18px;
-  color: white;
-  padding-left: 10px;
-}
-/* line 64, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item img {
-  display: block;
-  position: relative;
-  z-index: 2;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-/* line 65, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item:hover {
-  cursor: pointer;
-  background-color: transparent;
-}
-/* line 68, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item:hover img {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
-}
-/* line 72, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu {
-  position: fixed;
-  bottom: 0px;
-}
-/* line 74, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul {
-  margin: 20px 0px 20px 0px;
-}
-/* line 76, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul li {
-  list-style-type: none;
-  font-size: 14px;
-  color: white;
-  line-height: 18px;
-  color: white;
-  padding: 3px 0px 3px 20px;
-  width: 140px;
-}
-/* line 78, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul li a {
-  color: white;
-}
-/* line 79, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul li a:hover {
-  text-decoration: none;
-}
-/* line 80, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul li:hover {
-  background-color: #d29c0e;
-}
-/* line 83, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu img {
-  margin: 20px 0px 20px 20px;
-}
-
-/* line 88, assets/sass/_layout.scss */
-nav.push-menu-left {
-  top: 0;
-  height: 100%;
-  width: 80px;
-  overflow: hidden;
-  border-right: 1px solid white;
-}
-/* line 94, assets/sass/_layout.scss */
-nav.push-menu-left .wrapper {
-  overflow-y: auto;
-  height: 100%;
-  width: 100%;
-  padding-right: 15px;
-}
-
-/* line 97, assets/sass/_layout.scss */
-nav.push-menu-left {
-  left: 0px;
-}
-
-/* line 101, assets/sass/_layout.scss */
-body.pml-open nav.push-menu-left {
-  left: 0;
-  width: 160px;
-}
-
-/* line 107, assets/sass/_layout.scss */
-body.pml-open .panel-wrap {
-  margin-left: 160px;
-}
-
-/* line 114, assets/sass/_layout.scss */
 .credits-menu-left {
   position: fixed;
   overflow: hidden;
@@ -610,14 +461,218 @@ body.pml-open .panel-wrap {
   background-color: #3a3a3a;
   left: -150px;
   z-index: 10;
+  color: white;
+}
+/* line 65, assets/sass/_layout.scss */
+.credits-menu-left .credits-wrap {
+  padding: 30px 15px 15px 15px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: -15px;
+  /* Increase this value (in negative) for cross-browser compatibility */
+  overflow: auto;
+}
+/* line 74, assets/sass/_layout.scss */
+.credits-menu-left p {
+  font-size: 11px;
+  line-height: 17px;
+  color: white;
+}
+/* line 77, assets/sass/_layout.scss */
+.credits-menu-left p.top-one {
+  margin-bottom: 140px;
+}
+/* line 78, assets/sass/_layout.scss */
+.credits-menu-left p.top-two {
+  margin-bottom: 40px;
+}
+/* line 79, assets/sass/_layout.scss */
+.credits-menu-left h4 {
+  font: 11px/17px "Cabin", sans-serif;
+  color: white;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+/* line 80, assets/sass/_layout.scss */
+.credits-menu-left a {
+  color: white;
+  text-decoration: underline;
 }
 
-/* line 125, assets/sass/_layout.scss */
-body.credits-open .credits-menu-left {
+/* line 82, assets/sass/_layout.scss */
+body.pml-open.credits-open .credits-menu-left {
   left: 160px;
 }
 
+/* line 86, assets/sass/_layout.scss */
+body.credits-open .credits-menu-left {
+  left: 80px;
+}
+
+/* line 90, assets/sass/_layout.scss */
+.close-credits-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 20;
+  color: white;
+}
+/* line 95, assets/sass/_layout.scss */
+.close-credits-menu:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+
+/* --- Open Menu Desktop --- */
+/* line 103, assets/sass/_layout.scss */
+body.pml-open nav.menu #logo img {
+  margin: 30px 10px 15px 20px;
+}
+/* line 104, assets/sass/_layout.scss */
+body.pml-open nav.menu .tagline {
+  color: white;
+  font-size: 11px;
+  line-height: 16px;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 20px;
+}
+/* line 106, assets/sass/_layout.scss */
+body.pml-open nav.menu .main-menu {
+  margin-top: 50px;
+}
+/* line 109, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item {
+  margin-bottom: -40px;
+  margin-left: 20px;
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 111, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item .text {
+  width: 130px;
+  position: relative;
+  top: -60px;
+  z-index: 12;
+}
+/* line 112, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item span.num {
+  display: block;
+  display: inline-block;
+  width: 20px;
+  font-size: 48px;
+  color: white;
+  padding-left: 10px;
+}
+/* line 113, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item span.title {
+  display: inline-block;
+  width: 70px;
+  font-size: 14px;
+  color: white;
+  line-height: 18px;
+  color: white;
+  padding-left: 10px;
+}
+/* line 114, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item img {
+  display: block;
+  position: relative;
+  z-index: 2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 115, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+/* line 118, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 122, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu {
+  margin-top: 200px;
+}
+/* line 125, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu ul {
+  margin: 20px 0px 20px 0px;
+}
+/* line 127, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu ul li {
+  list-style-type: none;
+  font-size: 14px;
+  color: white;
+  line-height: 18px;
+  color: white;
+  padding: 3px 0px 3px 20px;
+  width: 140px;
+}
+/* line 129, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu ul li a {
+  color: white;
+}
+/* line 130, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu ul li a:hover {
+  text-decoration: none;
+}
 /* line 131, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu ul li:hover {
+  background-color: #d29c0e;
+}
+/* line 134, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu img {
+  margin: 20px 0px 20px 20px;
+}
+
+/* line 138, assets/sass/_layout.scss */
+nav.push-menu-left {
+  top: 0;
+  height: 100%;
+  width: 80px;
+  overflow: hidden;
+  border-right: 1px solid white;
+}
+/* line 144, assets/sass/_layout.scss */
+nav.push-menu-left .wrapper {
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+  padding-right: 15px;
+}
+
+/* line 147, assets/sass/_layout.scss */
+nav.push-menu-left {
+  left: 0px;
+}
+
+/* line 151, assets/sass/_layout.scss */
+body.pml-open nav.push-menu-left {
+  left: 0;
+  width: 160px;
+}
+
+/* line 157, assets/sass/_layout.scss */
+body.pml-open .panel-wrap {
+  margin-left: 160px;
+}
+
+/* line 167, assets/sass/_layout.scss */
 .mask {
   position: fixed;
   top: 0;
@@ -626,7 +681,7 @@ body.credits-open .credits-menu-left {
   height: 100%;
 }
 
-/* line 143, assets/sass/_layout.scss */
+/* line 179, assets/sass/_layout.scss */
 #open {
   z-index: 200;
   position: fixed;
@@ -634,7 +689,7 @@ body.credits-open .credits-menu-left {
   right: 20px;
 }
 
-/* line 144, assets/sass/_layout.scss */
+/* line 180, assets/sass/_layout.scss */
 #close {
   z-index: 200;
   position: fixed;
@@ -642,7 +697,7 @@ body.credits-open .credits-menu-left {
   right: 20px;
 }
 
-/* line 146, assets/sass/_layout.scss */
+/* line 182, assets/sass/_layout.scss */
 .panel {
   position: absolute;
   width: 100%;
@@ -651,7 +706,7 @@ body.credits-open .credits-menu-left {
   overflow: auto;
 }
 
-/* line 155, assets/sass/_layout.scss */
+/* line 191, assets/sass/_layout.scss */
 .panel-wrap {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -662,19 +717,19 @@ body.credits-open .credits-menu-left {
 }
 
 /* ------END OF STORY NAV ---------*/
-/* line 163, assets/sass/_layout.scss */
+/* line 199, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
   background-color: #020202;
   width: 50%;
   float: left;
 }
-/* line 163, assets/sass/_layout.scss */
+/* line 199, assets/sass/_layout.scss */
 .left-nav a {
   position: relative;
   left: 7%;
 }
-/* line 164, assets/sass/_layout.scss */
+/* line 200, assets/sass/_layout.scss */
 .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -682,18 +737,18 @@ body.credits-open .credits-menu-left {
   right: 5px;
 }
 
-/* line 167, assets/sass/_layout.scss */
+/* line 203, assets/sass/_layout.scss */
 .right-nav {
   width: 50%;
   float: right;
 }
-/* line 167, assets/sass/_layout.scss */
+/* line 203, assets/sass/_layout.scss */
 .right-nav a {
   float: right;
   position: relative;
   right: 10%;
 }
-/* line 168, assets/sass/_layout.scss */
+/* line 204, assets/sass/_layout.scss */
 .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -702,7 +757,7 @@ body.credits-open .credits-menu-left {
 }
 
 /* ----------- Home ------------- */
-/* line 171, assets/sass/_layout.scss */
+/* line 207, assets/sass/_layout.scss */
 #home .panel-wrap {
   background: url("assets/img/cover-large.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1210,7 +1265,305 @@ body.credits-open .credits-menu-left {
 /* line 2, assets/sass/_map.scss */
 #map {
   left: 300%;
-  background: #c2c2c2;
+  /*
+      Now let's style the presentation steps.
+  
+      We start with basics to make sure it displays correctly in everywhere ...
+  */
+  /*
+      ... and we enhance the styles for impress.js.
+  
+      Basically we remove the margin and make inactive steps a little bit transparent.
+  */
+  /*
+      These 'slide' step styles were heavily inspired by HTML5 Slides:
+      http://html5slides.googlecode.com/svn/trunk/styles.css
+  
+      ;)
+   
+      They cover everything what you see on first three steps of the demo.
+  */
+  /*
+      Now, when we have all the steps styled let's give users a hint how to navigate
+      around the presentation.
+  
+      The best way to do this would be to use JavaScript, show a delayed hint for a
+      first time users, then hide it and store a status in cookie or localStorage...
+  
+      But I wanted to have some CSS fun and avoid additional scripting...
+  
+      Let me explain it first, so maybe the transition magic will be more readable
+      when you read the code.
+  
+      First of all I wanted the hint to appear only when user is idle for a while.
+      You can't detect the 'idle' state in CSS, but I delayed a appearing of the
+      hint by 5s using transition-delay.
+  
+      You also can't detect in CSS if the user is a first-time visitor, so I had to
+      make an assumption that I'll only show the hint on the first step. And when
+      the step is changed hide the hint, because I can assume that user already
+      knows how to navigate.
+  
+      To summarize it - hint is shown when the user is on the first step for longer
+      than 5 seconds.
+  
+      The other problem I had was caused by the fact that I wanted the hint to fade
+      in and out. It can be easily achieved by transitioning the opacity property.
+      But that also meant that the hint was always on the screen, even if totally
+      transparent. It covered part of the screen and you couldn't correctly clicked
+      through it.
+      Unfortunately you cannot transition between display `block` and `none` in pure
+      CSS, so I needed a way to not only fade out the hint but also move it out of
+      the screen.
+  
+      I solved this problem by positioning the hint below the bottom of the screen
+      with CSS transform and moving it up to show it. But I also didn't want this move
+      to be visible. I wanted the hint only to fade in and out visually, so I delayed
+      the fade in transition, so it starts when the hint is already in its correct
+      position on the screen.
+  
+      I know, it sounds complicated ... maybe it would be easier with the code?
+  */
+  /*
+      And as the last thing there is a workaround for quite strange bug.
+      It happens a lot in Chrome. I don't remember if I've seen it in Firefox.
+  
+      Sometimes the element positioned in 3D (especially when it's moved back
+      along Z axis) is not clickable, because it falls 'behind' the <body>
+      element.
+  
+      To prevent this, I decided to make <body> non clickable by setting
+      pointer-events property to `none` value.
+      Value if this property is inherited, so to make everything else clickable
+      I bring it back on the #impress element.
+  
+      If you want to know more about `pointer-events` here are some docs:
+      https://developer.mozilla.org/en/CSS/pointer-events
+  
+      There is one very important thing to notice about this workaround - it makes
+      everything 'unclickable' except what's in #impress element.
+  
+      So use it wisely ... or don't use at all.
+  */
+  /*
+      There is one funny thing I just realized.
+  
+      Thanks to this workaround above everything except #impress element is invisible
+      for click events. That means that the hint element is also not clickable.
+      So basically all of this transforms and delayed transitions trickery was probably
+      not needed at all...
+  
+      But it was fun to learn about it, wasn't it?
+  */
+  /*
+      That's all I have for you in this file.
+      Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
+      for you.
+  */
+}
+/* line 13, assets/sass/_map.scss */
+#map .step {
+  position: relative;
+  width: 900px;
+  padding: 40px;
+  margin: 20px auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'PT Serif', georgia, serif;
+  font-size: 48px;
+  line-height: 1.5;
+}
+/* line 35, assets/sass/_map.scss */
+#map .impress-enabled .step {
+  margin: 0;
+  /*opacity: 0.3;*/
+  opacity: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+/* line 47, assets/sass/_map.scss */
+#map .impress-enabled .step.active {
+  opacity: 1;
+}
+/* line 57, assets/sass/_map.scss */
+#map .slide {
+  display: block;
+  width: 900px;
+  height: 700px;
+  padding: 40px 60px;
+  font-size: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+/* line 70, assets/sass/_map.scss */
+#map span.number {
+  color: #ffcc00;
+  font-family: georgia;
+  font-size: 150px;
+  -webkit-transition: all .5s ease-in;
+}
+/* line 72, assets/sass/_map.scss */
+#map div.content {
+  opacity: 0;
+  -webkit-transition: all .5s ease-in;
+}
+/* line 73, assets/sass/_map.scss */
+#map .impress-enabled .step.active div.content {
+  opacity: 1;
+  -webkit-transition: all 2s ease-in;
+}
+/* line 138, assets/sass/_map.scss */
+#map .impress-enabled {
+  pointer-events: none;
+}
+/* line 139, assets/sass/_map.scss */
+#map .impress-enabled #impress {
+  pointer-events: auto;
+}
+/* line 159, assets/sass/_map.scss */
+#map .hint {
+  /*
+      We hide the hint until presentation is started and from browsers not supporting
+      impress.js, as they will have a linear scrollable view ...
+  */
+  display: none;
+  /*
+      ... and give it some fixed position and nice styles.
+  */
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 200px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #EEE;
+  text-align: center;
+  font-size: 50px;
+  padding: 20px;
+  z-index: 100;
+  /*
+      By default we don't want the hint to be visible, so we make it transparent ...
+  */
+  opacity: 0;
+  /*
+      ... and position it below the bottom of the screen (relative to it's fixed position)
+  */
+  -webkit-transform: translateY(400px);
+  -moz-transform: translateY(400px);
+  -ms-transform: translateY(400px);
+  -o-transform: translateY(400px);
+  transform: translateY(400px);
+    /*
+        Now let's imagine that the hint is visible and we want to fade it out and move out
+        of the screen.
+
+        So we define the transition on the opacity property with 1s duration and another
+        transition on transform property delayed by 1s so it will happen after the fade out
+        on opacity finished.
+
+        This way user will not see the hint moving down.
+    */
+  -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+  -moz-transition: opacity 1s,    -moz-transform 0.5s 1s;
+  -ms-transition: opacity 1s,     -ms-transform 0.5s 1s;
+  -o-transition: opacity 1s,      -o-transform 0.5s 1s;
+  transition: opacity 1s,         transform 0.5s 1s;
+}
+
+/** Stately setup
+*************************************/
+@font-face {
+  font-family: 'stately-webfont';
+  src: url("assets/font/stately-webfont.eot");
+  src: url("assets/font/stately-webfont.eot?#iefix") format("embedded-opentype"), url("assets/font/stately-webfont.woff") format("woff"), url("assets/font/stately-webfont.ttf") format("truetype"), url("assets/font/stately-webfont.svg#testfontRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, assets/sass/_states.scss */
+.stately {
+  font: normal normal 1200px "stately-webfont";
+  line-height: 100%;
+  font-size-adjust: none;
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga=1";
+  -ms-font-feature-settings: "liga" 1;
+  -ms-font-feature-settings: "liga", "dlig";
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  border-radius: 0;
+  -webkit-transition: all .2s ease-in;
+}
+
+/* line 33, assets/sass/_states.scss */
+.stately li {
+  float: left;
+  margin: -5% 0 0 -100%;
+  position: relative;
+  left: 90%;
+  width: 100%;
+  cursor: default;
+  -webkit-transition: all .8s ease-in;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 49, assets/sass/_states.scss */
+#fullmap-zoom .stately {
+  font: normal normal 1800px;
+}
+
+/* line 52, assets/sass/_states.scss */
+span.tx {
+  color: #ffcc00;
+  font-family: georgia;
+  font-size: 50px;
+  position: fixed;
+  top: 300px;
+  z-index: 100;
+  left: 450px;
+  -webkit-transition: all .5s ease-in;
+}
+
+/* line 56, assets/sass/_states.scss */
+span.wv {
+  color: #ffcc00;
+  font-family: georgia;
+  font-size: 50px;
+  position: fixed;
+  top: 200px;
+  z-index: 100;
+  left: 700px;
+  -webkit-transition: all .5s ease-in;
+}
+
+/* line 58, assets/sass/_states.scss */
+span:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/** Style customizations
+*************************************/
+/* line 64, assets/sass/_states.scss */
+#plain {
+  color: #999;
 }
 
 /* ----------- CEO LETTER ------------- */
@@ -1254,19 +1607,6 @@ body.credits-open .credits-menu-left {
   width: 500px;
   padding-left: 200px;
   padding-top: 90px;
-}
-
-/* --------- FOR MODAL BOX --------------*/
-/* line 189, assets/sass/_layout.scss */
-#lean_overlay {
-  position: fixed;
-  z-index: 100;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  background: #000;
-  display: none;
 }
 
 /**

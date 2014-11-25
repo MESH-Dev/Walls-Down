@@ -1,6 +1,6 @@
-(function() {
+ 
   /*------------------PANEL SCROLLING-----------------*/
-  var scrollElement = 'html, body';
+ var scrollElement = 'html, body';
   var $scrollElement;
 
   $(function() {
@@ -11,7 +11,7 @@
       if ($(this).attr('scrollLeft') == initScrollLeft + 1) {
         scrollElement = this.nodeName.toLowerCase();
         $(this).attr('scrollLeft', initScrollLeft);
-        return false;
+        return false; 
       }
     });
     $scrollElement = $(scrollElement);
@@ -96,18 +96,30 @@
     }).bind('load', scrollToClosestPanel);
   });
 
-/*------------------MODAL BOXES-----------------*/
-  $(function() {
-    
+ 
 
-  });
+/*------------------MAP and IMPRESS-----------------*/
+$(function() {
+   var map = impress();
+   map.init(); 
+        $('#texas').click(function(){
+            $('#plain .tx').css('color',"#cfcfcf");
+        });
+});
 
-
-
-
-
-})();
-
+ 
+/*------------------MAP and JMPRESS----------------
+$(function() {
+  $('#jmpress').jmpress({
+        hash: {
+            use : false,
+            update : false,
+            bindChange : false
+        },
+        start : '#fullmap'
+    });
+});
+*/
 
 /*------------------MOBILE MENU-----------------*/
 $(function() {
@@ -136,7 +148,6 @@ $(function() {
         $('body').removeClass(activeNav);
         $('body').removeClass(activeCredits);
         activeNav = "";
- 
     });
 
      $pushMenuLeft.hover(function(){
@@ -144,25 +155,14 @@ $(function() {
       }, function(){
         $('body').removeClass('pml-open');
      });
- 
-
-
 
     //CREDITS MENU --------------
     /* push menu left */
     $("#credit-link").click(function(){
-        $('body').addClass("credits-open");
- 
+        $('body').addClass("credits-open"); 
         activeCredits = "credits-open";
-
     });
 
-    $(".mask").click(function(){
-        $('body').removeClass(activeCredits);
-        activeCredits = "";
- 
-    } );
- 
     /* hide active menu if close menu button is clicked */
     $(".close-credits-menu").click(function(){
         $('body').removeClass(activeCredits);

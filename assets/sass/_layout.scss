@@ -11,7 +11,7 @@ nav.menu {
     position: fixed;
     z-index: 20;
     background-color: $black;
-    overflow: hidden;
+    //overflow: hidden;
 
     @include animate(.3s);
 
@@ -31,7 +31,8 @@ nav.menu {
     }
     
     .secondary-menu{
-      position: fixed; bottom: 0px;
+      //position: fixed; bottom: 0px;
+      margin-top: 200px;
       ul{
         margin: 20px 0px 20px 0px;
         li{
@@ -41,12 +42,61 @@ nav.menu {
           &:hover{background-color: $gold;}
         }
       }
-      img{margin: 20px 0px 20px 10px;  @include animate(0.3s); }
+      img{width: 80%; margin: 20px 10px 20px 10px;  @include animate(0.3s); }
 
 
     }
  
 }
+
+//CREDITS MENU 
+.credits-menu-left{
+    position: fixed;
+    overflow: hidden;
+    
+    @include animate(0.3s);
+    top: 0;
+    width: 210px;
+    height: 100%;
+    background-color: $darkgray;
+    left: -150px;
+    z-index: 10;
+    color: $white;
+    .credits-wrap{ 
+      padding: 30px 15px 15px 15px;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: -15px; /* Increase this value (in negative) for cross-browser compatibility */
+      overflow: auto;
+    } 
+    p{
+      font-size: 11px; line-height: 17px; color: $white;
+    }
+    p.top-one{margin-bottom: 140px;}
+    p.top-two{margin-bottom: 40px;}
+    h4{font:11px/17px $cabin ; color: $white; letter-spacing: 0.1em; text-transform:uppercase;}
+    a{color:$white; text-decoration:underline;}
+}
+body.pml-open.credits-open .credits-menu-left{
+    left: 160px;
+}
+
+body.credits-open .credits-menu-left{
+    left: 80px;
+}
+
+.close-credits-menu{
+  position: absolute; 
+  top: 10px; right: 10px;
+  z-index: 20;
+  color: $white;
+  &:hover{@include opacity(0.7)}
+}
+
+
+
 
 /* --- Open Menu Desktop --- */
 body.pml-open nav.menu{
@@ -70,7 +120,8 @@ body.pml-open nav.menu{
     }
     
     .secondary-menu{
-      position: fixed; bottom: 0px;
+      //position: fixed; bottom: 0px;
+      margin-top: 200px;
       ul{
         margin: 20px 0px 20px 0px;
         li{
@@ -81,7 +132,6 @@ body.pml-open nav.menu{
         }
       }
       img{margin: 20px 0px 20px 20px }
-
     }
 }
 
@@ -110,21 +160,7 @@ body.pml-open{
 
 
 
-//CREDITS MENU 
-.credits-menu-left{
-    position: fixed;
-    overflow: hidden;
-    @include animate(0.3s);
-    top: 0;
-    width: 210px;
-    height: 100%;
-    background-color: $darkgray;
-    left: -150px;
-    z-index: 10;
-}
-body.credits-open .credits-menu-left{
-    left: 160px;
-}
+
 
 
  
@@ -183,16 +219,6 @@ body.credits-open .credits-menu-left{
 @import "nicu";
 @import "timeline";
 @import "map";
+@import "states";
 @import "letters";
-
-/* --------- FOR MODAL BOX --------------*/
-#lean_overlay {
-    position: fixed;
-    z-index:100;
-    top: 0px;
-    left: 0px;
-    height:100%;
-    width:100%;
-    background: #000;
-    display: none;
-}
+ 
