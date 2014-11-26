@@ -351,7 +351,7 @@ body {
 nav.menu {
   position: fixed;
   z-index: 20;
-  background-color: #020202;
+  background-color: #d29c0e;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
