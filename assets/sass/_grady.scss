@@ -13,14 +13,15 @@
       width: 680px; 
       hr {color: $teal; background-color: $teal; border:none;  width: 100%; height: 3px;position: relative; top: -10px}
     }
-
     h2{color: $white; padding: 20px 0px 240px 210px; width: 610px; font-style: italic;}
+    img{position:absolute; left:960px; top:20px;}
   }
 
   .bg-black{
     background-color: $black;
     margin-bottom: 0px;
     p {color: $white; }
+    blockquote{color: $white;}
   }
 
   .bg-white{
@@ -32,6 +33,21 @@
   .text-container{
     width:500px;
     padding-left: 200px;
+    img{padding-left:70px;}
+    .white-line{
+      display: block;
+      margin: 50px 0px 40px 180px;
+      width: 100px;
+      height: 7px;
+      background-color:$white; 
+    }
+    .black-line{
+      display: block;
+      margin: 50px 0px 40px 180px;
+      width: 100px;
+      height: 7px;
+      background-color:$black; 
+    }
   }
 
   .transition-one{
@@ -40,7 +56,109 @@
     height: 300px;
     margin-top: 0px; margin-bottom:0px;
   }
+  
+  .section-two{
+      p.neg-top{
+        position: relative;
+        top: -100px;
+      }
+      p.neg-top-fix{
+        margin-top: -100px;
+      }
+      img{position:absolute; left:800px; top:2150px;}
+      .brahms{font-size:24px; color:$gold; font-style: italic; position:absolute; left:920px; top:3512px; width: 300px;}
+  }
 
+  .transition-grady-ruins{
+    background: url('assets/img/grady-ruins.jpg')top left no-repeat;
+    //@include background-size(cover);
+    height: 950px;
+    background-color: $black;
+    margin-top: -0px; margin-bottom:0px;
+  }
 
+  .section-three{
+    padding-top: 40px;
+  }
+
+  .transition-three{
+    background: url('assets/img/grady-transition-three.png')top left no-repeat;
+    //@include background-size(cover);
+    height: 450px;
+    background-color: $white;
+    margin-top: -280px; margin-bottom:0px;
+  }
+
+  .section-four{
+    padding-top: 0px;
+    padding-bottom: 50px;
+    img{position:absolute; left:790px; top:6824px;}
+  }
+
+  .section-five{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    img{position:absolute; left:840px; top:7800px;}
+  }  
+
+  .section-six{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  } 
+
+  .transition-skyline{
+    background: url('assets/img/grady-skyline.jpg')top left no-repeat;
+    //@include background-size(cover);
+    height: 1330px;
+    background-color: $white;
+    margin-top: 0px; margin-bottom:0px;
+  }
+
+  .section-seven{
+    p.neg-top{
+      position: relative;
+      top: -300px;
+    }
+    p.neg-top-fix{
+      margin-top: -300px;
+    }
+  }
+
+  .section-eight{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  } 
+  .section-nine{
+    padding-top: 30px;
+    padding-bottom: 50px;
+  } 
+
+  .transition-mic{
+    background: url('assets/img/grady-micd.jpg')top left no-repeat;
+   @include background-size(cover);
+    height: 760px;
+    background-color: $white;
+    margin-top: -250px; margin-bottom:0px;
+  }
+
+  .section-ten{
+    padding-bottom: 0px;
+    p.neg-top{
+      position: relative;
+      top: -500px;
+    }
+    p.neg-top-fix{
+      margin-top: -500px;
+    }
+   
+  }
+
+  .grady-end{
+    background: url('assets/img/grady-end.jpg')top left no-repeat;
+    @include background-size(cover);
+    height: 940px;
+    background-color: $white;
+    margin-top: -600px; margin-bottom:0px;
+  }
 
 }

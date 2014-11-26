@@ -21,6 +21,9 @@ h5{font:10px/17px $cabin ; color: $gold;  text-transform:uppercase;}
 
 //paragraphs
 p{font:14px/20px $georgia; padding-bottom: 20px; color: $black; }
+p.fl::first-letter{
+    text-transform: uppercase; font-size:36px;  
+  }
 
 //blockquotes
 blockquote{margin: 0px 0px 20px 50px; font: 18px/26px $georgia; font-style: italic;}
