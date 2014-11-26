@@ -10,7 +10,7 @@ body {
 nav.menu {
     position: fixed;
     z-index: 20;
-    background-color: $gold;
+    background-color: $black;
     //overflow: hidden;
 
     @include animate(.3s);
