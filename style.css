@@ -71,34 +71,34 @@ p, h1 {
 ================================================== */
 /* #Basic Styles
 ================================================== */
-/* line 70, assets/sass/_base.scss */
+/* line 72, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 74, assets/sass/_base.scss */
+/* line 76, assets/sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 75, assets/sass/_base.scss */
+/* line 77, assets/sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 76, assets/sass/_base.scss */
+/* line 78, assets/sass/_base.scss */
 em {
   text-style: italic;
 }
 
-/* line 78, assets/sass/_base.scss */
+/* line 80, assets/sass/_base.scss */
 .hide {
   display: none;
 }
 
-/* line 79, assets/sass/_base.scss */
+/* line 81, assets/sass/_base.scss */
 .show {
   display: block;
 }
@@ -109,13 +109,13 @@ em {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 99, assets/sass/_base.scss */
+/* line 101, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 101, assets/sass/_base.scss */
+/* line 103, assets/sass/_base.scss */
 a img:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
@@ -124,60 +124,60 @@ a img:hover {
 
 /*  Image Styles
    ========================================================================== */
-/* line 106, assets/sass/_base.scss */
+/* line 108, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 107, assets/sass/_base.scss */
+/* line 109, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 108, assets/sass/_base.scss */
+/* line 110, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 109, assets/sass/_base.scss */
+/* line 111, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 110, assets/sass/_base.scss */
+/* line 112, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 111, assets/sass/_base.scss */
+/* line 113, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 112, assets/sass/_base.scss */
+/* line 114, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 113, assets/sass/_base.scss */
+/* line 115, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 114, assets/sass/_base.scss */
+/* line 116, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 115, assets/sass/_base.scss */
+/* line 117, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -186,22 +186,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 116, assets/sass/_base.scss */
+/* line 118, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 117, assets/sass/_base.scss */
+/* line 119, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 118, assets/sass/_base.scss */
+/* line 120, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 119, assets/sass/_base.scss */
+/* line 121, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -211,7 +211,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 120, assets/sass/_base.scss */
+/* line 122, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -220,7 +220,7 @@ a img.aligncenter {
 }
 
 /* You can also use a <br class="clear" /> to clear columns */
-/* line 124, assets/sass/_base.scss */
+/* line 126, assets/sass/_base.scss */
 .clear {
   clear: both;
   display: block;
@@ -1336,7 +1336,6 @@ body.pml-open .panel-wrap {
 }
 /* line 6, assets/sass/_timeline.scss */
 #timeline .panel-wrap {
-  height: 100%px;
   background: url("assets/img/timeline-bg.jpg") top left no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1437,118 +1436,73 @@ body.pml-open .panel-wrap {
 /* line 2, assets/sass/_map.scss */
 #map {
   left: 300%;
-  /*
-      Now let's style the presentation steps.
-  
-      We start with basics to make sure it displays correctly in everywhere ...
-  */
-  /*
-      ... and we enhance the styles for impress.js.
-  
-      Basically we remove the margin and make inactive steps a little bit transparent.
-  */
-  /*
-      These 'slide' step styles were heavily inspired by HTML5 Slides:
-      http://html5slides.googlecode.com/svn/trunk/styles.css
-  
-      ;)
-   
-      They cover everything what you see on first three steps of the demo.
-  */
-  /*
-      Now, when we have all the steps styled let's give users a hint how to navigate
-      around the presentation.
-  
-      The best way to do this would be to use JavaScript, show a delayed hint for a
-      first time users, then hide it and store a status in cookie or localStorage...
-  
-      But I wanted to have some CSS fun and avoid additional scripting...
-  
-      Let me explain it first, so maybe the transition magic will be more readable
-      when you read the code.
-  
-      First of all I wanted the hint to appear only when user is idle for a while.
-      You can't detect the 'idle' state in CSS, but I delayed a appearing of the
-      hint by 5s using transition-delay.
-  
-      You also can't detect in CSS if the user is a first-time visitor, so I had to
-      make an assumption that I'll only show the hint on the first step. And when
-      the step is changed hide the hint, because I can assume that user already
-      knows how to navigate.
-  
-      To summarize it - hint is shown when the user is on the first step for longer
-      than 5 seconds.
-  
-      The other problem I had was caused by the fact that I wanted the hint to fade
-      in and out. It can be easily achieved by transitioning the opacity property.
-      But that also meant that the hint was always on the screen, even if totally
-      transparent. It covered part of the screen and you couldn't correctly clicked
-      through it.
-      Unfortunately you cannot transition between display `block` and `none` in pure
-      CSS, so I needed a way to not only fade out the hint but also move it out of
-      the screen.
-  
-      I solved this problem by positioning the hint below the bottom of the screen
-      with CSS transform and moving it up to show it. But I also didn't want this move
-      to be visible. I wanted the hint only to fade in and out visually, so I delayed
-      the fade in transition, so it starts when the hint is already in its correct
-      position on the screen.
-  
-      I know, it sounds complicated ... maybe it would be easier with the code?
-  */
-  /*
-      And as the last thing there is a workaround for quite strange bug.
-      It happens a lot in Chrome. I don't remember if I've seen it in Firefox.
-  
-      Sometimes the element positioned in 3D (especially when it's moved back
-      along Z axis) is not clickable, because it falls 'behind' the <body>
-      element.
-  
-      To prevent this, I decided to make <body> non clickable by setting
-      pointer-events property to `none` value.
-      Value if this property is inherited, so to make everything else clickable
-      I bring it back on the #impress element.
-  
-      If you want to know more about `pointer-events` here are some docs:
-      https://developer.mozilla.org/en/CSS/pointer-events
-  
-      There is one very important thing to notice about this workaround - it makes
-      everything 'unclickable' except what's in #impress element.
-  
-      So use it wisely ... or don't use at all.
-  */
-  /*
-      There is one funny thing I just realized.
-  
-      Thanks to this workaround above everything except #impress element is invisible
-      for click events. That means that the hint element is also not clickable.
-      So basically all of this transforms and delayed transitions trickery was probably
-      not needed at all...
-  
-      But it was fun to learn about it, wasn't it?
-  */
-  /*
-      That's all I have for you in this file.
-      Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
-      for you.
-  */
+  overflow: hidden;
 }
-/* line 13, assets/sass/_map.scss */
+/* line 5, assets/sass/_map.scss */
+#map .panel-wrap {
+  height: 100%;
+  overflow: hidden;
+  background: url("assets/img/map-bg.jpg") top left no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 12, assets/sass/_map.scss */
+#map .map-intro {
+  padding: 25px 0px 0px 50px;
+  position: relative;
+  z-index: 1000;
+}
+/* line 14, assets/sass/_map.scss */
+#map .map-intro h1 {
+  font: 32px/36px Georgia, Times, "Times New Roman", serif;
+  color: white;
+  display: inline;
+  float: left;
+}
+/* line 15, assets/sass/_map.scss */
+#map .map-intro .intro-text {
+  width: 380px;
+  display: inline;
+  float: left;
+  margin: 0px 0px 0px 30px;
+  padding: 10px 10px 0px 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+/* line 20, assets/sass/_map.scss */
+#map .map-intro .intro-text p {
+  font: 12px/15px Georgia, Times, "Times New Roman", serif;
+  color: white;
+  font-style: italic;
+}
+/* line 25, assets/sass/_map.scss */
+#map .zoom-out {
+  position: absolute;
+  z-index: 1001;
+  top: 40px;
+  right: 20px;
+}
+/* line 30, assets/sass/_map.scss */
+#map .zoom-out a {
+  color: white;
+}
+/* line 31, assets/sass/_map.scss */
+#map .zoom-out a:hover {
+  text-decoration: underline;
+}
+/* line 36, assets/sass/_map.scss */
 #map .step {
   position: relative;
-  width: 900px;
-  padding: 40px;
-  margin: 20px auto;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'PT Serif', georgia, serif;
-  font-size: 48px;
-  line-height: 1.5;
 }
-/* line 35, assets/sass/_map.scss */
+/* line 50, assets/sass/_map.scss */
 #map .impress-enabled .step {
   margin: 0;
   /*opacity: 0.3;*/
@@ -1559,92 +1513,102 @@ body.pml-open .panel-wrap {
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
-/* line 47, assets/sass/_map.scss */
+/* line 62, assets/sass/_map.scss */
 #map .impress-enabled .step.active {
   opacity: 1;
 }
-/* line 57, assets/sass/_map.scss */
+/* line 65, assets/sass/_map.scss */
 #map .slide {
   display: block;
-  width: 900px;
-  height: 700px;
-  padding: 40px 60px;
+  width: 950px;
+  padding: 0px;
+  max-height: 230px;
+  overflow: hidden;
   font-size: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-}
-/* line 70, assets/sass/_map.scss */
-#map span.number {
-  color: #ffcc00;
-  font-family: georgia;
-  font-size: 150px;
-  -webkit-transition: all .5s ease-in;
-}
-/* line 72, assets/sass/_map.scss */
-#map div.content {
-  opacity: 0;
-  -webkit-transition: all .5s ease-in;
+  z-index: 23;
+  -webkit-transition: max-height 0.8s;
+  -moz-transition: max-height 0.8s;
+  transition: max-height 0.8s;
 }
 /* line 73, assets/sass/_map.scss */
-#map .impress-enabled .step.active div.content {
+#map .slide span:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+/* line 81, assets/sass/_map.scss */
+#map span.number {
+  color: #d29c0e;
+  font-family: georgia;
+  font-size: 110px;
+  -webkit-transition: all .5s ease-in;
+  position: relative;
+  z-index: 10000;
+}
+/* line 82, assets/sass/_map.scss */
+#map span.subtext {
+  font: 24px/30px "Cabin", sans-serif;
+  font-weight: bold;
+  color: #d29c0e;
+  display: block;
+  text-transform: uppercase;
+  -webkit-transition: all .5s ease-in;
+}
+/* line 83, assets/sass/_map.scss */
+#map .number-wrap {
+  display: inline;
+  float: left;
+  width: 350px;
+  text-align: right;
+}
+/* line 87, assets/sass/_map.scss */
+#map .content {
+  width: 500px;
+  display: inline;
+  float: left;
+  opacity: 0;
+  margin-left: 40px;
+  -webkit-transition: all .5s ease-in;
+}
+/* line 95, assets/sass/_map.scss */
+#map .content p {
+  color: white;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* line 103, assets/sass/_map.scss */
+#map #wa .number-wrap {
+  width: 400px;
+}
+/* line 104, assets/sass/_map.scss */
+#map #wa .content {
+  width: 450px;
+}
+/* line 107, assets/sass/_map.scss */
+#map #oh .number-wrap {
+  width: 400px;
+}
+/* line 108, assets/sass/_map.scss */
+#map #oh .content {
+  width: 450px;
+}
+/* line 112, assets/sass/_map.scss */
+#map #usa .number-wrap {
+  width: 900px;
+  display: block;
+}
+/* line 113, assets/sass/_map.scss */
+#map #usa .content {
+  width: 500px;
+  display: block;
+}
+/* line 114, assets/sass/_map.scss */
+#map #usa span.number {
+  font-size: 170px;
+}
+/* line 118, assets/sass/_map.scss */
+#map .step.active div.content {
   opacity: 1;
   -webkit-transition: all 2s ease-in;
-}
-/* line 138, assets/sass/_map.scss */
-#map .impress-enabled {
-  pointer-events: none;
-}
-/* line 139, assets/sass/_map.scss */
-#map .impress-enabled #impress {
-  pointer-events: auto;
-}
-/* line 159, assets/sass/_map.scss */
-#map .hint {
-  /*
-      We hide the hint until presentation is started and from browsers not supporting
-      impress.js, as they will have a linear scrollable view ...
-  */
-  display: none;
-  /*
-      ... and give it some fixed position and nice styles.
-  */
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 200px;
-  background: rgba(0, 0, 0, 0.5);
-  color: #EEE;
-  text-align: center;
-  font-size: 50px;
-  padding: 20px;
-  z-index: 100;
-  /*
-      By default we don't want the hint to be visible, so we make it transparent ...
-  */
-  opacity: 0;
-  /*
-      ... and position it below the bottom of the screen (relative to it's fixed position)
-  */
-  -webkit-transform: translateY(400px);
-  -moz-transform: translateY(400px);
-  -ms-transform: translateY(400px);
-  -o-transform: translateY(400px);
-  transform: translateY(400px);
-    /*
-        Now let's imagine that the hint is visible and we want to fade it out and move out
-        of the screen.
-
-        So we define the transition on the opacity property with 1s duration and another
-        transition on transform property delayed by 1s so it will happen after the fade out
-        on opacity finished.
-
-        This way user will not see the hint moving down.
-    */
-  -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
-  -moz-transition: opacity 1s,    -moz-transform 0.5s 1s;
-  -ms-transition: opacity 1s,     -ms-transform 0.5s 1s;
-  -o-transition: opacity 1s,      -o-transform 0.5s 1s;
-  transition: opacity 1s,         transform 0.5s 1s;
 }
 
 /** Stately setup
@@ -1659,7 +1623,7 @@ body.pml-open .panel-wrap {
 
 /* line 12, assets/sass/_states.scss */
 .stately {
-  font: normal normal 1200px "stately-webfont";
+  font: normal normal 1000px "stately-webfont";
   line-height: 100%;
   font-size-adjust: none;
   -webkit-text-rendering: optimizeLegibility;
@@ -1670,7 +1634,7 @@ body.pml-open .panel-wrap {
   -moz-font-feature-settings: "liga=1";
   -ms-font-feature-settings: "liga" 1;
   -ms-font-feature-settings: "liga", "dlig";
-  width: 100%;
+  width: 90%;
   display: block;
   margin: 0 auto;
   padding: 0;
@@ -1694,48 +1658,14 @@ body.pml-open .panel-wrap {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-/* line 49, assets/sass/_states.scss */
-#fullmap-zoom .stately {
-  font: normal normal 1800px;
-}
-
-/* line 52, assets/sass/_states.scss */
-span.tx {
-  color: #ffcc00;
-  font-family: georgia;
-  font-size: 50px;
-  position: fixed;
-  top: 300px;
-  z-index: 100;
-  left: 450px;
-  -webkit-transition: all .5s ease-in;
-}
-
-/* line 56, assets/sass/_states.scss */
-span.wv {
-  color: #ffcc00;
-  font-family: georgia;
-  font-size: 50px;
-  position: fixed;
-  top: 200px;
-  z-index: 100;
-  left: 700px;
-  -webkit-transition: all .5s ease-in;
-}
-
-/* line 58, assets/sass/_states.scss */
-span:hover {
-  opacity: 0.7;
-  cursor: pointer;
+  color: #474644;
 }
 
 /** Style customizations
 *************************************/
-/* line 64, assets/sass/_states.scss */
-#plain {
-  color: #999;
+/* line 56, assets/sass/_states.scss */
+#plain li.inactive {
+  color: #2b2a29;
 }
 
 /* ----------- CEO LETTER ------------- */

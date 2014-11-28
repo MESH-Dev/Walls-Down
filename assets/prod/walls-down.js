@@ -915,27 +915,29 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 
 /*------------------MAP and IMPRESS-----------------*/
 $(function() {
-   var map = impress();
-   map.init(); 
-        $('#texas').click(function(){
-            $('#plain .tx').css('color',"#cfcfcf");
-        });
+  var map = impress();
+  map.init();
+  
+  $('span.number').click(function(){
+      var state = $(this).parent().parent().attr("id");
+      var $st = $(this).parent().parent();
+
+      stateid = "#"+state;
+      state = "."+state;
+      console.log($st);
+      $('#plain li').not(state).addClass('inactive');
+      $('.slide').not($st).fadeOut();
+      $st.css('max-height', '500px');
+  });
+
+  $('#fullmap, .zoom-out a').click(function(){
+      $('#plain li').removeClass('inactive');
+      $('.slide').fadeIn();
+      $('.slide').css('max-height', '200px');
+  });
 });
 
  
-/*------------------MAP and JMPRESS----------------
-$(function() {
-  $('#jmpress').jmpress({
-        hash: {
-            use : false,
-            update : false,
-            bindChange : false
-        },
-        start : '#fullmap'
-    });
-});
-*/
-
 /*------------------MOBILE MENU-----------------*/
 $(function() {
  
