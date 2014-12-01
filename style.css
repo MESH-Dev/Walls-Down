@@ -737,8 +737,9 @@ body.pml-open .panel-wrap {
 /* line 202, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
-  background-color: #020202;
+  height: 0px;
   width: 50%;
+  top: -80px;
   float: left;
 }
 /* line 202, assets/sass/_layout.scss */
@@ -756,7 +757,10 @@ body.pml-open .panel-wrap {
 
 /* line 206, assets/sass/_layout.scss */
 .right-nav {
+  position: relative;
+  height: 0px;
   width: 50%;
+  top: -80px;
   float: right;
 }
 /* line 206, assets/sass/_layout.scss */
@@ -784,6 +788,32 @@ body.pml-open .panel-wrap {
   height: 100%;
   overflow: hidden;
   left: 0;
+}
+/* line 216, assets/sass/_layout.scss */
+#home .panel-wrap .right-nav {
+  position: absolute;
+  height: 0px;
+  width: 50%;
+  top: 90%;
+  right: 1%;
+  float: right;
+}
+/* line 216, assets/sass/_layout.scss */
+#home .panel-wrap .right-nav a {
+  float: right;
+  position: relative;
+  right: 10%;
+}
+/* line 217, assets/sass/_layout.scss */
+#home .panel-wrap .right-nav .fa {
+  font-size: 45px;
+  position: relative;
+  top: 8px;
+  left: 5px;
+}
+/* line 218, assets/sass/_layout.scss */
+#home .panel-wrap .right-nav a {
+  color: #020202;
 }
 
 /* --------- PANEL IMPORTS --------------*/
@@ -1327,7 +1357,7 @@ body.pml-open .panel-wrap {
 }
 /* line 192, assets/sass/_nicu.scss */
 #nicu .panel-twelve {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 /* line 193, assets/sass/_nicu.scss */
 #nicu .panel-twelve .panel-left {
@@ -1635,6 +1665,48 @@ body.pml-open .panel-wrap {
   opacity: 1;
   -webkit-transition: all 2s ease-in;
 }
+/* line 117, assets/sass/_map.scss */
+#map .left-nav {
+  position: absolute;
+  height: 0px;
+  width: 30%;
+  top: 92%;
+  left: 8%;
+  float: left;
+}
+/* line 117, assets/sass/_map.scss */
+#map .left-nav a {
+  position: relative;
+  left: 7%;
+}
+/* line 118, assets/sass/_map.scss */
+#map .left-nav .fa {
+  font-size: 45px;
+  position: relative;
+  top: 8px;
+  right: 5px;
+}
+/* line 120, assets/sass/_map.scss */
+#map .right-nav {
+  position: absolute;
+  height: 0px;
+  top: 92%;
+  right: 1%;
+  float: right;
+}
+/* line 120, assets/sass/_map.scss */
+#map .right-nav a {
+  float: right;
+  position: relative;
+  right: 10%;
+}
+/* line 121, assets/sass/_map.scss */
+#map .right-nav .fa {
+  font-size: 45px;
+  position: relative;
+  top: 8px;
+  left: 5px;
+}
 
 /** Stately setup
 *************************************/
@@ -1698,6 +1770,14 @@ body.pml-open .panel-wrap {
 #ceo-letter {
   left: 600%;
 }
+/* line 4, assets/sass/_letters.scss */
+#ceo-letter .left-nav {
+  position: relative;
+  height: 0px;
+  width: 50%;
+  top: 30px;
+  left: -160px;
+}
 
 /* ----------- EDITOR LETTER ------------- */
 /* line 8, assets/sass/_letters.scss */
@@ -1706,7 +1786,7 @@ body.pml-open .panel-wrap {
 }
 
 /* ----------- LETTER ------------- */
-/* line 14, assets/sass/_letters.scss */
+/* line 15, assets/sass/_letters.scss */
 .letter .panel-wrap {
   background: url("assets/img/letter-bg.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1716,7 +1796,7 @@ body.pml-open .panel-wrap {
   background-color: #020202;
   min-height: 1000px;
 }
-/* line 24, assets/sass/_letters.scss */
+/* line 25, assets/sass/_letters.scss */
 .letter h1 {
   font: 26px/30px bold "Cabin", sans-serif, sans-serif;
   color: #d29c0e;
@@ -1725,7 +1805,7 @@ body.pml-open .panel-wrap {
   font-weight: bold;
   padding: 0px 0px 40px 0px;
 }
-/* line 32, assets/sass/_letters.scss */
+/* line 33, assets/sass/_letters.scss */
 .letter .text-container {
   width: 500px;
   padding-left: 200px;

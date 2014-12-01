@@ -199,11 +199,11 @@ body.pml-open{
 
 
 /* ------END OF STORY NAV ---------*/
-.left-nav{position: relative; background-color: $black; width: 50%; float:left; a{position: relative;  left: 7%;}
+.left-nav{position: relative; height: 0px; width: 50%; top:-80px; float:left; a{position: relative;  left: 7%;}
   .fa{font-size: 45px; position:relative; top: 8px; right: 5px;}
   
  }
-.right-nav{width: 50%; float: right; a{float: right; position: relative;  right: 10%;}
+.right-nav{position: relative; height: 0px;  width: 50%;  top:-80px; float: right; a{float: right; position: relative;  right: 10%;}
   .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}}
 
 /* ----------- Home ------------- */
@@ -213,6 +213,10 @@ body.pml-open{
   height: 100%;
   overflow: hidden;
   left: 0;
+  .right-nav{position: absolute;  height: 0px;  width: 50%;  top:90%; right:1%; float: right; a{float: right; position: relative;  right: 10%;}
+    .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}
+    a{color:$black}
+  }
 
 }
 

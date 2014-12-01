@@ -113,6 +113,13 @@
     }
  
     .step.active div.content{ opacity: 1; -webkit-transition: all 2s ease-in;} 
+
+ .left-nav{position: absolute; height: 0px; width: 30%; top:92%; left: 8%; float:left; a{position: relative;  left: 7%;}
+    .fa{font-size: 45px; position:relative; top: 8px; right: 5px;}
+  }
+  .right-nav{position: absolute; height: 0px; top:92%; right: 1%;  float: right; a{float: right; position: relative;  right: 10%;}
+    .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}
+  }
  
 
 }
