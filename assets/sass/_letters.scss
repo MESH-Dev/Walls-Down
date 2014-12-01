@@ -15,6 +15,7 @@
     background: url('assets/img/letter-bg.jpg') top left no-repeat;
     @include background-size(cover);
     background-color: $black;
+    min-height: 1000px;
   }
 
   

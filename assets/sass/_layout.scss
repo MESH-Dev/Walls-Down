@@ -22,13 +22,15 @@ nav.menu {
       margin-top:90px;
     }
     .menu-item{
-      margin-bottom: 30px; padding: 3px 5px 3px 10px;  position:relative;  overflow: hidden; ; 
+      margin-bottom: 30px; padding: 3px 5px 3px 10px; width:100%; position:relative;  overflow: hidden; ; 
       .text{width: 80px; position:relative; top: 0px;  z-index:12; }
       span.num{display: none; }
       span.title{display: inline-block; width: 65px; font-size: 13px; color: $white; line-height: 15px; color: $white;  }
       img{display:none; ;}
-      &:hover{background-color:$gold;}
+      
     }
+
+    .menu-active{background-color: $gold;}
     
     .secondary-menu{
       //position: fixed; bottom: 0px;
@@ -41,9 +43,9 @@ nav.menu {
           a:hover{text-decoration: none;}
           &:hover{background-color: $gold;}
         }
+        li:first-child{ width: 50px;}
       }
       img{width: 80%; margin: 20px 10px 20px 10px;  @include animate(0.3s); }
-
 
     }
  
@@ -72,7 +74,7 @@ nav.menu {
       overflow: auto;
     } 
     p{
-      font-size: 11px; line-height: 17px; color: $white;
+      font-size: 11px; line-height: 17px; color: $white; padding-right:10px;
     }
     p.top-one{margin-bottom: 140px;}
     p.top-two{margin-bottom: 40px;}
@@ -101,7 +103,7 @@ body.credits-open .credits-menu-left{
 /* --- Open Menu Desktop --- */
 body.pml-open nav.menu{
   #logo img{margin: 30px 10px 15px 20px; }
-    .tagline{color: $white; font-size:11px; line-height:16px; font-style: italic; font-weight: bold; margin-left: 20px; }
+    .tagline{color: $white; display:block; font-size:11px; line-height:16px; font-style: italic; font-weight: bold; margin-left: 20px; }
     
     .main-menu{
       margin-top:50px;
@@ -118,6 +120,7 @@ body.pml-open nav.menu{
         img{  @include opacity(0.8);}
       }
     }
+    .menu-active{background-color: transparent;}
     
     .secondary-menu{
       //position: fixed; bottom: 0px;

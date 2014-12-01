@@ -375,6 +375,7 @@ nav.menu .main-menu {
 nav.menu .menu-item {
   margin-bottom: 30px;
   padding: 3px 5px 3px 10px;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }
@@ -402,19 +403,19 @@ nav.menu .menu-item span.title {
 nav.menu .menu-item img {
   display: none;
 }
-/* line 30, assets/sass/_layout.scss */
-nav.menu .menu-item:hover {
+/* line 33, assets/sass/_layout.scss */
+nav.menu .menu-active {
   background-color: #d29c0e;
 }
-/* line 33, assets/sass/_layout.scss */
+/* line 35, assets/sass/_layout.scss */
 nav.menu .secondary-menu {
   margin-top: 200px;
 }
-/* line 36, assets/sass/_layout.scss */
+/* line 38, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul {
   margin: 20px 0px 20px 0px;
 }
-/* line 38, assets/sass/_layout.scss */
+/* line 40, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul li {
   list-style-type: none;
   font-size: 13px;
@@ -429,19 +430,23 @@ nav.menu .secondary-menu ul li {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 40, assets/sass/_layout.scss */
+/* line 42, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul li a {
   color: white;
 }
-/* line 41, assets/sass/_layout.scss */
+/* line 43, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul li a:hover {
   text-decoration: none;
 }
-/* line 42, assets/sass/_layout.scss */
+/* line 44, assets/sass/_layout.scss */
 nav.menu .secondary-menu ul li:hover {
   background-color: #d29c0e;
 }
-/* line 45, assets/sass/_layout.scss */
+/* line 46, assets/sass/_layout.scss */
+nav.menu .secondary-menu ul li:first-child {
+  width: 50px;
+}
+/* line 48, assets/sass/_layout.scss */
 nav.menu .secondary-menu img {
   width: 80%;
   margin: 20px 10px 20px 10px;
@@ -452,7 +457,7 @@ nav.menu .secondary-menu img {
   transition: all 0.3s;
 }
 
-/* line 53, assets/sass/_layout.scss */
+/* line 55, assets/sass/_layout.scss */
 .credits-menu-left {
   position: fixed;
   overflow: hidden;
@@ -469,7 +474,7 @@ nav.menu .secondary-menu img {
   z-index: 10;
   color: white;
 }
-/* line 65, assets/sass/_layout.scss */
+/* line 67, assets/sass/_layout.scss */
 .credits-menu-left .credits-wrap {
   padding: 30px 15px 15px 15px;
   position: absolute;
@@ -480,44 +485,45 @@ nav.menu .secondary-menu img {
   /* Increase this value (in negative) for cross-browser compatibility */
   overflow: auto;
 }
-/* line 74, assets/sass/_layout.scss */
+/* line 76, assets/sass/_layout.scss */
 .credits-menu-left p {
   font-size: 11px;
   line-height: 17px;
   color: white;
+  padding-right: 10px;
 }
-/* line 77, assets/sass/_layout.scss */
+/* line 79, assets/sass/_layout.scss */
 .credits-menu-left p.top-one {
   margin-bottom: 140px;
 }
-/* line 78, assets/sass/_layout.scss */
+/* line 80, assets/sass/_layout.scss */
 .credits-menu-left p.top-two {
   margin-bottom: 40px;
 }
-/* line 79, assets/sass/_layout.scss */
+/* line 81, assets/sass/_layout.scss */
 .credits-menu-left h4 {
   font: 11px/17px "Cabin", sans-serif;
   color: white;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-/* line 80, assets/sass/_layout.scss */
+/* line 82, assets/sass/_layout.scss */
 .credits-menu-left a {
   color: white;
   text-decoration: underline;
 }
 
-/* line 82, assets/sass/_layout.scss */
+/* line 84, assets/sass/_layout.scss */
 body.pml-open.credits-open .credits-menu-left {
   left: 160px;
 }
 
-/* line 86, assets/sass/_layout.scss */
+/* line 88, assets/sass/_layout.scss */
 body.credits-open .credits-menu-left {
   left: 80px;
 }
 
-/* line 90, assets/sass/_layout.scss */
+/* line 92, assets/sass/_layout.scss */
 .close-credits-menu {
   position: absolute;
   top: 10px;
@@ -525,31 +531,32 @@ body.credits-open .credits-menu-left {
   z-index: 20;
   color: white;
 }
-/* line 95, assets/sass/_layout.scss */
+/* line 97, assets/sass/_layout.scss */
 .close-credits-menu:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
 
 /* --- Open Menu Desktop --- */
-/* line 103, assets/sass/_layout.scss */
+/* line 105, assets/sass/_layout.scss */
 body.pml-open nav.menu #logo img {
   margin: 30px 10px 15px 20px;
 }
-/* line 104, assets/sass/_layout.scss */
+/* line 106, assets/sass/_layout.scss */
 body.pml-open nav.menu .tagline {
   color: white;
+  display: block;
   font-size: 11px;
   line-height: 16px;
   font-style: italic;
   font-weight: bold;
   margin-left: 20px;
 }
-/* line 106, assets/sass/_layout.scss */
+/* line 108, assets/sass/_layout.scss */
 body.pml-open nav.menu .main-menu {
   margin-top: 50px;
 }
-/* line 109, assets/sass/_layout.scss */
+/* line 111, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item {
   margin-bottom: -40px;
   margin-left: 20px;
@@ -562,14 +569,14 @@ body.pml-open nav.menu .menu-item {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 111, assets/sass/_layout.scss */
+/* line 113, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item .text {
   width: 130px;
   position: relative;
   top: -60px;
   z-index: 12;
 }
-/* line 112, assets/sass/_layout.scss */
+/* line 114, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item span.num {
   display: block;
   display: inline-block;
@@ -578,7 +585,7 @@ body.pml-open nav.menu .menu-item span.num {
   color: white;
   padding-left: 10px;
 }
-/* line 113, assets/sass/_layout.scss */
+/* line 115, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item span.title {
   display: inline-block;
   width: 70px;
@@ -588,7 +595,7 @@ body.pml-open nav.menu .menu-item span.title {
   color: white;
   padding-left: 10px;
 }
-/* line 114, assets/sass/_layout.scss */
+/* line 116, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item img {
   display: block;
   position: relative;
@@ -601,25 +608,29 @@ body.pml-open nav.menu .menu-item img {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 115, assets/sass/_layout.scss */
+/* line 117, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item:hover {
   cursor: pointer;
   background-color: transparent;
 }
-/* line 118, assets/sass/_layout.scss */
+/* line 120, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
-/* line 122, assets/sass/_layout.scss */
+/* line 123, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-active {
+  background-color: transparent;
+}
+/* line 125, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu {
   margin-top: 200px;
 }
-/* line 125, assets/sass/_layout.scss */
+/* line 128, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu ul {
   margin: 20px 0px 20px 0px;
 }
-/* line 127, assets/sass/_layout.scss */
+/* line 130, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu ul li {
   list-style-type: none;
   font-size: 14px;
@@ -629,24 +640,24 @@ body.pml-open nav.menu .secondary-menu ul li {
   padding: 3px 0px 3px 20px;
   width: 140px;
 }
-/* line 129, assets/sass/_layout.scss */
+/* line 132, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu ul li a {
   color: white;
 }
-/* line 130, assets/sass/_layout.scss */
+/* line 133, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu ul li a:hover {
   text-decoration: none;
 }
-/* line 131, assets/sass/_layout.scss */
+/* line 134, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu ul li:hover {
   background-color: #d29c0e;
 }
-/* line 134, assets/sass/_layout.scss */
+/* line 137, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu img {
   margin: 20px 0px 20px 20px;
 }
 
-/* line 138, assets/sass/_layout.scss */
+/* line 141, assets/sass/_layout.scss */
 nav.push-menu-left {
   top: 0;
   height: 100%;
@@ -654,7 +665,7 @@ nav.push-menu-left {
   overflow: hidden;
   border-right: 1px solid white;
 }
-/* line 144, assets/sass/_layout.scss */
+/* line 147, assets/sass/_layout.scss */
 nav.push-menu-left .wrapper {
   overflow-y: auto;
   height: 100%;
@@ -662,23 +673,23 @@ nav.push-menu-left .wrapper {
   padding-right: 15px;
 }
 
-/* line 147, assets/sass/_layout.scss */
+/* line 150, assets/sass/_layout.scss */
 nav.push-menu-left {
   left: 0px;
 }
 
-/* line 151, assets/sass/_layout.scss */
+/* line 154, assets/sass/_layout.scss */
 body.pml-open nav.push-menu-left {
   left: 0;
   width: 160px;
 }
 
-/* line 157, assets/sass/_layout.scss */
+/* line 160, assets/sass/_layout.scss */
 body.pml-open .panel-wrap {
   margin-left: 160px;
 }
 
-/* line 167, assets/sass/_layout.scss */
+/* line 170, assets/sass/_layout.scss */
 .mask {
   position: fixed;
   top: 0;
@@ -687,7 +698,7 @@ body.pml-open .panel-wrap {
   height: 100%;
 }
 
-/* line 179, assets/sass/_layout.scss */
+/* line 182, assets/sass/_layout.scss */
 #open {
   z-index: 200;
   position: fixed;
@@ -695,7 +706,7 @@ body.pml-open .panel-wrap {
   right: 20px;
 }
 
-/* line 180, assets/sass/_layout.scss */
+/* line 183, assets/sass/_layout.scss */
 #close {
   z-index: 200;
   position: fixed;
@@ -703,7 +714,7 @@ body.pml-open .panel-wrap {
   right: 20px;
 }
 
-/* line 182, assets/sass/_layout.scss */
+/* line 185, assets/sass/_layout.scss */
 .panel {
   position: absolute;
   width: 100%;
@@ -712,7 +723,7 @@ body.pml-open .panel-wrap {
   overflow: auto;
 }
 
-/* line 191, assets/sass/_layout.scss */
+/* line 194, assets/sass/_layout.scss */
 .panel-wrap {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -723,19 +734,19 @@ body.pml-open .panel-wrap {
 }
 
 /* ------END OF STORY NAV ---------*/
-/* line 199, assets/sass/_layout.scss */
+/* line 202, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
   background-color: #020202;
   width: 50%;
   float: left;
 }
-/* line 199, assets/sass/_layout.scss */
+/* line 202, assets/sass/_layout.scss */
 .left-nav a {
   position: relative;
   left: 7%;
 }
-/* line 200, assets/sass/_layout.scss */
+/* line 203, assets/sass/_layout.scss */
 .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -743,18 +754,18 @@ body.pml-open .panel-wrap {
   right: 5px;
 }
 
-/* line 203, assets/sass/_layout.scss */
+/* line 206, assets/sass/_layout.scss */
 .right-nav {
   width: 50%;
   float: right;
 }
-/* line 203, assets/sass/_layout.scss */
+/* line 206, assets/sass/_layout.scss */
 .right-nav a {
   float: right;
   position: relative;
   right: 10%;
 }
-/* line 204, assets/sass/_layout.scss */
+/* line 207, assets/sass/_layout.scss */
 .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -763,7 +774,7 @@ body.pml-open .panel-wrap {
 }
 
 /* ----------- Home ------------- */
-/* line 207, assets/sass/_layout.scss */
+/* line 210, assets/sass/_layout.scss */
 #home .panel-wrap {
   background: url("assets/img/cover-large.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -938,7 +949,7 @@ body.pml-open .panel-wrap {
 #grady .section-four img {
   position: absolute;
   left: 790px;
-  top: 6824px;
+  top: 6788px;
 }
 /* line 98, assets/sass/_grady.scss */
 #grady .section-five {
@@ -1076,7 +1087,7 @@ body.pml-open .panel-wrap {
 /* line 19, assets/sass/_nicu.scss */
 #nicu .panel-one {
   background: url("assets/img/nicu-1.jpg") top right no-repeat;
-  background-color: #171711;
+  background-color: #121212;
   margin-bottom: 80px;
 }
 /* line 23, assets/sass/_nicu.scss */
@@ -1468,30 +1479,30 @@ body.pml-open .panel-wrap {
   float: left;
   margin: 0px 0px 0px 30px;
   padding: 10px 10px 0px 10px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.7);
 }
-/* line 20, assets/sass/_map.scss */
+/* line 18, assets/sass/_map.scss */
 #map .map-intro .intro-text p {
   font: 12px/15px Georgia, Times, "Times New Roman", serif;
   color: white;
   font-style: italic;
 }
-/* line 25, assets/sass/_map.scss */
+/* line 24, assets/sass/_map.scss */
 #map .zoom-out {
   position: absolute;
   z-index: 1001;
   top: 40px;
   right: 20px;
 }
-/* line 30, assets/sass/_map.scss */
+/* line 29, assets/sass/_map.scss */
 #map .zoom-out a {
   color: white;
 }
-/* line 31, assets/sass/_map.scss */
+/* line 30, assets/sass/_map.scss */
 #map .zoom-out a:hover {
   text-decoration: underline;
 }
-/* line 36, assets/sass/_map.scss */
+/* line 35, assets/sass/_map.scss */
 #map .step {
   position: relative;
   padding: 0px;
@@ -1502,7 +1513,7 @@ body.pml-open .panel-wrap {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 50, assets/sass/_map.scss */
+/* line 49, assets/sass/_map.scss */
 #map .impress-enabled .step {
   margin: 0;
   /*opacity: 0.3;*/
@@ -1513,29 +1524,28 @@ body.pml-open .panel-wrap {
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
-/* line 62, assets/sass/_map.scss */
+/* line 61, assets/sass/_map.scss */
 #map .impress-enabled .step.active {
   opacity: 1;
 }
-/* line 65, assets/sass/_map.scss */
+/* line 64, assets/sass/_map.scss */
 #map .slide {
   display: block;
   width: 950px;
   padding: 0px;
   max-height: 230px;
-  overflow: hidden;
   font-size: 20px;
   z-index: 23;
   -webkit-transition: max-height 0.8s;
   -moz-transition: max-height 0.8s;
   transition: max-height 0.8s;
 }
-/* line 73, assets/sass/_map.scss */
+/* line 71, assets/sass/_map.scss */
 #map .slide span:hover {
   opacity: 0.7;
   cursor: pointer;
 }
-/* line 81, assets/sass/_map.scss */
+/* line 77, assets/sass/_map.scss */
 #map span.number {
   color: #d29c0e;
   font-family: georgia;
@@ -1544,7 +1554,7 @@ body.pml-open .panel-wrap {
   position: relative;
   z-index: 10000;
 }
-/* line 82, assets/sass/_map.scss */
+/* line 78, assets/sass/_map.scss */
 #map span.subtext {
   font: 24px/30px "Cabin", sans-serif;
   font-weight: bold;
@@ -1553,14 +1563,14 @@ body.pml-open .panel-wrap {
   text-transform: uppercase;
   -webkit-transition: all .5s ease-in;
 }
-/* line 83, assets/sass/_map.scss */
+/* line 79, assets/sass/_map.scss */
 #map .number-wrap {
   display: inline;
   float: left;
   width: 350px;
   text-align: right;
 }
-/* line 87, assets/sass/_map.scss */
+/* line 83, assets/sass/_map.scss */
 #map .content {
   width: 500px;
   display: inline;
@@ -1569,43 +1579,48 @@ body.pml-open .panel-wrap {
   margin-left: 40px;
   -webkit-transition: all .5s ease-in;
 }
-/* line 95, assets/sass/_map.scss */
+/* line 91, assets/sass/_map.scss */
 #map .content p {
   color: white;
   font-size: 16px;
   line-height: 26px;
 }
-/* line 103, assets/sass/_map.scss */
+/* line 96, assets/sass/_map.scss */
+#map .content img {
+  max-width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+/* line 100, assets/sass/_map.scss */
 #map #wa .number-wrap {
   width: 400px;
 }
-/* line 104, assets/sass/_map.scss */
+/* line 101, assets/sass/_map.scss */
 #map #wa .content {
   width: 450px;
 }
-/* line 107, assets/sass/_map.scss */
+/* line 104, assets/sass/_map.scss */
 #map #oh .number-wrap {
   width: 400px;
 }
-/* line 108, assets/sass/_map.scss */
+/* line 105, assets/sass/_map.scss */
 #map #oh .content {
   width: 450px;
 }
-/* line 112, assets/sass/_map.scss */
+/* line 109, assets/sass/_map.scss */
 #map #usa .number-wrap {
   width: 900px;
   display: block;
 }
-/* line 113, assets/sass/_map.scss */
+/* line 110, assets/sass/_map.scss */
 #map #usa .content {
   width: 500px;
   display: block;
 }
-/* line 114, assets/sass/_map.scss */
+/* line 111, assets/sass/_map.scss */
 #map #usa span.number {
   font-size: 170px;
 }
-/* line 118, assets/sass/_map.scss */
+/* line 115, assets/sass/_map.scss */
 #map .step.active div.content {
   opacity: 1;
   -webkit-transition: all 2s ease-in;
@@ -1689,8 +1704,9 @@ body.pml-open .panel-wrap {
   -o-background-size: cover;
   background-size: cover;
   background-color: #020202;
+  min-height: 1000px;
 }
-/* line 23, assets/sass/_letters.scss */
+/* line 24, assets/sass/_letters.scss */
 .letter h1 {
   font: 26px/30px bold "Cabin", sans-serif, sans-serif;
   color: #d29c0e;
@@ -1699,7 +1715,7 @@ body.pml-open .panel-wrap {
   font-weight: bold;
   padding: 0px 0px 40px 0px;
 }
-/* line 31, assets/sass/_letters.scss */
+/* line 32, assets/sass/_letters.scss */
 .letter .text-container {
   width: 500px;
   padding-left: 200px;

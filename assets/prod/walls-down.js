@@ -921,24 +921,43 @@ $(function() {
   $('span.number').click(function(){
       var state = $(this).parent().parent().attr("id");
       var $st = $(this).parent().parent();
-
       stateid = "#"+state;
       state = "."+state;
-      console.log($st);
+ 
       $('#plain li').not(state).addClass('inactive');
+      $('.intro-text').fadeOut();
       $('.slide').not($st).fadeOut();
-      $st.css('max-height', '500px');
+      $st.css('max-height', '600px');
+      $st.css('overflow', 'auto');
+
+
   });
 
   $('#fullmap, .zoom-out a').click(function(){
       $('#plain li').removeClass('inactive');
+      $('.intro-text').removeClass('inactive');
+      $('.intro-text').fadeIn();
       $('.slide').fadeIn();
       $('.slide').css('max-height', '200px');
+      $('.slide').css('overflow', 'hidden');
   });
+
+  $('#map-read-more').click(function(e){
+    $('#map-more').removeClass("hide");
+    $('#map-more').addClass("show");
+    e.preventDefault();
+  });
+  $('#map-read-close').click(function(e){
+    $('#map-more').removeClass("show");
+    $('#map-more').addClass("hide");
+    e.preventDefault();
+  });
+
+
 });
 
  
-/*------------------MOBILE MENU-----------------*/
+/*------------------ MENU-----------------*/
 $(function() {
  
     var $togglePushLeft = $(".toggle-push-left" );
@@ -983,10 +1002,25 @@ $(function() {
     /* hide active menu if close menu button is clicked */
     $(".close-credits-menu").click(function(){
         $('body').removeClass(activeCredits);
+        $(".secondary-menu li").removeClass('menu-active');
         activeCredits = "";
  
     });
+});
 
+/*------------------ MENU ACTIVE TOGGLE-----------------*/
+$(function() {
+  $(".main-menu a").click(function(){
+    $("nav.menu a div").removeClass('menu-active');
+    $(".secondary-menu li").removeClass('menu-active');
+    $(this).children(".menu-item").addClass('menu-active');
+  });
+
+   $(".secondary-menu li a").click(function(){
+    $("nav.menu a div").removeClass('menu-active');
+    $(".secondary-menu li").removeClass('menu-active');
+    $(this).parent("li").addClass('menu-active');
+  });
 
 
 });

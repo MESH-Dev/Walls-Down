@@ -14,12 +14,11 @@
         h1{font:32px/36px $georgia ; color: $white; display: inline; float:left; }
         .intro-text{
             width:380px; display: inline; float:left; margin: 0px 0px 0px 30px; padding:10px 10px 0px 10px ;
-            background: rgba(0,0,0,0.2); 
+            background: rgba(0,0,0,0.7); 
+            p{font:12px/15px $georgia; color: $white; font-style: italic;}
 
-            
-            p{
-                font:12px/15px $georgia; color: $white; font-style: italic;  }
         }
+        #map-more{  }
     }
 
     .zoom-out{
@@ -67,13 +66,10 @@
         width: 950px;
         padding: 0px;
         max-height: 230px;
-        overflow: hidden;
+       
         font-size: 20px;
-        //border: 1px solid rgba(0, 0, 0, .3);
         span:hover{opacity: 0.7; cursor: pointer;}
         z-index: 23;
-        //background-color: rgba(255, 255, 255, .3);
-
         -webkit-transition: max-height 0.8s;
         -moz-transition: max-height 0.8s;
         transition: max-height 0.8s;
@@ -97,6 +93,7 @@
             font-size:16px;
             line-height: 26px;
         }
+        img{max-width: 100%; margin: 10px 0px 10px 0px;}
     }
 
     #wa {
