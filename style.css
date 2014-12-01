@@ -1395,45 +1395,55 @@ body.pml-open .panel-wrap {
   text-align: left;
   padding: 0px 0px 0px 0px;
 }
-/* line 23, assets/sass/_timeline.scss */
+/* line 21, assets/sass/_timeline.scss */
+#timeline .time-block a {
+  color: #020202;
+  text-decoration: underline;
+}
+/* line 22, assets/sass/_timeline.scss */
+#timeline .time-block a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 25, assets/sass/_timeline.scss */
 #timeline .even {
   padding-left: 340px;
 }
-/* line 25, assets/sass/_timeline.scss */
+/* line 27, assets/sass/_timeline.scss */
 #timeline .even .vertical-line {
   margin: 10px 0px 10px 20px;
 }
-/* line 31, assets/sass/_timeline.scss */
+/* line 33, assets/sass/_timeline.scss */
 #timeline .odd .vertical-line {
   margin: 10px 0px 10px 540px;
 }
-/* line 35, assets/sass/_timeline.scss */
+/* line 37, assets/sass/_timeline.scss */
 #timeline .line-title {
   background: url("assets/img/line-2.png") top left no-repeat;
   height: 183px;
   margin: 10px 0px 10px 280px;
 }
-/* line 36, assets/sass/_timeline.scss */
+/* line 38, assets/sass/_timeline.scss */
 #timeline .line-1 {
   background: url("assets/img/line-1.png") top left no-repeat;
   height: 91px;
 }
-/* line 37, assets/sass/_timeline.scss */
+/* line 39, assets/sass/_timeline.scss */
 #timeline .line-2 {
   background: url("assets/img/line-2.png") top left no-repeat;
   height: 183px;
 }
-/* line 38, assets/sass/_timeline.scss */
+/* line 40, assets/sass/_timeline.scss */
 #timeline .line-3 {
   background: url("assets/img/line-3.png") top left no-repeat;
   height: 74px;
 }
-/* line 39, assets/sass/_timeline.scss */
+/* line 41, assets/sass/_timeline.scss */
 #timeline .line-4 {
   background: url("assets/img/line-4.png") top left no-repeat;
   height: 116px;
 }
-/* line 41, assets/sass/_timeline.scss */
+/* line 43, assets/sass/_timeline.scss */
 #timeline .callout h3 {
   font: 20px/30px Georgia, Times, "Times New Roman", serif;
   color: #020202;
