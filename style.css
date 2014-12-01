@@ -443,7 +443,7 @@ nav.menu .secondary-menu ul li:hover {
   background-color: #d29c0e;
 }
 /* line 46, assets/sass/_layout.scss */
-nav.menu .secondary-menu ul li:first-child {
+nav.menu .secondary-menu ul li:nth-child(2) {
   width: 50px;
 }
 /* line 48, assets/sass/_layout.scss */
@@ -1686,13 +1686,13 @@ body.pml-open .panel-wrap {
 /* ----------- CEO LETTER ------------- */
 /* line 2, assets/sass/_letters.scss */
 #ceo-letter {
-  left: 500%;
+  left: 600%;
 }
 
 /* ----------- EDITOR LETTER ------------- */
 /* line 8, assets/sass/_letters.scss */
 #editor-letter {
-  left: 600%;
+  left: 500%;
 }
 
 /* ----------- LETTER ------------- */

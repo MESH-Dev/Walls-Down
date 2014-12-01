@@ -43,7 +43,7 @@ nav.menu {
           a:hover{text-decoration: none;}
           &:hover{background-color: $gold;}
         }
-        li:first-child{ width: 50px;}
+        li:nth-child(2){ width: 50px;}
       }
       img{width: 80%; margin: 20px 10px 20px 10px;  @include animate(0.3s); }
 
