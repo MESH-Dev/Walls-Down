@@ -709,7 +709,7 @@ body.credits-open .credits-menu-left {
 
 /* line 192, assets/sass/_layout.scss */
 #open {
-  display: block;
+  display: none;
   z-index: 200;
   position: fixed;
   top: 20px;
@@ -722,22 +722,7 @@ body.credits-open .credits-menu-left {
   }
 }
 
-/* line 197, assets/sass/_layout.scss */
-#close {
-  display: none;
-  z-index: 200;
-  position: fixed;
-  top: 50px;
-  right: 20px;
-}
-@media only screen and (max-width: 320px) {
-  /* line 197, assets/sass/_layout.scss */
-  #close {
-    display: block;
-  }
-}
-
-/* line 204, assets/sass/_layout.scss */
+/* line 199, assets/sass/_layout.scss */
 .panel {
   position: absolute;
   width: 100%;
@@ -746,7 +731,7 @@ body.credits-open .credits-menu-left {
   overflow: auto;
 }
 
-/* line 213, assets/sass/_layout.scss */
+/* line 208, assets/sass/_layout.scss */
 .panel-wrap {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -756,14 +741,14 @@ body.credits-open .credits-menu-left {
   margin-left: 80px;
 }
 @media only screen and (max-width: 320px) {
-  /* line 213, assets/sass/_layout.scss */
+  /* line 208, assets/sass/_layout.scss */
   .panel-wrap {
     margin-left: 0px;
   }
 }
 
 /* ------END OF STORY NAV ---------*/
-/* line 226, assets/sass/_layout.scss */
+/* line 221, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
   height: 0px;
@@ -771,12 +756,12 @@ body.credits-open .credits-menu-left {
   top: -80px;
   float: left;
 }
-/* line 226, assets/sass/_layout.scss */
+/* line 221, assets/sass/_layout.scss */
 .left-nav a {
   position: relative;
   left: 7%;
 }
-/* line 227, assets/sass/_layout.scss */
+/* line 222, assets/sass/_layout.scss */
 .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -784,7 +769,7 @@ body.credits-open .credits-menu-left {
   right: 5px;
 }
 
-/* line 230, assets/sass/_layout.scss */
+/* line 225, assets/sass/_layout.scss */
 .right-nav {
   position: relative;
   height: 0px;
@@ -792,13 +777,13 @@ body.credits-open .credits-menu-left {
   top: -80px;
   float: right;
 }
-/* line 230, assets/sass/_layout.scss */
+/* line 225, assets/sass/_layout.scss */
 .right-nav a {
   float: right;
   position: relative;
   right: 10%;
 }
-/* line 231, assets/sass/_layout.scss */
+/* line 226, assets/sass/_layout.scss */
 .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -807,7 +792,7 @@ body.credits-open .credits-menu-left {
 }
 
 /* ----------- Home ------------- */
-/* line 234, assets/sass/_layout.scss */
+/* line 229, assets/sass/_layout.scss */
 #home .panel-wrap {
   background: url("assets/img/cover-large.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -818,31 +803,35 @@ body.credits-open .credits-menu-left {
   overflow: hidden;
   left: 0;
 }
-/* line 240, assets/sass/_layout.scss */
+/* line 235, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav {
   position: absolute;
+  width: 100%;
   height: 0px;
-  width: 50%;
   top: 90%;
-  right: 1%;
+  right: 2%;
   float: right;
 }
-/* line 240, assets/sass/_layout.scss */
-#home .panel-wrap .right-nav a {
-  float: right;
-  position: relative;
-  right: 10%;
-}
-/* line 241, assets/sass/_layout.scss */
+/* line 237, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
 }
-/* line 242, assets/sass/_layout.scss */
+/* line 238, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav a {
   color: #020202;
+}
+@media only screen and (max-width: 320px) {
+  /* line 229, assets/sass/_layout.scss */
+  #home .panel-wrap {
+    background: url("assets/img/cover-large.jpg") top left no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+  }
 }
 
 /* --------- PANEL IMPORTS --------------*/

@@ -172,16 +172,16 @@ $(function() {
     });
 
      $pushMenuLeft.hover(function(){
-        //$('body').addClass('pml-open');
+        $('body').addClass('pml-open');
       }, function(){
-        //$('body').removeClass('pml-open');
+        $('body').removeClass('pml-open');
      });
 
 
     //CREDITS MENU --------------
     /* push menu left */
     $("#credit-link").click(function(){
-        $('body').addClass("credits-open"); 
+        $('body').addClass("credits-open");
         activeCredits = "credits-open";
     });
 
