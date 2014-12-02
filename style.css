@@ -457,7 +457,162 @@ nav.menu .secondary-menu img {
   transition: all 0.3s;
 }
 
-/* line 55, assets/sass/_layout.scss */
+/* --- Open Menu Desktop --- */
+/* line 60, assets/sass/_layout.scss */
+body.pml-open nav.menu #logo img {
+  margin: 30px 10px 15px 20px;
+}
+/* line 61, assets/sass/_layout.scss */
+body.pml-open nav.menu .tagline {
+  color: white;
+  display: block;
+  font-size: 11px;
+  line-height: 16px;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 20px;
+}
+/* line 63, assets/sass/_layout.scss */
+body.pml-open nav.menu .main-menu {
+  margin-top: 50px;
+}
+/* line 66, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item {
+  margin-bottom: -40px;
+  margin-left: 10px;
+  position: relative;
+  height: 120px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 68, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item .text {
+  width: 130px;
+  position: relative;
+  top: -60px;
+  z-index: 12;
+}
+/* line 69, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item span.num {
+  display: block;
+  display: inline-block;
+  width: 20px;
+  font-size: 48px;
+  color: white;
+  padding-left: 10px;
+}
+/* line 70, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item span.title {
+  display: inline-block;
+  width: 70px;
+  font-size: 14px;
+  color: white;
+  line-height: 18px;
+  color: white;
+  padding-left: 10px;
+}
+/* line 71, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item img {
+  display: block;
+  position: relative;
+  z-index: 2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 72, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+/* line 75, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-item:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+}
+/* line 78, assets/sass/_layout.scss */
+body.pml-open nav.menu .menu-active {
+  background-color: transparent;
+}
+/* line 80, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu {
+  margin-top: 200px;
+}
+/* line 83, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu ul {
+  margin: 20px 0px 20px 0px;
+}
+/* line 85, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu ul li {
+  list-style-type: none;
+  font-size: 14px;
+  color: white;
+  line-height: 18px;
+  color: white;
+  padding: 3px 0px 3px 20px;
+  width: 140px;
+}
+/* line 87, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu ul li a {
+  color: white;
+}
+/* line 88, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu ul li a:hover {
+  text-decoration: none;
+}
+/* line 89, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu ul li:hover {
+  background-color: #d29c0e;
+}
+/* line 92, assets/sass/_layout.scss */
+body.pml-open nav.menu .secondary-menu img {
+  margin: 20px 0px 20px 20px;
+}
+
+/* line 97, assets/sass/_layout.scss */
+nav.push-menu-left {
+  top: 0;
+  height: 100%;
+  width: 80px;
+  overflow: hidden;
+  border-right: 1px solid white;
+  left: 0px;
+}
+/* line 104, assets/sass/_layout.scss */
+nav.push-menu-left .wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  padding-right: 15px;
+}
+@media only screen and (max-width: 320px) {
+  /* line 97, assets/sass/_layout.scss */
+  nav.push-menu-left {
+    left: -80px;
+  }
+}
+
+/* line 111, assets/sass/_layout.scss */
+body.pml-open nav.push-menu-left {
+  left: 0;
+  width: 160px;
+}
+
+/* line 117, assets/sass/_layout.scss */
+body.pml-open .panel-wrap {
+  margin-left: 160px;
+}
+
+/* line 123, assets/sass/_layout.scss */
 .credits-menu-left {
   position: fixed;
   overflow: hidden;
@@ -474,7 +629,7 @@ nav.menu .secondary-menu img {
   z-index: 10;
   color: white;
 }
-/* line 67, assets/sass/_layout.scss */
+/* line 135, assets/sass/_layout.scss */
 .credits-menu-left .credits-wrap {
   padding: 30px 15px 15px 15px;
   position: absolute;
@@ -485,45 +640,51 @@ nav.menu .secondary-menu img {
   /* Increase this value (in negative) for cross-browser compatibility */
   overflow: auto;
 }
-/* line 76, assets/sass/_layout.scss */
+/* line 144, assets/sass/_layout.scss */
 .credits-menu-left p {
   font-size: 11px;
   line-height: 17px;
   color: white;
   padding-right: 10px;
 }
-/* line 79, assets/sass/_layout.scss */
+/* line 147, assets/sass/_layout.scss */
 .credits-menu-left p.top-one {
   margin-bottom: 140px;
 }
-/* line 80, assets/sass/_layout.scss */
+/* line 148, assets/sass/_layout.scss */
 .credits-menu-left p.top-two {
   margin-bottom: 40px;
 }
-/* line 81, assets/sass/_layout.scss */
+/* line 149, assets/sass/_layout.scss */
 .credits-menu-left h4 {
   font: 11px/17px "Cabin", sans-serif;
   color: white;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-/* line 82, assets/sass/_layout.scss */
+/* line 150, assets/sass/_layout.scss */
 .credits-menu-left a {
   color: white;
   text-decoration: underline;
 }
+@media only screen and (max-width: 320px) {
+  /* line 123, assets/sass/_layout.scss */
+  .credits-menu-left {
+    left: -250px;
+  }
+}
 
-/* line 84, assets/sass/_layout.scss */
+/* line 155, assets/sass/_layout.scss */
 body.pml-open.credits-open .credits-menu-left {
   left: 160px;
 }
 
-/* line 88, assets/sass/_layout.scss */
+/* line 159, assets/sass/_layout.scss */
 body.credits-open .credits-menu-left {
   left: 80px;
 }
 
-/* line 92, assets/sass/_layout.scss */
+/* line 166, assets/sass/_layout.scss */
 .close-credits-menu {
   position: absolute;
   top: 10px;
@@ -531,165 +692,13 @@ body.credits-open .credits-menu-left {
   z-index: 20;
   color: white;
 }
-/* line 97, assets/sass/_layout.scss */
+/* line 171, assets/sass/_layout.scss */
 .close-credits-menu:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
 
-/* --- Open Menu Desktop --- */
-/* line 105, assets/sass/_layout.scss */
-body.pml-open nav.menu #logo img {
-  margin: 30px 10px 15px 20px;
-}
-/* line 106, assets/sass/_layout.scss */
-body.pml-open nav.menu .tagline {
-  color: white;
-  display: block;
-  font-size: 11px;
-  line-height: 16px;
-  font-style: italic;
-  font-weight: bold;
-  margin-left: 20px;
-}
-/* line 108, assets/sass/_layout.scss */
-body.pml-open nav.menu .main-menu {
-  margin-top: 50px;
-}
-/* line 111, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item {
-  margin-bottom: -40px;
-  margin-left: 20px;
-  position: relative;
-  height: 120px;
-  overflow: hidden;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-/* line 113, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item .text {
-  width: 130px;
-  position: relative;
-  top: -60px;
-  z-index: 12;
-}
-/* line 114, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item span.num {
-  display: block;
-  display: inline-block;
-  width: 20px;
-  font-size: 48px;
-  color: white;
-  padding-left: 10px;
-}
-/* line 115, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item span.title {
-  display: inline-block;
-  width: 70px;
-  font-size: 14px;
-  color: white;
-  line-height: 18px;
-  color: white;
-  padding-left: 10px;
-}
-/* line 116, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item img {
-  display: block;
-  position: relative;
-  z-index: 2;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-/* line 117, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item:hover {
-  cursor: pointer;
-  background-color: transparent;
-}
-/* line 120, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-item:hover img {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
-}
-/* line 123, assets/sass/_layout.scss */
-body.pml-open nav.menu .menu-active {
-  background-color: transparent;
-}
-/* line 125, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu {
-  margin-top: 200px;
-}
-/* line 128, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul {
-  margin: 20px 0px 20px 0px;
-}
-/* line 130, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul li {
-  list-style-type: none;
-  font-size: 14px;
-  color: white;
-  line-height: 18px;
-  color: white;
-  padding: 3px 0px 3px 20px;
-  width: 140px;
-}
-/* line 132, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul li a {
-  color: white;
-}
-/* line 133, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul li a:hover {
-  text-decoration: none;
-}
-/* line 134, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu ul li:hover {
-  background-color: #d29c0e;
-}
-/* line 137, assets/sass/_layout.scss */
-body.pml-open nav.menu .secondary-menu img {
-  margin: 20px 0px 20px 20px;
-}
-
-/* line 141, assets/sass/_layout.scss */
-nav.push-menu-left {
-  top: 0;
-  height: 100%;
-  width: 80px;
-  overflow: hidden;
-  border-right: 1px solid white;
-}
-/* line 147, assets/sass/_layout.scss */
-nav.push-menu-left .wrapper {
-  overflow-y: auto;
-  height: 100%;
-  width: 100%;
-  padding-right: 15px;
-}
-
-/* line 150, assets/sass/_layout.scss */
-nav.push-menu-left {
-  left: 0px;
-}
-
-/* line 154, assets/sass/_layout.scss */
-body.pml-open nav.push-menu-left {
-  left: 0;
-  width: 160px;
-}
-
-/* line 160, assets/sass/_layout.scss */
-body.pml-open .panel-wrap {
-  margin-left: 160px;
-}
-
-/* line 170, assets/sass/_layout.scss */
+/* line 180, assets/sass/_layout.scss */
 .mask {
   position: fixed;
   top: 0;
@@ -698,23 +707,37 @@ body.pml-open .panel-wrap {
   height: 100%;
 }
 
-/* line 182, assets/sass/_layout.scss */
+/* line 192, assets/sass/_layout.scss */
 #open {
+  display: block;
   z-index: 200;
   position: fixed;
   top: 20px;
   right: 20px;
 }
+@media only screen and (max-width: 320px) {
+  /* line 192, assets/sass/_layout.scss */
+  #open {
+    display: block;
+  }
+}
 
-/* line 183, assets/sass/_layout.scss */
+/* line 197, assets/sass/_layout.scss */
 #close {
+  display: none;
   z-index: 200;
   position: fixed;
   top: 50px;
   right: 20px;
 }
+@media only screen and (max-width: 320px) {
+  /* line 197, assets/sass/_layout.scss */
+  #close {
+    display: block;
+  }
+}
 
-/* line 185, assets/sass/_layout.scss */
+/* line 204, assets/sass/_layout.scss */
 .panel {
   position: absolute;
   width: 100%;
@@ -723,7 +746,7 @@ body.pml-open .panel-wrap {
   overflow: auto;
 }
 
-/* line 194, assets/sass/_layout.scss */
+/* line 213, assets/sass/_layout.scss */
 .panel-wrap {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -732,9 +755,15 @@ body.pml-open .panel-wrap {
   transition: all 0.3s;
   margin-left: 80px;
 }
+@media only screen and (max-width: 320px) {
+  /* line 213, assets/sass/_layout.scss */
+  .panel-wrap {
+    margin-left: 0px;
+  }
+}
 
 /* ------END OF STORY NAV ---------*/
-/* line 202, assets/sass/_layout.scss */
+/* line 226, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
   height: 0px;
@@ -742,12 +771,12 @@ body.pml-open .panel-wrap {
   top: -80px;
   float: left;
 }
-/* line 202, assets/sass/_layout.scss */
+/* line 226, assets/sass/_layout.scss */
 .left-nav a {
   position: relative;
   left: 7%;
 }
-/* line 203, assets/sass/_layout.scss */
+/* line 227, assets/sass/_layout.scss */
 .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -755,7 +784,7 @@ body.pml-open .panel-wrap {
   right: 5px;
 }
 
-/* line 206, assets/sass/_layout.scss */
+/* line 230, assets/sass/_layout.scss */
 .right-nav {
   position: relative;
   height: 0px;
@@ -763,13 +792,13 @@ body.pml-open .panel-wrap {
   top: -80px;
   float: right;
 }
-/* line 206, assets/sass/_layout.scss */
+/* line 230, assets/sass/_layout.scss */
 .right-nav a {
   float: right;
   position: relative;
   right: 10%;
 }
-/* line 207, assets/sass/_layout.scss */
+/* line 231, assets/sass/_layout.scss */
 .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -778,7 +807,7 @@ body.pml-open .panel-wrap {
 }
 
 /* ----------- Home ------------- */
-/* line 210, assets/sass/_layout.scss */
+/* line 234, assets/sass/_layout.scss */
 #home .panel-wrap {
   background: url("assets/img/cover-large.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -789,7 +818,7 @@ body.pml-open .panel-wrap {
   overflow: hidden;
   left: 0;
 }
-/* line 216, assets/sass/_layout.scss */
+/* line 240, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav {
   position: absolute;
   height: 0px;
@@ -798,20 +827,20 @@ body.pml-open .panel-wrap {
   right: 1%;
   float: right;
 }
-/* line 216, assets/sass/_layout.scss */
+/* line 240, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav a {
   float: right;
   position: relative;
   right: 10%;
 }
-/* line 217, assets/sass/_layout.scss */
+/* line 241, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
 }
-/* line 218, assets/sass/_layout.scss */
+/* line 242, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav a {
   color: #020202;
 }

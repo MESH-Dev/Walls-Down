@@ -967,11 +967,11 @@ $(function() {
 
    
     /* push menu left */
-    $(".toggle-push-left").click(function(){
-        $('body').addClass("pml-open");
-        activeNav = "pml-open";
-
-    });
+    $(".toggle-push-left").click(
+      function(){
+        $('body').toggleClass("pml-open");
+      }
+    );
 
     $(".mask").click(function(){
         $('body').removeClass(activeNav);
@@ -982,15 +982,16 @@ $(function() {
     /* hide active menu if close menu button is clicked */
     $(".close-menu").click(function(){
         $('body').removeClass(activeNav);
-        $('body').removeClass(activeCredits);
+        $('body').removeClass(".credits-open");
         activeNav = "";
     });
 
      $pushMenuLeft.hover(function(){
-        $('body').addClass('pml-open');
+        //$('body').addClass('pml-open');
       }, function(){
-        $('body').removeClass('pml-open');
+        //$('body').removeClass('pml-open');
      });
+
 
     //CREDITS MENU --------------
     /* push menu left */
@@ -1008,7 +1009,7 @@ $(function() {
     });
 });
 
-/*------------------ MENU ACTIVE TOGGLE-----------------*/
+/*------------------ MENU ACTIVE/Hover TOGGLE-----------------*/
 $(function() {
   $(".main-menu a").click(function(){
     $("nav.menu a div").removeClass('menu-active');

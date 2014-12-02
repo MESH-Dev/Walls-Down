@@ -48,8 +48,76 @@ nav.menu {
       img{width: 80%; margin: 20px 10px 20px 10px;  @include animate(0.3s); }
 
     }
+
+    @include breakpoint(phone) {
+      
+    }
  
 }
+ 
+/* --- Open Menu Desktop --- */
+body.pml-open nav.menu{
+  #logo img{margin: 30px 10px 15px 20px; }
+    .tagline{color: $white; display:block; font-size:11px; line-height:16px; font-style: italic; font-weight: bold; margin-left: 20px; }
+    
+    .main-menu{
+      margin-top:50px;
+    }
+    .menu-item{
+      margin-bottom: -40px; margin-left: 10px;  position:relative; height: 120px; overflow: hidden; @include animate(0.3s);
+      .text{width: 130px; position:relative; top: -60px;  z-index:12; }
+      span.num{display: block; display: inline-block; width: 20px; font-size: 48px; color: $white; padding-left:10px; }
+      span.title{display: inline-block; width: 70px; font-size: 14px; color: $white; line-height: 18px; color: $white; padding-left:10px; }
+      img{display: block; position: relative; z-index:2; @include opacity(0.5);  @include animate(0.3s);}
+      &:hover{
+        cursor: pointer; 
+        background-color: transparent;
+        img{  @include opacity(0.8);}
+      }
+    }
+    .menu-active{background-color: transparent;}
+    
+    .secondary-menu{
+      //position: fixed; bottom: 0px;
+      margin-top: 200px;
+      ul{
+        margin: 20px 0px 20px 0px;
+        li{
+          list-style-type: none; font-size: 14px; color: $white; line-height: 18px; color: $white; padding: 3px 0px 3px 20px; width: 140px;
+          a{color: $white} 
+          a:hover{text-decoration: none;}
+          &:hover{background-color: $gold;}
+        }
+      }
+      img{margin: 20px 0px 20px 20px }
+    }
+
+}
+
+nav.push-menu-left {
+    top: 0;
+    height: 100%;
+    width: 80px;
+    overflow: hidden;
+    border-right:1px solid $white;
+    left: 0px;
+    .wrapper {overflow-y:auto; overflow-x:hidden;height: 100%; width:100%; padding-right: 15px;  }
+    @include breakpoint(small) {
+      left: -80px;
+    }
+
+}
+ 
+body.pml-open nav.push-menu-left {
+    left: 0;
+    width: 160px;
+}
+
+body.pml-open{
+  .panel-wrap{margin-left: 160px;}
+}
+
+
 
 //CREDITS MENU 
 .credits-menu-left{
@@ -80,6 +148,9 @@ nav.menu {
     p.top-two{margin-bottom: 40px;}
     h4{font:11px/17px $cabin ; color: $white; letter-spacing: 0.1em; text-transform:uppercase;}
     a{color:$white; text-decoration:underline;}
+    @include breakpoint(small) {
+       left: -250px;
+    }
 }
 body.pml-open.credits-open .credits-menu-left{
     left: 160px;
@@ -87,6 +158,9 @@ body.pml-open.credits-open .credits-menu-left{
 
 body.credits-open .credits-menu-left{
     left: 80px;
+    @include breakpoint(small) {
+       
+    }
 }
 
 .close-credits-menu{
@@ -96,70 +170,6 @@ body.credits-open .credits-menu-left{
   color: $white;
   &:hover{@include opacity(0.7)}
 }
-
-
-
-
-/* --- Open Menu Desktop --- */
-body.pml-open nav.menu{
-  #logo img{margin: 30px 10px 15px 20px; }
-    .tagline{color: $white; display:block; font-size:11px; line-height:16px; font-style: italic; font-weight: bold; margin-left: 20px; }
-    
-    .main-menu{
-      margin-top:50px;
-    }
-    .menu-item{
-      margin-bottom: -40px; margin-left: 20px;  position:relative; height: 120px; overflow: hidden; @include animate(0.3s);
-      .text{width: 130px; position:relative; top: -60px;  z-index:12; }
-      span.num{display: block; display: inline-block; width: 20px; font-size: 48px; color: $white; padding-left:10px; }
-      span.title{display: inline-block; width: 70px; font-size: 14px; color: $white; line-height: 18px; color: $white; padding-left:10px; }
-      img{display: block; position: relative; z-index:2; @include opacity(0.5);  @include animate(0.3s);}
-      &:hover{
-        cursor: pointer; 
-        background-color: transparent;
-        img{  @include opacity(0.8);}
-      }
-    }
-    .menu-active{background-color: transparent;}
-    
-    .secondary-menu{
-      //position: fixed; bottom: 0px;
-      margin-top: 200px;
-      ul{
-        margin: 20px 0px 20px 0px;
-        li{
-          list-style-type: none; font-size: 14px; color: $white; line-height: 18px; color: $white; padding: 3px 0px 3px 20px; width: 140px;
-          a{color: $white} 
-          a:hover{text-decoration: none;}
-          &:hover{background-color: $gold;}
-        }
-      }
-      img{margin: 20px 0px 20px 20px }
-    }
-}
-
-nav.push-menu-left {
-    top: 0;
-    height: 100%;
-    width: 80px;
-    overflow: hidden;
-    border-right:1px solid $white;
-    .wrapper {overflow-y:auto;height: 100%; width:100%; padding-right: 15px;  }
-}
-
-nav.push-menu-left {
-    left: 0px;
- 
-}
-body.pml-open nav.push-menu-left {
-    left: 0;
-    width: 160px;
-}
-
-body.pml-open{
-  .panel-wrap{margin-left: 160px;}
-}
-
 
 
 
@@ -179,8 +189,17 @@ body.pml-open{
  
 
 
-#open{z-index: 200; position: fixed; top: 20px; right: 20px;}
-#close{z-index: 200; position: fixed; top: 50px; right: 20px;}
+#open{display:block; z-index: 200; position: fixed; top: 20px; right: 20px;
+  @include breakpoint(small) {
+      display:block;
+    }
+}
+#close{display:none; z-index: 200; position: fixed; top: 50px; right: 20px;
+  @include breakpoint(small) {
+      display:block;
+  }
+
+}
 
 .panel {
   position: absolute;
@@ -192,8 +211,13 @@ body.pml-open{
 }
 
 .panel-wrap{
-   @include animate(0.3s);
-   margin-left: 80px; 
+  @include animate(0.3s);
+  margin-left: 80px; 
+  
+  @include breakpoint(small) {
+    margin-left: 0px;  
+  }
+
  
 }
 
