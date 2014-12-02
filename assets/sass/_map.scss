@@ -1,24 +1,35 @@
 /* ----------- INTERACTIVE MAP ------------- */
 #map {
     left: 300%;
-    overflow: hidden;
     .panel-wrap{
         height: 100%;
+
         overflow: hidden;
         background: url('assets/img/map-bg.jpg') top left no-repeat;
         @include background-size(cover);
+        @include breakpoint(small) {
+            overflow: auto;
+            width: 100%;
+        }
     }
 
     .map-intro{
         padding: 25px 0px 0px 50px; position:relative; z-index: 1000;
-        h1{font:32px/36px $georgia ; color: $white; display: inline; float:left; }
+        h1{font:32px/36px $georgia ; color: $white; display: inline; float:left; @include breakpoint(small) {padding: 10% 10% 10% 10%; width: 80%;} }
         .intro-text{
             width:380px; display: inline; float:left; margin: 0px 0px 0px 30px; padding:10px 10px 0px 10px ;
             background: rgba(0,0,0,0.7); 
             p{font:12px/15px $georgia; color: $white; font-style: italic;}
+            @include breakpoint(small) {
+                padding: 5%; width: 70%;
+                background: rgba(0,0,0,0.3); 
+            }
 
         }
-        #map-more{  }
+        @include breakpoint(small) {
+            padding: 10% 0% 0% 0%;
+        }
+
     }
 
     .zoom-out{
@@ -28,6 +39,9 @@
         right: 20px;
         a{color: white;}
         a:hover{text-decoration: underline;}
+        @include breakpoint(small) {
+          display: none;
+        }
     }
 
 
@@ -45,6 +59,7 @@
        // font-family: 'PT Serif', georgia, serif;
         //font-size: 48px;
         //line-height: 1.5;
+        
     }
     .impress-enabled .step {
         margin: 0;
@@ -66,17 +81,38 @@
         width: 950px;
         padding: 0px;
         max-height: 230px;
-       
         font-size: 20px;
         span:hover{opacity: 0.7; cursor: pointer;}
         z-index: 23;
         -webkit-transition: max-height 0.8s;
         -moz-transition: max-height 0.8s;
         transition: max-height 0.8s;
+
+        @include breakpoint(small) {
+            padding: 10%;
+            width: 100%;
+            max-height: 80%;
+            font-size: 14px; line-height:20px;
+        }
+
+
     }
-    span.number{color: $gold; font-family: georgia; font-size: 110px; -webkit-transition: all .5s ease-in; position:relative; z-index: 10000;}
-    span.subtext{font:24px/30px $cabin; font-weight:bold; color: $gold; display:block;  text-transform:uppercase; -webkit-transition: all .5s ease-in; }
-    .number-wrap{display:inline; float:left; width: 350px; text-align: right; }
+    span.number{
+        color: $gold; font-family: georgia; font-size: 110px; 
+        -webkit-transition: all .5s ease-in; position:relative; 
+        z-index: 10000; 
+        @include breakpoint(small){font-size:40px; line-height:45px; width:100%;  float: left;}
+    }
+    span.subtext{
+        font:16px/20px $cabin; font-weight:bold; color: $gold; display:block;  
+        text-transform:uppercase; -webkit-transition: all .5s ease-in; 
+    }
+    
+
+    .number-wrap{
+        display:inline; float:left; width: 350px; text-align: right; 
+        @include breakpoint(small){ text-align: left; width: 100%; padding: 0px 0px 10px 0px; } 
+    }
    
     
     
@@ -94,35 +130,54 @@
             line-height: 26px;
         }
         img{max-width: 100%; margin: 10px 0px 10px 0px;}
+
+
+        @include breakpoint(small) {
+          padding: 0%;
+          margin-left: 0;
+          width: 100%;
+          max-height: 80%;
+          opacity: 1;
+          p{
+                font-size: 14px; line-height:20px;
+          }
+        }
     }
 
     #wa {
-        .number-wrap{width: 400px;}
-        .content{width: 450px;}
+        .number-wrap{width: 400px; @include breakpoint(small){width: 100%; padding: 0px 0px 10px 0px;} }
+        .content{width: 450px; @include breakpoint(small){padding: 0%; width: 100%;}}
     }
     #oh {
-        .number-wrap{width: 400px;}
-        .content{width: 450px;}
+        .number-wrap{width: 400px; @include breakpoint(small){width: 100%; padding: 0px 0px 10px 0px;}}
+        .content{width: 450px; @include breakpoint(small){padding: 0%; width: 100%;}}
     }
 
     #usa{
-        .number-wrap{width: 900px; display:block;}
-        .content{width: 500px; display:block;}
-         span.number{font-size: 170px;}
+        .number-wrap{width: 900px; display:block; @include breakpoint(small){width: 100%; padding: 0px 0px 10px 0px;}}
+        .content{width: 500px; display:block; @include breakpoint(small){padding: 0%; width: 100%;}}
+         span.number{font-size: 170px; @include breakpoint(small){font-size: 40px}}
 
     }
  
     .step.active div.content{ opacity: 1; -webkit-transition: all 2s ease-in;} 
 
- .left-nav{position: absolute; height: 0px; width: 30%; top:92%; left: 8%; float:left; a{position: relative;  left: 7%;}
+ .left-nav{
+    position: absolute; height: 0px; width: 30%; top:92%; left: 8%; float:left; 
+    a{position: relative;  left: 7%;}
     .fa{font-size: 45px; position:relative; top: 8px; right: 5px;}
+
+    @include breakpoint(small){
+        position: relative; height: 0px; width: 50%; top:-80px; float:left; 
+    }
+
   }
-  .right-nav{position: absolute; height: 0px; top:92%; right: 1%;  float: right; a{float: right; position: relative;  right: 10%;}
+  .right-nav{
+    position: absolute; height: 0px; top:92%; right: 1%;  float: right;
+    a{float: right; position: relative;  right: 10%;}
     .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}
-  }
- 
-
+    @include breakpoint(small){
+        position: relative; height: 0px;  width: 50%;  top:-80px; float: right; 
+    }
+  } 
 }
-
-//.impress-enabled          { pointer-events: none }
-//.impress-enabled #impress { pointer-events: auto }

@@ -45,7 +45,10 @@
   .even{
     padding-left:340px;
     .vertical-line{
-       margin: 10px 0px 10px 50% ;
+       margin: 10px 0px 10px 20px;
+       @include breakpoint(small) {
+        margin: 10px 0px 10px 50% ;
+      }
     }
     @include breakpoint(small) {
       padding-left: 10%;

@@ -25,6 +25,9 @@
     p{color: $gray; font-style: italic; width: 330px; padding: 0px 0px 20px 120px;}
     p:last-child{padding-bottom: 150px;}
     margin-bottom: 80px;
+     @include breakpoint(small) {
+       @include background-size(contain);
+    }
   }
 
   .panel-two{
@@ -38,6 +41,10 @@
       p,a{color: $white;} 
     }
     margin-bottom: 80px;
+
+    @include breakpoint(small) {
+       @include background-size(contain);
+    }
   }
 
   .panel-three{

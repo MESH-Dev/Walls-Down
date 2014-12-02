@@ -1182,7 +1182,16 @@ body.credits-open .credits-menu-left {
 #nicu .panel-one p:last-child {
   padding-bottom: 150px;
 }
-/* line 30, assets/sass/_nicu.scss */
+@media only screen and (max-width: 320px) {
+  /* line 21, assets/sass/_nicu.scss */
+  #nicu .panel-one {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+}
+/* line 33, assets/sass/_nicu.scss */
 #nicu .panel-two {
   background: url("assets/img/nicu-2.jpg") top right no-repeat;
   -webkit-background-size: cover;
@@ -1191,91 +1200,100 @@ body.credits-open .credits-menu-left {
   background-size: cover;
   margin-bottom: 80px;
 }
-/* line 33, assets/sass/_nicu.scss */
+/* line 36, assets/sass/_nicu.scss */
 #nicu .panel-two .panel-text {
   width: 390px;
   padding: 450px 0px 80px 45px;
 }
-/* line 34, assets/sass/_nicu.scss */
+/* line 37, assets/sass/_nicu.scss */
 #nicu .panel-two .panel-text h2 {
   color: white;
 }
-/* line 38, assets/sass/_nicu.scss */
+/* line 41, assets/sass/_nicu.scss */
 #nicu .panel-two .panel-text p, #nicu .panel-two .panel-text a {
   color: white;
 }
-/* line 43, assets/sass/_nicu.scss */
+@media only screen and (max-width: 320px) {
+  /* line 33, assets/sass/_nicu.scss */
+  #nicu .panel-two {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+}
+/* line 50, assets/sass/_nicu.scss */
 #nicu .panel-three {
   margin-bottom: 80px;
 }
-/* line 44, assets/sass/_nicu.scss */
+/* line 51, assets/sass/_nicu.scss */
 #nicu .panel-three .panel-left {
   padding: 0px 0px 0px 45px;
   width: 380px;
 }
-/* line 48, assets/sass/_nicu.scss */
+/* line 55, assets/sass/_nicu.scss */
 #nicu .panel-three .panel-right {
   padding: 40px 0px 20px 70px;
   width: 380px;
 }
-/* line 56, assets/sass/_nicu.scss */
+/* line 63, assets/sass/_nicu.scss */
 #nicu .panel-four {
   margin-bottom: 20px;
 }
-/* line 57, assets/sass/_nicu.scss */
+/* line 64, assets/sass/_nicu.scss */
 #nicu .panel-four .panel-left {
   padding: 0px 0px 10px 45px;
   width: 380px;
 }
-/* line 61, assets/sass/_nicu.scss */
+/* line 68, assets/sass/_nicu.scss */
 #nicu .panel-four .panel-right {
   padding: 90px 0px 0px 50px;
   width: 600px;
 }
-/* line 64, assets/sass/_nicu.scss */
+/* line 71, assets/sass/_nicu.scss */
 #nicu .panel-four .panel-right .panel-text {
   padding: 30px 0px 180px 20px;
   width: 380px;
 }
-/* line 74, assets/sass/_nicu.scss */
+/* line 81, assets/sass/_nicu.scss */
 #nicu .panel-five {
   background: url("assets/img/nicu-5.jpg") top left no-repeat;
 }
-/* line 77, assets/sass/_nicu.scss */
+/* line 84, assets/sass/_nicu.scss */
 #nicu .panel-five .panel-text {
   width: 390px;
   padding: 615px 0px 80px 530px;
   overflow-y: visible;
 }
-/* line 87, assets/sass/_nicu.scss */
+/* line 94, assets/sass/_nicu.scss */
 #nicu .panel-six {
   margin-bottom: 80px;
 }
-/* line 88, assets/sass/_nicu.scss */
+/* line 95, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-left {
   padding: 0px 0px 10px 45px;
   width: 420px;
 }
-/* line 91, assets/sass/_nicu.scss */
+/* line 98, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-left .panel-text {
   width: 380px;
 }
-/* line 94, assets/sass/_nicu.scss */
+/* line 101, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-left .panel-text p.small-italic {
   font-size: 12px;
   line-height: 20px;
   font-style: italic;
 }
-/* line 96, assets/sass/_nicu.scss */
+/* line 103, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-left img {
   margin: -10px 0px 0px 30px;
 }
-/* line 99, assets/sass/_nicu.scss */
+/* line 106, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-right {
   width: 400px;
   padding: 220px 0px 0px 45px;
 }
-/* line 107, assets/sass/_nicu.scss */
+/* line 114, assets/sass/_nicu.scss */
 #nicu .panel-seven {
   background: url("assets/img/nicu-7.jpg") top right no-repeat;
   -webkit-background-size: cover;
@@ -1284,53 +1302,53 @@ body.credits-open .credits-menu-left {
   background-size: cover;
   margin-bottom: 80px;
 }
-/* line 110, assets/sass/_nicu.scss */
+/* line 117, assets/sass/_nicu.scss */
 #nicu .panel-seven .panel-text {
   width: 390px;
   padding: 50px 0px 80px 45px;
 }
-/* line 111, assets/sass/_nicu.scss */
+/* line 118, assets/sass/_nicu.scss */
 #nicu .panel-seven .panel-text h2 {
   color: white;
 }
-/* line 115, assets/sass/_nicu.scss */
+/* line 122, assets/sass/_nicu.scss */
 #nicu .panel-seven .panel-text p, #nicu .panel-seven .panel-text a {
   color: white;
 }
-/* line 116, assets/sass/_nicu.scss */
+/* line 123, assets/sass/_nicu.scss */
 #nicu .panel-seven .panel-text blockquote {
   color: #d29c0e;
 }
-/* line 122, assets/sass/_nicu.scss */
+/* line 129, assets/sass/_nicu.scss */
 #nicu .panel-eight {
   margin-bottom: 150px;
 }
-/* line 123, assets/sass/_nicu.scss */
+/* line 130, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-left {
   padding: 100px 0px 10px 45px;
   width: 420px;
 }
-/* line 126, assets/sass/_nicu.scss */
+/* line 133, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-left .panel-text {
   width: 380px;
   padding: 30px 0px 0px 0px;
 }
-/* line 129, assets/sass/_nicu.scss */
+/* line 136, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-left .panel-text p.small-italic {
   font-size: 12px;
   line-height: 20px;
   font-style: italic;
 }
-/* line 131, assets/sass/_nicu.scss */
+/* line 138, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-left img {
   margin: -10px 0px 0px 30px;
 }
-/* line 134, assets/sass/_nicu.scss */
+/* line 141, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-right {
   width: 400px;
   padding: 00px 0px 0px 45px;
 }
-/* line 142, assets/sass/_nicu.scss */
+/* line 149, assets/sass/_nicu.scss */
 #nicu .panel-nine {
   background: url("assets/img/nicu-9.jpg") top right no-repeat;
   -webkit-background-size: cover;
@@ -1339,39 +1357,39 @@ body.credits-open .credits-menu-left {
   background-size: cover;
   margin-bottom: 130px;
 }
-/* line 146, assets/sass/_nicu.scss */
+/* line 153, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full1 {
   padding: 30px 0px 0px 600px;
   width: 380px;
 }
-/* line 152, assets/sass/_nicu.scss */
+/* line 159, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full2 {
   padding: 80px 0px 80px 45px;
   width: 380px;
 }
-/* line 153, assets/sass/_nicu.scss */
+/* line 160, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full2 blockquote {
   color: #d29c0e;
 }
-/* line 154, assets/sass/_nicu.scss */
+/* line 161, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full2 p, #nicu .panel-nine .panel-full2 a {
   color: white;
 }
-/* line 163, assets/sass/_nicu.scss */
+/* line 170, assets/sass/_nicu.scss */
 #nicu .panel-ten {
   margin-bottom: 150px;
 }
-/* line 164, assets/sass/_nicu.scss */
+/* line 171, assets/sass/_nicu.scss */
 #nicu .panel-ten .panel-left {
   padding: 50px 0px 10px 45px;
   width: 460px;
 }
-/* line 168, assets/sass/_nicu.scss */
+/* line 175, assets/sass/_nicu.scss */
 #nicu .panel-ten .panel-right {
   padding: 0px 0px 10px 15px;
   width: 400px;
 }
-/* line 176, assets/sass/_nicu.scss */
+/* line 183, assets/sass/_nicu.scss */
 #nicu .panel-eleven {
   background: url("assets/img/nicu-11.jpg") top right no-repeat;
   -webkit-background-size: cover;
@@ -1380,47 +1398,47 @@ body.credits-open .credits-menu-left {
   background-size: cover;
   margin-bottom: 80px;
 }
-/* line 179, assets/sass/_nicu.scss */
+/* line 186, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-left {
   padding: 130px 0px 30px 45px;
   width: 360px;
 }
-/* line 180, assets/sass/_nicu.scss */
+/* line 187, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-left blockquote {
   color: #d29c0e;
 }
-/* line 181, assets/sass/_nicu.scss */
+/* line 188, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-left p, #nicu .panel-eleven .panel-left a {
   color: white;
 }
-/* line 185, assets/sass/_nicu.scss */
+/* line 192, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-right {
   padding: 650px 0px 30px 45px;
   width: 380px;
 }
-/* line 186, assets/sass/_nicu.scss */
+/* line 193, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-right h2 {
   color: white;
 }
-/* line 187, assets/sass/_nicu.scss */
+/* line 194, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-right p, #nicu .panel-eleven .panel-right a {
   color: white;
 }
-/* line 194, assets/sass/_nicu.scss */
+/* line 201, assets/sass/_nicu.scss */
 #nicu .panel-twelve {
   margin-bottom: 100px;
 }
-/* line 195, assets/sass/_nicu.scss */
+/* line 202, assets/sass/_nicu.scss */
 #nicu .panel-twelve .panel-left {
   padding: 0px 0px 0px 45px;
   width: 380px;
 }
-/* line 199, assets/sass/_nicu.scss */
+/* line 206, assets/sass/_nicu.scss */
 #nicu .panel-twelve .panel-right {
   padding: 0px 0px 10px 45px;
   width: 580px;
 }
-/* line 206, assets/sass/_nicu.scss */
+/* line 213, assets/sass/_nicu.scss */
 #nicu .left-nav a, #nicu .right-nav a {
   text-decoration: none;
 }
@@ -1523,7 +1541,13 @@ body.credits-open .credits-menu-left {
 }
 /* line 47, assets/sass/_timeline.scss */
 #timeline .even .vertical-line {
-  margin: 10px 0px 10px 50%;
+  margin: 10px 0px 10px 20px;
+}
+@media only screen and (max-width: 320px) {
+  /* line 47, assets/sass/_timeline.scss */
+  #timeline .even .vertical-line {
+    margin: 10px 0px 10px 50%;
+  }
 }
 @media only screen and (max-width: 320px) {
   /* line 45, assets/sass/_timeline.scss */
@@ -1531,49 +1555,49 @@ body.credits-open .credits-menu-left {
     padding-left: 10%;
   }
 }
-/* line 56, assets/sass/_timeline.scss */
+/* line 59, assets/sass/_timeline.scss */
 #timeline .odd .vertical-line {
   margin: 10px 0px 10px 540px;
 }
 @media only screen and (max-width: 320px) {
-  /* line 56, assets/sass/_timeline.scss */
+  /* line 59, assets/sass/_timeline.scss */
   #timeline .odd .vertical-line {
     margin: 10px 0px 10px 50%;
   }
 }
-/* line 63, assets/sass/_timeline.scss */
+/* line 66, assets/sass/_timeline.scss */
 #timeline .line-title {
   background: url("assets/img/line-2.png") top left no-repeat;
   height: 183px;
   margin: 10px 0px 10px 280px;
 }
 @media only screen and (max-width: 320px) {
-  /* line 63, assets/sass/_timeline.scss */
+  /* line 66, assets/sass/_timeline.scss */
   #timeline .line-title {
     margin: 10px 0px 10px 50%;
   }
 }
-/* line 68, assets/sass/_timeline.scss */
+/* line 71, assets/sass/_timeline.scss */
 #timeline .line-1 {
   background: url("assets/img/line-1.png") top left no-repeat;
   height: 91px;
 }
-/* line 69, assets/sass/_timeline.scss */
+/* line 72, assets/sass/_timeline.scss */
 #timeline .line-2 {
   background: url("assets/img/line-2.png") top left no-repeat;
   height: 183px;
 }
-/* line 70, assets/sass/_timeline.scss */
+/* line 73, assets/sass/_timeline.scss */
 #timeline .line-3 {
   background: url("assets/img/line-3.png") top left no-repeat;
   height: 74px;
 }
-/* line 71, assets/sass/_timeline.scss */
+/* line 74, assets/sass/_timeline.scss */
 #timeline .line-4 {
   background: url("assets/img/line-4.png") top left no-repeat;
   height: 116px;
 }
-/* line 73, assets/sass/_timeline.scss */
+/* line 76, assets/sass/_timeline.scss */
 #timeline .callout h3 {
   font: 20px/30px Georgia, Times, "Times New Roman", serif;
   color: #020202;
@@ -1583,13 +1607,13 @@ body.credits-open .credits-menu-left {
   width: 550px;
 }
 @media only screen and (max-width: 320px) {
-  /* line 73, assets/sass/_timeline.scss */
+  /* line 76, assets/sass/_timeline.scss */
   #timeline .callout h3 {
     padding: 10% 10% 10% 10%;
     width: 80%;
   }
 }
-/* line 84, assets/sass/_timeline.scss */
+/* line 87, assets/sass/_timeline.scss */
 #timeline .left-nav a, #timeline .right-nav a {
   color: #020202;
 }
@@ -1598,9 +1622,8 @@ body.credits-open .credits-menu-left {
 /* line 2, assets/sass/_map.scss */
 #map {
   left: 300%;
-  overflow: hidden;
 }
-/* line 5, assets/sass/_map.scss */
+/* line 4, assets/sass/_map.scss */
 #map .panel-wrap {
   height: 100%;
   overflow: hidden;
@@ -1610,20 +1633,34 @@ body.credits-open .credits-menu-left {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 12, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 4, assets/sass/_map.scss */
+  #map .panel-wrap {
+    overflow: auto;
+    width: 100%;
+  }
+}
+/* line 16, assets/sass/_map.scss */
 #map .map-intro {
   padding: 25px 0px 0px 50px;
   position: relative;
   z-index: 1000;
 }
-/* line 14, assets/sass/_map.scss */
+/* line 18, assets/sass/_map.scss */
 #map .map-intro h1 {
   font: 32px/36px Georgia, Times, "Times New Roman", serif;
   color: white;
   display: inline;
   float: left;
 }
-/* line 15, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 18, assets/sass/_map.scss */
+  #map .map-intro h1 {
+    padding: 10% 10% 10% 10%;
+    width: 80%;
+  }
+}
+/* line 19, assets/sass/_map.scss */
 #map .map-intro .intro-text {
   width: 380px;
   display: inline;
@@ -1632,28 +1669,48 @@ body.credits-open .credits-menu-left {
   padding: 10px 10px 0px 10px;
   background: rgba(0, 0, 0, 0.7);
 }
-/* line 18, assets/sass/_map.scss */
+/* line 22, assets/sass/_map.scss */
 #map .map-intro .intro-text p {
   font: 12px/15px Georgia, Times, "Times New Roman", serif;
   color: white;
   font-style: italic;
 }
-/* line 24, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 19, assets/sass/_map.scss */
+  #map .map-intro .intro-text {
+    padding: 5%;
+    width: 70%;
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 16, assets/sass/_map.scss */
+  #map .map-intro {
+    padding: 10% 0% 0% 0%;
+  }
+}
+/* line 35, assets/sass/_map.scss */
 #map .zoom-out {
   position: absolute;
   z-index: 1001;
   top: 40px;
   right: 20px;
 }
-/* line 29, assets/sass/_map.scss */
+/* line 40, assets/sass/_map.scss */
 #map .zoom-out a {
   color: white;
 }
-/* line 30, assets/sass/_map.scss */
+/* line 41, assets/sass/_map.scss */
 #map .zoom-out a:hover {
   text-decoration: underline;
 }
-/* line 35, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 35, assets/sass/_map.scss */
+  #map .zoom-out {
+    display: none;
+  }
+}
+/* line 49, assets/sass/_map.scss */
 #map .step {
   position: relative;
   padding: 0px;
@@ -1664,7 +1721,7 @@ body.credits-open .credits-menu-left {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 49, assets/sass/_map.scss */
+/* line 64, assets/sass/_map.scss */
 #map .impress-enabled .step {
   margin: 0;
   /*opacity: 0.3;*/
@@ -1675,11 +1732,11 @@ body.credits-open .credits-menu-left {
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
-/* line 61, assets/sass/_map.scss */
+/* line 76, assets/sass/_map.scss */
 #map .impress-enabled .step.active {
   opacity: 1;
 }
-/* line 64, assets/sass/_map.scss */
+/* line 79, assets/sass/_map.scss */
 #map .slide {
   display: block;
   width: 950px;
@@ -1691,12 +1748,22 @@ body.credits-open .credits-menu-left {
   -moz-transition: max-height 0.8s;
   transition: max-height 0.8s;
 }
-/* line 71, assets/sass/_map.scss */
+/* line 85, assets/sass/_map.scss */
 #map .slide span:hover {
   opacity: 0.7;
   cursor: pointer;
 }
-/* line 77, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 79, assets/sass/_map.scss */
+  #map .slide {
+    padding: 10%;
+    width: 100%;
+    max-height: 80%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+/* line 100, assets/sass/_map.scss */
 #map span.number {
   color: #d29c0e;
   font-family: georgia;
@@ -1705,23 +1772,40 @@ body.credits-open .credits-menu-left {
   position: relative;
   z-index: 10000;
 }
-/* line 78, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 100, assets/sass/_map.scss */
+  #map span.number {
+    font-size: 40px;
+    line-height: 45px;
+    width: 100%;
+    float: left;
+  }
+}
+/* line 106, assets/sass/_map.scss */
 #map span.subtext {
-  font: 24px/30px "Cabin", sans-serif;
+  font: 16px/20px "Cabin", sans-serif;
   font-weight: bold;
   color: #d29c0e;
   display: block;
   text-transform: uppercase;
   -webkit-transition: all .5s ease-in;
 }
-/* line 79, assets/sass/_map.scss */
+/* line 112, assets/sass/_map.scss */
 #map .number-wrap {
   display: inline;
   float: left;
   width: 350px;
   text-align: right;
 }
-/* line 83, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 112, assets/sass/_map.scss */
+  #map .number-wrap {
+    text-align: left;
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+  }
+}
+/* line 119, assets/sass/_map.scss */
 #map .content {
   width: 500px;
   display: inline;
@@ -1730,53 +1814,116 @@ body.credits-open .credits-menu-left {
   margin-left: 40px;
   -webkit-transition: all .5s ease-in;
 }
-/* line 91, assets/sass/_map.scss */
+/* line 127, assets/sass/_map.scss */
 #map .content p {
   color: white;
   font-size: 16px;
   line-height: 26px;
 }
-/* line 96, assets/sass/_map.scss */
+/* line 132, assets/sass/_map.scss */
 #map .content img {
   max-width: 100%;
   margin: 10px 0px 10px 0px;
 }
-/* line 100, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 119, assets/sass/_map.scss */
+  #map .content {
+    padding: 0%;
+    margin-left: 0;
+    width: 100%;
+    max-height: 80%;
+    opacity: 1;
+  }
+  /* line 141, assets/sass/_map.scss */
+  #map .content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+/* line 148, assets/sass/_map.scss */
 #map #wa .number-wrap {
   width: 400px;
 }
-/* line 101, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 148, assets/sass/_map.scss */
+  #map #wa .number-wrap {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+  }
+}
+/* line 149, assets/sass/_map.scss */
 #map #wa .content {
   width: 450px;
 }
-/* line 104, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 149, assets/sass/_map.scss */
+  #map #wa .content {
+    padding: 0%;
+    width: 100%;
+  }
+}
+/* line 152, assets/sass/_map.scss */
 #map #oh .number-wrap {
   width: 400px;
 }
-/* line 105, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 152, assets/sass/_map.scss */
+  #map #oh .number-wrap {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+  }
+}
+/* line 153, assets/sass/_map.scss */
 #map #oh .content {
   width: 450px;
 }
-/* line 109, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 153, assets/sass/_map.scss */
+  #map #oh .content {
+    padding: 0%;
+    width: 100%;
+  }
+}
+/* line 157, assets/sass/_map.scss */
 #map #usa .number-wrap {
   width: 900px;
   display: block;
 }
-/* line 110, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 157, assets/sass/_map.scss */
+  #map #usa .number-wrap {
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+  }
+}
+/* line 158, assets/sass/_map.scss */
 #map #usa .content {
   width: 500px;
   display: block;
 }
-/* line 111, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 158, assets/sass/_map.scss */
+  #map #usa .content {
+    padding: 0%;
+    width: 100%;
+  }
+}
+/* line 159, assets/sass/_map.scss */
 #map #usa span.number {
   font-size: 170px;
 }
-/* line 115, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 159, assets/sass/_map.scss */
+  #map #usa span.number {
+    font-size: 40px;
+  }
+}
+/* line 163, assets/sass/_map.scss */
 #map .step.active div.content {
   opacity: 1;
   -webkit-transition: all 2s ease-in;
 }
-/* line 117, assets/sass/_map.scss */
+/* line 165, assets/sass/_map.scss */
 #map .left-nav {
   position: absolute;
   height: 0px;
@@ -1785,19 +1932,29 @@ body.credits-open .credits-menu-left {
   left: 8%;
   float: left;
 }
-/* line 117, assets/sass/_map.scss */
+/* line 167, assets/sass/_map.scss */
 #map .left-nav a {
   position: relative;
   left: 7%;
 }
-/* line 118, assets/sass/_map.scss */
+/* line 168, assets/sass/_map.scss */
 #map .left-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   right: 5px;
 }
-/* line 120, assets/sass/_map.scss */
+@media only screen and (max-width: 320px) {
+  /* line 165, assets/sass/_map.scss */
+  #map .left-nav {
+    position: relative;
+    height: 0px;
+    width: 50%;
+    top: -80px;
+    float: left;
+  }
+}
+/* line 175, assets/sass/_map.scss */
 #map .right-nav {
   position: absolute;
   height: 0px;
@@ -1805,18 +1962,28 @@ body.credits-open .credits-menu-left {
   right: 1%;
   float: right;
 }
-/* line 120, assets/sass/_map.scss */
+/* line 177, assets/sass/_map.scss */
 #map .right-nav a {
   float: right;
   position: relative;
   right: 10%;
 }
-/* line 121, assets/sass/_map.scss */
+/* line 178, assets/sass/_map.scss */
 #map .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
+}
+@media only screen and (max-width: 320px) {
+  /* line 175, assets/sass/_map.scss */
+  #map .right-nav {
+    position: relative;
+    height: 0px;
+    width: 50%;
+    top: -80px;
+    float: right;
+  }
 }
 
 /** Stately setup
@@ -1850,8 +2017,14 @@ body.credits-open .credits-menu-left {
   border-radius: 0;
   -webkit-transition: all .2s ease-in;
 }
+@media only screen and (max-width: 320px) {
+  /* line 12, assets/sass/_states.scss */
+  .stately {
+    display: none;
+  }
+}
 
-/* line 33, assets/sass/_states.scss */
+/* line 36, assets/sass/_states.scss */
 .stately li {
   float: left;
   margin: -5% 0 0 -100%;
@@ -1871,7 +2044,7 @@ body.credits-open .credits-menu-left {
 
 /** Style customizations
 *************************************/
-/* line 56, assets/sass/_states.scss */
+/* line 59, assets/sass/_states.scss */
 #plain li.inactive {
   color: #2b2a29;
 }

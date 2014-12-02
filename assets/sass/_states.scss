@@ -26,9 +26,12 @@
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  border-radius: 0;
- 
-  -webkit-transition: all .2s ease-in; }
+  border-radius: 0; 
+  -webkit-transition: all .2s ease-in; 
+  @include breakpoint(small) {
+      display:none;
+  }
+}
 
 .stately li {
     float: left;
