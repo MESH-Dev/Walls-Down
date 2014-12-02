@@ -915,43 +915,53 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 
 /*------------------MAP and IMPRESS-----------------*/
 $(function() {
-  var map = impress();
-  map.init();
+
+  var isDesktop = (function() {
+    return !('ontouchstart' in window) // works on most browsers 
+   || !('onmsgesturechange' in window); // works on ie10
+  })();
+
   
-  $('span.number').click(function(){
-      var state = $(this).parent().parent().attr("id");
-      var $st = $(this).parent().parent();
-      stateid = "#"+state;
-      state = "."+state;
- 
-      $('#plain li').not(state).addClass('inactive');
-      $('.intro-text').fadeOut();
-      $('.slide').not($st).fadeOut();
-      $st.css('max-height', '600px');
-      $st.css('overflow', 'auto');
+  window.isDesktop = isDesktop;
+  if( isDesktop ){
+    var map = impress();
+    map.init();
+    
+    $('span.number').click(function(){
+        var state = $(this).parent().parent().attr("id");
+        var $st = $(this).parent().parent();
+        stateid = "#"+state;
+        state = "."+state;
+   
+        $('#plain li').not(state).addClass('inactive');
+        $('.intro-text').fadeOut();
+        $('.slide').not($st).fadeOut();
+        $st.css('max-height', '600px');
+        $st.css('overflow', 'auto');
 
 
-  });
+    });
 
-  $('#fullmap, .zoom-out a').click(function(){
-      $('#plain li').removeClass('inactive');
-      $('.intro-text').removeClass('inactive');
-      $('.intro-text').fadeIn();
-      $('.slide').fadeIn();
-      $('.slide').css('max-height', '200px');
-      $('.slide').css('overflow', 'hidden');
-  });
+    $('#fullmap, .zoom-out a').click(function(){
+        $('#plain li').removeClass('inactive');
+        $('.intro-text').removeClass('inactive');
+        $('.intro-text').fadeIn();
+        $('.slide').fadeIn();
+        $('.slide').css('max-height', '200px');
+        $('.slide').css('overflow', 'hidden');
+    });
 
-  $('#map-read-more').click(function(e){
-    $('#map-more').removeClass("hide");
-    $('#map-more').addClass("show");
-    e.preventDefault();
-  });
-  $('#map-read-close').click(function(e){
-    $('#map-more').removeClass("show");
-    $('#map-more').addClass("hide");
-    e.preventDefault();
-  });
+    $('#map-read-more').click(function(e){
+      $('#map-more').removeClass("hide");
+      $('#map-more').addClass("show");
+      e.preventDefault();
+    });
+    $('#map-read-close').click(function(e){
+      $('#map-more').removeClass("show");
+      $('#map-more').addClass("hide");
+      e.preventDefault();
+    });
+  }
 
 
 });

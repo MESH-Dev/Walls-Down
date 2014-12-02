@@ -1,6 +1,7 @@
 /* ----------- GRADY ------------- */
 #grady{
   left: 100%;
+  overflow-x: hidden;
   .intro{
     background-color: $black;
     h1{font-size: 81px; line-height: 88px; color: $white; padding: 250px 0px 0px 210px; text-transform:uppercase; width: 640px; }

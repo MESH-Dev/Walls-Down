@@ -841,12 +841,13 @@ body.credits-open .credits-menu-left {
 /* line 2, assets/sass/_grady.scss */
 #grady {
   left: 100%;
+  overflow-x: hidden;
 }
-/* line 4, assets/sass/_grady.scss */
+/* line 5, assets/sass/_grady.scss */
 #grady .intro {
   background-color: #020202;
 }
-/* line 6, assets/sass/_grady.scss */
+/* line 7, assets/sass/_grady.scss */
 #grady .intro h1 {
   font-size: 81px;
   line-height: 88px;
@@ -855,7 +856,7 @@ body.credits-open .credits-menu-left {
   text-transform: uppercase;
   width: 640px;
 }
-/* line 7, assets/sass/_grady.scss */
+/* line 8, assets/sass/_grady.scss */
 #grady .intro .teal-line {
   padding: 20px 0px 0px 0px;
   margin-left: 190px;
@@ -864,7 +865,7 @@ body.credits-open .credits-menu-left {
   border-right: 3px solid #4b7a82;
   width: 680px;
 }
-/* line 14, assets/sass/_grady.scss */
+/* line 15, assets/sass/_grady.scss */
 #grady .intro .teal-line hr {
   color: #4b7a82;
   background-color: #4b7a82;
@@ -874,71 +875,71 @@ body.credits-open .credits-menu-left {
   position: relative;
   top: -10px;
 }
-/* line 16, assets/sass/_grady.scss */
+/* line 17, assets/sass/_grady.scss */
 #grady .intro h2 {
   color: white;
   padding: 20px 0px 240px 210px;
   width: 610px;
   font-style: italic;
 }
-/* line 17, assets/sass/_grady.scss */
+/* line 18, assets/sass/_grady.scss */
 #grady .intro img {
   position: absolute;
   left: 960px;
   top: 20px;
 }
-/* line 20, assets/sass/_grady.scss */
+/* line 21, assets/sass/_grady.scss */
 #grady .bg-black {
   background-color: #020202;
   margin-bottom: 0px;
 }
-/* line 23, assets/sass/_grady.scss */
+/* line 24, assets/sass/_grady.scss */
 #grady .bg-black p {
   color: white;
 }
-/* line 24, assets/sass/_grady.scss */
+/* line 25, assets/sass/_grady.scss */
 #grady .bg-black blockquote {
   color: white;
 }
-/* line 25, assets/sass/_grady.scss */
+/* line 26, assets/sass/_grady.scss */
 #grady .bg-black a {
   color: white;
   text-decoration: underline;
 }
-/* line 26, assets/sass/_grady.scss */
+/* line 27, assets/sass/_grady.scss */
 #grady .bg-black a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 29, assets/sass/_grady.scss */
+/* line 30, assets/sass/_grady.scss */
 #grady .bg-white {
   background-color: white;
   margin: 0;
 }
-/* line 32, assets/sass/_grady.scss */
+/* line 33, assets/sass/_grady.scss */
 #grady .bg-white p {
   color: #020202;
 }
-/* line 33, assets/sass/_grady.scss */
+/* line 34, assets/sass/_grady.scss */
 #grady .bg-white a {
   color: #020202;
   text-decoration: underline;
 }
-/* line 34, assets/sass/_grady.scss */
+/* line 35, assets/sass/_grady.scss */
 #grady .bg-white a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 37, assets/sass/_grady.scss */
+/* line 38, assets/sass/_grady.scss */
 #grady .text-container {
   width: 500px;
   padding-left: 200px;
 }
-/* line 40, assets/sass/_grady.scss */
+/* line 41, assets/sass/_grady.scss */
 #grady .text-container img {
   padding-left: 70px;
 }
-/* line 41, assets/sass/_grady.scss */
+/* line 42, assets/sass/_grady.scss */
 #grady .text-container .white-line {
   display: block;
   margin: 50px 0px 40px 180px;
@@ -946,7 +947,7 @@ body.credits-open .credits-menu-left {
   height: 7px;
   background-color: white;
 }
-/* line 48, assets/sass/_grady.scss */
+/* line 49, assets/sass/_grady.scss */
 #grady .text-container .black-line {
   display: block;
   margin: 50px 0px 40px 180px;
@@ -954,7 +955,7 @@ body.credits-open .credits-menu-left {
   height: 7px;
   background-color: #020202;
 }
-/* line 57, assets/sass/_grady.scss */
+/* line 58, assets/sass/_grady.scss */
 #grady .transition-one {
   background: url("assets/img/grady-transition-one.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -965,22 +966,22 @@ body.credits-open .credits-menu-left {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-/* line 65, assets/sass/_grady.scss */
+/* line 66, assets/sass/_grady.scss */
 #grady .section-two p.neg-top {
   position: relative;
   top: -100px;
 }
-/* line 69, assets/sass/_grady.scss */
+/* line 70, assets/sass/_grady.scss */
 #grady .section-two p.neg-top-fix {
   margin-top: -100px;
 }
-/* line 72, assets/sass/_grady.scss */
+/* line 73, assets/sass/_grady.scss */
 #grady .section-two img {
   position: absolute;
   left: 800px;
   top: 2150px;
 }
-/* line 73, assets/sass/_grady.scss */
+/* line 74, assets/sass/_grady.scss */
 #grady .section-two .brahms {
   font-size: 24px;
   color: #d29c0e;
@@ -990,7 +991,7 @@ body.credits-open .credits-menu-left {
   top: 3512px;
   width: 300px;
 }
-/* line 76, assets/sass/_grady.scss */
+/* line 77, assets/sass/_grady.scss */
 #grady .transition-grady-ruins {
   background: url("assets/img/grady-ruins.jpg") top left no-repeat;
   height: 950px;
@@ -998,11 +999,11 @@ body.credits-open .credits-menu-left {
   margin-top: -0px;
   margin-bottom: 0px;
 }
-/* line 84, assets/sass/_grady.scss */
+/* line 85, assets/sass/_grady.scss */
 #grady .section-three {
   padding-top: 40px;
 }
-/* line 88, assets/sass/_grady.scss */
+/* line 89, assets/sass/_grady.scss */
 #grady .transition-three {
   background: url("assets/img/grady-transition-three.png") top left no-repeat;
   height: 450px;
@@ -1010,34 +1011,34 @@ body.credits-open .credits-menu-left {
   margin-top: -280px;
   margin-bottom: 0px;
 }
-/* line 96, assets/sass/_grady.scss */
+/* line 97, assets/sass/_grady.scss */
 #grady .section-four {
   padding-top: 0px;
   padding-bottom: 50px;
 }
-/* line 99, assets/sass/_grady.scss */
+/* line 100, assets/sass/_grady.scss */
 #grady .section-four img {
   position: absolute;
   left: 790px;
   top: 6788px;
 }
-/* line 102, assets/sass/_grady.scss */
+/* line 103, assets/sass/_grady.scss */
 #grady .section-five {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 105, assets/sass/_grady.scss */
+/* line 106, assets/sass/_grady.scss */
 #grady .section-five img {
   position: absolute;
   left: 840px;
   top: 7800px;
 }
-/* line 108, assets/sass/_grady.scss */
+/* line 109, assets/sass/_grady.scss */
 #grady .section-six {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 113, assets/sass/_grady.scss */
+/* line 114, assets/sass/_grady.scss */
 #grady .transition-skyline {
   background: url("assets/img/grady-skyline.jpg") top left no-repeat;
   height: 1330px;
@@ -1045,26 +1046,26 @@ body.credits-open .credits-menu-left {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-/* line 122, assets/sass/_grady.scss */
+/* line 123, assets/sass/_grady.scss */
 #grady .section-seven p.neg-top {
   position: relative;
   top: -300px;
 }
-/* line 126, assets/sass/_grady.scss */
+/* line 127, assets/sass/_grady.scss */
 #grady .section-seven p.neg-top-fix {
   margin-top: -300px;
 }
-/* line 131, assets/sass/_grady.scss */
+/* line 132, assets/sass/_grady.scss */
 #grady .section-eight {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 135, assets/sass/_grady.scss */
+/* line 136, assets/sass/_grady.scss */
 #grady .section-nine {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-/* line 140, assets/sass/_grady.scss */
+/* line 141, assets/sass/_grady.scss */
 #grady .transition-mic {
   background: url("assets/img/grady-micd.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1076,20 +1077,20 @@ body.credits-open .credits-menu-left {
   margin-top: -250px;
   margin-bottom: 0px;
 }
-/* line 148, assets/sass/_grady.scss */
+/* line 149, assets/sass/_grady.scss */
 #grady .section-ten {
   padding-bottom: 0px;
 }
-/* line 150, assets/sass/_grady.scss */
+/* line 151, assets/sass/_grady.scss */
 #grady .section-ten p.neg-top {
   position: relative;
   top: -500px;
 }
-/* line 154, assets/sass/_grady.scss */
+/* line 155, assets/sass/_grady.scss */
 #grady .section-ten p.neg-top-fix {
   margin-top: -500px;
 }
-/* line 160, assets/sass/_grady.scss */
+/* line 161, assets/sass/_grady.scss */
 #grady .grady-end {
   background: url("assets/img/grady-end.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1437,12 +1438,25 @@ body.credits-open .credits-menu-left {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 12, assets/sass/_timeline.scss */
+@media only screen and (max-width: 320px) {
+  /* line 6, assets/sass/_timeline.scss */
+  #timeline .panel-wrap {
+    width: 100%;
+  }
+}
+/* line 16, assets/sass/_timeline.scss */
 #timeline h1 {
   padding: 75px 0px 10px 0px;
   width: 390px;
 }
-/* line 13, assets/sass/_timeline.scss */
+@media only screen and (max-width: 320px) {
+  /* line 16, assets/sass/_timeline.scss */
+  #timeline h1 {
+    padding: 10% 10% 10% 10%;
+    width: 80%;
+  }
+}
+/* line 24, assets/sass/_timeline.scss */
 #timeline h3 {
   font: 14px/20px Georgia, Times, "Times New Roman", serif;
   color: #020202;
@@ -1450,12 +1464,19 @@ body.credits-open .credits-menu-left {
   width: 350px;
   text-transform: none;
 }
-/* line 15, assets/sass/_timeline.scss */
+@media only screen and (max-width: 320px) {
+  /* line 24, assets/sass/_timeline.scss */
+  #timeline h3 {
+    padding: 10% 10% 10% 10%;
+    width: 80%;
+  }
+}
+/* line 31, assets/sass/_timeline.scss */
 #timeline .time-block {
   width: 550px;
   padding: 0px 0px 0px 100px;
 }
-/* line 18, assets/sass/_timeline.scss */
+/* line 34, assets/sass/_timeline.scss */
 #timeline .time-block h2 {
   font: 24px/40px "Cabin", sans-serif;
   color: #d29c0e;
@@ -1465,11 +1486,11 @@ body.credits-open .credits-menu-left {
   text-align: center;
   padding: 0px 0px 10px 0px;
 }
-/* line 19, assets/sass/_timeline.scss */
+/* line 35, assets/sass/_timeline.scss */
 #timeline .time-block h4 {
   text-align: center;
 }
-/* line 20, assets/sass/_timeline.scss */
+/* line 36, assets/sass/_timeline.scss */
 #timeline .time-block h5 {
   font: 14px/20px "Cabin", sans-serif;
   color: #d29c0e;
@@ -1479,55 +1500,80 @@ body.credits-open .credits-menu-left {
   text-align: left;
   padding: 0px 0px 0px 0px;
 }
-/* line 21, assets/sass/_timeline.scss */
+/* line 37, assets/sass/_timeline.scss */
 #timeline .time-block a {
   color: #020202;
   text-decoration: underline;
 }
-/* line 22, assets/sass/_timeline.scss */
+/* line 38, assets/sass/_timeline.scss */
 #timeline .time-block a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 25, assets/sass/_timeline.scss */
+@media only screen and (max-width: 320px) {
+  /* line 31, assets/sass/_timeline.scss */
+  #timeline .time-block {
+    padding: 10% 10% 10% 10%;
+    width: 80%;
+  }
+}
+/* line 45, assets/sass/_timeline.scss */
 #timeline .even {
   padding-left: 340px;
 }
-/* line 27, assets/sass/_timeline.scss */
+/* line 47, assets/sass/_timeline.scss */
 #timeline .even .vertical-line {
-  margin: 10px 0px 10px 20px;
+  margin: 10px 0px 10px 50%;
 }
-/* line 33, assets/sass/_timeline.scss */
+@media only screen and (max-width: 320px) {
+  /* line 45, assets/sass/_timeline.scss */
+  #timeline .even {
+    padding-left: 10%;
+  }
+}
+/* line 56, assets/sass/_timeline.scss */
 #timeline .odd .vertical-line {
   margin: 10px 0px 10px 540px;
 }
-/* line 37, assets/sass/_timeline.scss */
+@media only screen and (max-width: 320px) {
+  /* line 56, assets/sass/_timeline.scss */
+  #timeline .odd .vertical-line {
+    margin: 10px 0px 10px 50%;
+  }
+}
+/* line 63, assets/sass/_timeline.scss */
 #timeline .line-title {
   background: url("assets/img/line-2.png") top left no-repeat;
   height: 183px;
   margin: 10px 0px 10px 280px;
 }
-/* line 38, assets/sass/_timeline.scss */
+@media only screen and (max-width: 320px) {
+  /* line 63, assets/sass/_timeline.scss */
+  #timeline .line-title {
+    margin: 10px 0px 10px 50%;
+  }
+}
+/* line 68, assets/sass/_timeline.scss */
 #timeline .line-1 {
   background: url("assets/img/line-1.png") top left no-repeat;
   height: 91px;
 }
-/* line 39, assets/sass/_timeline.scss */
+/* line 69, assets/sass/_timeline.scss */
 #timeline .line-2 {
   background: url("assets/img/line-2.png") top left no-repeat;
   height: 183px;
 }
-/* line 40, assets/sass/_timeline.scss */
+/* line 70, assets/sass/_timeline.scss */
 #timeline .line-3 {
   background: url("assets/img/line-3.png") top left no-repeat;
   height: 74px;
 }
-/* line 41, assets/sass/_timeline.scss */
+/* line 71, assets/sass/_timeline.scss */
 #timeline .line-4 {
   background: url("assets/img/line-4.png") top left no-repeat;
   height: 116px;
 }
-/* line 43, assets/sass/_timeline.scss */
+/* line 73, assets/sass/_timeline.scss */
 #timeline .callout h3 {
   font: 20px/30px Georgia, Times, "Times New Roman", serif;
   color: #020202;
@@ -1536,7 +1582,14 @@ body.credits-open .credits-menu-left {
   padding-bottom: 100px;
   width: 550px;
 }
-/* line 50, assets/sass/_timeline.scss */
+@media only screen and (max-width: 320px) {
+  /* line 73, assets/sass/_timeline.scss */
+  #timeline .callout h3 {
+    padding: 10% 10% 10% 10%;
+    width: 80%;
+  }
+}
+/* line 84, assets/sass/_timeline.scss */
 #timeline .left-nav a, #timeline .right-nav a {
   color: #020202;
 }
