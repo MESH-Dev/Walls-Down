@@ -22,12 +22,16 @@
     margin-bottom: 0px;
     p {color: $white; }
     blockquote{color: $white;}
+    a{color:$white; text-decoration: underline;}
+    a:hover{@include opacity(0.7)}
   }
 
   .bg-white{
     background-color: $white; 
     margin: 0;
     p {color: $black; }
+    a{color:$black; text-decoration: underline;}
+    a:hover{@include opacity(0.7)}
   }
   
   .text-container{

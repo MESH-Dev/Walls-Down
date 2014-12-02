@@ -47,6 +47,8 @@
     width: 550px;
   }
 
+  .left-nav a, .right-nav a{color:$black;}
+
   
 
     @include breakpoint(widescreen){
