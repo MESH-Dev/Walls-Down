@@ -71,34 +71,34 @@ p, h1 {
 ================================================== */
 /* #Basic Styles
 ================================================== */
-/* line 72, assets/sass/_base.scss */
+/* line 73, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 76, assets/sass/_base.scss */
+/* line 77, assets/sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 77, assets/sass/_base.scss */
+/* line 78, assets/sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 78, assets/sass/_base.scss */
+/* line 79, assets/sass/_base.scss */
 em {
   text-style: italic;
 }
 
-/* line 80, assets/sass/_base.scss */
+/* line 81, assets/sass/_base.scss */
 .hide {
   display: none;
 }
 
-/* line 81, assets/sass/_base.scss */
+/* line 82, assets/sass/_base.scss */
 .show {
   display: block;
 }
@@ -109,13 +109,13 @@ em {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 101, assets/sass/_base.scss */
+/* line 102, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 103, assets/sass/_base.scss */
+/* line 104, assets/sass/_base.scss */
 a img:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
@@ -124,60 +124,60 @@ a img:hover {
 
 /*  Image Styles
    ========================================================================== */
-/* line 108, assets/sass/_base.scss */
+/* line 109, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 109, assets/sass/_base.scss */
+/* line 110, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 110, assets/sass/_base.scss */
+/* line 111, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 111, assets/sass/_base.scss */
+/* line 112, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 112, assets/sass/_base.scss */
+/* line 113, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 113, assets/sass/_base.scss */
+/* line 114, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 114, assets/sass/_base.scss */
+/* line 115, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 115, assets/sass/_base.scss */
+/* line 116, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 116, assets/sass/_base.scss */
+/* line 117, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 117, assets/sass/_base.scss */
+/* line 118, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -186,22 +186,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 118, assets/sass/_base.scss */
+/* line 119, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 119, assets/sass/_base.scss */
+/* line 120, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 120, assets/sass/_base.scss */
+/* line 121, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 121, assets/sass/_base.scss */
+/* line 122, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -211,7 +211,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 122, assets/sass/_base.scss */
+/* line 123, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -220,7 +220,7 @@ a img.aligncenter {
 }
 
 /* You can also use a <br class="clear" /> to clear columns */
-/* line 126, assets/sass/_base.scss */
+/* line 127, assets/sass/_base.scss */
 .clear {
   clear: both;
   display: block;
@@ -594,7 +594,7 @@ nav.push-menu-left .wrapper {
   width: 100%;
   padding-right: 15px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 97, assets/sass/_layout.scss */
   nav.push-menu-left {
     left: -80px;
@@ -667,7 +667,7 @@ body.pml-open .panel-wrap {
   color: white;
   text-decoration: underline;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 123, assets/sass/_layout.scss */
   .credits-menu-left {
     left: -250px;
@@ -715,7 +715,7 @@ body.credits-open .credits-menu-left {
   top: 20px;
   right: 20px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 192, assets/sass/_layout.scss */
   #open {
     display: block;
@@ -740,7 +740,7 @@ body.credits-open .credits-menu-left {
   transition: all 0.3s;
   margin-left: 80px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 208, assets/sass/_layout.scss */
   .panel-wrap {
     margin-left: 0px;
@@ -825,7 +825,7 @@ body.credits-open .credits-menu-left {
 #home .panel-wrap .right-nav a {
   color: #020202;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 231, assets/sass/_layout.scss */
   #home .panel-wrap {
     background: url("assets/img/cover-large.jpg") top left no-repeat;
@@ -1153,7 +1153,7 @@ body.credits-open .credits-menu-left {
   padding: 120px 0px 30px 120px;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 18, assets/sass/_nicu.scss */
   #nicu h1 {
     font: 24px/30px Georgia, Times, "Times New Roman", serif;
@@ -1166,7 +1166,7 @@ body.credits-open .credits-menu-left {
   font: 32px/36px Georgia, Times, "Times New Roman", serif;
   color: #020202;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 24, assets/sass/_nicu.scss */
   #nicu h2 {
     font-size: 20px;
@@ -1197,7 +1197,7 @@ body.credits-open .credits-menu-left {
 #nicu .panel-one p:last-child {
   padding-bottom: 150px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 35, assets/sass/_nicu.scss */
   #nicu .panel-one {
     -webkit-background-size: contain;
@@ -1238,7 +1238,7 @@ body.credits-open .credits-menu-left {
 #nicu .panel-two .panel-text p, #nicu .panel-two .panel-text a {
   color: white;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 52, assets/sass/_nicu.scss */
   #nicu .panel-two {
     -webkit-background-size: contain;
@@ -1249,7 +1249,7 @@ body.credits-open .credits-menu-left {
   /* line 65, assets/sass/_nicu.scss */
   #nicu .panel-two h2 {
     width: 50%;
-    padding-top: 50%;
+    padding-top: 80%;
   }
   /* line 66, assets/sass/_nicu.scss */
   #nicu .panel-two h3 {
@@ -1303,114 +1303,132 @@ body.credits-open .credits-menu-left {
   padding: 615px 0px 80px 530px;
   overflow-y: visible;
 }
-/* line 114, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 107, assets/sass/_nicu.scss */
+  #nicu .panel-five .panel-text {
+    padding-top: 67% !important;
+  }
+}
+/* line 115, assets/sass/_nicu.scss */
 #nicu .panel-six {
   margin-bottom: 80px;
 }
-/* line 115, assets/sass/_nicu.scss */
+/* line 116, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-left {
   padding: 0px 0px 10px 45px;
   width: 420px;
 }
-/* line 118, assets/sass/_nicu.scss */
+/* line 119, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-left .panel-text {
   width: 80%;
 }
-/* line 120, assets/sass/_nicu.scss */
+/* line 121, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-left .panel-text p.small-italic {
   font-size: 12px;
   line-height: 20px;
   font-style: italic;
 }
-/* line 122, assets/sass/_nicu.scss */
+/* line 123, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-left img {
   margin: -10px 0px 0px 30px;
 }
-@media only screen and (max-width: 320px) {
-  /* line 122, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 123, assets/sass/_nicu.scss */
   #nicu .panel-six .panel-left img {
     margin: 0;
   }
 }
-/* line 128, assets/sass/_nicu.scss */
+/* line 129, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-right {
   width: 400px;
   padding: 220px 0px 0px 45px;
 }
-/* line 136, assets/sass/_nicu.scss */
+/* line 137, assets/sass/_nicu.scss */
 #nicu .panel-seven {
-  background: url("assets/img/nicu-7.jpg") top right no-repeat;
+  background: url("assets/img/nicu-7.jpg") top left no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   margin-bottom: 80px;
 }
-/* line 139, assets/sass/_nicu.scss */
+/* line 140, assets/sass/_nicu.scss */
 #nicu .panel-seven .panel-text {
   width: 390px;
   padding: 50px 0px 80px 45px;
 }
-/* line 140, assets/sass/_nicu.scss */
+/* line 141, assets/sass/_nicu.scss */
 #nicu .panel-seven .panel-text h2 {
   color: white;
 }
-/* line 143, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 141, assets/sass/_nicu.scss */
+  #nicu .panel-seven .panel-text h2 {
+    color: #020202;
+  }
+}
+/* line 144, assets/sass/_nicu.scss */
 #nicu .panel-seven .panel-text p, #nicu .panel-seven .panel-text a {
   color: white;
 }
-@media only screen and (max-width: 320px) {
-  /* line 143, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 144, assets/sass/_nicu.scss */
   #nicu .panel-seven .panel-text p, #nicu .panel-seven .panel-text a {
     color: #020202;
   }
 }
-/* line 147, assets/sass/_nicu.scss */
+/* line 148, assets/sass/_nicu.scss */
 #nicu .panel-seven .panel-text blockquote {
   color: #d29c0e;
 }
-/* line 153, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 140, assets/sass/_nicu.scss */
+  #nicu .panel-seven .panel-text {
+    padding-top: 67% !important;
+  }
+}
+/* line 155, assets/sass/_nicu.scss */
 #nicu .panel-eight {
   margin-bottom: 150px;
 }
-/* line 154, assets/sass/_nicu.scss */
+/* line 156, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-left {
   padding: 100px 0px 10px 45px;
   width: 420px;
 }
-/* line 157, assets/sass/_nicu.scss */
+/* line 159, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-left .panel-text {
   width: 80%;
   padding: 30px 0px 0px 0px;
 }
-/* line 161, assets/sass/_nicu.scss */
+/* line 163, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-left .panel-text p.small-italic {
   font-size: 12px;
   line-height: 20px;
   font-style: italic;
 }
-@media only screen and (max-width: 320px) {
-  /* line 157, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 159, assets/sass/_nicu.scss */
   #nicu .panel-eight .panel-left .panel-text {
     padding: 30px 10% 0 10%;
   }
 }
-/* line 164, assets/sass/_nicu.scss */
+/* line 166, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-left img {
   margin: -10px 0px 0px 30px;
 }
-@media only screen and (max-width: 320px) {
-  /* line 164, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 166, assets/sass/_nicu.scss */
   #nicu .panel-eight .panel-left img {
     margin: 0;
   }
 }
-/* line 170, assets/sass/_nicu.scss */
+/* line 172, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-right {
   width: 400px;
   padding: 00px 0px 0px 45px;
 }
-/* line 178, assets/sass/_nicu.scss */
+/* line 180, assets/sass/_nicu.scss */
 #nicu .panel-nine {
   background: url("assets/img/nicu-9.jpg") top right no-repeat;
   -webkit-background-size: cover;
@@ -1419,59 +1437,59 @@ body.credits-open .credits-menu-left {
   background-size: cover;
   margin-bottom: 130px;
 }
-/* line 182, assets/sass/_nicu.scss */
+/* line 184, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full1 {
   padding: 30px 0px 0px 600px;
   width: 380px;
 }
-@media only screen and (max-width: 320px) {
-  /* line 182, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 184, assets/sass/_nicu.scss */
   #nicu .panel-nine .panel-full1 {
-    padding: 0 10% 18px 10%;
-    width: 80%;
+    padding: 0 0 18px 0;
+    width: 100%;
   }
 }
-/* line 188, assets/sass/_nicu.scss */
+/* line 190, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full2 {
   padding: 80px 0px 80px 45px;
   width: 380px;
 }
-/* line 189, assets/sass/_nicu.scss */
+/* line 191, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full2 blockquote {
   color: #d29c0e;
 }
-/* line 190, assets/sass/_nicu.scss */
+/* line 192, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full2 p, #nicu .panel-nine .panel-full2 a {
   color: white;
 }
-@media only screen and (max-width: 320px) {
-  /* line 190, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 192, assets/sass/_nicu.scss */
   #nicu .panel-nine .panel-full2 p, #nicu .panel-nine .panel-full2 a {
     color: #020202;
   }
 }
-@media only screen and (max-width: 320px) {
-  /* line 188, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 190, assets/sass/_nicu.scss */
   #nicu .panel-nine .panel-full2 {
-    padding: 0 10% 18px 10%;
-    width: 80%;
+    padding: 0 0 18px 0;
+    width: 100%;
   }
 }
-/* line 200, assets/sass/_nicu.scss */
+/* line 202, assets/sass/_nicu.scss */
 #nicu .panel-ten {
   margin-bottom: 150px;
 }
-/* line 201, assets/sass/_nicu.scss */
+/* line 203, assets/sass/_nicu.scss */
 #nicu .panel-ten .panel-left {
   padding: 50px 0px 10px 45px;
   width: 460px;
 }
-/* line 205, assets/sass/_nicu.scss */
+/* line 207, assets/sass/_nicu.scss */
 #nicu .panel-ten .panel-right {
   padding: 0px 0px 10px 15px;
   width: 400px;
 }
-/* line 213, assets/sass/_nicu.scss */
+/* line 215, assets/sass/_nicu.scss */
 #nicu .panel-eleven {
   background: url("assets/img/nicu-11.jpg") top right no-repeat;
   -webkit-background-size: cover;
@@ -1480,66 +1498,66 @@ body.credits-open .credits-menu-left {
   background-size: cover;
   margin-bottom: 80px;
 }
-/* line 216, assets/sass/_nicu.scss */
+/* line 218, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-left {
   padding: 130px 0px 30px 45px;
   width: 360px;
 }
-/* line 217, assets/sass/_nicu.scss */
+/* line 219, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-left blockquote {
   color: #d29c0e;
 }
-/* line 218, assets/sass/_nicu.scss */
+/* line 220, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-left p, #nicu .panel-eleven .panel-left a {
   color: white;
 }
-@media only screen and (max-width: 320px) {
-  /* line 218, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 220, assets/sass/_nicu.scss */
   #nicu .panel-eleven .panel-left p, #nicu .panel-eleven .panel-left a {
     color: #020202;
   }
 }
-/* line 222, assets/sass/_nicu.scss */
+/* line 224, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-right {
   padding: 650px 0px 30px 45px;
   width: 380px;
 }
-/* line 223, assets/sass/_nicu.scss */
+/* line 225, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-right h2 {
   color: white;
 }
-@media only screen and (max-width: 320px) {
-  /* line 223, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 225, assets/sass/_nicu.scss */
   #nicu .panel-eleven .panel-right h2 {
     color: #020202;
   }
 }
-/* line 224, assets/sass/_nicu.scss */
+/* line 226, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-right p, #nicu .panel-eleven .panel-right a {
   color: white;
 }
-@media only screen and (max-width: 320px) {
-  /* line 224, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 226, assets/sass/_nicu.scss */
   #nicu .panel-eleven .panel-right p, #nicu .panel-eleven .panel-right a {
     color: #020202;
   }
 }
-/* line 231, assets/sass/_nicu.scss */
+/* line 233, assets/sass/_nicu.scss */
 #nicu .panel-twelve {
   margin-bottom: 100px;
 }
-/* line 232, assets/sass/_nicu.scss */
+/* line 234, assets/sass/_nicu.scss */
 #nicu .panel-twelve .panel-left {
   padding: 0px 0px 0px 45px;
   width: 380px;
 }
-/* line 236, assets/sass/_nicu.scss */
+/* line 238, assets/sass/_nicu.scss */
 #nicu .panel-twelve .panel-right {
   padding: 0px 0px 10px 45px;
   width: 580px;
 }
-@media only screen and (max-width: 320px) {
-  /* line 246, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 248, assets/sass/_nicu.scss */
   #nicu .panel-one, #nicu .panel-two, #nicu .panel-three, #nicu .panel-four, #nicu .panel-five,
   #nicu .panel-six, #nicu .panel-seven, #nicu .panel-eight, #nicu .panel-nine, #nicu .panel-ten,
   #nicu .panel-eleven, #nicu .panel-twelve {
@@ -1548,7 +1566,7 @@ body.credits-open .credits-menu-left {
     -o-background-size: contain;
     background-size: contain;
   }
-  /* line 248, assets/sass/_nicu.scss */
+  /* line 250, assets/sass/_nicu.scss */
   #nicu .panel-one .panel-left, #nicu .panel-one .panel-right, #nicu .panel-two .panel-left, #nicu .panel-two .panel-right, #nicu .panel-three .panel-left, #nicu .panel-three .panel-right, #nicu .panel-four .panel-left, #nicu .panel-four .panel-right, #nicu .panel-five .panel-left, #nicu .panel-five .panel-right,
   #nicu .panel-six .panel-left,
   #nicu .panel-six .panel-right, #nicu .panel-seven .panel-left, #nicu .panel-seven .panel-right, #nicu .panel-eight .panel-left, #nicu .panel-eight .panel-right, #nicu .panel-nine .panel-left, #nicu .panel-nine .panel-right, #nicu .panel-ten .panel-left, #nicu .panel-ten .panel-right,
@@ -1557,7 +1575,7 @@ body.credits-open .credits-menu-left {
     width: 100%;
     padding: 0;
   }
-  /* line 248, assets/sass/_nicu.scss */
+  /* line 250, assets/sass/_nicu.scss */
   #nicu .panel-one .panel-left img, #nicu .panel-one .panel-right img, #nicu .panel-two .panel-left img, #nicu .panel-two .panel-right img, #nicu .panel-three .panel-left img, #nicu .panel-three .panel-right img, #nicu .panel-four .panel-left img, #nicu .panel-four .panel-right img, #nicu .panel-five .panel-left img, #nicu .panel-five .panel-right img,
   #nicu .panel-six .panel-left img,
   #nicu .panel-six .panel-right img, #nicu .panel-seven .panel-left img, #nicu .panel-seven .panel-right img, #nicu .panel-eight .panel-left img, #nicu .panel-eight .panel-right img, #nicu .panel-nine .panel-left img, #nicu .panel-nine .panel-right img, #nicu .panel-ten .panel-left img, #nicu .panel-ten .panel-right img,
@@ -1566,7 +1584,7 @@ body.credits-open .credits-menu-left {
     max-width: 100%;
     margin-bottom: 10px;
   }
-  /* line 249, assets/sass/_nicu.scss */
+  /* line 251, assets/sass/_nicu.scss */
   #nicu .panel-one .panel-text, #nicu .panel-two .panel-text, #nicu .panel-three .panel-text, #nicu .panel-four .panel-text, #nicu .panel-five .panel-text,
   #nicu .panel-six .panel-text, #nicu .panel-seven .panel-text, #nicu .panel-eight .panel-text, #nicu .panel-nine .panel-text, #nicu .panel-ten .panel-text,
   #nicu .panel-eleven .panel-text, #nicu .panel-twelve .panel-text {
@@ -1574,7 +1592,7 @@ body.credits-open .credits-menu-left {
     width: 80%;
   }
 }
-/* line 254, assets/sass/_nicu.scss */
+/* line 256, assets/sass/_nicu.scss */
 #nicu .left-nav a, #nicu .right-nav a {
   text-decoration: none;
 }
@@ -1592,7 +1610,7 @@ body.credits-open .credits-menu-left {
   -o-background-size: cover;
   background-size: cover;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 6, assets/sass/_timeline.scss */
   #timeline .panel-wrap {
     width: 100%;
@@ -1603,7 +1621,7 @@ body.credits-open .credits-menu-left {
   padding: 75px 0px 10px 0px;
   width: 390px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 16, assets/sass/_timeline.scss */
   #timeline h1 {
     padding: 10% 10% 10% 10%;
@@ -1618,7 +1636,7 @@ body.credits-open .credits-menu-left {
   width: 350px;
   text-transform: none;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 24, assets/sass/_timeline.scss */
   #timeline h3 {
     padding: 10% 10% 10% 10%;
@@ -1664,7 +1682,7 @@ body.credits-open .credits-menu-left {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 31, assets/sass/_timeline.scss */
   #timeline .time-block {
     padding: 10% 10% 10% 10%;
@@ -1679,13 +1697,13 @@ body.credits-open .credits-menu-left {
 #timeline .even .vertical-line {
   margin: 10px 0px 10px 20px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 47, assets/sass/_timeline.scss */
   #timeline .even .vertical-line {
     margin: 10px 0px 10px 50%;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 45, assets/sass/_timeline.scss */
   #timeline .even {
     padding-left: 10%;
@@ -1695,7 +1713,7 @@ body.credits-open .credits-menu-left {
 #timeline .odd .vertical-line {
   margin: 10px 0px 10px 540px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 59, assets/sass/_timeline.scss */
   #timeline .odd .vertical-line {
     margin: 10px 0px 10px 50%;
@@ -1707,7 +1725,7 @@ body.credits-open .credits-menu-left {
   height: 183px;
   margin: 10px 0px 10px 280px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 66, assets/sass/_timeline.scss */
   #timeline .line-title {
     margin: 10px 0px 10px 50%;
@@ -1742,7 +1760,7 @@ body.credits-open .credits-menu-left {
   padding-bottom: 100px;
   width: 550px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 76, assets/sass/_timeline.scss */
   #timeline .callout h3 {
     padding: 10% 10% 10% 10%;
@@ -1769,7 +1787,7 @@ body.credits-open .credits-menu-left {
   -o-background-size: cover;
   background-size: cover;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 4, assets/sass/_map.scss */
   #map .panel-wrap {
     overflow: auto;
@@ -1789,7 +1807,7 @@ body.credits-open .credits-menu-left {
   display: inline;
   float: left;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 17, assets/sass/_map.scss */
   #map .map-intro h1 {
     padding: 10% 10% 10% 10%;
@@ -1811,7 +1829,7 @@ body.credits-open .credits-menu-left {
   color: white;
   font-style: italic;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 18, assets/sass/_map.scss */
   #map .map-intro .intro-text {
     padding: 5%;
@@ -1819,7 +1837,7 @@ body.credits-open .credits-menu-left {
     background: rgba(0, 0, 0, 0.3);
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 15, assets/sass/_map.scss */
   #map .map-intro {
     padding: 10% 0% 0% 0%;
@@ -1840,7 +1858,7 @@ body.credits-open .credits-menu-left {
 #map .zoom-out a:hover {
   text-decoration: underline;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 34, assets/sass/_map.scss */
   #map .zoom-out {
     display: none;
@@ -1889,7 +1907,7 @@ body.credits-open .credits-menu-left {
   opacity: 0.7;
   cursor: pointer;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 78, assets/sass/_map.scss */
   #map .slide {
     padding: 10%;
@@ -1908,7 +1926,7 @@ body.credits-open .credits-menu-left {
   position: relative;
   z-index: 10000;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 99, assets/sass/_map.scss */
   #map span.number {
     font-size: 40px;
@@ -1933,7 +1951,7 @@ body.credits-open .credits-menu-left {
   width: 350px;
   text-align: right;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 111, assets/sass/_map.scss */
   #map .number-wrap {
     text-align: left;
@@ -1961,7 +1979,7 @@ body.credits-open .credits-menu-left {
   max-width: 100%;
   margin: 10px 0px 10px 0px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 118, assets/sass/_map.scss */
   #map .content {
     padding: 0%;
@@ -1980,7 +1998,7 @@ body.credits-open .credits-menu-left {
 #map #wa .number-wrap {
   width: 400px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 147, assets/sass/_map.scss */
   #map #wa .number-wrap {
     width: 100%;
@@ -1991,7 +2009,7 @@ body.credits-open .credits-menu-left {
 #map #wa .content {
   width: 450px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 148, assets/sass/_map.scss */
   #map #wa .content {
     padding: 0%;
@@ -2002,7 +2020,7 @@ body.credits-open .credits-menu-left {
 #map #oh .number-wrap {
   width: 400px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 151, assets/sass/_map.scss */
   #map #oh .number-wrap {
     width: 100%;
@@ -2013,7 +2031,7 @@ body.credits-open .credits-menu-left {
 #map #oh .content {
   width: 450px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 152, assets/sass/_map.scss */
   #map #oh .content {
     padding: 0%;
@@ -2025,7 +2043,7 @@ body.credits-open .credits-menu-left {
   width: 900px;
   display: block;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 156, assets/sass/_map.scss */
   #map #usa .number-wrap {
     width: 100%;
@@ -2037,7 +2055,7 @@ body.credits-open .credits-menu-left {
   width: 500px;
   display: block;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 157, assets/sass/_map.scss */
   #map #usa .content {
     padding: 0%;
@@ -2048,7 +2066,7 @@ body.credits-open .credits-menu-left {
 #map #usa span.number {
   font-size: 170px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 158, assets/sass/_map.scss */
   #map #usa span.number {
     font-size: 40px;
@@ -2080,7 +2098,7 @@ body.credits-open .credits-menu-left {
   top: 8px;
   right: 5px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 164, assets/sass/_map.scss */
   #map .left-nav {
     position: relative;
@@ -2111,7 +2129,7 @@ body.credits-open .credits-menu-left {
   top: 8px;
   left: 5px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 174, assets/sass/_map.scss */
   #map .right-nav {
     position: relative;
@@ -2153,7 +2171,7 @@ body.credits-open .credits-menu-left {
   border-radius: 0;
   -webkit-transition: all .2s ease-in;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
   /* line 12, assets/sass/_states.scss */
   .stately {
     display: none;

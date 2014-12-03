@@ -62,7 +62,7 @@
 
     @include breakpoint(small) {
        @include background-size(contain);
-       h2{width: 50%; padding-top: 50%;}
+       h2{width: 50%; padding-top: 80%;}
        h3{width: 50%;}
        .panel-text{ 
          p,a{color: $black}
@@ -108,6 +108,7 @@
       width: 390px;
       padding: 615px 0px 80px 530px; 
       overflow-y: visible;
+      @include breakpoint(small) {padding-top: 67% !important;}
     }
   }
 
@@ -134,10 +135,10 @@
   }
 
   .panel-seven{
-    background: url('assets/img/nicu-7.jpg') top right no-repeat;
+    background: url('assets/img/nicu-7.jpg') top left no-repeat;
     @include background-size(cover);
     .panel-text{
-      h2{color: $white;}
+      h2{color: $white; @include breakpoint(small) {color: $black;}}
       width: 390px;
       padding: 50px 0px 80px 45px; 
       p,a{
@@ -145,6 +146,7 @@
         @include breakpoint(small) {color: $black;}
       }
       blockquote{color: $gold;}
+      @include breakpoint(small) {padding-top: 67% !important;}
     }
     margin-bottom: 80px;
  
@@ -182,7 +184,7 @@
     .panel-full1{
       padding: 30px 0px 0px 600px; 
       width: 380px;
-      @include breakpoint(small) {padding: 0 10% 18px 10%; width: 80%;}
+      @include breakpoint(small) {padding: 0 0 18px 0; width: 100%;}
     }
 
     .panel-full2{
@@ -190,7 +192,7 @@
       p,a{color: $white; @include breakpoint(small) {color:$black;} }
       padding: 80px 0px 80px 45px; 
       width: 380px;
-      @include breakpoint(small) {padding: 0 10% 18px 10%; width: 80%;}
+      @include breakpoint(small) {padding: 0 0 18px 0; width: 100%;}
     }
  
     margin-bottom: 130px;

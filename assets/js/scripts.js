@@ -102,13 +102,17 @@
 $(function() {
 
   var isDesktop = (function() {
-    return !('ontouchstart' in window) // works on most browsers 
-   || !('onmsgesturechange' in window); // works on ie10
+    return !('ontouchstart' in window) || !('onmsgesturechange' in window); // works on ie10
   })();
 
+  var viewportwidth = $(window).width();
+  $(window).resize(function() {
+    viewportwidth= $(window).width();
+  });
   
   window.isDesktop = isDesktop;
-  if( isDesktop ){
+ 
+  if( isDesktop && viewportwidth >767){
     var map = impress();
     map.init();
     
@@ -136,17 +140,19 @@ $(function() {
         $('.slide').css('overflow', 'hidden');
     });
 
-    $('#map-read-more').click(function(e){
-      $('#map-more').removeClass("hide");
-      $('#map-more').addClass("show");
-      e.preventDefault();
-    });
-    $('#map-read-close').click(function(e){
-      $('#map-more').removeClass("show");
-      $('#map-more').addClass("hide");
-      e.preventDefault();
-    });
+    
   }
+
+  $('#map-read-more').click(function(e){
+    $('#map-more').removeClass("hide");
+    $('#map-more').addClass("show");
+    e.preventDefault();
+  });
+  $('#map-read-close').click(function(e){
+    $('#map-more').removeClass("show");
+    $('#map-more').addClass("hide");
+    e.preventDefault();
+  });
 
 
 });
