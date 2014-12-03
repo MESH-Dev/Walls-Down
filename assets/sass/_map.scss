@@ -3,7 +3,6 @@
     left: 300%;
     .panel-wrap{
         height: 100%;
-
         overflow: hidden;
         background: url('assets/img/map-bg.jpg') top left no-repeat;
         @include background-size(cover);
