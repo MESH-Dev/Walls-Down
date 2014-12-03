@@ -97,14 +97,16 @@
 
     }
     span.number{
-        color: $gold; font-family: georgia; font-size: 110px; 
+        color: $gold; font-family: georgia; font-size: 110px; line-height:135px; 
         -webkit-transition: all .5s ease-in; position:relative; 
         z-index: 10000; 
         @include breakpoint(small){font-size:40px; line-height:45px; width:100%;  float: left;}
     }
     span.subtext{
-        font:16px/20px $cabin; font-weight:bold; color: $gold; display:block;  
+        font:26px/30px $cabin; font-weight:bold; color: $gold; display:block;  
         text-transform:uppercase; -webkit-transition: all .5s ease-in; 
+
+        @include breakpoint(small){font:16px/20px $cabin;   }
     }
     
 

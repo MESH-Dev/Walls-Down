@@ -1922,6 +1922,7 @@ body.credits-open .credits-menu-left {
   color: #d29c0e;
   font-family: georgia;
   font-size: 110px;
+  line-height: 135px;
   -webkit-transition: all .5s ease-in;
   position: relative;
   z-index: 10000;
@@ -1937,14 +1938,20 @@ body.credits-open .credits-menu-left {
 }
 /* line 105, assets/sass/_map.scss */
 #map span.subtext {
-  font: 16px/20px "Cabin", sans-serif;
+  font: 26px/30px "Cabin", sans-serif;
   font-weight: bold;
   color: #d29c0e;
   display: block;
   text-transform: uppercase;
   -webkit-transition: all .5s ease-in;
 }
-/* line 111, assets/sass/_map.scss */
+@media only screen and (max-width: 767px) {
+  /* line 105, assets/sass/_map.scss */
+  #map span.subtext {
+    font: 16px/20px "Cabin", sans-serif;
+  }
+}
+/* line 113, assets/sass/_map.scss */
 #map .number-wrap {
   display: inline;
   float: left;
@@ -1952,14 +1959,14 @@ body.credits-open .credits-menu-left {
   text-align: right;
 }
 @media only screen and (max-width: 767px) {
-  /* line 111, assets/sass/_map.scss */
+  /* line 113, assets/sass/_map.scss */
   #map .number-wrap {
     text-align: left;
     width: 100%;
     padding: 0px 0px 10px 0px;
   }
 }
-/* line 118, assets/sass/_map.scss */
+/* line 120, assets/sass/_map.scss */
 #map .content {
   width: 500px;
   display: inline;
@@ -1968,19 +1975,19 @@ body.credits-open .credits-menu-left {
   margin-left: 40px;
   -webkit-transition: all .5s ease-in;
 }
-/* line 126, assets/sass/_map.scss */
+/* line 128, assets/sass/_map.scss */
 #map .content p {
   color: white;
   font-size: 16px;
   line-height: 26px;
 }
-/* line 131, assets/sass/_map.scss */
+/* line 133, assets/sass/_map.scss */
 #map .content img {
   max-width: 100%;
   margin: 10px 0px 10px 0px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 118, assets/sass/_map.scss */
+  /* line 120, assets/sass/_map.scss */
   #map .content {
     padding: 0%;
     margin-left: 0;
@@ -1988,96 +1995,96 @@ body.credits-open .credits-menu-left {
     max-height: 80%;
     opacity: 1;
   }
-  /* line 140, assets/sass/_map.scss */
+  /* line 142, assets/sass/_map.scss */
   #map .content p {
     font-size: 14px;
     line-height: 20px;
   }
 }
-/* line 147, assets/sass/_map.scss */
+/* line 149, assets/sass/_map.scss */
 #map #wa .number-wrap {
   width: 400px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 147, assets/sass/_map.scss */
+  /* line 149, assets/sass/_map.scss */
   #map #wa .number-wrap {
     width: 100%;
     padding: 0px 0px 10px 0px;
   }
 }
-/* line 148, assets/sass/_map.scss */
+/* line 150, assets/sass/_map.scss */
 #map #wa .content {
   width: 450px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 148, assets/sass/_map.scss */
+  /* line 150, assets/sass/_map.scss */
   #map #wa .content {
     padding: 0%;
     width: 100%;
   }
 }
-/* line 151, assets/sass/_map.scss */
+/* line 153, assets/sass/_map.scss */
 #map #oh .number-wrap {
   width: 400px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 151, assets/sass/_map.scss */
+  /* line 153, assets/sass/_map.scss */
   #map #oh .number-wrap {
     width: 100%;
     padding: 0px 0px 10px 0px;
   }
 }
-/* line 152, assets/sass/_map.scss */
+/* line 154, assets/sass/_map.scss */
 #map #oh .content {
   width: 450px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 152, assets/sass/_map.scss */
+  /* line 154, assets/sass/_map.scss */
   #map #oh .content {
     padding: 0%;
     width: 100%;
   }
 }
-/* line 156, assets/sass/_map.scss */
+/* line 158, assets/sass/_map.scss */
 #map #usa .number-wrap {
   width: 900px;
   display: block;
 }
 @media only screen and (max-width: 767px) {
-  /* line 156, assets/sass/_map.scss */
+  /* line 158, assets/sass/_map.scss */
   #map #usa .number-wrap {
     width: 100%;
     padding: 0px 0px 10px 0px;
   }
 }
-/* line 157, assets/sass/_map.scss */
+/* line 159, assets/sass/_map.scss */
 #map #usa .content {
   width: 500px;
   display: block;
 }
 @media only screen and (max-width: 767px) {
-  /* line 157, assets/sass/_map.scss */
+  /* line 159, assets/sass/_map.scss */
   #map #usa .content {
     padding: 0%;
     width: 100%;
   }
 }
-/* line 158, assets/sass/_map.scss */
+/* line 160, assets/sass/_map.scss */
 #map #usa span.number {
   font-size: 170px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 158, assets/sass/_map.scss */
+  /* line 160, assets/sass/_map.scss */
   #map #usa span.number {
     font-size: 40px;
   }
 }
-/* line 162, assets/sass/_map.scss */
+/* line 164, assets/sass/_map.scss */
 #map .step.active div.content {
   opacity: 1;
   -webkit-transition: all 2s ease-in;
 }
-/* line 164, assets/sass/_map.scss */
+/* line 166, assets/sass/_map.scss */
 #map .left-nav {
   position: absolute;
   height: 0px;
@@ -2086,12 +2093,12 @@ body.credits-open .credits-menu-left {
   left: 8%;
   float: left;
 }
-/* line 166, assets/sass/_map.scss */
+/* line 168, assets/sass/_map.scss */
 #map .left-nav a {
   position: relative;
   left: 7%;
 }
-/* line 167, assets/sass/_map.scss */
+/* line 169, assets/sass/_map.scss */
 #map .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -2099,7 +2106,7 @@ body.credits-open .credits-menu-left {
   right: 5px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 164, assets/sass/_map.scss */
+  /* line 166, assets/sass/_map.scss */
   #map .left-nav {
     position: relative;
     height: 0px;
@@ -2108,7 +2115,7 @@ body.credits-open .credits-menu-left {
     float: left;
   }
 }
-/* line 174, assets/sass/_map.scss */
+/* line 176, assets/sass/_map.scss */
 #map .right-nav {
   position: absolute;
   height: 0px;
@@ -2116,13 +2123,13 @@ body.credits-open .credits-menu-left {
   right: 1%;
   float: right;
 }
-/* line 176, assets/sass/_map.scss */
+/* line 178, assets/sass/_map.scss */
 #map .right-nav a {
   float: right;
   position: relative;
   right: 10%;
 }
-/* line 177, assets/sass/_map.scss */
+/* line 179, assets/sass/_map.scss */
 #map .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -2130,7 +2137,7 @@ body.credits-open .credits-menu-left {
   left: 5px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 174, assets/sass/_map.scss */
+  /* line 176, assets/sass/_map.scss */
   #map .right-nav {
     position: relative;
     height: 0px;
