@@ -27,7 +27,9 @@
   
   //background-position-x: 79px;
   h1{
-    font:26px/30px bold $cabin, sans-serif; 
+ 
+    font-size: 26px; line-height:30px;
+    font-family: $cabin;
     color: $gold; 
     text-transform:uppercase; 
     width: 300px;

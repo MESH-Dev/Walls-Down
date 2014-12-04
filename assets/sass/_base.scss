@@ -80,6 +80,7 @@ em{text-style:italic;}
 
 .hide{display:none; }
 .show{display:block;}
+.hideme{@include opacity(0);}
 
 
 /* #Buttons

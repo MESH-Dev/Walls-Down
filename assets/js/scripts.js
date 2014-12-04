@@ -273,9 +273,10 @@ $(function() {
 
     //CREDITS MENU --------------
     /* push menu left */
-    $("#credit-link").click(function(){
+    $("#credit-link").click(function(e){
         $('body').addClass("credits-open");
         activeCredits = "credits-open";
+        e.preventDefault();
     });
 
     /* hide active menu if close menu button is clicked */
@@ -302,8 +303,26 @@ $(function() {
       $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
       $('.secondary-menu li a[href="'+ hash +'"]').parent("li").addClass('menu-active');
    }, false);
-
- 
-
-
 });
+
+/*------------------ TIMELINE SCROLLS -----------------*/
+$(function() {
+  $('#timeline').scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},500);
+                $(this).children('.vertical-line').animate({'height':'140px'},1500);
+            }
+            
+        });
+    
+    });
+});
+
+

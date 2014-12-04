@@ -103,19 +103,25 @@ em {
   display: block;
 }
 
+/* line 83, assets/sass/_base.scss */
+.hideme {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+
 /* #Buttons
 ================================================== */
 /* #Forms
 ================================================== */
 /* #Images
 ================================================== */
-/* line 102, assets/sass/_base.scss */
+/* line 103, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 104, assets/sass/_base.scss */
+/* line 105, assets/sass/_base.scss */
 a img:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
@@ -124,60 +130,60 @@ a img:hover {
 
 /*  Image Styles
    ========================================================================== */
-/* line 109, assets/sass/_base.scss */
+/* line 110, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 110, assets/sass/_base.scss */
+/* line 111, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 111, assets/sass/_base.scss */
+/* line 112, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 112, assets/sass/_base.scss */
+/* line 113, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 113, assets/sass/_base.scss */
+/* line 114, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 114, assets/sass/_base.scss */
+/* line 115, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 115, assets/sass/_base.scss */
+/* line 116, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 116, assets/sass/_base.scss */
+/* line 117, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 117, assets/sass/_base.scss */
+/* line 118, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 118, assets/sass/_base.scss */
+/* line 119, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -186,22 +192,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 119, assets/sass/_base.scss */
+/* line 120, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 120, assets/sass/_base.scss */
+/* line 121, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 121, assets/sass/_base.scss */
+/* line 122, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 122, assets/sass/_base.scss */
+/* line 123, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -211,7 +217,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 123, assets/sass/_base.scss */
+/* line 124, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -220,7 +226,7 @@ a img.aligncenter {
 }
 
 /* You can also use a <br class="clear" /> to clear columns */
-/* line 127, assets/sass/_base.scss */
+/* line 128, assets/sass/_base.scss */
 .clear {
   clear: both;
   display: block;
@@ -1136,15 +1142,16 @@ body.credits-open .credits-menu-left {
 #grady .section-four {
   padding-top: 0px;
   padding-bottom: 50px;
+  position: relative;
 }
-/* line 150, assets/sass/_grady.scss */
+/* line 151, assets/sass/_grady.scss */
 #grady .section-four img {
   position: absolute;
   left: 790px;
-  top: 6858px;
+  top: 58px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 150, assets/sass/_grady.scss */
+  /* line 151, assets/sass/_grady.scss */
   #grady .section-four img {
     position: relative;
     display: block;
@@ -1154,37 +1161,38 @@ body.credits-open .credits-menu-left {
     padding-bottom: 30px;
   }
 }
-/* line 160, assets/sass/_grady.scss */
+/* line 161, assets/sass/_grady.scss */
 #grady .section-five {
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-top: -20px;
+  margin-top: -40px;
   z-index: 15;
+  position: relative;
 }
-/* line 165, assets/sass/_grady.scss */
+/* line 167, assets/sass/_grady.scss */
 #grady .section-five img {
   position: absolute;
   right: 0px;
-  top: 7800px;
+  top: 400px;
 }
 @media only screen and (max-width: 1325px) {
-  /* line 165, assets/sass/_grady.scss */
+  /* line 167, assets/sass/_grady.scss */
   #grady .section-five img {
     width: 350px;
   }
 }
 @media only screen and (max-width: 1130px) {
-  /* line 165, assets/sass/_grady.scss */
+  /* line 167, assets/sass/_grady.scss */
   #grady .section-five img {
-    display: none;
+    width: 200px;
   }
 }
-/* line 171, assets/sass/_grady.scss */
+/* line 173, assets/sass/_grady.scss */
 #grady .section-six {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 176, assets/sass/_grady.scss */
+/* line 178, assets/sass/_grady.scss */
 #grady .transition-skyline {
   background: url("assets/img/grady-skyline.jpg") top left no-repeat;
   height: 1330px;
@@ -1193,7 +1201,7 @@ body.credits-open .credits-menu-left {
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 176, assets/sass/_grady.scss */
+  /* line 178, assets/sass/_grady.scss */
   #grady .transition-skyline {
     background: url("assets/img/grady-skyline-small.jpg") #020202 top left no-repeat;
     -webkit-background-size: contain;
@@ -1204,37 +1212,37 @@ body.credits-open .credits-menu-left {
   }
 }
 @media only screen and (max-width: 767px) and (max-width: 480px) {
-  /* line 176, assets/sass/_grady.scss */
+  /* line 178, assets/sass/_grady.scss */
   #grady .transition-skyline {
     height: 500px;
   }
 }
 @media only screen and (max-width: 767px) and (max-width: 320px) {
-  /* line 176, assets/sass/_grady.scss */
+  /* line 178, assets/sass/_grady.scss */
   #grady .transition-skyline {
     height: 500px;
   }
 }
-/* line 192, assets/sass/_grady.scss */
+/* line 194, assets/sass/_grady.scss */
 #grady .section-seven p.neg-top {
   position: relative;
   top: -300px;
 }
-/* line 196, assets/sass/_grady.scss */
+/* line 198, assets/sass/_grady.scss */
 #grady .section-seven p.neg-top-fix {
   margin-top: -300px;
 }
-/* line 201, assets/sass/_grady.scss */
+/* line 203, assets/sass/_grady.scss */
 #grady .section-eight {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 205, assets/sass/_grady.scss */
+/* line 207, assets/sass/_grady.scss */
 #grady .section-nine {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-/* line 210, assets/sass/_grady.scss */
+/* line 212, assets/sass/_grady.scss */
 #grady .transition-mic {
   background: url("assets/img/grady-micd.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1246,20 +1254,20 @@ body.credits-open .credits-menu-left {
   margin-top: -250px;
   margin-bottom: 0px;
 }
-/* line 218, assets/sass/_grady.scss */
+/* line 220, assets/sass/_grady.scss */
 #grady .section-ten {
   padding-bottom: 0px;
 }
-/* line 220, assets/sass/_grady.scss */
+/* line 222, assets/sass/_grady.scss */
 #grady .section-ten p.neg-top {
   position: relative;
   top: -500px;
 }
-/* line 224, assets/sass/_grady.scss */
+/* line 226, assets/sass/_grady.scss */
 #grady .section-ten p.neg-top-fix {
   margin-top: -500px;
 }
-/* line 230, assets/sass/_grady.scss */
+/* line 232, assets/sass/_grady.scss */
 #grady .grady-end {
   background: url("assets/img/grady-end.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1272,7 +1280,7 @@ body.credits-open .credits-menu-left {
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 240, assets/sass/_grady.scss */
+  /* line 242, assets/sass/_grady.scss */
   #grady .left-nav {
     position: relative;
     height: 0px;
@@ -1280,7 +1288,7 @@ body.credits-open .credits-menu-left {
     top: -300px;
     float: left;
   }
-  /* line 241, assets/sass/_grady.scss */
+  /* line 243, assets/sass/_grady.scss */
   #grady .right-nav {
     position: relative;
     height: 0px;
@@ -1965,23 +1973,36 @@ body.credits-open .credits-menu-left {
 #timeline .line-1 {
   background: url("assets/img/line-1.png") top left no-repeat;
   height: 91px;
+  height: 0;
 }
 /* line 72, assets/sass/_timeline.scss */
 #timeline .line-2 {
   background: url("assets/img/line-2.png") top left no-repeat;
   height: 183px;
+  height: 0;
 }
 /* line 73, assets/sass/_timeline.scss */
 #timeline .line-3 {
   background: url("assets/img/line-3.png") top left no-repeat;
   height: 74px;
+  height: 0;
 }
 /* line 74, assets/sass/_timeline.scss */
 #timeline .line-4 {
   background: url("assets/img/line-4.png") top left no-repeat;
   height: 116px;
+  height: 0;
+}
+/* line 75, assets/sass/_timeline.scss */
+#timeline .timeline-title .line-1 {
+  background: none;
+  height: 91px;
 }
 /* line 76, assets/sass/_timeline.scss */
+#timeline .first-block .line-1 {
+  height: 91px;
+}
+/* line 78, assets/sass/_timeline.scss */
 #timeline .callout h3 {
   font: 20px/30px Georgia, Times, "Times New Roman", serif;
   color: #020202;
@@ -1991,13 +2012,13 @@ body.credits-open .credits-menu-left {
   width: 550px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 76, assets/sass/_timeline.scss */
+  /* line 78, assets/sass/_timeline.scss */
   #timeline .callout h3 {
     padding: 10% 10% 10% 10%;
     width: 80%;
   }
 }
-/* line 87, assets/sass/_timeline.scss */
+/* line 89, assets/sass/_timeline.scss */
 #timeline .left-nav a, #timeline .right-nav a {
   color: #020202;
 }
@@ -2513,7 +2534,9 @@ body.credits-open .credits-menu-left {
 }
 /* line 29, assets/sass/_letters.scss */
 .letter h1 {
-  font: 26px/30px bold "Cabin", sans-serif, sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+  font-family: "Cabin", sans-serif;
   color: #d29c0e;
   text-transform: uppercase;
   width: 300px;
@@ -2527,14 +2550,14 @@ body.credits-open .credits-menu-left {
     padding: 50px 0 20px 0;
   }
 }
-/* line 40, assets/sass/_letters.scss */
+/* line 42, assets/sass/_letters.scss */
 .letter .text-container {
   width: 500px;
   padding-left: 200px;
   padding-top: 90px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 40, assets/sass/_letters.scss */
+  /* line 42, assets/sass/_letters.scss */
   .letter .text-container {
     width: 100%;
     padding: 0 0 100px 0;

@@ -147,8 +147,9 @@
   .section-four{
     padding-top: 0px;
     padding-bottom: 50px;
+    position: relative;
     img{
-      position:absolute; left: 790px; top:6858px;
+      position:absolute; left: 790px; top:58px;
        //@media only screen and (max-width: 1325px){ width: 350px; }
        //@media only screen and (max-width: 1130px){ display:none; }
       @include breakpoint(small) {
@@ -160,11 +161,12 @@
   .section-five{
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-top: -20px;
+    margin-top: -40px;
     z-index: 15;
-    img{position:absolute; right:0px; top:7800px;
+    position:relative;
+    img{position:absolute; right:0px; top:400px;
        @media only screen and (max-width: 1325px){ width: 350px; }
-       @media only screen and (max-width: 1130px){ display:none; }
+       @media only screen and (max-width: 1130px){ width: 200px;  }
     }
   }  
 
