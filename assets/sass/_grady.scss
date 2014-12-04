@@ -4,7 +4,13 @@
   overflow-x: hidden;
   .intro{
     background-color: $black;
-    h1{font-size: 81px; line-height: 88px; color: $white; padding: 250px 0px 0px 210px; text-transform:uppercase; width: 640px; }
+    @include breakpoint(small) {width: 100%;}
+    h1{
+      font-size: 81px; line-height: 88px; color: $white; padding: 250px 0px 0px 210px; text-transform:uppercase; width: 640px; 
+      @include breakpoint(small) {
+        padding: 40px 10% 18px 10%; width: 60%; font-size: 40px; line-height: 48px;
+      }
+    }
     .teal-line{
       padding: 20px 0px 0px 0px; 
       margin-left:190px;
@@ -13,9 +19,24 @@
       border-right: 3px solid $teal;
       width: 680px; 
       hr {color: $teal; background-color: $teal; border:none;  width: 100%; height: 3px;position: relative; top: -10px}
+      @include breakpoint(small) {
+        width: 70%; margin-left:5%;
+      }
     }
-    h2{color: $white; padding: 20px 0px 240px 210px; width: 610px; font-style: italic;}
-    img{position:absolute; left:960px; top:20px;}
+    h2{
+      color: $white; padding: 20px 0px 240px 210px; width: 610px; font-style: italic;
+      @include breakpoint(small) {
+        width: 60%;  padding: 20px 10% 18px 10%;  font-size: 30px; line-height: 38px;
+      }
+      
+    }
+    img{
+      position:absolute; left:960px; top:20px;
+      @include breakpoint(small) {
+        width: 30%;  position:absolute; left:85%; top:80px;
+      }
+
+    }
   }
 
   .bg-black{
@@ -53,6 +74,13 @@
       height: 7px;
       background-color:$black; 
     }
+
+    @include breakpoint(small) {
+        width: 80%; padding: 20px 10% 0 10%;
+        img{padding-left: 10%; max-width: 80%}
+    }
+
+
   }
 
   .transition-one{

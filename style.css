@@ -847,7 +847,13 @@ body.credits-open .credits-menu-left {
 #grady .intro {
   background-color: #020202;
 }
-/* line 7, assets/sass/_grady.scss */
+@media only screen and (max-width: 767px) {
+  /* line 5, assets/sass/_grady.scss */
+  #grady .intro {
+    width: 100%;
+  }
+}
+/* line 8, assets/sass/_grady.scss */
 #grady .intro h1 {
   font-size: 81px;
   line-height: 88px;
@@ -856,7 +862,16 @@ body.credits-open .credits-menu-left {
   text-transform: uppercase;
   width: 640px;
 }
-/* line 8, assets/sass/_grady.scss */
+@media only screen and (max-width: 767px) {
+  /* line 8, assets/sass/_grady.scss */
+  #grady .intro h1 {
+    padding: 40px 10% 18px 10%;
+    width: 60%;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+/* line 14, assets/sass/_grady.scss */
 #grady .intro .teal-line {
   padding: 20px 0px 0px 0px;
   margin-left: 190px;
@@ -865,7 +880,7 @@ body.credits-open .credits-menu-left {
   border-right: 3px solid #4b7a82;
   width: 680px;
 }
-/* line 15, assets/sass/_grady.scss */
+/* line 21, assets/sass/_grady.scss */
 #grady .intro .teal-line hr {
   color: #4b7a82;
   background-color: #4b7a82;
@@ -875,71 +890,96 @@ body.credits-open .credits-menu-left {
   position: relative;
   top: -10px;
 }
-/* line 17, assets/sass/_grady.scss */
+@media only screen and (max-width: 767px) {
+  /* line 14, assets/sass/_grady.scss */
+  #grady .intro .teal-line {
+    width: 70%;
+    margin-left: 5%;
+  }
+}
+/* line 26, assets/sass/_grady.scss */
 #grady .intro h2 {
   color: white;
   padding: 20px 0px 240px 210px;
   width: 610px;
   font-style: italic;
 }
-/* line 18, assets/sass/_grady.scss */
+@media only screen and (max-width: 767px) {
+  /* line 26, assets/sass/_grady.scss */
+  #grady .intro h2 {
+    width: 60%;
+    padding: 20px 10% 18px 10%;
+    font-size: 30px;
+    line-height: 38px;
+  }
+}
+/* line 33, assets/sass/_grady.scss */
 #grady .intro img {
   position: absolute;
   left: 960px;
   top: 20px;
 }
-/* line 21, assets/sass/_grady.scss */
+@media only screen and (max-width: 767px) {
+  /* line 33, assets/sass/_grady.scss */
+  #grady .intro img {
+    width: 30%;
+    position: absolute;
+    left: 85%;
+    top: 80px;
+  }
+}
+/* line 42, assets/sass/_grady.scss */
 #grady .bg-black {
   background-color: #020202;
   margin-bottom: 0px;
 }
-/* line 24, assets/sass/_grady.scss */
+/* line 45, assets/sass/_grady.scss */
 #grady .bg-black p {
   color: white;
 }
-/* line 25, assets/sass/_grady.scss */
+/* line 46, assets/sass/_grady.scss */
 #grady .bg-black blockquote {
   color: white;
 }
-/* line 26, assets/sass/_grady.scss */
+/* line 47, assets/sass/_grady.scss */
 #grady .bg-black a {
   color: white;
   text-decoration: underline;
 }
-/* line 27, assets/sass/_grady.scss */
+/* line 48, assets/sass/_grady.scss */
 #grady .bg-black a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 30, assets/sass/_grady.scss */
+/* line 51, assets/sass/_grady.scss */
 #grady .bg-white {
   background-color: white;
   margin: 0;
 }
-/* line 33, assets/sass/_grady.scss */
+/* line 54, assets/sass/_grady.scss */
 #grady .bg-white p {
   color: #020202;
 }
-/* line 34, assets/sass/_grady.scss */
+/* line 55, assets/sass/_grady.scss */
 #grady .bg-white a {
   color: #020202;
   text-decoration: underline;
 }
-/* line 35, assets/sass/_grady.scss */
+/* line 56, assets/sass/_grady.scss */
 #grady .bg-white a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 38, assets/sass/_grady.scss */
+/* line 59, assets/sass/_grady.scss */
 #grady .text-container {
   width: 500px;
   padding-left: 200px;
 }
-/* line 41, assets/sass/_grady.scss */
+/* line 62, assets/sass/_grady.scss */
 #grady .text-container img {
   padding-left: 70px;
 }
-/* line 42, assets/sass/_grady.scss */
+/* line 63, assets/sass/_grady.scss */
 #grady .text-container .white-line {
   display: block;
   margin: 50px 0px 40px 180px;
@@ -947,7 +987,7 @@ body.credits-open .credits-menu-left {
   height: 7px;
   background-color: white;
 }
-/* line 49, assets/sass/_grady.scss */
+/* line 70, assets/sass/_grady.scss */
 #grady .text-container .black-line {
   display: block;
   margin: 50px 0px 40px 180px;
@@ -955,7 +995,19 @@ body.credits-open .credits-menu-left {
   height: 7px;
   background-color: #020202;
 }
-/* line 58, assets/sass/_grady.scss */
+@media only screen and (max-width: 767px) {
+  /* line 59, assets/sass/_grady.scss */
+  #grady .text-container {
+    width: 80%;
+    padding: 20px 10% 0 10%;
+  }
+  /* line 80, assets/sass/_grady.scss */
+  #grady .text-container img {
+    padding-left: 10%;
+    max-width: 80%;
+  }
+}
+/* line 86, assets/sass/_grady.scss */
 #grady .transition-one {
   background: url("assets/img/grady-transition-one.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -966,22 +1018,22 @@ body.credits-open .credits-menu-left {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-/* line 66, assets/sass/_grady.scss */
+/* line 94, assets/sass/_grady.scss */
 #grady .section-two p.neg-top {
   position: relative;
   top: -100px;
 }
-/* line 70, assets/sass/_grady.scss */
+/* line 98, assets/sass/_grady.scss */
 #grady .section-two p.neg-top-fix {
   margin-top: -100px;
 }
-/* line 73, assets/sass/_grady.scss */
+/* line 101, assets/sass/_grady.scss */
 #grady .section-two img {
   position: absolute;
   left: 800px;
   top: 2150px;
 }
-/* line 74, assets/sass/_grady.scss */
+/* line 102, assets/sass/_grady.scss */
 #grady .section-two .brahms {
   font-size: 24px;
   color: #d29c0e;
@@ -991,7 +1043,7 @@ body.credits-open .credits-menu-left {
   top: 3512px;
   width: 300px;
 }
-/* line 77, assets/sass/_grady.scss */
+/* line 105, assets/sass/_grady.scss */
 #grady .transition-grady-ruins {
   background: url("assets/img/grady-ruins.jpg") top left no-repeat;
   height: 950px;
@@ -999,11 +1051,11 @@ body.credits-open .credits-menu-left {
   margin-top: -0px;
   margin-bottom: 0px;
 }
-/* line 85, assets/sass/_grady.scss */
+/* line 113, assets/sass/_grady.scss */
 #grady .section-three {
   padding-top: 40px;
 }
-/* line 89, assets/sass/_grady.scss */
+/* line 117, assets/sass/_grady.scss */
 #grady .transition-three {
   background: url("assets/img/grady-transition-three.png") top left no-repeat;
   height: 450px;
@@ -1011,34 +1063,34 @@ body.credits-open .credits-menu-left {
   margin-top: -280px;
   margin-bottom: 0px;
 }
-/* line 97, assets/sass/_grady.scss */
+/* line 125, assets/sass/_grady.scss */
 #grady .section-four {
   padding-top: 0px;
   padding-bottom: 50px;
 }
-/* line 100, assets/sass/_grady.scss */
+/* line 128, assets/sass/_grady.scss */
 #grady .section-four img {
   position: absolute;
   left: 790px;
   top: 6788px;
 }
-/* line 103, assets/sass/_grady.scss */
+/* line 131, assets/sass/_grady.scss */
 #grady .section-five {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 106, assets/sass/_grady.scss */
+/* line 134, assets/sass/_grady.scss */
 #grady .section-five img {
   position: absolute;
   left: 840px;
   top: 7800px;
 }
-/* line 109, assets/sass/_grady.scss */
+/* line 137, assets/sass/_grady.scss */
 #grady .section-six {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 114, assets/sass/_grady.scss */
+/* line 142, assets/sass/_grady.scss */
 #grady .transition-skyline {
   background: url("assets/img/grady-skyline.jpg") top left no-repeat;
   height: 1330px;
@@ -1046,26 +1098,26 @@ body.credits-open .credits-menu-left {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-/* line 123, assets/sass/_grady.scss */
+/* line 151, assets/sass/_grady.scss */
 #grady .section-seven p.neg-top {
   position: relative;
   top: -300px;
 }
-/* line 127, assets/sass/_grady.scss */
+/* line 155, assets/sass/_grady.scss */
 #grady .section-seven p.neg-top-fix {
   margin-top: -300px;
 }
-/* line 132, assets/sass/_grady.scss */
+/* line 160, assets/sass/_grady.scss */
 #grady .section-eight {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 136, assets/sass/_grady.scss */
+/* line 164, assets/sass/_grady.scss */
 #grady .section-nine {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-/* line 141, assets/sass/_grady.scss */
+/* line 169, assets/sass/_grady.scss */
 #grady .transition-mic {
   background: url("assets/img/grady-micd.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1077,20 +1129,20 @@ body.credits-open .credits-menu-left {
   margin-top: -250px;
   margin-bottom: 0px;
 }
-/* line 149, assets/sass/_grady.scss */
+/* line 177, assets/sass/_grady.scss */
 #grady .section-ten {
   padding-bottom: 0px;
 }
-/* line 151, assets/sass/_grady.scss */
+/* line 179, assets/sass/_grady.scss */
 #grady .section-ten p.neg-top {
   position: relative;
   top: -500px;
 }
-/* line 155, assets/sass/_grady.scss */
+/* line 183, assets/sass/_grady.scss */
 #grady .section-ten p.neg-top-fix {
   margin-top: -500px;
 }
-/* line 161, assets/sass/_grady.scss */
+/* line 189, assets/sass/_grady.scss */
 #grady .grady-end {
   background: url("assets/img/grady-end.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1449,47 +1501,59 @@ body.credits-open .credits-menu-left {
     width: 100%;
   }
 }
-/* line 190, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 184, assets/sass/_nicu.scss */
+  #nicu .panel-nine .panel-full1 {
+    padding-top: 67% !important;
+  }
+}
+/* line 191, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full2 {
   padding: 80px 0px 80px 45px;
   width: 380px;
 }
-/* line 191, assets/sass/_nicu.scss */
+/* line 192, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full2 blockquote {
   color: #d29c0e;
 }
-/* line 192, assets/sass/_nicu.scss */
+/* line 193, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full2 p, #nicu .panel-nine .panel-full2 a {
   color: white;
 }
 @media only screen and (max-width: 767px) {
-  /* line 192, assets/sass/_nicu.scss */
+  /* line 193, assets/sass/_nicu.scss */
   #nicu .panel-nine .panel-full2 p, #nicu .panel-nine .panel-full2 a {
     color: #020202;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 190, assets/sass/_nicu.scss */
+  /* line 191, assets/sass/_nicu.scss */
   #nicu .panel-nine .panel-full2 {
     padding: 0 0 18px 0;
     width: 100%;
   }
 }
-/* line 202, assets/sass/_nicu.scss */
+/* line 203, assets/sass/_nicu.scss */
 #nicu .panel-ten {
   margin-bottom: 150px;
 }
-/* line 203, assets/sass/_nicu.scss */
+/* line 204, assets/sass/_nicu.scss */
 #nicu .panel-ten .panel-left {
   padding: 50px 0px 10px 45px;
   width: 460px;
 }
-/* line 207, assets/sass/_nicu.scss */
+/* line 208, assets/sass/_nicu.scss */
 #nicu .panel-ten .panel-right {
   padding: 0px 0px 10px 15px;
   width: 400px;
 }
-/* line 215, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 203, assets/sass/_nicu.scss */
+  #nicu .panel-ten {
+    margin-bottom: 18px;
+  }
+}
+/* line 217, assets/sass/_nicu.scss */
 #nicu .panel-eleven {
   background: url("assets/img/nicu-11.jpg") top right no-repeat;
   -webkit-background-size: cover;
@@ -1498,66 +1562,72 @@ body.credits-open .credits-menu-left {
   background-size: cover;
   margin-bottom: 80px;
 }
-/* line 218, assets/sass/_nicu.scss */
+/* line 220, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-left {
   padding: 130px 0px 30px 45px;
   width: 360px;
 }
-/* line 219, assets/sass/_nicu.scss */
+/* line 221, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-left blockquote {
   color: #d29c0e;
 }
-/* line 220, assets/sass/_nicu.scss */
+/* line 222, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-left p, #nicu .panel-eleven .panel-left a {
   color: white;
 }
 @media only screen and (max-width: 767px) {
-  /* line 220, assets/sass/_nicu.scss */
+  /* line 222, assets/sass/_nicu.scss */
   #nicu .panel-eleven .panel-left p, #nicu .panel-eleven .panel-left a {
     color: #020202;
   }
 }
-/* line 224, assets/sass/_nicu.scss */
+@media only screen and (max-width: 767px) {
+  /* line 220, assets/sass/_nicu.scss */
+  #nicu .panel-eleven .panel-left {
+    padding-top: 67% !important;
+  }
+}
+/* line 227, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-right {
   padding: 650px 0px 30px 45px;
   width: 380px;
 }
-/* line 225, assets/sass/_nicu.scss */
+/* line 228, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-right h2 {
   color: white;
 }
 @media only screen and (max-width: 767px) {
-  /* line 225, assets/sass/_nicu.scss */
+  /* line 228, assets/sass/_nicu.scss */
   #nicu .panel-eleven .panel-right h2 {
     color: #020202;
   }
 }
-/* line 226, assets/sass/_nicu.scss */
+/* line 229, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-right p, #nicu .panel-eleven .panel-right a {
   color: white;
 }
 @media only screen and (max-width: 767px) {
-  /* line 226, assets/sass/_nicu.scss */
+  /* line 229, assets/sass/_nicu.scss */
   #nicu .panel-eleven .panel-right p, #nicu .panel-eleven .panel-right a {
     color: #020202;
   }
 }
-/* line 233, assets/sass/_nicu.scss */
+/* line 236, assets/sass/_nicu.scss */
 #nicu .panel-twelve {
   margin-bottom: 100px;
 }
-/* line 234, assets/sass/_nicu.scss */
+/* line 237, assets/sass/_nicu.scss */
 #nicu .panel-twelve .panel-left {
   padding: 0px 0px 0px 45px;
   width: 380px;
 }
-/* line 238, assets/sass/_nicu.scss */
+/* line 241, assets/sass/_nicu.scss */
 #nicu .panel-twelve .panel-right {
   padding: 0px 0px 10px 45px;
   width: 580px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 248, assets/sass/_nicu.scss */
+  /* line 251, assets/sass/_nicu.scss */
   #nicu .panel-one, #nicu .panel-two, #nicu .panel-three, #nicu .panel-four, #nicu .panel-five,
   #nicu .panel-six, #nicu .panel-seven, #nicu .panel-eight, #nicu .panel-nine, #nicu .panel-ten,
   #nicu .panel-eleven, #nicu .panel-twelve {
@@ -1566,7 +1636,7 @@ body.credits-open .credits-menu-left {
     -o-background-size: contain;
     background-size: contain;
   }
-  /* line 250, assets/sass/_nicu.scss */
+  /* line 253, assets/sass/_nicu.scss */
   #nicu .panel-one .panel-left, #nicu .panel-one .panel-right, #nicu .panel-two .panel-left, #nicu .panel-two .panel-right, #nicu .panel-three .panel-left, #nicu .panel-three .panel-right, #nicu .panel-four .panel-left, #nicu .panel-four .panel-right, #nicu .panel-five .panel-left, #nicu .panel-five .panel-right,
   #nicu .panel-six .panel-left,
   #nicu .panel-six .panel-right, #nicu .panel-seven .panel-left, #nicu .panel-seven .panel-right, #nicu .panel-eight .panel-left, #nicu .panel-eight .panel-right, #nicu .panel-nine .panel-left, #nicu .panel-nine .panel-right, #nicu .panel-ten .panel-left, #nicu .panel-ten .panel-right,
@@ -1575,7 +1645,7 @@ body.credits-open .credits-menu-left {
     width: 100%;
     padding: 0;
   }
-  /* line 250, assets/sass/_nicu.scss */
+  /* line 253, assets/sass/_nicu.scss */
   #nicu .panel-one .panel-left img, #nicu .panel-one .panel-right img, #nicu .panel-two .panel-left img, #nicu .panel-two .panel-right img, #nicu .panel-three .panel-left img, #nicu .panel-three .panel-right img, #nicu .panel-four .panel-left img, #nicu .panel-four .panel-right img, #nicu .panel-five .panel-left img, #nicu .panel-five .panel-right img,
   #nicu .panel-six .panel-left img,
   #nicu .panel-six .panel-right img, #nicu .panel-seven .panel-left img, #nicu .panel-seven .panel-right img, #nicu .panel-eight .panel-left img, #nicu .panel-eight .panel-right img, #nicu .panel-nine .panel-left img, #nicu .panel-nine .panel-right img, #nicu .panel-ten .panel-left img, #nicu .panel-ten .panel-right img,
@@ -1584,7 +1654,7 @@ body.credits-open .credits-menu-left {
     max-width: 100%;
     margin-bottom: 10px;
   }
-  /* line 251, assets/sass/_nicu.scss */
+  /* line 254, assets/sass/_nicu.scss */
   #nicu .panel-one .panel-text, #nicu .panel-two .panel-text, #nicu .panel-three .panel-text, #nicu .panel-four .panel-text, #nicu .panel-five .panel-text,
   #nicu .panel-six .panel-text, #nicu .panel-seven .panel-text, #nicu .panel-eight .panel-text, #nicu .panel-nine .panel-text, #nicu .panel-ten .panel-text,
   #nicu .panel-eleven .panel-text, #nicu .panel-twelve .panel-text {
@@ -1592,7 +1662,7 @@ body.credits-open .credits-menu-left {
     width: 80%;
   }
 }
-/* line 256, assets/sass/_nicu.scss */
+/* line 259, assets/sass/_nicu.scss */
 #nicu .left-nav a, #nicu .right-nav a {
   text-decoration: none;
 }
