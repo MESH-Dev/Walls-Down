@@ -14,7 +14,7 @@
   }
  
   h1{
-    padding: 75px 0px 10px 0px; width: 390px;
+    padding: 75px 0px 10px 0px; width: 420px;
     
     @include breakpoint(small) {
       padding: 10% 10% 10% 10%; width: 80%;
@@ -31,7 +31,7 @@
   .time-block{
     width: 550px;
     padding: 0px 0px 0px 100px;
-    h2{font:24px/40px $cabin ; color: $gold; letter-spacing: 0.1em;  text-transform:uppercase; font-weight: bold; text-align: center; padding: 0px 0px 10px 0px}
+    h2{font:24px/30px $cabin ; color: $gold; letter-spacing: 0.1em;  text-transform:uppercase; font-weight: bold; text-align: center; padding: 0px 0px 10px 0px}
     h4{text-align: center;}
     h5{font:14px/20px $cabin ; color: $gold; letter-spacing: 0.1em;  text-transform:uppercase; font-weight: bold; text-align: left; padding: 0px 0px 0px 0px}
     a{color: $black; text-decoration: underline; }

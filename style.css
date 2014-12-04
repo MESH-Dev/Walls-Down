@@ -255,8 +255,9 @@ span.underline {
 
 /* line 14, assets/sass/_typography.scss */
 h1 {
-  font: 54px/60px Georgia, Times, "Times New Roman", serif;
+  font: 48px/50px Georgia, Times, "Times New Roman", serif;
   color: #020202;
+  text-transform: uppercase;
 }
 
 /* line 15, assets/sass/_typography.scss */
@@ -649,7 +650,7 @@ body.pml-open .panel-wrap {
 }
 /* line 147, assets/sass/_layout.scss */
 .credits-menu-left p.top-one {
-  margin-bottom: 140px;
+  margin-bottom: 80px;
 }
 /* line 148, assets/sass/_layout.scss */
 .credits-menu-left p.top-two {
@@ -1144,31 +1145,34 @@ body.credits-open .credits-menu-left {
 #grady .section-five {
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-top: -20px;
+  z-index: 15;
+  position: relative;
 }
-/* line 152, assets/sass/_grady.scss */
+/* line 155, assets/sass/_grady.scss */
 #grady .section-five img {
   position: absolute;
   right: 0px;
   top: 7800px;
 }
 @media only screen and (max-width: 1325px) {
-  /* line 152, assets/sass/_grady.scss */
+  /* line 155, assets/sass/_grady.scss */
   #grady .section-five img {
     width: 350px;
   }
 }
 @media only screen and (max-width: 1130px) {
-  /* line 152, assets/sass/_grady.scss */
+  /* line 155, assets/sass/_grady.scss */
   #grady .section-five img {
     display: none;
   }
 }
-/* line 158, assets/sass/_grady.scss */
+/* line 161, assets/sass/_grady.scss */
 #grady .section-six {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 163, assets/sass/_grady.scss */
+/* line 166, assets/sass/_grady.scss */
 #grady .transition-skyline {
   background: url("assets/img/grady-skyline.jpg") top left no-repeat;
   height: 1330px;
@@ -1177,7 +1181,7 @@ body.credits-open .credits-menu-left {
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 163, assets/sass/_grady.scss */
+  /* line 166, assets/sass/_grady.scss */
   #grady .transition-skyline {
     background: url("assets/img/grady-skyline-small.jpg") #020202 top left no-repeat;
     -webkit-background-size: contain;
@@ -1188,37 +1192,37 @@ body.credits-open .credits-menu-left {
   }
 }
 @media only screen and (max-width: 767px) and (max-width: 480px) {
-  /* line 163, assets/sass/_grady.scss */
+  /* line 166, assets/sass/_grady.scss */
   #grady .transition-skyline {
     height: 500px;
   }
 }
 @media only screen and (max-width: 767px) and (max-width: 320px) {
-  /* line 163, assets/sass/_grady.scss */
+  /* line 166, assets/sass/_grady.scss */
   #grady .transition-skyline {
     height: 500px;
   }
 }
-/* line 179, assets/sass/_grady.scss */
+/* line 182, assets/sass/_grady.scss */
 #grady .section-seven p.neg-top {
   position: relative;
   top: -300px;
 }
-/* line 183, assets/sass/_grady.scss */
+/* line 186, assets/sass/_grady.scss */
 #grady .section-seven p.neg-top-fix {
   margin-top: -300px;
 }
-/* line 188, assets/sass/_grady.scss */
+/* line 191, assets/sass/_grady.scss */
 #grady .section-eight {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 192, assets/sass/_grady.scss */
+/* line 195, assets/sass/_grady.scss */
 #grady .section-nine {
   padding-top: 30px;
   padding-bottom: 50px;
 }
-/* line 197, assets/sass/_grady.scss */
+/* line 200, assets/sass/_grady.scss */
 #grady .transition-mic {
   background: url("assets/img/grady-micd.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1230,20 +1234,20 @@ body.credits-open .credits-menu-left {
   margin-top: -250px;
   margin-bottom: 0px;
 }
-/* line 205, assets/sass/_grady.scss */
+/* line 208, assets/sass/_grady.scss */
 #grady .section-ten {
   padding-bottom: 0px;
 }
-/* line 207, assets/sass/_grady.scss */
+/* line 210, assets/sass/_grady.scss */
 #grady .section-ten p.neg-top {
   position: relative;
   top: -500px;
 }
-/* line 211, assets/sass/_grady.scss */
+/* line 214, assets/sass/_grady.scss */
 #grady .section-ten p.neg-top-fix {
   margin-top: -500px;
 }
-/* line 217, assets/sass/_grady.scss */
+/* line 220, assets/sass/_grady.scss */
 #grady .grady-end {
   background: url("assets/img/grady-end.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1256,7 +1260,7 @@ body.credits-open .credits-menu-left {
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 227, assets/sass/_grady.scss */
+  /* line 230, assets/sass/_grady.scss */
   #grady .left-nav {
     position: relative;
     height: 0px;
@@ -1264,7 +1268,7 @@ body.credits-open .credits-menu-left {
     top: -300px;
     float: left;
   }
-  /* line 228, assets/sass/_grady.scss */
+  /* line 231, assets/sass/_grady.scss */
   #grady .right-nav {
     position: relative;
     height: 0px;
@@ -1466,7 +1470,7 @@ body.credits-open .credits-menu-left {
 }
 /* line 105, assets/sass/_nicu.scss */
 #nicu .panel-five {
-  background: url("assets/img/nicu-5.jpg") top left no-repeat;
+  background: url("assets/img/nicu-5.png") top left no-repeat;
 }
 /* line 107, assets/sass/_nicu.scss */
 #nicu .panel-five .panel-text {
@@ -1808,7 +1812,7 @@ body.credits-open .credits-menu-left {
 /* line 16, assets/sass/_timeline.scss */
 #timeline h1 {
   padding: 75px 0px 10px 0px;
-  width: 390px;
+  width: 420px;
 }
 @media only screen and (max-width: 767px) {
   /* line 16, assets/sass/_timeline.scss */
@@ -1839,7 +1843,7 @@ body.credits-open .credits-menu-left {
 }
 /* line 34, assets/sass/_timeline.scss */
 #timeline .time-block h2 {
-  font: 24px/40px "Cabin", sans-serif;
+  font: 24px/30px "Cabin", sans-serif;
   color: #d29c0e;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -1965,8 +1969,9 @@ body.credits-open .credits-menu-left {
 /* line 2, assets/sass/_map.scss */
 #map {
   left: 300%;
+  overflow: hidden;
 }
-/* line 4, assets/sass/_map.scss */
+/* line 5, assets/sass/_map.scss */
 #map .panel-wrap {
   height: 100%;
   overflow: hidden;
@@ -1977,33 +1982,41 @@ body.credits-open .credits-menu-left {
   background-size: cover;
 }
 @media only screen and (max-width: 767px) {
-  /* line 4, assets/sass/_map.scss */
+  /* line 5, assets/sass/_map.scss */
   #map .panel-wrap {
     overflow: auto;
     width: 100%;
   }
 }
-/* line 15, assets/sass/_map.scss */
+/* line 16, assets/sass/_map.scss */
 #map .map-intro {
-  padding: 25px 0px 0px 50px;
+  padding: 25px 0px 0px 40px;
   position: relative;
   z-index: 1000;
 }
-/* line 17, assets/sass/_map.scss */
+/* line 18, assets/sass/_map.scss */
 #map .map-intro h1 {
-  font: 32px/36px Georgia, Times, "Times New Roman", serif;
   color: white;
   display: inline;
   float: left;
 }
+/* line 20, assets/sass/_map.scss */
+#map .map-intro h1 a {
+  color: white;
+  text-decoration: none;
+}
+/* line 20, assets/sass/_map.scss */
+#map .map-intro h1 a:hover {
+  text-decoration: none;
+}
 @media only screen and (max-width: 767px) {
-  /* line 17, assets/sass/_map.scss */
+  /* line 18, assets/sass/_map.scss */
   #map .map-intro h1 {
     padding: 10% 10% 10% 10%;
     width: 80%;
   }
 }
-/* line 18, assets/sass/_map.scss */
+/* line 22, assets/sass/_map.scss */
 #map .map-intro .intro-text {
   width: 380px;
   display: inline;
@@ -2012,14 +2025,14 @@ body.credits-open .credits-menu-left {
   padding: 10px 10px 0px 10px;
   background: rgba(0, 0, 0, 0.7);
 }
-/* line 21, assets/sass/_map.scss */
+/* line 25, assets/sass/_map.scss */
 #map .map-intro .intro-text p {
-  font: 12px/15px Georgia, Times, "Times New Roman", serif;
+  font: 14px/20px Georgia, Times, "Times New Roman", serif;
   color: white;
   font-style: italic;
 }
 @media only screen and (max-width: 767px) {
-  /* line 18, assets/sass/_map.scss */
+  /* line 22, assets/sass/_map.scss */
   #map .map-intro .intro-text {
     padding: 5%;
     width: 70%;
@@ -2027,33 +2040,33 @@ body.credits-open .credits-menu-left {
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 15, assets/sass/_map.scss */
+  /* line 16, assets/sass/_map.scss */
   #map .map-intro {
     padding: 10% 0% 0% 0%;
   }
 }
-/* line 34, assets/sass/_map.scss */
+/* line 38, assets/sass/_map.scss */
 #map .zoom-out {
-  position: absolute;
-  z-index: 1001;
-  top: 40px;
-  right: 20px;
+  position: relative;
+  padding: 0 0 10px 0px;
+  width: 500px;
+  text-align: right;
 }
-/* line 39, assets/sass/_map.scss */
+/* line 44, assets/sass/_map.scss */
 #map .zoom-out a {
   color: white;
 }
-/* line 40, assets/sass/_map.scss */
+/* line 45, assets/sass/_map.scss */
 #map .zoom-out a:hover {
   text-decoration: underline;
 }
 @media only screen and (max-width: 767px) {
-  /* line 34, assets/sass/_map.scss */
+  /* line 38, assets/sass/_map.scss */
   #map .zoom-out {
     display: none;
   }
 }
-/* line 48, assets/sass/_map.scss */
+/* line 53, assets/sass/_map.scss */
 #map .step {
   position: relative;
   padding: 0px;
@@ -2064,7 +2077,7 @@ body.credits-open .credits-menu-left {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 63, assets/sass/_map.scss */
+/* line 68, assets/sass/_map.scss */
 #map .impress-enabled .step {
   margin: 0;
   /*opacity: 0.3;*/
@@ -2075,14 +2088,14 @@ body.credits-open .credits-menu-left {
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
-/* line 75, assets/sass/_map.scss */
+/* line 80, assets/sass/_map.scss */
 #map .impress-enabled .step.active {
   opacity: 1;
 }
-/* line 78, assets/sass/_map.scss */
+/* line 83, assets/sass/_map.scss */
 #map .slide {
   display: block;
-  width: 950px;
+  width: 960px;
   padding: 0px;
   max-height: 230px;
   font-size: 20px;
@@ -2091,13 +2104,13 @@ body.credits-open .credits-menu-left {
   -moz-transition: max-height 0.8s;
   transition: max-height 0.8s;
 }
-/* line 84, assets/sass/_map.scss */
+/* line 89, assets/sass/_map.scss */
 #map .slide span:hover {
   opacity: 0.7;
   cursor: pointer;
 }
 @media only screen and (max-width: 767px) {
-  /* line 78, assets/sass/_map.scss */
+  /* line 83, assets/sass/_map.scss */
   #map .slide {
     padding: 10%;
     width: 100%;
@@ -2106,18 +2119,22 @@ body.credits-open .credits-menu-left {
     line-height: 20px;
   }
 }
-/* line 99, assets/sass/_map.scss */
+/* line 105, assets/sass/_map.scss */
 #map span.number {
   color: #d29c0e;
   font-family: georgia;
   font-size: 110px;
   line-height: 135px;
-  -webkit-transition: all .5s ease-in;
+  -webkit-transition: all 0.2;
+  -moz-transition: all 0.2;
+  -ms-transition: all 0.2;
+  -o-transition: all 0.2;
+  transition: all 0.2;
   position: relative;
   z-index: 10000;
 }
 @media only screen and (max-width: 767px) {
-  /* line 99, assets/sass/_map.scss */
+  /* line 105, assets/sass/_map.scss */
   #map span.number {
     font-size: 40px;
     line-height: 45px;
@@ -2125,7 +2142,13 @@ body.credits-open .credits-menu-left {
     float: left;
   }
 }
-/* line 105, assets/sass/_map.scss */
+/* line 112, assets/sass/_map.scss */
+#map .active span.number:hover, #map .active span.subtext:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  cursor: default;
+}
+/* line 113, assets/sass/_map.scss */
 #map span.subtext {
   font: 26px/30px "Cabin", sans-serif;
   font-weight: bold;
@@ -2135,12 +2158,12 @@ body.credits-open .credits-menu-left {
   -webkit-transition: all .5s ease-in;
 }
 @media only screen and (max-width: 767px) {
-  /* line 105, assets/sass/_map.scss */
+  /* line 113, assets/sass/_map.scss */
   #map span.subtext {
     font: 16px/20px "Cabin", sans-serif;
   }
 }
-/* line 113, assets/sass/_map.scss */
+/* line 121, assets/sass/_map.scss */
 #map .number-wrap {
   display: inline;
   float: left;
@@ -2148,14 +2171,14 @@ body.credits-open .credits-menu-left {
   text-align: right;
 }
 @media only screen and (max-width: 767px) {
-  /* line 113, assets/sass/_map.scss */
+  /* line 121, assets/sass/_map.scss */
   #map .number-wrap {
     text-align: left;
     width: 100%;
     padding: 0px 0px 10px 0px;
   }
 }
-/* line 120, assets/sass/_map.scss */
+/* line 128, assets/sass/_map.scss */
 #map .content {
   width: 500px;
   display: inline;
@@ -2164,19 +2187,19 @@ body.credits-open .credits-menu-left {
   margin-left: 40px;
   -webkit-transition: all .5s ease-in;
 }
-/* line 128, assets/sass/_map.scss */
+/* line 136, assets/sass/_map.scss */
 #map .content p {
   color: white;
   font-size: 16px;
   line-height: 26px;
 }
-/* line 133, assets/sass/_map.scss */
+/* line 141, assets/sass/_map.scss */
 #map .content img {
   max-width: 100%;
   margin: 10px 0px 10px 0px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 120, assets/sass/_map.scss */
+  /* line 128, assets/sass/_map.scss */
   #map .content {
     padding: 0%;
     margin-left: 0;
@@ -2184,96 +2207,97 @@ body.credits-open .credits-menu-left {
     max-height: 80%;
     opacity: 1;
   }
-  /* line 142, assets/sass/_map.scss */
+  /* line 150, assets/sass/_map.scss */
   #map .content p {
     font-size: 14px;
     line-height: 20px;
   }
 }
-/* line 149, assets/sass/_map.scss */
+/* line 157, assets/sass/_map.scss */
 #map #wa .number-wrap {
   width: 400px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 149, assets/sass/_map.scss */
+  /* line 157, assets/sass/_map.scss */
   #map #wa .number-wrap {
     width: 100%;
     padding: 0px 0px 10px 0px;
   }
 }
-/* line 150, assets/sass/_map.scss */
+/* line 158, assets/sass/_map.scss */
 #map #wa .content {
   width: 450px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 150, assets/sass/_map.scss */
+  /* line 158, assets/sass/_map.scss */
   #map #wa .content {
     padding: 0%;
     width: 100%;
   }
 }
-/* line 153, assets/sass/_map.scss */
+/* line 161, assets/sass/_map.scss */
 #map #oh .number-wrap {
   width: 400px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 153, assets/sass/_map.scss */
+  /* line 161, assets/sass/_map.scss */
   #map #oh .number-wrap {
     width: 100%;
     padding: 0px 0px 10px 0px;
   }
 }
-/* line 154, assets/sass/_map.scss */
+/* line 162, assets/sass/_map.scss */
 #map #oh .content {
   width: 450px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 154, assets/sass/_map.scss */
+  /* line 162, assets/sass/_map.scss */
   #map #oh .content {
     padding: 0%;
     width: 100%;
   }
 }
-/* line 158, assets/sass/_map.scss */
+/* line 166, assets/sass/_map.scss */
 #map #usa .number-wrap {
   width: 900px;
   display: block;
 }
 @media only screen and (max-width: 767px) {
-  /* line 158, assets/sass/_map.scss */
+  /* line 166, assets/sass/_map.scss */
   #map #usa .number-wrap {
     width: 100%;
     padding: 0px 0px 10px 0px;
   }
 }
-/* line 159, assets/sass/_map.scss */
+/* line 167, assets/sass/_map.scss */
 #map #usa .content {
   width: 500px;
+  margin-left: 100px;
   display: block;
 }
 @media only screen and (max-width: 767px) {
-  /* line 159, assets/sass/_map.scss */
+  /* line 167, assets/sass/_map.scss */
   #map #usa .content {
     padding: 0%;
     width: 100%;
   }
 }
-/* line 160, assets/sass/_map.scss */
+/* line 168, assets/sass/_map.scss */
 #map #usa span.number {
   font-size: 170px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 160, assets/sass/_map.scss */
+  /* line 168, assets/sass/_map.scss */
   #map #usa span.number {
     font-size: 40px;
   }
 }
-/* line 164, assets/sass/_map.scss */
+/* line 172, assets/sass/_map.scss */
 #map .step.active div.content {
   opacity: 1;
   -webkit-transition: all 2s ease-in;
 }
-/* line 166, assets/sass/_map.scss */
+/* line 174, assets/sass/_map.scss */
 #map .left-nav {
   position: absolute;
   height: 0px;
@@ -2282,12 +2306,12 @@ body.credits-open .credits-menu-left {
   left: 8%;
   float: left;
 }
-/* line 168, assets/sass/_map.scss */
+/* line 176, assets/sass/_map.scss */
 #map .left-nav a {
   position: relative;
   left: 7%;
 }
-/* line 169, assets/sass/_map.scss */
+/* line 177, assets/sass/_map.scss */
 #map .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -2295,7 +2319,7 @@ body.credits-open .credits-menu-left {
   right: 5px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 166, assets/sass/_map.scss */
+  /* line 174, assets/sass/_map.scss */
   #map .left-nav {
     position: relative;
     height: 0px;
@@ -2304,7 +2328,7 @@ body.credits-open .credits-menu-left {
     float: left;
   }
 }
-/* line 176, assets/sass/_map.scss */
+/* line 184, assets/sass/_map.scss */
 #map .right-nav {
   position: absolute;
   height: 0px;
@@ -2312,13 +2336,13 @@ body.credits-open .credits-menu-left {
   right: 1%;
   float: right;
 }
-/* line 178, assets/sass/_map.scss */
+/* line 186, assets/sass/_map.scss */
 #map .right-nav a {
   float: right;
   position: relative;
   right: 10%;
 }
-/* line 179, assets/sass/_map.scss */
+/* line 187, assets/sass/_map.scss */
 #map .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -2326,7 +2350,7 @@ body.credits-open .credits-menu-left {
   left: 5px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 176, assets/sass/_map.scss */
+  /* line 184, assets/sass/_map.scss */
   #map .right-nav {
     position: relative;
     height: 0px;
@@ -2379,7 +2403,7 @@ body.credits-open .credits-menu-left {
   float: left;
   margin: -5% 0 0 -100%;
   position: relative;
-  left: 90%;
+  left: 100%;
   width: 100%;
   cursor: default;
   -webkit-transition: all .8s ease-in;

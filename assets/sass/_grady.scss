@@ -149,6 +149,9 @@
   .section-five{
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-top: -20px;
+    z-index: 15;
+    position: relative;
     img{position:absolute; right:0px; top:7800px;
        @media only screen and (max-width: 1325px){ width: 350px; }
        @media only screen and (max-width: 1130px){ display:none; }

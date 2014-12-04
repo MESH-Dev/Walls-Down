@@ -766,18 +766,22 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
         }, false);
         
         // delegated handler for clicking on step elements
+     
         document.addEventListener("click", function ( event ) {
             var target = event.target;
+            target = target.parentNode;
+ 
             // find closest step element that is not active
-            while ( !(target.classList.contains("step") && !target.classList.contains("active")) &&
-                    (target !== document.documentElement) ) {
+            while ((target.classList.contains("number-wrap") && !target.classList.contains("active"))&&(target !== document.documentElement) ) {
+ 
                 target = target.parentNode;
+ 
             }
-            
             if ( api.goto(target) ) {
                 event.preventDefault();
             }
         }, false);
+         
         
         // touch handler to detect taps on the left and right side of the screen
         // based on awesome work of @hakimel: https://github.com/hakimel/reveal.js
@@ -991,10 +995,24 @@ $(function() {
   if( isDesktop && viewportwidth >767){
     var map = impress();
     map.init();
-    
-    $('span.number').click(function(){
-        var state = $(this).parent().parent().attr("id");
-        var $st = $(this).parent().parent();
+    if (window.location.hash == "#map") {
+      map.goto(0);
+    }
+    window.addEventListener("hashchange", function () {
+      if (window.location.hash == "#map") {
+          map.goto(0);
+          $('#plain li').removeClass('inactive');
+          $('.intro-text').removeClass('inactive');
+          $('.intro-text').fadeIn();
+          $('.slide').fadeIn();
+          $('.slide').css('max-height', '200px');
+          $('.slide').css('overflow', 'hidden');
+      }
+    }, false);
+ 
+    $('div.number-wrap').click(function(){
+        var state = $(this).parent().attr("id");
+        var $st = $(this).parent();
         stateid = "#"+state;
         state = "."+state;
    
@@ -1007,7 +1025,7 @@ $(function() {
 
     });
 
-    $('#fullmap, .zoom-out a').click(function(){
+    $('#fullmap, .zoom-out a, a#maptitle ').click(function(){
         $('#plain li').removeClass('inactive');
         $('.intro-text').removeClass('inactive');
         $('.intro-text').fadeIn();
@@ -1020,13 +1038,17 @@ $(function() {
   }
 
   $('#map-read-more').click(function(e){
-    $('#map-more').removeClass("hide");
-    $('#map-more').addClass("show");
+    //$('#map-more').removeClass("hide");
+    //$('#map-more').addClass("show");
+    $('#map-more').fadeIn();
+     $(this).hide();
     e.preventDefault();
   });
   $('#map-read-close').click(function(e){
-    $('#map-more').removeClass("show");
-    $('#map-more').addClass("hide");
+    //$('#map-more').removeClass("show");
+    //$('#map-more').addClass("hide");
+    $('#map-more').fadeOut();
+    $('#map-read-more').show();
     e.preventDefault();
   });
 
