@@ -2,12 +2,13 @@
 #ceo-letter {
   left: 600%;
   .left-nav{position: relative;  height: 0px;  width: 50%; top: 30px; left:-160px;}
+   .panel-wrap{min-height: 800px; height:100%}
 }
 
 /* ----------- EDITOR LETTER ------------- */
 #editor-letter {
   left: 500%;
- 
+  .text-container{padding-bottom: 150px;}
 }
 
  /* ----------- LETTER ------------- */
@@ -16,7 +17,7 @@
     background: url('assets/img/letter-bg.jpg') top left no-repeat;
     @include background-size(cover);
     background-color: $black;
-    min-height: 1000px;
+   
     @include breakpoint(small) {
       width: 80%; padding: 0 10% 0 10%;
     }

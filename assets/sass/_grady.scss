@@ -25,13 +25,22 @@
         width: 70%; margin-left:5%;
       }
     }
+    
     h2{
-      color: $white; padding: 20px 0px 240px 210px; width: 610px; font-style: italic;
+      color: $white; padding: 20px 0px 20px 210px; width: 610px; font-style: italic;
       @include breakpoint(small) {
-        width: 60%;  padding: 20px 10% 18px 10%;  font-size: 24px; line-height: 30px;
+        width: 60%;  padding: 10px 10% 18px 10%;  font-size: 24px; line-height: 30px;
       }
-      
     }
+    .fa-angle-down{
+      padding: 0px 0px 230px 480px;
+      font-size: 80px; color: $white;
+       @include breakpoint(small) {
+        padding: 0px 0px 90px 47%;
+        font-size: 20px;
+       }
+    }
+
     img{
       position:absolute; left:960px; top:20px; z-index:2;
       @include breakpoint(small) {
@@ -139,7 +148,9 @@
     padding-top: 0px;
     padding-bottom: 50px;
     img{
-      position:absolute; left:790px; top:6788px;
+      position:absolute; left: 790px; top:6858px;
+       //@media only screen and (max-width: 1325px){ width: 350px; }
+       //@media only screen and (max-width: 1130px){ display:none; }
       @include breakpoint(small) {
         position:relative; display:block; float:left; top: auto; left: auto; padding-bottom:30px;
       }
@@ -151,7 +162,6 @@
     padding-bottom: 50px;
     margin-top: -20px;
     z-index: 15;
-    position: relative;
     img{position:absolute; right:0px; top:7800px;
        @media only screen and (max-width: 1325px){ width: 350px; }
        @media only screen and (max-width: 1130px){ display:none; }

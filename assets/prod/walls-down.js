@@ -1021,6 +1021,8 @@ $(function() {
         $('.slide').not($st).fadeOut();
         $st.css('max-height', '600px');
         $st.css('overflow', 'auto');
+       //$("h1 #maptitle").css('font-size','26px');
+        //$("h1 #maptitle").css('line-height','px');
 
 
     });
@@ -1108,19 +1110,23 @@ $(function() {
     });
 });
 
-/*------------------ MENU ACTIVE/Hover TOGGLE-----------------*/
+/*------------------ MENU ACTIVE/Hover TOGGLE from hash-----------------*/
 $(function() {
-  $(".main-menu a").click(function(){
-    $("nav.menu a div").removeClass('menu-active');
-    $(".secondary-menu li").removeClass('menu-active');
-    $(this).children(".menu-item").addClass('menu-active');
-  });
 
-   $(".secondary-menu li a").click(function(){
-    $("nav.menu a div").removeClass('menu-active');
-    $(".secondary-menu li").removeClass('menu-active');
-    $(this).parent("li").addClass('menu-active');
-  });
+  var hash = window.location.hash ? window.location.hash : '#home';
+  if (hash.indexOf("#/") >= 0) hash ="#map";
+  $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
+
+  window.addEventListener("hashchange", function () {
+      var hash = window.location.hash ? window.location.hash : '#home';
+      if (hash.indexOf("#/") >= 0) hash ="#map";
+      $("nav.menu a div").removeClass('menu-active');
+      $(".secondary-menu li").removeClass('menu-active');
+      $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
+      $('.secondary-menu li a[href="'+ hash +'"]').parent("li").addClass('menu-active');
+   }, false);
+
+ 
 
 
 });

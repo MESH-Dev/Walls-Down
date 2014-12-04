@@ -16,7 +16,7 @@
     .map-intro{
         padding: 25px 0px 0px 40px; position:relative; z-index: 1000;
         h1{ 
-            color: $white; display: inline; float:left; 
+            color: $white; display: inline; float:left;  @include animate(0.3);
             a{color:white; text-decoration:none; &:hover{text-decoration:none; }}
             @include breakpoint(small) {padding: 10% 10% 10% 10%; width: 80%;} }
         .intro-text{
