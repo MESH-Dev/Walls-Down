@@ -37,6 +37,58 @@
     });
   });
 
+  /* Panel Scroll on keyup (arrows)*/
+  $(function() {
+    var $window = $(window);
+
+    var $panels = $('.panel');
+    var panelArr =[];
+    $panels.each(function() {
+      panelArr.push($(this).attr('id'));
+    });
+
+    console.log(panelArr);
+  
+    $('html').keydown(function(e){
+      if(e.which == 37) //LEFT ARROW
+      {
+        var hash = window.location.hash ? window.location.hash : '#home';
+        if (hash.indexOf("#/") >= 0) hash ="#map"; //Check if hash includes "/#/" ? set to #map
+        console.log(hash);
+        
+        //check if hash is in panelArr 
+        //- if yes, get prev id in array, set panel to hash and scroll
+        //- if no, do nothing
+        $panel = $("#grady");
+        $scrollElement.stop().animate({
+          scrollLeft: $panel.offset().left
+        }, 500, 'swing', function() {
+          window.location.hash = '#grady';
+        });
+      }
+      if(e.which == 39) //right ARROW
+      {
+        var hash = window.location.hash ? window.location.hash : '#home';
+        if (hash.indexOf("#/") >= 0) hash ="#map"; //Check if hash includes "/#/" ? set to #map
+        console.log(hash);
+        //check if hash is in panelArr 
+        //- if yes, get next id in array, set panel to hash and scroll
+        //- if no, do nothing
+        $panel = $("#grady");
+        $scrollElement.stop().animate({
+          scrollLeft: $panel.offset().left
+        }, 500, 'swing', function() {
+          window.location.hash = '#grady';
+        });
+      }
+      e.preventDefault();
+    });
+    
+  });
+
+
+
+
   /* Force snap to panel on resize.*/
   $(function() {
     var $window = $(window);
@@ -45,7 +97,7 @@
     $window.resize(function() {
       window.clearTimeout(timer);
       timer = window.setTimeout(function() {
-        var hash = window.location.hash ? window.location.hash : '#about';
+        var hash = window.location.hash ? window.location.hash : '#home';
 
         $scrollElement.stop().animate({
           scrollLeft: $(hash).offset().left
