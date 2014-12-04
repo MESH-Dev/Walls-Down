@@ -6,7 +6,7 @@ body {
 
 //NAVIGATION MENU
 
-/* --- Small Menu Desktop --- */
+/* --- Small Menu Desktop ---
 nav.menu {
     position: fixed;
     z-index: 20;
@@ -30,7 +30,7 @@ nav.menu {
       
     }
 
-    .menu-active{background-color: $gold;}
+    //.menu-active{background-color: $gold;}
     
     .secondary-menu{
       //position: fixed; bottom: 0px;
@@ -54,42 +54,49 @@ nav.menu {
     }
  
 }
- 
+ */
 /* --- Open Menu Desktop --- */
 body.pml-open nav.menu{
+  position: fixed;
+  z-index: 20;
+  background-color: $black;
   #logo img{margin: 30px 10px 15px 20px; }
     .tagline{color: $white; display:block; font-size:11px; line-height:16px; font-style: italic; font-weight: bold; margin-left: 20px; }
     
     .main-menu{
       margin-top:50px;
+      a{z-index: 30; position: relative;}
+       a:hover{cursor: pointer; }
     }
     .menu-item{
-      margin-bottom: -40px; margin-left: 10px;  position:relative; height: 120px; overflow: hidden; @include animate(0.3s);
-      .text{width: 130px; position:relative; top: -60px;  z-index:12; }
+      margin-bottom: -40px; margin-left: 20px; margin-right:10px;  position:relative; z-index:1; height: 120px; overflow: hidden; @include animate(0.3s);
+      .text{width: 121px; position:relative; top: -66px;  z-index:12; height:66px;   }
       span.num{display: block; display: inline-block; width: 20px; font-size: 48px; color: $white; padding-left:10px; }
-      span.title{display: inline-block; width: 70px; font-size: 14px; color: $white; line-height: 18px; color: $white; padding-left:10px; }
-      img{display: block; position: relative; z-index:2; @include opacity(0.5);  @include animate(0.3s);}
+      span.title{display: inline-block; width: 70px; font-size: 14px; color: $white; line-height: 18px; color: $white; padding-left:10px;   }
+      img{display: block; position: relative; z-index:2; @include opacity(0.5);  @include animate(0.3s);  }
       &:hover{
-        cursor: pointer; 
         background-color: transparent;
-        img{  @include opacity(0.8);}
+        img{ @include opacity(0.9);}
       }
     }
-    .menu-active{background-color: transparent;}
+    .menu-active .text{background:rgba(210, 156, 14, 0.50);}
+    .credit-active{background-color: $darkgray;}
     
     .secondary-menu{
       //position: fixed; bottom: 0px;
+      .menu-active{background-color: $gold;}
       margin-top: 70px;
       ul{
         margin: 20px 0px 20px 0px;
         li{
           list-style-type: none; font-size: 14px; color: $white; line-height: 18px; color: $white; padding: 3px 0px 3px 20px; width: 140px;
           a{color: $white} 
-          a:hover{text-decoration: none;}
-          &:hover{background-color: $gold;}
-        }
+            a:hover{text-decoration: none;}
+            &:hover{background-color: $gold;}
+          }
       }
       img{margin: 20px 0px 20px 20px }
+
     }
 
 }
@@ -171,11 +178,6 @@ body.credits-open .credits-menu-left{
   &:hover{@include opacity(0.7)}
 }
 
-
-
-
-
-
  
 .mask {
     position: fixed;
@@ -189,11 +191,14 @@ body.credits-open .credits-menu-left{
  
 
 
-#open{display:none; z-index: 200; position: fixed; top: 20px; right: 20px;
+#open{
+  display:none; z-index: 200; 
+  position: fixed; top: 20px; left:20px;
   @include breakpoint(small) {
       display:block;
-    }
+  } 
 }
+body.pml-open #open{left: 180px; @include animate(0.3)}
  
 
 .panel {

@@ -243,7 +243,21 @@ $(function() {
     var activeNav;
     var activeCredits;
 
-   
+    $('body').addClass("pml-open");
+ 
+    var viewportwidth = $(window).width();
+    if(viewportwidth < 768){
+      $('body').removeClass("pml-open");
+    }
+
+    $(window).resize(function() {
+      viewportwidth= $(window).width();
+      if(viewportwidth < 768){
+       $('body').removeClass("pml-open");
+      }
+    });
+
+
     /* push menu left */
     $(".toggle-push-left").click(
       function(){
@@ -264,11 +278,13 @@ $(function() {
         activeNav = "";
     });
 
-     $pushMenuLeft.hover(function(){
+    /*
+    $pushMenuLeft.hover(function(){
         $('body').addClass('pml-open');
       }, function(){
         $('body').removeClass('pml-open');
      });
+    */
 
 
     //CREDITS MENU --------------
@@ -276,13 +292,14 @@ $(function() {
     $("#credit-link").click(function(e){
         $('body').addClass("credits-open");
         activeCredits = "credits-open";
+        $(this).parent().addClass('credit-active');
         e.preventDefault();
     });
 
     /* hide active menu if close menu button is clicked */
     $(".close-credits-menu").click(function(){
         $('body').removeClass(activeCredits);
-        $(".secondary-menu li").removeClass('menu-active');
+        $(".secondary-menu li").removeClass('credit-active');
         activeCredits = "";
  
     });
