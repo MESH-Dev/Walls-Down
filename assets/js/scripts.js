@@ -1,4 +1,4 @@
- 
+
   /*------------------PANEL SCROLLING-----------------*/
  var scrollElement = 'html, body';
   var $scrollElement;
@@ -44,46 +44,51 @@
     var $panels = $('.panel');
     var panelArr =[];
     $panels.each(function() {
-      panelArr.push($(this).attr('id'));
+      var idhash = "#" + $(this).attr('id');
+      panelArr.push(idhash);
     });
-
-    console.log(panelArr);
   
     $('html').keydown(function(e){
       if(e.which == 37) //LEFT ARROW
       {
         var hash = window.location.hash ? window.location.hash : '#home';
         if (hash.indexOf("#/") >= 0) hash ="#map"; //Check if hash includes "/#/" ? set to #map
-        console.log(hash);
-        
+        var idx = panelArr.indexOf(hash);
+
         //check if hash is in panelArr 
         //- if yes, get prev id in array, set panel to hash and scroll
-        //- if no, do nothing
-        $panel = $("#grady");
-        $scrollElement.stop().animate({
-          scrollLeft: $panel.offset().left
-        }, 500, 'swing', function() {
-          window.location.hash = '#grady';
-        });
+        if(idx != -1)
+        {
+          $panel = $(panelArr[idx-1]);
+          $scrollElement.stop().animate({
+            scrollLeft: $panel.offset().left
+          }, 500, 'swing', function() {
+            window.location.hash = panelArr[idx-1];
+          });
+        }
+        e.preventDefault();
       }
       if(e.which == 39) //right ARROW
       {
         var hash = window.location.hash ? window.location.hash : '#home';
         if (hash.indexOf("#/") >= 0) hash ="#map"; //Check if hash includes "/#/" ? set to #map
-        console.log(hash);
+        var idx = panelArr.indexOf(hash);
+
         //check if hash is in panelArr 
-        //- if yes, get next id in array, set panel to hash and scroll
-        //- if no, do nothing
-        $panel = $("#grady");
-        $scrollElement.stop().animate({
-          scrollLeft: $panel.offset().left
-        }, 500, 'swing', function() {
-          window.location.hash = '#grady';
-        });
+        //- if yes, get prev id in array, set panel to hash and scroll
+        if(idx != -1)
+        {
+          $panel = $(panelArr[idx+1]);
+          $scrollElement.stop().animate({
+            scrollLeft: $panel.offset().left
+          }, 500, 'swing', function() {
+            window.location.hash = panelArr[idx+1];
+          });
+        }
+        e.preventDefault();
       }
-      e.preventDefault();
-    });
-    
+      
+    });  
   });
 
 

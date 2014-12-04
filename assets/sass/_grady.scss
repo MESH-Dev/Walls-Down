@@ -7,6 +7,7 @@
     @include breakpoint(small) {width: 100%;}
     h1{
       font-size: 81px; line-height: 88px; color: $white; padding: 250px 0px 0px 210px; text-transform:uppercase; width: 640px; 
+      position:relative; z-index:10;
       @include breakpoint(small) {
         padding: 40px 10% 18px 10%; width: 60%; font-size: 40px; line-height: 48px;
       }
@@ -18,6 +19,7 @@
       border-left: 3px solid $teal;
       border-right: 3px solid $teal;
       width: 680px; 
+      position:relative; z-index:10;
       hr {color: $teal; background-color: $teal; border:none;  width: 100%; height: 3px;position: relative; top: -10px}
       @include breakpoint(small) {
         width: 70%; margin-left:5%;
@@ -26,12 +28,12 @@
     h2{
       color: $white; padding: 20px 0px 240px 210px; width: 610px; font-style: italic;
       @include breakpoint(small) {
-        width: 60%;  padding: 20px 10% 18px 10%;  font-size: 30px; line-height: 38px;
+        width: 60%;  padding: 20px 10% 18px 10%;  font-size: 24px; line-height: 30px;
       }
       
     }
     img{
-      position:absolute; left:960px; top:20px;
+      position:absolute; left:960px; top:20px; z-index:2;
       @include breakpoint(small) {
         width: 30%;  position:absolute; left:85%; top:80px;
       }
@@ -66,6 +68,7 @@
       width: 100px;
       height: 7px;
       background-color:$white; 
+      @include breakpoint(small) { margin: 0 auto; margin-top: 20px; margin-bottom:25px; }
     }
     .black-line{
       display: block;
@@ -73,11 +76,13 @@
       width: 100px;
       height: 7px;
       background-color:$black; 
+      @include breakpoint(small) { margin: 0 auto; margin-top: 20px; margin-bottom:25px; }
     }
 
     @include breakpoint(small) {
         width: 80%; padding: 20px 10% 0 10%;
         img{padding-left: 10%; max-width: 80%}
+        blockquote{width:80%; margin: 20px 10% 20px 10% }
     }
 
 
@@ -98,7 +103,7 @@
       p.neg-top-fix{
         margin-top: -100px;
       }
-      img{position:absolute; left:800px; top:2150px;}
+      img{position:absolute; left:800px; top:2150px; @include breakpoint(small) {display:none;} }
       .brahms{font-size:24px; color:$gold; font-style: italic; position:absolute; left:920px; top:3512px; width: 300px;}
   }
 
@@ -108,7 +113,15 @@
     height: 950px;
     background-color: $black;
     margin-top: -0px; margin-bottom:0px;
+    @include breakpoint(small) {
+      background: url('assets/img/grady-ruins-small.jpg') $black top left no-repeat;
+      height: 576px;
+      @include background-size(contain); 
+    }
+    @media only screen and (max-width: 480px){ height: 300px; }
+    @media only screen and (max-width: 320px){ height: 230px; }
   }
+
 
   .section-three{
     padding-top: 40px;
@@ -125,13 +138,21 @@
   .section-four{
     padding-top: 0px;
     padding-bottom: 50px;
-    img{position:absolute; left:790px; top:6788px;}
+    img{
+      position:absolute; left:790px; top:6788px;
+      @include breakpoint(small) {
+        position:relative; display:block; float:left; top: auto; left: auto; padding-bottom:30px;
+      }
+    }
   }
 
   .section-five{
     padding-top: 50px;
     padding-bottom: 50px;
-    img{position:absolute; left:840px; top:7800px;}
+    img{position:absolute; right:0px; top:7800px;
+       @media only screen and (max-width: 1325px){ width: 350px; }
+       @media only screen and (max-width: 1130px){ display:none; }
+    }
   }  
 
   .section-six{
@@ -145,6 +166,13 @@
     height: 1330px;
     background-color: $white;
     margin-top: 0px; margin-bottom:0px;
+    @include breakpoint(small) {
+      background: url('assets/img/grady-skyline-small.jpg') $black top left no-repeat;
+      @include background-size(contain);
+      height: 755px;
+      @media only screen and (max-width: 480px){ height: 500px; }
+      @media only screen and (max-width: 320px){ height: 500px; }
+    }
   }
 
   .section-seven{
@@ -192,6 +220,13 @@
     height: 940px;
     background-color: $white;
     margin-top: -600px; margin-bottom:0px;
+    
   }
+
+  @include breakpoint(small) {
+    .left-nav{position: relative; height: 0px; width: 50%; top:-300px; float:left;}
+    .right-nav{position: relative; height: 0px;  width: 50%;  top:-300px; float: right; }
+  }
+
 
 }

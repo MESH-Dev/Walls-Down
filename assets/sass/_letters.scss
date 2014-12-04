@@ -17,6 +17,9 @@
     @include background-size(cover);
     background-color: $black;
     min-height: 1000px;
+    @include breakpoint(small) {
+      width: 80%; padding: 0 10% 0 10%;
+    }
   }
 
   
@@ -29,11 +32,17 @@
     width: 300px;
     font-weight: bold;
     padding: 0px 0px 40px 0px;
+    @include breakpoint(small) {
+      width: 100%;  padding:50px 0 20px 0; 
+    }
   }
   .text-container{
     width:500px;
     padding-left: 200px;
     padding-top: 90px;
+    @include breakpoint(small) {
+      width: 100%; padding:0 0 100px 0;  
+    }
   }
 
 }

@@ -19,7 +19,7 @@ nav.menu {
     .tagline{display: none;}
     
     .main-menu{
-      margin-top:90px;
+      margin-top:75px;
     }
     .menu-item{
       margin-bottom: 30px; padding: 3px 5px 3px 10px; width:100%; position:relative;  overflow: hidden; ; 
@@ -34,7 +34,7 @@ nav.menu {
     
     .secondary-menu{
       //position: fixed; bottom: 0px;
-      margin-top: 200px;
+      margin-top: 100px;
       ul{
         margin: 20px 0px 20px 0px;
         li{
@@ -43,7 +43,7 @@ nav.menu {
           a:hover{text-decoration: none;}
           &:hover{background-color: $gold;}
         }
-        li:nth-child(2){ width: 50px;}
+        li:nth-child(2){letter-spacing:.5px;}
       }
       img{width: 80%; margin: 20px 10px 20px 10px;  @include animate(0.3s); }
 
@@ -79,7 +79,7 @@ body.pml-open nav.menu{
     
     .secondary-menu{
       //position: fixed; bottom: 0px;
-      margin-top: 200px;
+      margin-top: 70px;
       ul{
         margin: 20px 0px 20px 0px;
         li{
@@ -234,6 +234,9 @@ body.credits-open .credits-menu-left{
   height: 100%;
   overflow: hidden;
   left: 0;
+  img{}
+ 
+
   .right-nav{position: absolute; width:100%;  height: 0px;  top:90%; right:2%; float: right;
      a{ }
     .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}
@@ -242,7 +245,7 @@ body.credits-open .credits-menu-left{
 
   @include breakpoint(small) {
     background: url('assets/img/cover-large.jpg')top left no-repeat;
-    @include background-size(100%);  
+    @include background-size(cover);  
   }
 
 }
