@@ -301,6 +301,11 @@ h5 {
   text-transform: uppercase;
 }
 
+/* line 20, assets/sass/_typography.scss */
+em {
+  font-style: italic;
+}
+
 /* line 23, assets/sass/_typography.scss */
 p {
   font: 14px/20px Georgia, Times, "Times New Roman", serif;
