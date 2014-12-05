@@ -31,7 +31,12 @@
        
     }
   }
-
+   h4{font:12px/17px $cabin ; color: $black; text-transform:uppercase; ;
+    @include breakpoint(small) {
+       
+    }
+  }
+  p.small-italic{font-size:12px; line-height:20px; font-style:italic;}
   .panel-one{
     background: url('assets/img/nicu-1.jpg') top right no-repeat;
     //@include background-size(cover);
