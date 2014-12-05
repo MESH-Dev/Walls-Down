@@ -260,14 +260,13 @@ $(function() {
     /* push menu left */
     $(".toggle-push-left").click(
       function(){
-        $('body').toggleClass("pml-open");
+        $('body').addClass("pml-open");
       }
     );
 
-    $(".mask").click(function(){
-        $('body').removeClass(activeNav);
-        activeNav = "";
- 
+    //hidemenu on click out of menu
+    $(".panel-wrap").click(function(){
+        //$('body').removeClass("pml-open");
     } );
  
     /* hide active menu if close menu button is clicked */
