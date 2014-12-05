@@ -33,6 +33,14 @@
   }
 }
 
+.single-state{
+  display: none;
+  @include breakpoint(nomap) {
+     display: inline; float:left;
+     span{position:relative; top:-50px; left: 100px;}
+  }
+}
+
 .stately li {
     float: left;
     margin: -5% 0 0 -100%;

@@ -10,7 +10,7 @@
       if ($(this).attr('scrollLeft') == initScrollLeft + 1) {
         scrollElement = this.nodeName.toLowerCase();
         $(this).attr('scrollLeft', initScrollLeft);
-        return false; 
+        return false;
       }
     });
     $scrollElement = $(scrollElement);
@@ -318,6 +318,8 @@ $(function() {
   var hash = window.location.hash ? window.location.hash : '#home';
   if (hash.indexOf("#/") >= 0) hash ="#map";
   $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
+
+  if(hash == "#map" || hash == "#map" || hash == "#map" ||)
 
   window.addEventListener("hashchange", function () {
       var hash = window.location.hash ? window.location.hash : '#home';

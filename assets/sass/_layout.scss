@@ -88,7 +88,7 @@ body.pml-open nav.menu{
     .secondary-menu{
       //position: fixed; bottom: 0px;
       .menu-active{background-color: $gold;}
-      margin-top: 70px;
+      margin-top: 35px;
       ul{
         margin: 20px 0px 20px 0px;
         li{
@@ -217,6 +217,8 @@ body.credits-open .credits-menu-left{
 #open{
   display:none; z-index: 20000; color:$black;
   position: fixed; top: 20px; left:20px;
+  font-family: $cabin; font-weight:bold;
+  padding: 5px; background: rgba(255,255,255,0.7);
   @include breakpoint(small) {
       display:block;
   } 
@@ -250,7 +252,7 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
 
 .social{width:100%;
   .social-title{font: 14px/20px $cabin; color: $black; text-transform:uppercase; padding-left:4px;}
-
+  
 } 
   .addthis_toolbox{text-align:center;}
   .addthis_toolbox > a{height: 25px;width: 25px;margin: 3px 3px;float: left;}
@@ -269,13 +271,25 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
 .grady-social{
   padding: 20px 0px 0px 200px;
 }
+.grady-social-top{
+  padding: 20px 0px 0px 200px;
+  .white-social{color:$white;}
+}
 
 .timeline-social{
   padding: 20px 0px 200px 0px;
 }
+.timeline-social-top{
+  padding: 20px 0px 0px 0px;
+}
 
 .nicu-social{
   padding: 40px 0px 20px 0px;
+}
+
+.nicu-social-top{
+  padding: 0px 0px 0px 120px; 
+  .white-social{color:$gray;}
 }
 
 .map-social{
@@ -288,7 +302,7 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
  
 }
 
-.map-social, .nav-social{
+.white-social{
   .addthis_toolbox span.at15t_facebook{background:url(assets/img/social_icons-single-white.png) no-repeat !important;background-position:-25px 0 !important;}
   .addthis_toolbox span.at15t_twitter{background:url(assets/img/social_icons-single-white.png) no-repeat !important;background-position:-50px 0 !important;}
   .addthis_toolbox span.at15t_linkedin{background:url(assets/img/social_icons-single-white.png) no-repeat !important;background-position:-2px 0 !important;}

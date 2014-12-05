@@ -31,7 +31,7 @@
        
     }
   }
-   h4{font:12px/17px $cabin ; color: $black; text-transform:uppercase; ;
+   h4{font:12px/17px $cabin ; color: $black; text-transform:uppercase; ; font-weight: bold;
     @include breakpoint(small) {
        
     }
