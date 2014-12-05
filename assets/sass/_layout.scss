@@ -1,6 +1,7 @@
 
 body {
-  overflow-x: hidden
+  overflow-x: hidden;
+   @include animate(.3s);
 }
 
 
@@ -57,6 +58,7 @@ nav.menu {
  */
 /* --- Open Menu Desktop --- */
 body.pml-open nav.menu{
+  @include animate(.3s);
   position: fixed;
   z-index: 20;
   background-color: $black;
@@ -112,16 +114,23 @@ nav.push-menu-left {
     @include breakpoint(small) {
       left: -80px;
     }
+     @include animate(.3s);
 
 }
  
 body.pml-open nav.push-menu-left {
     left: 0;
     width: 160px;
+    @include animate(.3s);
 }
 
 body.pml-open{
-  .panel-wrap{margin-left: 160px;}
+  .panel-wrap{
+    margin-left: 160px;  
+    @include breakpoint(small) {
+      margin-left: 0px; @include animate(.3s);
+    }
+  }
 }
 
 
@@ -192,7 +201,7 @@ body.credits-open .credits-menu-left{
 
 
 #open{
-  display:none; z-index: 200; 
+  display:none; z-index: 20000; color:$black;
   position: fixed; top: 20px; left:20px;
   @include breakpoint(small) {
       display:block;

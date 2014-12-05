@@ -71,42 +71,49 @@ p, h1 {
 ================================================== */
 /* #Basic Styles
 ================================================== */
-/* line 73, assets/sass/_base.scss */
+/* line 77, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 77, assets/sass/_base.scss */
+/* line 81, assets/sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 78, assets/sass/_base.scss */
+/* line 82, assets/sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 79, assets/sass/_base.scss */
+/* line 83, assets/sass/_base.scss */
 em {
   text-style: italic;
 }
 
-/* line 81, assets/sass/_base.scss */
+/* line 85, assets/sass/_base.scss */
 .hide {
   display: none;
 }
 
-/* line 82, assets/sass/_base.scss */
+/* line 86, assets/sass/_base.scss */
 .show {
   display: block;
 }
 
-/* line 83, assets/sass/_base.scss */
+/* line 87, assets/sass/_base.scss */
 .hideme {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
+}
+@media only screen and (max-width: 767px) {
+  /* line 87, assets/sass/_base.scss */
+  .hideme {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
 }
 
 /* #Buttons
@@ -115,13 +122,13 @@ em {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 103, assets/sass/_base.scss */
+/* line 107, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 105, assets/sass/_base.scss */
+/* line 109, assets/sass/_base.scss */
 a img:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
@@ -130,60 +137,60 @@ a img:hover {
 
 /*  Image Styles
    ========================================================================== */
-/* line 110, assets/sass/_base.scss */
+/* line 114, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 111, assets/sass/_base.scss */
+/* line 115, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 112, assets/sass/_base.scss */
+/* line 116, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 113, assets/sass/_base.scss */
+/* line 117, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 114, assets/sass/_base.scss */
+/* line 118, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 115, assets/sass/_base.scss */
+/* line 119, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 116, assets/sass/_base.scss */
+/* line 120, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 117, assets/sass/_base.scss */
+/* line 121, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 118, assets/sass/_base.scss */
+/* line 122, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 119, assets/sass/_base.scss */
+/* line 123, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -192,22 +199,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 120, assets/sass/_base.scss */
+/* line 124, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 121, assets/sass/_base.scss */
+/* line 125, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 122, assets/sass/_base.scss */
+/* line 126, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 123, assets/sass/_base.scss */
+/* line 127, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -217,7 +224,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 124, assets/sass/_base.scss */
+/* line 128, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -226,7 +233,7 @@ a img.aligncenter {
 }
 
 /* You can also use a <br class="clear" /> to clear columns */
-/* line 128, assets/sass/_base.scss */
+/* line 132, assets/sass/_base.scss */
 .clear {
   clear: both;
   display: block;
@@ -351,6 +358,11 @@ ol li {
 /* line 2, assets/sass/_layout.scss */
 body {
   overflow-x: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 /* --- Small Menu Desktop ---
@@ -403,17 +415,22 @@ nav.menu {
 }
  */
 /* --- Open Menu Desktop --- */
-/* line 59, assets/sass/_layout.scss */
+/* line 60, assets/sass/_layout.scss */
 body.pml-open nav.menu {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   position: fixed;
   z-index: 20;
   background-color: #020202;
 }
-/* line 63, assets/sass/_layout.scss */
+/* line 65, assets/sass/_layout.scss */
 body.pml-open nav.menu #logo img {
   margin: 30px 10px 15px 20px;
 }
-/* line 64, assets/sass/_layout.scss */
+/* line 66, assets/sass/_layout.scss */
 body.pml-open nav.menu .tagline {
   color: white;
   display: block;
@@ -423,20 +440,20 @@ body.pml-open nav.menu .tagline {
   font-weight: bold;
   margin-left: 20px;
 }
-/* line 66, assets/sass/_layout.scss */
+/* line 68, assets/sass/_layout.scss */
 body.pml-open nav.menu .main-menu {
   margin-top: 50px;
 }
-/* line 68, assets/sass/_layout.scss */
+/* line 70, assets/sass/_layout.scss */
 body.pml-open nav.menu .main-menu a {
   z-index: 30;
   position: relative;
 }
-/* line 69, assets/sass/_layout.scss */
+/* line 71, assets/sass/_layout.scss */
 body.pml-open nav.menu .main-menu a:hover {
   cursor: pointer;
 }
-/* line 71, assets/sass/_layout.scss */
+/* line 73, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item {
   margin-bottom: -40px;
   margin-left: 20px;
@@ -451,7 +468,7 @@ body.pml-open nav.menu .menu-item {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 73, assets/sass/_layout.scss */
+/* line 75, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item .text {
   width: 121px;
   position: relative;
@@ -459,7 +476,7 @@ body.pml-open nav.menu .menu-item .text {
   z-index: 12;
   height: 66px;
 }
-/* line 74, assets/sass/_layout.scss */
+/* line 76, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item span.num {
   display: block;
   display: inline-block;
@@ -468,7 +485,7 @@ body.pml-open nav.menu .menu-item span.num {
   color: white;
   padding-left: 10px;
 }
-/* line 75, assets/sass/_layout.scss */
+/* line 77, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item span.title {
   display: inline-block;
   width: 70px;
@@ -478,7 +495,7 @@ body.pml-open nav.menu .menu-item span.title {
   color: white;
   padding-left: 10px;
 }
-/* line 76, assets/sass/_layout.scss */
+/* line 78, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item img {
   display: block;
   position: relative;
@@ -491,36 +508,36 @@ body.pml-open nav.menu .menu-item img {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 77, assets/sass/_layout.scss */
+/* line 79, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item:hover {
   background-color: transparent;
 }
-/* line 79, assets/sass/_layout.scss */
+/* line 81, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item:hover img {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
   opacity: 0.9;
 }
-/* line 82, assets/sass/_layout.scss */
+/* line 84, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-active .text {
   background: rgba(210, 156, 14, 0.5);
 }
-/* line 83, assets/sass/_layout.scss */
+/* line 85, assets/sass/_layout.scss */
 body.pml-open nav.menu .credit-active {
   background-color: #3a3a3a;
 }
-/* line 85, assets/sass/_layout.scss */
+/* line 87, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu {
   margin-top: 70px;
 }
-/* line 87, assets/sass/_layout.scss */
+/* line 89, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu .menu-active {
   background-color: #d29c0e;
 }
-/* line 89, assets/sass/_layout.scss */
+/* line 91, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu ul {
   margin: 20px 0px 20px 0px;
 }
-/* line 91, assets/sass/_layout.scss */
+/* line 93, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu ul li {
   list-style-type: none;
   font-size: 14px;
@@ -530,24 +547,24 @@ body.pml-open nav.menu .secondary-menu ul li {
   padding: 3px 0px 3px 20px;
   width: 140px;
 }
-/* line 93, assets/sass/_layout.scss */
+/* line 95, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu ul li a {
   color: white;
 }
-/* line 94, assets/sass/_layout.scss */
+/* line 96, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu ul li a:hover {
   text-decoration: none;
 }
-/* line 95, assets/sass/_layout.scss */
+/* line 97, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu ul li:hover {
   background-color: #d29c0e;
 }
-/* line 98, assets/sass/_layout.scss */
+/* line 100, assets/sass/_layout.scss */
 body.pml-open nav.menu .secondary-menu img {
   margin: 20px 0px 20px 20px;
 }
 
-/* line 104, assets/sass/_layout.scss */
+/* line 106, assets/sass/_layout.scss */
 nav.push-menu-left {
   top: 0;
   height: 100%;
@@ -555,8 +572,13 @@ nav.push-menu-left {
   overflow: hidden;
   border-right: 1px solid white;
   left: 0px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
-/* line 111, assets/sass/_layout.scss */
+/* line 113, assets/sass/_layout.scss */
 nav.push-menu-left .wrapper {
   overflow-y: auto;
   overflow-x: hidden;
@@ -565,24 +587,40 @@ nav.push-menu-left .wrapper {
   padding-right: 15px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 104, assets/sass/_layout.scss */
+  /* line 106, assets/sass/_layout.scss */
   nav.push-menu-left {
     left: -80px;
   }
 }
 
-/* line 118, assets/sass/_layout.scss */
+/* line 121, assets/sass/_layout.scss */
 body.pml-open nav.push-menu-left {
   left: 0;
   width: 160px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-/* line 124, assets/sass/_layout.scss */
+/* line 128, assets/sass/_layout.scss */
 body.pml-open .panel-wrap {
   margin-left: 160px;
 }
+@media only screen and (max-width: 767px) {
+  /* line 128, assets/sass/_layout.scss */
+  body.pml-open .panel-wrap {
+    margin-left: 0px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
 
-/* line 130, assets/sass/_layout.scss */
+/* line 139, assets/sass/_layout.scss */
 .credits-menu-left {
   position: fixed;
   overflow: hidden;
@@ -599,7 +637,7 @@ body.pml-open .panel-wrap {
   z-index: 10;
   color: white;
 }
-/* line 142, assets/sass/_layout.scss */
+/* line 151, assets/sass/_layout.scss */
 .credits-menu-left .credits-wrap {
   padding: 30px 15px 15px 15px;
   position: absolute;
@@ -610,51 +648,51 @@ body.pml-open .panel-wrap {
   /* Increase this value (in negative) for cross-browser compatibility */
   overflow: auto;
 }
-/* line 151, assets/sass/_layout.scss */
+/* line 160, assets/sass/_layout.scss */
 .credits-menu-left p {
   font-size: 11px;
   line-height: 17px;
   color: white;
   padding-right: 10px;
 }
-/* line 154, assets/sass/_layout.scss */
+/* line 163, assets/sass/_layout.scss */
 .credits-menu-left p.top-one {
   margin-bottom: 80px;
 }
-/* line 155, assets/sass/_layout.scss */
+/* line 164, assets/sass/_layout.scss */
 .credits-menu-left p.top-two {
   margin-bottom: 40px;
 }
-/* line 156, assets/sass/_layout.scss */
+/* line 165, assets/sass/_layout.scss */
 .credits-menu-left h4 {
   font: 11px/17px "Cabin", sans-serif;
   color: white;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-/* line 157, assets/sass/_layout.scss */
+/* line 166, assets/sass/_layout.scss */
 .credits-menu-left a {
   color: white;
   text-decoration: underline;
 }
 @media only screen and (max-width: 767px) {
-  /* line 130, assets/sass/_layout.scss */
+  /* line 139, assets/sass/_layout.scss */
   .credits-menu-left {
     left: -250px;
   }
 }
 
-/* line 162, assets/sass/_layout.scss */
+/* line 171, assets/sass/_layout.scss */
 body.pml-open.credits-open .credits-menu-left {
   left: 160px;
 }
 
-/* line 166, assets/sass/_layout.scss */
+/* line 175, assets/sass/_layout.scss */
 body.credits-open .credits-menu-left {
   left: 80px;
 }
 
-/* line 173, assets/sass/_layout.scss */
+/* line 182, assets/sass/_layout.scss */
 .close-credits-menu {
   position: absolute;
   top: 10px;
@@ -662,13 +700,13 @@ body.credits-open .credits-menu-left {
   z-index: 20;
   color: white;
 }
-/* line 178, assets/sass/_layout.scss */
+/* line 187, assets/sass/_layout.scss */
 .close-credits-menu:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
 
-/* line 182, assets/sass/_layout.scss */
+/* line 191, assets/sass/_layout.scss */
 .mask {
   position: fixed;
   top: 0;
@@ -677,22 +715,23 @@ body.credits-open .credits-menu-left {
   height: 100%;
 }
 
-/* line 194, assets/sass/_layout.scss */
+/* line 203, assets/sass/_layout.scss */
 #open {
   display: none;
-  z-index: 200;
+  z-index: 20000;
+  color: #020202;
   position: fixed;
   top: 20px;
   left: 20px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 194, assets/sass/_layout.scss */
+  /* line 203, assets/sass/_layout.scss */
   #open {
     display: block;
   }
 }
 
-/* line 201, assets/sass/_layout.scss */
+/* line 210, assets/sass/_layout.scss */
 body.pml-open #open {
   left: 180px;
   -webkit-transition: all 0.3;
@@ -702,7 +741,7 @@ body.pml-open #open {
   transition: all 0.3;
 }
 
-/* line 204, assets/sass/_layout.scss */
+/* line 213, assets/sass/_layout.scss */
 .panel {
   position: absolute;
   width: 100%;
@@ -711,7 +750,7 @@ body.pml-open #open {
   overflow: auto;
 }
 
-/* line 213, assets/sass/_layout.scss */
+/* line 222, assets/sass/_layout.scss */
 .panel-wrap {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -721,14 +760,14 @@ body.pml-open #open {
   margin-left: 80px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 213, assets/sass/_layout.scss */
+  /* line 222, assets/sass/_layout.scss */
   .panel-wrap {
     margin-left: 0px;
   }
 }
 
 /* ------END OF STORY NAV ---------*/
-/* line 226, assets/sass/_layout.scss */
+/* line 235, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
   height: 0px;
@@ -736,13 +775,13 @@ body.pml-open #open {
   top: -80px;
   float: left;
 }
-/* line 227, assets/sass/_layout.scss */
+/* line 236, assets/sass/_layout.scss */
 .left-nav a {
   position: relative;
   left: 7%;
   font-style: italic;
 }
-/* line 228, assets/sass/_layout.scss */
+/* line 237, assets/sass/_layout.scss */
 .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -750,7 +789,7 @@ body.pml-open #open {
   right: 5px;
 }
 
-/* line 231, assets/sass/_layout.scss */
+/* line 240, assets/sass/_layout.scss */
 .right-nav {
   position: relative;
   height: 0px;
@@ -758,14 +797,14 @@ body.pml-open #open {
   top: -80px;
   float: right;
 }
-/* line 232, assets/sass/_layout.scss */
+/* line 241, assets/sass/_layout.scss */
 .right-nav a {
   float: right;
   position: relative;
   right: 10%;
   font-style: italic;
 }
-/* line 233, assets/sass/_layout.scss */
+/* line 242, assets/sass/_layout.scss */
 .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -774,7 +813,7 @@ body.pml-open #open {
 }
 
 /* ----------- Home ------------- */
-/* line 236, assets/sass/_layout.scss */
+/* line 245, assets/sass/_layout.scss */
 #home .panel-wrap {
   background: url("assets/img/cover-large.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -785,7 +824,7 @@ body.pml-open #open {
   overflow: hidden;
   left: 0;
 }
-/* line 245, assets/sass/_layout.scss */
+/* line 254, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav {
   position: absolute;
   width: 100%;
@@ -794,19 +833,19 @@ body.pml-open #open {
   right: 2%;
   float: right;
 }
-/* line 247, assets/sass/_layout.scss */
+/* line 256, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
 }
-/* line 248, assets/sass/_layout.scss */
+/* line 257, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav a {
   color: #020202;
 }
 @media only screen and (max-width: 767px) {
-  /* line 236, assets/sass/_layout.scss */
+  /* line 245, assets/sass/_layout.scss */
   #home .panel-wrap {
     background: url("assets/img/cover-large.jpg") top left no-repeat;
     -webkit-background-size: cover;
@@ -2030,7 +2069,7 @@ body.pml-open #open {
   -o-background-size: cover;
   background-size: cover;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 5, assets/sass/_map.scss */
   #map .panel-wrap {
     overflow: auto;
@@ -2063,7 +2102,7 @@ body.pml-open #open {
 #map .map-intro h1 a:hover {
   text-decoration: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 18, assets/sass/_map.scss */
   #map .map-intro h1 {
     padding: 10% 10% 10% 10%;
@@ -2085,7 +2124,7 @@ body.pml-open #open {
   color: white;
   font-style: italic;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 22, assets/sass/_map.scss */
   #map .map-intro .intro-text {
     padding: 5%;
@@ -2093,7 +2132,7 @@ body.pml-open #open {
     background: rgba(0, 0, 0, 0.3);
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 16, assets/sass/_map.scss */
   #map .map-intro {
     padding: 10% 0% 0% 0%;
@@ -2114,7 +2153,7 @@ body.pml-open #open {
 #map .zoom-out a:hover {
   text-decoration: underline;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 38, assets/sass/_map.scss */
   #map .zoom-out {
     display: none;
@@ -2163,7 +2202,7 @@ body.pml-open #open {
   opacity: 0.7;
   cursor: pointer;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 83, assets/sass/_map.scss */
   #map .slide {
     padding: 10%;
@@ -2187,7 +2226,7 @@ body.pml-open #open {
   position: relative;
   z-index: 10000;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 105, assets/sass/_map.scss */
   #map span.number {
     font-size: 40px;
@@ -2211,7 +2250,7 @@ body.pml-open #open {
   text-transform: uppercase;
   -webkit-transition: all .5s ease-in;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 113, assets/sass/_map.scss */
   #map span.subtext {
     font: 16px/20px "Cabin", sans-serif;
@@ -2224,7 +2263,7 @@ body.pml-open #open {
   width: 350px;
   text-align: right;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 121, assets/sass/_map.scss */
   #map .number-wrap {
     text-align: left;
@@ -2252,7 +2291,7 @@ body.pml-open #open {
   max-width: 100%;
   margin: 10px 0px 10px 0px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 128, assets/sass/_map.scss */
   #map .content {
     padding: 0%;
@@ -2271,7 +2310,7 @@ body.pml-open #open {
 #map #wa .number-wrap {
   width: 400px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 157, assets/sass/_map.scss */
   #map #wa .number-wrap {
     width: 100%;
@@ -2282,7 +2321,7 @@ body.pml-open #open {
 #map #wa .content {
   width: 450px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 158, assets/sass/_map.scss */
   #map #wa .content {
     padding: 0%;
@@ -2293,7 +2332,7 @@ body.pml-open #open {
 #map #oh .number-wrap {
   width: 400px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 161, assets/sass/_map.scss */
   #map #oh .number-wrap {
     width: 100%;
@@ -2304,7 +2343,7 @@ body.pml-open #open {
 #map #oh .content {
   width: 450px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 162, assets/sass/_map.scss */
   #map #oh .content {
     padding: 0%;
@@ -2316,7 +2355,7 @@ body.pml-open #open {
   width: 900px;
   display: block;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 166, assets/sass/_map.scss */
   #map #usa .number-wrap {
     width: 100%;
@@ -2329,7 +2368,7 @@ body.pml-open #open {
   margin-left: 100px;
   display: block;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 167, assets/sass/_map.scss */
   #map #usa .content {
     padding: 0%;
@@ -2341,7 +2380,7 @@ body.pml-open #open {
 #map #usa span.number {
   font-size: 170px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 168, assets/sass/_map.scss */
   #map #usa span.number {
     font-size: 40px;
@@ -2373,7 +2412,7 @@ body.pml-open #open {
   top: 8px;
   right: 5px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 174, assets/sass/_map.scss */
   #map .left-nav {
     position: relative;
@@ -2404,7 +2443,7 @@ body.pml-open #open {
   top: 8px;
   left: 5px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 184, assets/sass/_map.scss */
   #map .right-nav {
     position: relative;
@@ -2446,7 +2485,7 @@ body.pml-open #open {
   border-radius: 0;
   -webkit-transition: all .2s ease-in;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 12, assets/sass/_states.scss */
   .stately {
     display: none;

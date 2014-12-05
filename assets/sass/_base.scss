@@ -41,6 +41,7 @@ $statedark:#2b2a29;
     -ms-transition: all $time;
     -o-transition: all $time;
     transition: all $time; 
+    //-webkit-transform: translateZ(0);
 }
  
 /* #Breakpoint Mixins
@@ -53,8 +54,11 @@ $statedark:#2b2a29;
   @if $point == smallscreen {
     @media only screen and (min-width: 768px) and (max-width: 1399px){ @content; }
   }
-  @else if $point == tablet  {
-    @media only screen and (max-width: 767px){ @content; }
+  //@else if $point == tablet  {
+    //@media only screen and (max-width: 767px){ @content; }
+  //}
+  @else if $point == nomap {
+    @media only screen and (max-width: 767px), (min-device-width : 768px) and (max-device-width : 1024px) { @content; }
   }
   //@else if $point == phone {
     //@media only screen and (min-width: 480px)   { @content; }
@@ -80,7 +84,7 @@ em{text-style:italic;}
 
 .hide{display:none; }
 .show{display:block;}
-.hideme{@include opacity(0);}
+.hideme{@include opacity(0); @include breakpoint(small) {@include opacity(1);}}
 
 
 /* #Buttons

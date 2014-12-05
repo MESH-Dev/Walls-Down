@@ -192,7 +192,7 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
                           // but some mobile devices need to be blacklisted,
                           // because their CSS 3D support or hardware is not
                           // good enough to run impress.js properly, sorry...
-                           ( ua.search(/(iphone)|(ipod)|(android)/) === -1 );
+                           ( ua.search(/(iphone)|(ipad)|(ipod)|(android)/) === -1 );
     
     if (!impressSupported) {
         // we can't be sure that `classList` is supported
@@ -821,7 +821,6 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 // I've learnt a lot when building impress.js and I hope this code and comments
 // will help somebody learn at least some part of it.
 
-
   /*------------------PANEL SCROLLING-----------------*/
  var scrollElement = 'html, body';
   var $scrollElement;
@@ -860,7 +859,7 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
     });
   });
 
-  /* Panel Scroll on keyup (arrows)*/
+  /* Panel Scroll on keyup */
   $(function() {
     var $window = $(window);
 

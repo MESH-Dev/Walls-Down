@@ -1,4 +1,3 @@
-
   /*------------------PANEL SCROLLING-----------------*/
  var scrollElement = 'html, body';
   var $scrollElement;
@@ -37,7 +36,7 @@
     });
   });
 
-  /* Panel Scroll on keyup (arrows)*/
+  /* Panel Scroll on keyup */
   $(function() {
     var $window = $(window);
 
