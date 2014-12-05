@@ -318,7 +318,7 @@ $(function() {
   var hash = window.location.hash ? window.location.hash : '#home';
   if (hash.indexOf("#/") >= 0) hash ="#map";
   $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
- 
+
 
   window.addEventListener("hashchange", function () {
       var hash = window.location.hash ? window.location.hash : '#home';
