@@ -1065,11 +1065,18 @@ $(function() {
     var activeNav;
     var activeCredits;
 
-    $('body').addClass("pml-open");
+    //$('body').addClass("pml-open");
  
     var viewportwidth = $(window).width();
     if(viewportwidth < 768){
       $('body').removeClass("pml-open");
+      //hidemenu on click out of menu
+      $(".panel-wrap").click(function(){
+          if($('body').hasClass('pml-open'))
+          {
+            $('body').removeClass('pml-open');
+          }
+      } );
     }
 
     $(window).resize(function() {
@@ -1083,14 +1090,16 @@ $(function() {
     /* push menu left */
     $(".toggle-push-left").click(
       function(){
-        $('body').addClass("pml-open");
+        if($('body').hasClass('pml-open')){
+          $('body').removeClass('pml-open');
+        }
+        else{
+          $('body').addClass('pml-open');
+        }
       }
     );
 
-    //hidemenu on click out of menu
-    $(".panel-wrap").click(function(){
-        //$('body').removeClass("pml-open");
-    } );
+    
  
     /* hide active menu if close menu button is clicked */
     $(".close-menu").click(function(){

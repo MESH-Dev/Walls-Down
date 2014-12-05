@@ -75,7 +75,7 @@ body.pml-open nav.menu{
       margin-bottom: -40px; margin-left: 20px; margin-right:10px;  position:relative; z-index:1; height: 120px; overflow: hidden; @include animate(0.3s);
       .text{width: 121px; position:relative; top: -66px;  z-index:12; height:66px;   }
       span.num{display: block; display: inline-block; width: 20px; font-size: 48px; color: $white; padding-left:10px; }
-      span.title{display: inline-block; width: 70px; font-size: 14px; color: $white; line-height: 18px; color: $white; padding-left:10px;   }
+      span.title{display: inline-block; width: 70px; font-size: 14px; color: $white; line-height: 18px; color: $white; padding-left:10px; padding-top: 5px; }
       img{display: block; position: relative; z-index:2; @include opacity(0.5);  @include animate(0.3s);  }
       &:hover{
         background-color: transparent;
@@ -243,6 +243,63 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
 
  
 }
+
+
+
+/* ------SHARE BUTTONS ---------*/
+
+.social{width:100%;
+  .social-title{font: 14px/20px $cabin; color: $black; text-transform:uppercase; padding-left:4px;}
+
+} 
+  .addthis_toolbox{text-align:center;}
+  .addthis_toolbox > a{height: 25px;width: 25px;margin: 3px 3px;float: left;}
+  .addthis_toolbox.addthis_32x32_style span {width:26px !important;}
+  .addthis_toolbox > a > span{height:25px !important;width:25px !important;display:block;background:url(assets/img/social_icons-single.png) no-repeat !important;}
+    .addthis_toolbox span.at15t_facebook{background:url(assets/img/social_icons-single.png) no-repeat !important;background-position:-25px 0 !important;}
+    .addthis_toolbox span.at15t_twitter{background:url(assets/img/social_icons-single.png) no-repeat !important;background-position:-50px 0 !important;}
+    .addthis_toolbox span.at15t_linkedin{background:url(assets/img/social_icons-single.png) no-repeat !important;background-position:-2px 0 !important;}
+    .addthis_toolbox span.at15t_pinterest_share{background:url(assets/img/social_icons-single.png) no-repeat !important;background-position:-74px 0 !important;}
+    .addthis_toolbox span.at15t_google_plusone_share{background:url(assets/img/social_icons-single.png) no-repeat !important;background-position:-124px 0 !important;}
+    .addthis_toolbox span.at15t_email{background:url(assets/img/social_icons-single.png) no-repeat !important;background-position:-98px 0 !important;}
+    .addthis_toolbox span.at15t_digg{background:url(assets/img/social_icons-single.png) no-repeat !important;background-position:-176px 0 !important;width:28px !important}
+    .addthis_toolbox span.at15t_evernote{background:url(assets/img/social_icons-single.png) no-repeat !important;background-position:-146px 0 !important;}
+    .addthis_toolbox span.at15t_compact{background:url(assets/img/social_icons-single.png) no-repeat !important;background-position:-204px 0 !important;}
+
+.grady-social{
+  padding: 20px 0px 0px 200px;
+}
+
+.timeline-social{
+  padding: 20px 0px 200px 0px;
+}
+
+.nicu-social{
+  padding: 40px 0px 20px 0px;
+}
+
+.map-social{
+  padding: 0px 0px 20px 0px;
+  .social-title{color:white;}
+}
+
+.nav-social{
+  padding: 0px 0px 20px 10px;
+ 
+}
+
+.map-social, .nav-social{
+  .addthis_toolbox span.at15t_facebook{background:url(assets/img/social_icons-single-white.png) no-repeat !important;background-position:-25px 0 !important;}
+  .addthis_toolbox span.at15t_twitter{background:url(assets/img/social_icons-single-white.png) no-repeat !important;background-position:-50px 0 !important;}
+  .addthis_toolbox span.at15t_linkedin{background:url(assets/img/social_icons-single-white.png) no-repeat !important;background-position:-2px 0 !important;}
+  .addthis_toolbox span.at15t_pinterest_share{background:url(assets/img/social_icons-single-white.png) no-repeat !important;background-position:-74px 0 !important;}
+  .addthis_toolbox span.at15t_google_plusone_share{background:url(assets/img/social_icons-single-white.png) no-repeat !important;background-position:-124px 0 !important;}
+  .addthis_toolbox span.at15t_email{background:url(assets/img/social_icons-single-white.png) no-repeat !important;background-position:-98px 0 !important;}
+  .addthis_toolbox span.at15t_digg{background:url(assets/img/social_icons-single-white.png) no-repeat !important;background-position:-176px 0 !important;width:28px !important}
+  .addthis_toolbox span.at15t_evernote{background:url(assets/img/social_icons-single-white.png) no-repeat !important;background-position:-146px 0 !important;}
+  .addthis_toolbox span.at15t_compact{background:url(assets/img/social_icons-single-white.png) no-repeat !important;background-position:-204px 0 !important;}
+}
+
 
 
 /* ------END OF STORY NAV ---------*/

@@ -494,6 +494,7 @@ body.pml-open nav.menu .menu-item span.title {
   line-height: 18px;
   color: white;
   padding-left: 10px;
+  padding-top: 5px;
 }
 /* line 79, assets/sass/_layout.scss */
 body.pml-open nav.menu .menu-item img {
@@ -780,8 +781,178 @@ body.pml-open #open {
   }
 }
 
+/* ------SHARE BUTTONS ---------*/
+/* line 251, assets/sass/_layout.scss */
+.social {
+  width: 100%;
+}
+/* line 252, assets/sass/_layout.scss */
+.social .social-title {
+  font: 14px/20px "Cabin", sans-serif;
+  color: #020202;
+  text-transform: uppercase;
+  padding-left: 4px;
+}
+
+/* line 255, assets/sass/_layout.scss */
+.addthis_toolbox {
+  text-align: center;
+}
+
+/* line 256, assets/sass/_layout.scss */
+.addthis_toolbox > a {
+  height: 25px;
+  width: 25px;
+  margin: 3px 3px;
+  float: left;
+}
+
+/* line 257, assets/sass/_layout.scss */
+.addthis_toolbox.addthis_32x32_style span {
+  width: 26px !important;
+}
+
+/* line 258, assets/sass/_layout.scss */
+.addthis_toolbox > a > span {
+  height: 25px !important;
+  width: 25px !important;
+  display: block;
+  background: url(assets/img/social_icons-single.png) no-repeat !important;
+}
+
+/* line 259, assets/sass/_layout.scss */
+.addthis_toolbox span.at15t_facebook {
+  background: url(assets/img/social_icons-single.png) no-repeat !important;
+  background-position: -25px 0 !important;
+}
+
+/* line 260, assets/sass/_layout.scss */
+.addthis_toolbox span.at15t_twitter {
+  background: url(assets/img/social_icons-single.png) no-repeat !important;
+  background-position: -50px 0 !important;
+}
+
+/* line 261, assets/sass/_layout.scss */
+.addthis_toolbox span.at15t_linkedin {
+  background: url(assets/img/social_icons-single.png) no-repeat !important;
+  background-position: -2px 0 !important;
+}
+
+/* line 262, assets/sass/_layout.scss */
+.addthis_toolbox span.at15t_pinterest_share {
+  background: url(assets/img/social_icons-single.png) no-repeat !important;
+  background-position: -74px 0 !important;
+}
+
+/* line 263, assets/sass/_layout.scss */
+.addthis_toolbox span.at15t_google_plusone_share {
+  background: url(assets/img/social_icons-single.png) no-repeat !important;
+  background-position: -124px 0 !important;
+}
+
+/* line 264, assets/sass/_layout.scss */
+.addthis_toolbox span.at15t_email {
+  background: url(assets/img/social_icons-single.png) no-repeat !important;
+  background-position: -98px 0 !important;
+}
+
+/* line 265, assets/sass/_layout.scss */
+.addthis_toolbox span.at15t_digg {
+  background: url(assets/img/social_icons-single.png) no-repeat !important;
+  background-position: -176px 0 !important;
+  width: 28px !important;
+}
+
+/* line 266, assets/sass/_layout.scss */
+.addthis_toolbox span.at15t_evernote {
+  background: url(assets/img/social_icons-single.png) no-repeat !important;
+  background-position: -146px 0 !important;
+}
+
+/* line 267, assets/sass/_layout.scss */
+.addthis_toolbox span.at15t_compact {
+  background: url(assets/img/social_icons-single.png) no-repeat !important;
+  background-position: -204px 0 !important;
+}
+
+/* line 269, assets/sass/_layout.scss */
+.grady-social {
+  padding: 20px 0px 0px 200px;
+}
+
+/* line 273, assets/sass/_layout.scss */
+.timeline-social {
+  padding: 20px 0px 200px 0px;
+}
+
+/* line 277, assets/sass/_layout.scss */
+.nicu-social {
+  padding: 40px 0px 20px 0px;
+}
+
+/* line 281, assets/sass/_layout.scss */
+.map-social {
+  padding: 0px 0px 20px 0px;
+}
+/* line 283, assets/sass/_layout.scss */
+.map-social .social-title {
+  color: white;
+}
+
+/* line 286, assets/sass/_layout.scss */
+.nav-social {
+  padding: 0px 0px 20px 10px;
+}
+
+/* line 292, assets/sass/_layout.scss */
+.map-social .addthis_toolbox span.at15t_facebook, .nav-social .addthis_toolbox span.at15t_facebook {
+  background: url(assets/img/social_icons-single-white.png) no-repeat !important;
+  background-position: -25px 0 !important;
+}
+/* line 293, assets/sass/_layout.scss */
+.map-social .addthis_toolbox span.at15t_twitter, .nav-social .addthis_toolbox span.at15t_twitter {
+  background: url(assets/img/social_icons-single-white.png) no-repeat !important;
+  background-position: -50px 0 !important;
+}
+/* line 294, assets/sass/_layout.scss */
+.map-social .addthis_toolbox span.at15t_linkedin, .nav-social .addthis_toolbox span.at15t_linkedin {
+  background: url(assets/img/social_icons-single-white.png) no-repeat !important;
+  background-position: -2px 0 !important;
+}
+/* line 295, assets/sass/_layout.scss */
+.map-social .addthis_toolbox span.at15t_pinterest_share, .nav-social .addthis_toolbox span.at15t_pinterest_share {
+  background: url(assets/img/social_icons-single-white.png) no-repeat !important;
+  background-position: -74px 0 !important;
+}
+/* line 296, assets/sass/_layout.scss */
+.map-social .addthis_toolbox span.at15t_google_plusone_share, .nav-social .addthis_toolbox span.at15t_google_plusone_share {
+  background: url(assets/img/social_icons-single-white.png) no-repeat !important;
+  background-position: -124px 0 !important;
+}
+/* line 297, assets/sass/_layout.scss */
+.map-social .addthis_toolbox span.at15t_email, .nav-social .addthis_toolbox span.at15t_email {
+  background: url(assets/img/social_icons-single-white.png) no-repeat !important;
+  background-position: -98px 0 !important;
+}
+/* line 298, assets/sass/_layout.scss */
+.map-social .addthis_toolbox span.at15t_digg, .nav-social .addthis_toolbox span.at15t_digg {
+  background: url(assets/img/social_icons-single-white.png) no-repeat !important;
+  background-position: -176px 0 !important;
+  width: 28px !important;
+}
+/* line 299, assets/sass/_layout.scss */
+.map-social .addthis_toolbox span.at15t_evernote, .nav-social .addthis_toolbox span.at15t_evernote {
+  background: url(assets/img/social_icons-single-white.png) no-repeat !important;
+  background-position: -146px 0 !important;
+}
+/* line 300, assets/sass/_layout.scss */
+.map-social .addthis_toolbox span.at15t_compact, .nav-social .addthis_toolbox span.at15t_compact {
+  background: url(assets/img/social_icons-single-white.png) no-repeat !important;
+  background-position: -204px 0 !important;
+}
+
 /* ------END OF STORY NAV ---------*/
-/* line 249, assets/sass/_layout.scss */
+/* line 306, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
   height: 0px;
@@ -789,13 +960,13 @@ body.pml-open #open {
   top: -80px;
   float: left;
 }
-/* line 250, assets/sass/_layout.scss */
+/* line 307, assets/sass/_layout.scss */
 .left-nav a {
   position: relative;
   left: 7%;
   font-style: italic;
 }
-/* line 251, assets/sass/_layout.scss */
+/* line 308, assets/sass/_layout.scss */
 .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -803,7 +974,7 @@ body.pml-open #open {
   right: 5px;
 }
 
-/* line 254, assets/sass/_layout.scss */
+/* line 311, assets/sass/_layout.scss */
 .right-nav {
   position: relative;
   height: 0px;
@@ -811,14 +982,14 @@ body.pml-open #open {
   top: -80px;
   float: right;
 }
-/* line 255, assets/sass/_layout.scss */
+/* line 312, assets/sass/_layout.scss */
 .right-nav a {
   float: right;
   position: relative;
   right: 10%;
   font-style: italic;
 }
-/* line 256, assets/sass/_layout.scss */
+/* line 313, assets/sass/_layout.scss */
 .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -827,7 +998,7 @@ body.pml-open #open {
 }
 
 /* ----------- Home ------------- */
-/* line 259, assets/sass/_layout.scss */
+/* line 316, assets/sass/_layout.scss */
 #home .panel-wrap {
   background: url("assets/img/cover-large.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -838,7 +1009,7 @@ body.pml-open #open {
   overflow: hidden;
   left: 0;
 }
-/* line 268, assets/sass/_layout.scss */
+/* line 325, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav {
   position: absolute;
   width: 100%;
@@ -847,19 +1018,19 @@ body.pml-open #open {
   right: 2%;
   float: right;
 }
-/* line 270, assets/sass/_layout.scss */
+/* line 327, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
 }
-/* line 271, assets/sass/_layout.scss */
+/* line 328, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav a {
   color: #020202;
 }
 @media only screen and (max-width: 767px) {
-  /* line 259, assets/sass/_layout.scss */
+  /* line 316, assets/sass/_layout.scss */
   #home .panel-wrap {
     background: url("assets/img/cover-large.jpg") top left no-repeat;
     -webkit-background-size: cover;
@@ -2052,7 +2223,7 @@ body.pml-open #open {
   color: #020202;
   font-style: italic;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
   width: 550px;
 }
 @media only screen and (max-width: 767px) {
