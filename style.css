@@ -1503,18 +1503,24 @@ body.pml-open #open {
     display: none;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1060px) {
+  /* line 178, assets/sass/_grady.scss */
+  #grady .section-five img {
+    display: none;
+  }
+}
 @media only screen and (max-width: 767px) {
   /* line 172, assets/sass/_grady.scss */
   #grady .section-five {
     margin-top: 0px;
   }
 }
-/* line 191, assets/sass/_grady.scss */
+/* line 190, assets/sass/_grady.scss */
 #grady .section-six {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-/* line 196, assets/sass/_grady.scss */
+/* line 195, assets/sass/_grady.scss */
 #grady .transition-skyline {
   background: url("assets/img/grady-skyline.jpg") top left no-repeat;
   height: 1330px;
@@ -1523,7 +1529,7 @@ body.pml-open #open {
   margin-bottom: 0px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 196, assets/sass/_grady.scss */
+  /* line 195, assets/sass/_grady.scss */
   #grady .transition-skyline {
     background: url("assets/img/grady-skyline-small.jpg") #020202 top left no-repeat;
     -webkit-background-size: contain;
@@ -1534,60 +1540,60 @@ body.pml-open #open {
   }
 }
 @media only screen and (max-width: 767px) and (max-width: 480px) {
-  /* line 196, assets/sass/_grady.scss */
+  /* line 195, assets/sass/_grady.scss */
   #grady .transition-skyline {
     height: 500px;
   }
 }
 @media only screen and (max-width: 767px) and (max-width: 320px) {
-  /* line 196, assets/sass/_grady.scss */
+  /* line 195, assets/sass/_grady.scss */
   #grady .transition-skyline {
     height: 500px;
   }
 }
-/* line 212, assets/sass/_grady.scss */
+/* line 211, assets/sass/_grady.scss */
 #grady .section-seven p.neg-top {
   position: relative;
   top: -300px;
 }
-/* line 216, assets/sass/_grady.scss */
+/* line 215, assets/sass/_grady.scss */
 #grady .section-seven p.neg-top-fix {
   margin-top: -300px;
 }
-/* line 221, assets/sass/_grady.scss */
+/* line 220, assets/sass/_grady.scss */
 #grady .section-eight {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 225, assets/sass/_grady.scss */
+/* line 224, assets/sass/_grady.scss */
 #grady .section-nine {
   padding-top: 30px;
   padding-bottom: 120px;
 }
-/* line 230, assets/sass/_grady.scss */
+/* line 229, assets/sass/_grady.scss */
 #grady .transition-mic {
   height: 400px;
   background-color: white;
 }
-/* line 231, assets/sass/_grady.scss */
+/* line 230, assets/sass/_grady.scss */
 #grady .transition-mic img {
   position: absolute;
   right: 0px;
   margin-top: -103px;
 }
-/* line 242, assets/sass/_grady.scss */
+/* line 241, assets/sass/_grady.scss */
 #grady .section-ten {
   padding-bottom: 0px;
   padding-top: 30px;
 }
-/* line 245, assets/sass/_grady.scss */
+/* line 244, assets/sass/_grady.scss */
 #grady .section-ten img#mic {
   position: absolute;
   right: 0px;
   margin-top: -133px;
 }
 @media only screen and (max-width: 1220px) {
-  /* line 245, assets/sass/_grady.scss */
+  /* line 244, assets/sass/_grady.scss */
   #grady .section-ten img#mic {
     display: none;
     position: relative;
@@ -1595,16 +1601,16 @@ body.pml-open #open {
     width: 30%;
   }
 }
-/* line 249, assets/sass/_grady.scss */
+/* line 248, assets/sass/_grady.scss */
 #grady .section-ten p.neg-top {
   position: relative;
   top: -330px;
 }
-/* line 253, assets/sass/_grady.scss */
+/* line 252, assets/sass/_grady.scss */
 #grady .section-ten p.neg-top-fix {
   margin-top: -330px;
 }
-/* line 259, assets/sass/_grady.scss */
+/* line 258, assets/sass/_grady.scss */
 #grady .grady-end {
   background: url("assets/img/grady-end.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1616,33 +1622,33 @@ body.pml-open #open {
   margin-top: -600px;
   margin-bottom: 0px;
 }
-/* line 265, assets/sass/_grady.scss */
+/* line 264, assets/sass/_grady.scss */
 #grady .grady-end img {
   display: none;
 }
 @media only screen and (max-width: 767px) {
-  /* line 259, assets/sass/_grady.scss */
+  /* line 258, assets/sass/_grady.scss */
   #grady .grady-end {
     margin-top: 0px;
     margin-bottom: 0px;
     background: transparent;
     height: 30%;
   }
-  /* line 267, assets/sass/_grady.scss */
+  /* line 266, assets/sass/_grady.scss */
   #grady .grady-end img {
     display: block;
     width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 277, assets/sass/_grady.scss */
+  /* line 276, assets/sass/_grady.scss */
   #grady .left-nav {
     width: 50%;
     bottom: 20px;
     float: left;
     font-size: 13px;
   }
-  /* line 278, assets/sass/_grady.scss */
+  /* line 277, assets/sass/_grady.scss */
   #grady .right-nav {
     width: 50%;
     bottom: 20px;
@@ -2226,10 +2232,23 @@ body.pml-open #open {
   -o-background-size: cover;
   background-size: cover;
 }
+@media only screen and (max-width: 767px) {
+  /* line 6, assets/sass/_timeline.scss */
+  #timeline .panel-wrap {
+    width: 100%;
+  }
+}
 /* line 16, assets/sass/_timeline.scss */
 #timeline h1 {
   padding: 75px 0px 10px 0px;
   width: 420px;
+}
+@media only screen and (max-width: 767px) {
+  /* line 16, assets/sass/_timeline.scss */
+  #timeline h1 {
+    padding: 80px 0% 20px 0%;
+    width: 100%;
+  }
 }
 /* line 24, assets/sass/_timeline.scss */
 #timeline h3 {
@@ -2238,6 +2257,13 @@ body.pml-open #open {
   font-style: italic;
   width: 350px;
   text-transform: none;
+}
+@media only screen and (max-width: 767px) {
+  /* line 24, assets/sass/_timeline.scss */
+  #timeline h3 {
+    padding: 0px 0% 40px 0%;
+    width: 100%;
+  }
 }
 /* line 31, assets/sass/_timeline.scss */
 #timeline .time-block {
@@ -2278,58 +2304,96 @@ body.pml-open #open {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 45, assets/sass/_timeline.scss */
+@media only screen and (max-width: 767px) {
+  /* line 31, assets/sass/_timeline.scss */
+  #timeline .time-block {
+    padding: 10px 10% 10px 10%;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 45, assets/sass/_timeline.scss */
+  #timeline .timeline-title .vertical-line {
+    display: none;
+    height: 0;
+  }
+}
+/* line 47, assets/sass/_timeline.scss */
 #timeline .even {
   padding-left: 340px;
 }
-/* line 47, assets/sass/_timeline.scss */
+/* line 49, assets/sass/_timeline.scss */
 #timeline .even .vertical-line {
   margin: 10px 0px 10px 20px;
 }
-/* line 59, assets/sass/_timeline.scss */
+@media only screen and (max-width: 767px) {
+  /* line 49, assets/sass/_timeline.scss */
+  #timeline .even .vertical-line {
+    margin: 10px 0px 10px 50%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 47, assets/sass/_timeline.scss */
+  #timeline .even {
+    padding-left: 10%;
+  }
+}
+/* line 61, assets/sass/_timeline.scss */
 #timeline .odd .vertical-line {
   margin: 10px 0px 10px 540px;
 }
-/* line 66, assets/sass/_timeline.scss */
+@media only screen and (max-width: 767px) {
+  /* line 61, assets/sass/_timeline.scss */
+  #timeline .odd .vertical-line {
+    margin: 10px 0px 10px 50%;
+  }
+}
+/* line 68, assets/sass/_timeline.scss */
 #timeline .line-title {
   background: url("assets/img/line-2.png") top left no-repeat;
   height: 183px;
   margin: 10px 0px 10px 280px;
 }
-/* line 71, assets/sass/_timeline.scss */
+@media only screen and (max-width: 767px) {
+  /* line 68, assets/sass/_timeline.scss */
+  #timeline .line-title {
+    margin: 10px 0px 10px 50%;
+  }
+}
+/* line 73, assets/sass/_timeline.scss */
 #timeline .line-1 {
   background: url("assets/img/line-1.png") top left no-repeat;
   height: 91px;
   height: 0;
 }
-/* line 72, assets/sass/_timeline.scss */
+/* line 74, assets/sass/_timeline.scss */
 #timeline .line-2 {
-  background: url("assets/img/line-2.png") top left no-repeat;
+  background: url("assets/img/line-4.png") top left no-repeat;
   height: 183px;
   height: 0;
 }
-/* line 73, assets/sass/_timeline.scss */
+/* line 75, assets/sass/_timeline.scss */
 #timeline .line-3 {
   background: url("assets/img/line-3.png") top left no-repeat;
   height: 74px;
   height: 0;
 }
-/* line 74, assets/sass/_timeline.scss */
+/* line 76, assets/sass/_timeline.scss */
 #timeline .line-4 {
   background: url("assets/img/line-4.png") top left no-repeat;
   height: 116px;
   height: 0;
 }
-/* line 75, assets/sass/_timeline.scss */
+/* line 77, assets/sass/_timeline.scss */
 #timeline .timeline-title .line-1 {
   background: none;
   height: 91px;
 }
-/* line 76, assets/sass/_timeline.scss */
+/* line 78, assets/sass/_timeline.scss */
 #timeline .first-block .line-1 {
   height: 91px;
 }
-/* line 78, assets/sass/_timeline.scss */
+/* line 80, assets/sass/_timeline.scss */
 #timeline .callout h3 {
   font: 20px/30px Georgia, Times, "Times New Roman", serif;
   color: #020202;
@@ -2338,7 +2402,14 @@ body.pml-open #open {
   padding-bottom: 30px;
   width: 550px;
 }
-/* line 89, assets/sass/_timeline.scss */
+@media only screen and (max-width: 767px) {
+  /* line 80, assets/sass/_timeline.scss */
+  #timeline .callout h3 {
+    padding: 10% 10% 10% 10%;
+    width: 80%;
+  }
+}
+/* line 91, assets/sass/_timeline.scss */
 #timeline .left-nav a, #timeline .right-nav a {
   color: #020202;
 }

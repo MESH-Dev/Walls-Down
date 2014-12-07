@@ -7,7 +7,7 @@
    
     background: url('assets/img/timeline-bg.jpg') top left no-repeat;
     @include background-size(cover);
-    @include breakpoint(small-grady) {
+    @include breakpoint(small) {
       width: 100%;
       //background-size: contain;
     }
@@ -16,15 +16,15 @@
   h1{
     padding: 75px 0px 10px 0px; width: 420px;
     
-    @include breakpoint(small-grady) {
-      padding: 10% 10% 10% 10%; width: 80%;
+    @include breakpoint(small) {
+      padding: 80px 0% 20px 0%; width: 100%;
     }
 
   }
   h3{font:14px/20px $georgia; color: $black; font-style: italic; width:350px; text-transform: none; 
     
-    @include breakpoint(small-grady) {
-      padding: 10% 10% 10% 10%; width: 80%;
+    @include breakpoint(small) {
+      padding: 0px 0% 40px 0%; width: 100%;
     }
   }
  
@@ -37,20 +37,22 @@
     a{color: $black; text-decoration: underline; }
     a:hover{@include opacity(0.7)}
 
-    @include breakpoint(small-grady) {
-      padding: 10% 10% 10% 10%; width: 80%;
+    @include breakpoint(small) {
+      padding: 10px 10% 10px 10%; width: 80%;
     }
   }
+
+  .timeline-title .vertical-line{@include breakpoint(small) {display:none; height:0}}
 
   .even{
     padding-left:340px;
     .vertical-line{
        margin: 10px 0px 10px 20px;
-       @include breakpoint(small-grady) {
+       @include breakpoint(small) {
         margin: 10px 0px 10px 50% ;
       }
     }
-    @include breakpoint(small-grady) {
+    @include breakpoint(small) {
       padding-left: 10%;
     }
   }
@@ -58,18 +60,18 @@
   .odd{
     .vertical-line{
       margin: 10px 0px 10px 540px ;
-      @include breakpoint(small-grady) {
+      @include breakpoint(small) {
         margin: 10px 0px 10px 50% ;
       }
     }
   }
   .line-title{background: url('assets/img/line-2.png') top left no-repeat; height: 183px; margin: 10px 0px 10px 280px; 
-      @include breakpoint(small-grady) {
+      @include breakpoint(small) {
         margin: 10px 0px 10px 50% ;
       }
   }
   .line-1{ background: url('assets/img/line-1.png') top left no-repeat; height: 91px; height: 0;  }
-  .line-2{ background: url('assets/img/line-2.png') top left no-repeat; height: 183px; height: 0; }
+  .line-2{ background: url('assets/img/line-4.png') top left no-repeat; height: 183px; height: 0; }
   .line-3{ background: url('assets/img/line-3.png') top left no-repeat; height: 74px; height: 0; }
   .line-4{ background: url('assets/img/line-4.png') top left no-repeat; height: 116px; height: 0; }
   .timeline-title .line-1{background: none; height:91px;}
@@ -80,7 +82,7 @@
     padding-top:100px;
     padding-bottom: 30px;
     width: 550px;
-    @include breakpoint(small-grady) {
+    @include breakpoint(small) {
         padding: 10% 10% 10% 10%; width: 80%;
     }
 
@@ -90,7 +92,7 @@
 
   
 
-  @include breakpoint(small-grady) {
+  @include breakpoint(small) {
      
   }
  }
