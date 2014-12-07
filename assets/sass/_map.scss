@@ -10,6 +10,8 @@
         @include breakpoint(nomap)  {
             overflow: auto;
             width: 100%;
+            position: relative;
+            z-index: 1;
         }
     }
 
@@ -97,7 +99,7 @@
 
         @include breakpoint(nomap)  {
             padding: 10%;
-            width: 100%;
+            width: 90%;
             max-height: 80%;
             font-size: 14px; line-height:20px;
         }

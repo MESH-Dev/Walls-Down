@@ -1068,7 +1068,7 @@ $(function() {
     //$('body').addClass("pml-open");
  
     var viewportwidth = $(window).width();
-    if(viewportwidth < 768){
+    if(viewportwidth < 769){
       $('body').removeClass("pml-open");
       //hidemenu on click out of menu
       $(".panel-wrap").click(function(){
@@ -1083,6 +1083,9 @@ $(function() {
       viewportwidth= $(window).width();
       if(viewportwidth < 768){
        $('body').removeClass("pml-open");
+      }
+      else{
+        $('body').addClass("pml-open");
       }
     });
 
