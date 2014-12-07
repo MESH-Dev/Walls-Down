@@ -2232,7 +2232,7 @@ body.pml-open #open {
   -o-background-size: cover;
   background-size: cover;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 6, assets/sass/_timeline.scss */
   #timeline .panel-wrap {
     width: 100%;
@@ -2243,7 +2243,7 @@ body.pml-open #open {
   padding: 75px 0px 10px 0px;
   width: 420px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 16, assets/sass/_timeline.scss */
   #timeline h1 {
     padding: 80px 0% 20px 0%;
@@ -2258,7 +2258,7 @@ body.pml-open #open {
   width: 350px;
   text-transform: none;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 24, assets/sass/_timeline.scss */
   #timeline h3 {
     padding: 0px 0% 40px 0%;
@@ -2304,14 +2304,14 @@ body.pml-open #open {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 31, assets/sass/_timeline.scss */
   #timeline .time-block {
     padding: 10px 10% 10px 10%;
     width: 80%;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 45, assets/sass/_timeline.scss */
   #timeline .timeline-title .vertical-line {
     display: none;
@@ -2326,13 +2326,13 @@ body.pml-open #open {
 #timeline .even .vertical-line {
   margin: 10px 0px 10px 20px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 49, assets/sass/_timeline.scss */
   #timeline .even .vertical-line {
     margin: 10px 0px 10px 50%;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 47, assets/sass/_timeline.scss */
   #timeline .even {
     padding-left: 10%;
@@ -2342,7 +2342,7 @@ body.pml-open #open {
 #timeline .odd .vertical-line {
   margin: 10px 0px 10px 540px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 61, assets/sass/_timeline.scss */
   #timeline .odd .vertical-line {
     margin: 10px 0px 10px 50%;
@@ -2354,7 +2354,7 @@ body.pml-open #open {
   height: 183px;
   margin: 10px 0px 10px 280px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 68, assets/sass/_timeline.scss */
   #timeline .line-title {
     margin: 10px 0px 10px 50%;
@@ -2402,7 +2402,7 @@ body.pml-open #open {
   padding-bottom: 30px;
   width: 550px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 80, assets/sass/_timeline.scss */
   #timeline .callout h3 {
     padding: 10% 10% 10% 10%;
