@@ -7,7 +7,7 @@
    
     background: url('assets/img/timeline-bg.jpg') top left no-repeat;
     @include background-size(cover);
-    @include breakpoint(small) {
+    @include breakpoint(small-grady) {
       width: 100%;
       //background-size: contain;
     }
@@ -16,14 +16,14 @@
   h1{
     padding: 75px 0px 10px 0px; width: 420px;
     
-    @include breakpoint(small) {
+    @include breakpoint(small-grady) {
       padding: 10% 10% 10% 10%; width: 80%;
     }
 
   }
   h3{font:14px/20px $georgia; color: $black; font-style: italic; width:350px; text-transform: none; 
     
-    @include breakpoint(small) {
+    @include breakpoint(small-grady) {
       padding: 10% 10% 10% 10%; width: 80%;
     }
   }
@@ -37,7 +37,7 @@
     a{color: $black; text-decoration: underline; }
     a:hover{@include opacity(0.7)}
 
-    @include breakpoint(small) {
+    @include breakpoint(small-grady) {
       padding: 10% 10% 10% 10%; width: 80%;
     }
   }
@@ -46,11 +46,11 @@
     padding-left:340px;
     .vertical-line{
        margin: 10px 0px 10px 20px;
-       @include breakpoint(small) {
+       @include breakpoint(small-grady) {
         margin: 10px 0px 10px 50% ;
       }
     }
-    @include breakpoint(small) {
+    @include breakpoint(small-grady) {
       padding-left: 10%;
     }
   }
@@ -58,13 +58,13 @@
   .odd{
     .vertical-line{
       margin: 10px 0px 10px 540px ;
-      @include breakpoint(small) {
+      @include breakpoint(small-grady) {
         margin: 10px 0px 10px 50% ;
       }
     }
   }
   .line-title{background: url('assets/img/line-2.png') top left no-repeat; height: 183px; margin: 10px 0px 10px 280px; 
-      @include breakpoint(small) {
+      @include breakpoint(small-grady) {
         margin: 10px 0px 10px 50% ;
       }
   }
@@ -80,7 +80,7 @@
     padding-top:100px;
     padding-bottom: 30px;
     width: 550px;
-    @include breakpoint(small) {
+    @include breakpoint(small-grady) {
         padding: 10% 10% 10% 10%; width: 80%;
     }
 
@@ -90,7 +90,7 @@
 
   
 
-  @include breakpoint(small) {
+  @include breakpoint(small-grady) {
      
   }
  }

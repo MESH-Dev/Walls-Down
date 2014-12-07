@@ -26,11 +26,13 @@
             @include breakpoint(nomap)  {
                 padding: 5%; width: 70%;
                 background: rgba(0,0,0,0.3); 
+                margin-bottom: 40px;
             }
 
         }
         @include breakpoint(nomap)  {
             padding: 10% 0% 0% 0%;
+          
         }
 
     }
@@ -120,7 +122,12 @@
 
     .number-wrap{
         display:inline; float:left; width: 350px; text-align: right; 
-        @include breakpoint(nomap) { text-align: left; width: 100%; padding: 0px 0px 10px 0px; } 
+        @include breakpoint(nomap) { text-align: left; width: 100%;position:relative; z-index: 2; padding: 0px 0px 10px 0px; } 
+    }
+
+    .single-state{
+        display: none;
+        @include breakpoint(nomap) {display:block; z-index: 0; position:relative; margin-top:-100px; padding: 0 0 0 30px;}
     }
    
     
@@ -147,6 +154,7 @@
           width: 100%;
           max-height: 80%;
           opacity: 1;
+          margin-bottom: 100px;
           p{
                 font-size: 14px; line-height:20px;
           }
@@ -164,7 +172,7 @@
 
     #usa{
         .number-wrap{width: 900px; display:block; @include breakpoint(nomap) {width: 100%; padding: 0px 0px 10px 0px;}}
-        .content{width: 500px; margin-left:100px; display:block; @include breakpoint(nomap) {padding: 0%; margin:0; width: 100%;}}
+        .content{width: 500px; margin-left:100px; display:block; @include breakpoint(nomap) {padding: 0%; margin:0; margin-bottom:100px; width: 100%;}}
          span.number{font-size: 170px; @include breakpoint(nomap) {font-size: 40px}}
 
     }
@@ -177,7 +185,8 @@
     .fa{font-size: 45px; position:relative; top: 8px; right: 5px;}
 
     @include breakpoint(nomap) {
-        position: relative; height: 0px; width: 50%; top:-80px; float:left; 
+        position: relative; height: 0px; width: 50%; top:-80px; float:left; left: 10px; 
+        font-size:13px;
     }
 
   }
@@ -187,6 +196,7 @@
     .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}
     @include breakpoint(nomap) {
         position: relative; height: 0px;  width: 50%;  top:-80px; float: right; 
+        font-size:13px;
     }
   } 
 }
