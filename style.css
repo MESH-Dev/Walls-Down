@@ -71,45 +71,45 @@ p, h1 {
 ================================================== */
 /* #Basic Styles
 ================================================== */
-/* line 78, assets/sass/_base.scss */
+/* line 82, assets/sass/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 82, assets/sass/_base.scss */
+/* line 86, assets/sass/_base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 83, assets/sass/_base.scss */
+/* line 87, assets/sass/_base.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 84, assets/sass/_base.scss */
+/* line 88, assets/sass/_base.scss */
 em {
   text-style: italic;
 }
 
-/* line 86, assets/sass/_base.scss */
+/* line 90, assets/sass/_base.scss */
 .hide {
   display: none;
 }
 
-/* line 87, assets/sass/_base.scss */
+/* line 91, assets/sass/_base.scss */
 .show {
   display: block;
 }
 
-/* line 88, assets/sass/_base.scss */
+/* line 92, assets/sass/_base.scss */
 .hideme {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
 @media only screen and (max-width: 767px) {
-  /* line 88, assets/sass/_base.scss */
+  /* line 92, assets/sass/_base.scss */
   .hideme {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
@@ -122,13 +122,13 @@ em {
 ================================================== */
 /* #Images
 ================================================== */
-/* line 108, assets/sass/_base.scss */
+/* line 112, assets/sass/_base.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 110, assets/sass/_base.scss */
+/* line 114, assets/sass/_base.scss */
 a img:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
@@ -137,60 +137,60 @@ a img:hover {
 
 /*  Image Styles
    ========================================================================== */
-/* line 115, assets/sass/_base.scss */
+/* line 119, assets/sass/_base.scss */
 .alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 116, assets/sass/_base.scss */
+/* line 120, assets/sass/_base.scss */
 .aligncenter, div.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 117, assets/sass/_base.scss */
+/* line 121, assets/sass/_base.scss */
 .alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 118, assets/sass/_base.scss */
+/* line 122, assets/sass/_base.scss */
 .alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 119, assets/sass/_base.scss */
+/* line 123, assets/sass/_base.scss */
 .aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-/* line 120, assets/sass/_base.scss */
+/* line 124, assets/sass/_base.scss */
 a img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-/* line 121, assets/sass/_base.scss */
+/* line 125, assets/sass/_base.scss */
 a img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 122, assets/sass/_base.scss */
+/* line 126, assets/sass/_base.scss */
 a img.alignleft {
   float: left;
   margin: 5px 20px 20px 0;
 }
 
-/* line 123, assets/sass/_base.scss */
+/* line 127, assets/sass/_base.scss */
 a img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 124, assets/sass/_base.scss */
+/* line 128, assets/sass/_base.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -199,22 +199,22 @@ a img.aligncenter {
   text-align: center;
 }
 
-/* line 125, assets/sass/_base.scss */
+/* line 129, assets/sass/_base.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-/* line 126, assets/sass/_base.scss */
+/* line 130, assets/sass/_base.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
 
-/* line 127, assets/sass/_base.scss */
+/* line 131, assets/sass/_base.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
 
-/* line 128, assets/sass/_base.scss */
+/* line 132, assets/sass/_base.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -224,7 +224,7 @@ a img.aligncenter {
   width: auto;
 }
 
-/* line 129, assets/sass/_base.scss */
+/* line 133, assets/sass/_base.scss */
 .wp-caption p.wp-caption-text {
   font-size: 11px;
   line-height: 17px;
@@ -233,7 +233,7 @@ a img.aligncenter {
 }
 
 /* You can also use a <br class="clear" /> to clear columns */
-/* line 133, assets/sass/_base.scss */
+/* line 137, assets/sass/_base.scss */
 .clear {
   clear: both;
   display: block;
@@ -2232,7 +2232,7 @@ body.pml-open #open {
   -o-background-size: cover;
   background-size: cover;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 6, assets/sass/_timeline.scss */
   #timeline .panel-wrap {
     width: 100%;
@@ -2243,7 +2243,7 @@ body.pml-open #open {
   padding: 75px 0px 10px 0px;
   width: 420px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 16, assets/sass/_timeline.scss */
   #timeline h1 {
     padding: 80px 0% 20px 0%;
@@ -2258,7 +2258,7 @@ body.pml-open #open {
   width: 350px;
   text-transform: none;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 24, assets/sass/_timeline.scss */
   #timeline h3 {
     padding: 0px 0% 40px 0%;
@@ -2304,14 +2304,14 @@ body.pml-open #open {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 31, assets/sass/_timeline.scss */
   #timeline .time-block {
     padding: 10px 10% 10px 10%;
     width: 80%;
   }
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 45, assets/sass/_timeline.scss */
   #timeline .timeline-title .vertical-line {
     display: none;
@@ -2326,13 +2326,13 @@ body.pml-open #open {
 #timeline .even .vertical-line {
   margin: 10px 0px 10px 20px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 49, assets/sass/_timeline.scss */
   #timeline .even .vertical-line {
     margin: 10px 0px 10px 50%;
   }
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 47, assets/sass/_timeline.scss */
   #timeline .even {
     padding-left: 10%;
@@ -2342,7 +2342,7 @@ body.pml-open #open {
 #timeline .odd .vertical-line {
   margin: 10px 0px 10px 540px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 61, assets/sass/_timeline.scss */
   #timeline .odd .vertical-line {
     margin: 10px 0px 10px 50%;
@@ -2354,7 +2354,7 @@ body.pml-open #open {
   height: 183px;
   margin: 10px 0px 10px 280px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 68, assets/sass/_timeline.scss */
   #timeline .line-title {
     margin: 10px 0px 10px 50%;
@@ -2402,7 +2402,7 @@ body.pml-open #open {
   padding-bottom: 30px;
   width: 550px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* line 80, assets/sass/_timeline.scss */
   #timeline .callout h3 {
     padding: 10% 10% 10% 10%;
