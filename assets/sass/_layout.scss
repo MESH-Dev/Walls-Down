@@ -223,6 +223,10 @@ body.credits-open .credits-menu-left{
   padding: 5px; background: rgba(255,255,255,0.7);
   @include breakpoint(small) {
       display:block;
+       -webkit-transform:translateZ(1px);
+      -moz-transform:translateZ(1px);
+      -o-transform:translateZ(1px);
+      transform:translateZ(1px);
 
   } 
 }
@@ -347,7 +351,9 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
   height: 100%;
   overflow: hidden;
   left: 0;
-  img{width: 60%; padding: 5% 20% 0 20%;}
+  img{width: 60%; padding: 5% 20% 0 20%;
+    @include breakpoint(small) {padding: 20% 5% 0% 5%; width:90%;}
+  }
  
   .instructions{
     position: absolute; width:160px;  bottom:2%; left:200px;; float: left;
@@ -361,10 +367,7 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
     a{color:$black}
   }
 
-  @include breakpoint(small) {
-    background: url('assets/img/cover-large.jpg')top left no-repeat;
-    @include background-size(cover);  
-  }
+ 
 
 }
 
