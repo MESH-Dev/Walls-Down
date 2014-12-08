@@ -192,7 +192,7 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
                           // but some mobile devices need to be blacklisted,
                           // because their CSS 3D support or hardware is not
                           // good enough to run impress.js properly, sorry...
-                           ( ua.search(/(iphone)|(ipod)|(android)/) === -1 );
+                           ( ua.search(/(iphone)|(ipad)|(ipod)|(android)/) === -1 );
     
     if (!impressSupported) {
         // we can't be sure that `classList` is supported
@@ -694,11 +694,12 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
         // KEYBOARD NAVIGATION HANDLERS
         
         // Prevent default keydown action when one of supported key is pressed.
+       /*
         document.addEventListener("keydown", function ( event ) {
             if ( event.keyCode === 9 || ( event.keyCode >= 32 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) ) {
                 event.preventDefault();
             }
-        }, false);
+        }, false);*/
         
         // Trigger impress action (next or prev) on keyup.
         
@@ -715,6 +716,8 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
         //   positioning. I didn't want to just prevent this default action, so I used [tab]
         //   as another way to moving to next step... And yes, I know that for the sake of
         //   consistency I should add [shift+tab] as opposite action...
+
+        /*
         document.addEventListener("keyup", function ( event ) {
             if ( event.keyCode === 9 || ( event.keyCode >= 32 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) ) {
                 switch( event.keyCode ) {
@@ -735,6 +738,7 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
                 event.preventDefault();
             }
         }, false);
+        */
         
         // delegated handler for clicking on the links to presentation steps
         document.addEventListener("click", function ( event ) {
@@ -762,18 +766,22 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
         }, false);
         
         // delegated handler for clicking on step elements
+     
         document.addEventListener("click", function ( event ) {
             var target = event.target;
+            target = target.parentNode;
+ 
             // find closest step element that is not active
-            while ( !(target.classList.contains("step") && !target.classList.contains("active")) &&
-                    (target !== document.documentElement) ) {
+            while ((target.classList.contains("number-wrap") && !target.classList.contains("active"))&&(target !== document.documentElement) ) {
+ 
                 target = target.parentNode;
+ 
             }
-            
             if ( api.goto(target) ) {
                 event.preventDefault();
             }
         }, false);
+         
         
         // touch handler to detect taps on the left and right side of the screen
         // based on awesome work of @hakimel: https://github.com/hakimel/reveal.js
@@ -813,12 +821,26 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 // I've learnt a lot when building impress.js and I hope this code and comments
 // will help somebody learn at least some part of it.
 
- 
   /*------------------PANEL SCROLLING-----------------*/
  var scrollElement = 'html, body';
   var $scrollElement;
-
+ 
   $(function() {
+
+
+    window.onpopstate = function(event)
+     {
+       var hash = window.location.hash;
+       var $panel = $(hash);
+
+       $scrollElement.stop().animate({
+         scrollLeft: $panel.offset().left
+       }, 500, 'swing', function() {
+         window.location.hash = hash;
+       });
+     };
+
+
     $('html, body').each(function () {
       var initScrollLeft = $(this).attr('scrollLeft');
 
@@ -852,6 +874,69 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
     });
   });
 
+  /* Panel Scroll on keyup */
+  $(function() {
+    var $window = $(window);
+
+    var $panels = $('.panel');
+    var panelArr =[];
+    $panels.each(function() {
+      var idhash = "#" + $(this).attr('id');
+      panelArr.push(idhash);
+    });
+  
+    $('html').keydown(function(e){
+      if(e.which == 37) //LEFT ARROW
+      {
+        var hash = window.location.hash ? window.location.hash : '#home';
+        if (hash.indexOf("#/") >= 0) hash ="#map"; //Check if hash includes "/#/" ? set to #map
+        var idx = panelArr.indexOf(hash);
+
+        //check if hash is in panelArr 
+        //- if yes, get prev id in array, set panel to hash and scroll
+        if(idx != -1)
+        {
+          $panel = $(panelArr[idx-1]);
+          $scrollElement.stop().animate({
+            scrollLeft: $panel.offset().left
+          }, 500, 'swing', function() {
+            window.location.hash = panelArr[idx-1];
+          });
+        }
+        e.preventDefault();
+      }
+      if(e.which == 39) //right ARROW
+      {
+        var hash = window.location.hash ? window.location.hash : '#home';
+        if (hash.indexOf("#/") >= 0) hash ="#map"; //Check if hash includes "/#/" ? set to #map
+        var idx = panelArr.indexOf(hash);
+
+        //check if hash is in panelArr 
+        //- if yes, get prev id in array, set panel to hash and scroll
+        if(idx != -1)
+        {
+          $panel = $(panelArr[idx+1]);
+          $scrollElement.stop().animate({
+            scrollLeft: $panel.offset().left
+          }, 500, 'swing', function() {
+            window.location.hash = panelArr[idx+1];
+          });
+        }
+        e.preventDefault();
+      }
+      
+    });
+
+
+
+
+
+
+  });
+
+
+
+
   /* Force snap to panel on resize.*/
   $(function() {
     var $window = $(window);
@@ -860,7 +945,7 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
     $window.resize(function() {
       window.clearTimeout(timer);
       timer = window.setTimeout(function() {
-        var hash = window.location.hash ? window.location.hash : '#about';
+        var hash = window.location.hash ? window.location.hash : '#home';
 
         $scrollElement.stop().animate({
           scrollLeft: $(hash).offset().left
@@ -915,28 +1000,85 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 
 /*------------------MAP and IMPRESS-----------------*/
 $(function() {
-   var map = impress();
-   map.init(); 
-        $('#texas').click(function(){
-            $('#plain .tx').css('color',"#cfcfcf");
-        });
+
+  var isDesktop = (function() {
+    return !('ontouchstart' in window) || !('onmsgesturechange' in window); // works on ie10
+  })();
+
+  var viewportwidth = $(window).width();
+  $(window).resize(function() {
+    viewportwidth= $(window).width();
+  });
+  
+  window.isDesktop = isDesktop;
+ 
+  if( isDesktop && viewportwidth >767){
+    var map = impress();
+    map.init();
+    if (window.location.hash == "#map") {
+      map.goto(0);
+    }
+    window.addEventListener("hashchange", function () {
+      if (window.location.hash == "#map") {
+          map.goto(0);
+          $('#plain li').removeClass('inactive');
+          $('.intro-text').removeClass('inactive');
+          $('.intro-text').fadeIn();
+          $('.slide').fadeIn();
+          $('.slide').css('max-height', '200px');
+          $('.slide').css('overflow', 'hidden');
+      }
+    }, false);
+ 
+    $('div.number-wrap').click(function(){
+        var state = $(this).parent().attr("id");
+        var $st = $(this).parent();
+        stateid = "#"+state;
+        state = "."+state;
+   
+        $('#plain li').not(state).addClass('inactive');
+        $('.intro-text').fadeOut();
+        $('.slide').not($st).fadeOut();
+        $st.css('max-height', '600px');
+        $st.css('overflow', 'auto');
+       //$("h1 #maptitle").css('font-size','26px');
+        //$("h1 #maptitle").css('line-height','px');
+
+
+    });
+
+    $('#fullmap, .zoom-out a, a#maptitle ').click(function(){
+        $('#plain li').removeClass('inactive');
+        $('.intro-text').removeClass('inactive');
+        $('.intro-text').fadeIn();
+        $('.slide').fadeIn();
+        $('.slide').css('max-height', '200px');
+        $('.slide').css('overflow', 'hidden');
+    });
+
+    
+  }
+
+  $('#map-read-more').click(function(e){
+    //$('#map-more').removeClass("hide");
+    //$('#map-more').addClass("show");
+    $('#map-more').fadeIn();
+     $(this).hide();
+    e.preventDefault();
+  });
+  $('#map-read-close').click(function(e){
+    //$('#map-more').removeClass("show");
+    //$('#map-more').addClass("hide");
+    $('#map-more').fadeOut();
+    $('#map-read-more').show();
+    e.preventDefault();
+  });
+
+
 });
 
  
-/*------------------MAP and JMPRESS----------------
-$(function() {
-  $('#jmpress').jmpress({
-        hash: {
-            use : false,
-            update : false,
-            bindChange : false
-        },
-        start : '#fullmap'
-    });
-});
-*/
-
-/*------------------MOBILE MENU-----------------*/
+/*------------------ MENU-----------------*/
 $(function() {
  
     var $togglePushLeft = $(".toggle-push-left" );
@@ -944,47 +1086,131 @@ $(function() {
     var activeNav;
     var activeCredits;
 
-   
-    /* push menu left */
-    $(".toggle-push-left").click(function(){
-        $('body').addClass("pml-open");
-        activeNav = "pml-open";
+    //$('body').addClass("pml-open");
+ 
+    var viewportwidth = $(window).width();
+    if(viewportwidth < 768){
+      $('body').removeClass("pml-open");
+      //hidemenu on click out of menu
+      $(".panel-wrap").click(function(){
+          if($('body').hasClass('pml-open'))
+          {
+            $('body').removeClass('pml-open');
+          }
+      } );
+    }
 
+    $(window).resize(function() {
+      viewportwidth= $(window).width();
+      if(viewportwidth < 768){
+       $('body').removeClass("pml-open");
+      }
+      else{
+        $('body').addClass("pml-open");
+      }
     });
 
-    $(".mask").click(function(){
-        $('body').removeClass(activeNav);
-        activeNav = "";
- 
-    } );
+
+    /* push menu left */
+    $(".toggle-push-left").click(
+      function(){
+        if($('body').hasClass('pml-open')){
+          $('body').removeClass('pml-open');
+        }
+        else{
+          $('body').addClass('pml-open');
+        }
+      }
+    );
+
+    
  
     /* hide active menu if close menu button is clicked */
     $(".close-menu").click(function(){
         $('body').removeClass(activeNav);
-        $('body').removeClass(activeCredits);
+        $('body').removeClass(".credits-open");
         activeNav = "";
     });
 
-     $pushMenuLeft.hover(function(){
+    /*
+    $pushMenuLeft.hover(function(){
         $('body').addClass('pml-open');
       }, function(){
         $('body').removeClass('pml-open');
      });
+    */
+
 
     //CREDITS MENU --------------
     /* push menu left */
-    $("#credit-link").click(function(){
-        $('body').addClass("credits-open"); 
+    $("#credit-link").click(function(e){
+        $('body').addClass("credits-open");
         activeCredits = "credits-open";
+        $(this).parent().addClass('credit-active');
+        e.preventDefault();
     });
 
     /* hide active menu if close menu button is clicked */
     $(".close-credits-menu").click(function(){
         $('body').removeClass(activeCredits);
+        $(".secondary-menu li").removeClass('credit-active');
         activeCredits = "";
  
     });
-
-
-
 });
+
+/*------------------ MENU ACTIVE/Hover TOGGLE from hash-----------------*/
+$(function() {
+
+  var hash = window.location.hash ? window.location.hash : '#home';
+  if (hash.indexOf("#/") >= 0) hash ="#map";
+  $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
+
+
+  window.addEventListener("hashchange", function () {
+      var hash = window.location.hash ? window.location.hash : '#home';
+      if (hash.indexOf("#/") >= 0) hash ="#map";
+      $("nav.menu a div").removeClass('menu-active');
+      $(".secondary-menu li").removeClass('menu-active');
+      $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
+      $('.secondary-menu li a[href="'+ hash +'"]').parent("li").addClass('menu-active');
+      $('#brahms').trigger('pause');
+   }, false);
+});
+
+/*------------------ TIMELINE SCROLLS -----------------*/
+$(function() {
+  $('#timeline').scroll( function(){
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},500);
+                $(this).children('.vertical-line').animate({'height':'120px'},1500);
+            }
+        });
+    });
+
+  var playit = 1;
+  $('#grady').scroll( function(){
+        /* Check the location of each desired element */
+        var $audio = $('#brahms');
+        
+        var bottom_of_object = $audio.position().top + $audio.outerHeight();
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        /* If the object is completely visible in the window, fade it it */
+        if( bottom_of_window > bottom_of_object ){
+          if(playit == 1){
+            $audio.trigger('play');
+            playit = 0;
+          }
+           
+        } 
+       
+    });
+});
+
+

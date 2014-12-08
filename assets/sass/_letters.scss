@@ -1,13 +1,22 @@
 /* ----------- CEO LETTER ------------- */
 #ceo-letter {
-  left: 500%;
- 
- }
+  left: 600%;
+  .left-nav{position: relative;  height: 0px;  width: 50%; top: 30px; left:-160px;
+    @include breakpoint(small) {
+      left:-10px;
+    }
+     @media only screen and (min-width: 768px) and (max-width: 1060px){ left:-10px;}
+  }
+
+
+   .panel-wrap{min-height: 800px; height:100%}
+}
 
 /* ----------- EDITOR LETTER ------------- */
 #editor-letter {
-  left: 600%;
- }
+  left: 500%;
+  .text-container{padding-bottom: 150px;}
+}
 
  /* ----------- LETTER ------------- */
 .letter{
@@ -15,23 +24,36 @@
     background: url('assets/img/letter-bg.jpg') top left no-repeat;
     @include background-size(cover);
     background-color: $black;
+   
+    @include breakpoint(small) {
+      width: 80%; padding: 0 10% 0 10%;
+    }
   }
 
   
   
   //background-position-x: 79px;
   h1{
-    font:26px/30px bold $cabin, sans-serif; 
+ 
+    font-size: 26px; line-height:30px;
+    font-family: $cabin;
     color: $gold; 
     text-transform:uppercase; 
     width: 300px;
     font-weight: bold;
     padding: 0px 0px 40px 0px;
+    @include breakpoint(small) {
+      width: 100%;  padding:80px 0 20px 0; 
+    }
   }
   .text-container{
     width:500px;
     padding-left: 200px;
     padding-top: 90px;
+    @include breakpoint(small) {
+      width: 100%; padding:0 0 100px 0;  
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1060px){ padding-left: 60px;  width: 60%;}
   }
 
 }

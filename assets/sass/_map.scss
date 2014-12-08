@@ -1,220 +1,395 @@
 /* ----------- INTERACTIVE MAP ------------- */
 #map {
+    left: 300%;
+    overflow: hidden;
+    .panel-wrap{
+        height: 100%;
+        overflow: hidden;
+        background: url('assets/img/map-bg.jpg') top left no-repeat;
+        @include background-size(cover);
+        @include breakpoint(nomap)  {
+            overflow: auto;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+    }
 
-	left: 300%;
+    .map-intro{
+        padding: 25px 0px 0px 40px; position:relative; z-index: 1000;
+        h1{ 
+            color: $white; display: inline; float:left;  @include animate(0.3);
+            a{color:white; text-decoration:none; &:hover{text-decoration:none; }}
+            @include breakpoint(nomap)  {padding: 10% 10% 10% 10%; width: 80%;} }
+        .intro-text{
+            width:380px; display: inline; float:left; margin: 0px 0px 0px 30px; padding:10px 10px 0px 10px ;
+            background: rgba(0,0,0,0.7); 
+            p{font:14px/20px $georgia; color: $white; font-style: italic;}
+            @include breakpoint(nomap)  {
+                padding: 5%; width: 70%;
+                background: rgba(0,0,0,0.3); 
+                margin-bottom: 40px;
+            }
+
+        }
+        @include breakpoint(nomap)  {
+            padding: 10% 0% 0% 0%;
+          
+        }
+
+    }
+
+    .zoom-out{
+        position: relative;
+ 
+        padding: 0 0 10px 0px;
+        width:500px;
+        text-align: right;
+        a{color: white;}
+        a:hover{text-decoration: underline;}
+        @include breakpoint(nomap)  {
+          display: none;
+        }
+    }
 
 
-/*
-    Now let's style the presentation steps.
 
-    We start with basics to make sure it displays correctly in everywhere ...
-*/
+    .step {
+        position: relative;
+        //width: 900px;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing:    border-box;
+        -ms-box-sizing:     border-box;
+        -o-box-sizing:      border-box;
+        box-sizing:         border-box;
+       // font-family: 'PT Serif', georgia, serif;
+        //font-size: 48px;
+        //line-height: 1.5;
+        
+    }
+    .impress-enabled .step {
+        margin: 0;
+        /*opacity: 0.3;*/
+        opacity: 1;
 
-.step {
-    position: relative;
-    width: 900px;
-    padding: 40px;
-    margin: 20px auto;
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -ms-transition:     opacity 1s;
+        -o-transition:      opacity 1s;
+        transition:         opacity 1s;
+    }
 
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-    -ms-box-sizing:     border-box;
-    -o-box-sizing:      border-box;
-    box-sizing:         border-box;
+    .impress-enabled .step.active { opacity: 1 }
 
-    font-family: 'PT Serif', georgia, serif;
-    font-size: 48px;
-    line-height: 1.5;
+    
+    .slide {
+        display: block;
+        width: 960px;
+        padding: 0px;
+        max-height: 230px;
+        font-size: 20px;
+        span:hover{opacity: 0.7; cursor: pointer;}
+        z-index: 23;
+        -webkit-transition: max-height 0.8s;
+        -moz-transition: max-height 0.8s;
+        transition: max-height 0.8s;
+
+
+        @include breakpoint(nomap)  {
+            padding: 10%;
+            width: 90%;
+            max-height: 80%;
+            font-size: 14px; line-height:20px;
+        }
+
+
+    }
+    span.number{
+        color: $gold; font-family: georgia; font-size: 110px; line-height:135px; 
+        @include animate(0.2);
+        position:relative; 
+        z-index: 10000; 
+        @include breakpoint(nomap) {font-size:40px; line-height:45px; width:100%;  float: left;}
+    }
+    .active span.number:hover,.active span.subtext:hover{@include opacity(1); cursor: default; }
+    span.subtext{
+        font:26px/30px $cabin; font-weight:bold; color: $gold; display:block;  
+        text-transform:uppercase; -webkit-transition: all .5s ease-in; 
+
+        @include breakpoint(nomap) {font:16px/20px $cabin;   }
+    }
+    
+
+    .number-wrap{
+        display:inline; float:left; width: 350px; text-align: right; 
+        @include breakpoint(nomap) { text-align: left; width: 100%;position:relative; z-index: 2; padding: 0px 0px 10px 0px; } 
+    }
+
+    .single-state{
+        display: none;
+        @include breakpoint(nomap) {display:block; z-index: 0; position:relative; margin-top:-100px; padding: 0 0 0 30px;}
+    }
+   
+    
+    
+    .content{
+        width: 500px;
+        display: inline;
+        float:left;
+        opacity: 0;
+        
+        margin-left: 40px;
+        -webkit-transition: all .5s ease-in;
+        p{
+            color: $white;
+            font-size:16px;
+            line-height: 26px;
+        }
+        img{max-width: 100%; margin: 10px 0px 10px 0px;}
+
+
+        @include breakpoint(nomap)  {
+          padding: 0%;
+          margin-left: 0;
+          width: 100%;
+          max-height: 80%;
+          opacity: 1;
+          margin-bottom: 100px;
+          p{
+                font-size: 14px; line-height:20px;
+          }
+        }
+    }
+
+    #wa {
+        .number-wrap{width: 400px; @include breakpoint(nomap) {width: 100%; padding: 0px 0px 10px 0px;} }
+        .content{width: 450px; @include breakpoint(nomap) {padding: 0%; width: 100%;}}
+    }
+    #oh {
+        .number-wrap{width: 400px; @include breakpoint(nomap) {width: 100%; padding: 0px 0px 10px 0px;}}
+        .content{width: 450px; @include breakpoint(nomap) {padding: 0%; width: 100%;}}
+    }
+
+    #usa{
+        .number-wrap{width: 900px; display:block; @include breakpoint(nomap) {width: 100%; padding: 0px 0px 10px 0px;}}
+        .content{width: 500px; margin-left:100px; display:block; @include breakpoint(nomap) {padding: 0%; margin:0; margin-bottom:100px; width: 100%;}}
+         span.number{font-size: 170px; @include breakpoint(nomap) {font-size: 40px}}
+
+    }
+ 
+    .step.active div.content{ opacity: 1; -webkit-transition: all 2s ease-in;} 
+
+ .left-nav{
+    position: absolute; height: 0px; width: 30%; top:92%; left: 12%; float:left; 
+    a{position: relative;  left: 7%;}
+    .fa{font-size: 45px; position:relative; top: 8px; right: 5px;}
+
+    @include breakpoint(nomap) {
+        position: relative; height: 0px; width: 50%; top:-80px; float:left; left: 10px; 
+        font-size:13px;
+    }
+
+  }
+  .right-nav{
+    position: absolute; height: 0px; top:92%; right: 1%;  float: right;
+    a{float: right; position: relative;  right: 10%;}
+    .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}
+    @include breakpoint(nomap) {
+        position: relative; height: 0px;  width: 50%;  top:-80px; float: right; 
+        font-size:13px;
+    }
+  } 
 }
 
-/*
-    ... and we enhance the styles for impress.js.
 
-    Basically we remove the margin and make inactive steps a little bit transparent.
-*/
-.impress-enabled .step {
-    margin: 0;
-    /*opacity: 0.3;*/
-    opacity: 1;
-
-    -webkit-transition: opacity 1s;
-    -moz-transition:    opacity 1s;
-    -ms-transition:     opacity 1s;
-    -o-transition:      opacity 1s;
-    transition:         opacity 1s;
-}
-
-.impress-enabled .step.active { opacity: 1 }
-
-/*
-    These 'slide' step styles were heavily inspired by HTML5 Slides:
-    http://html5slides.googlecode.com/svn/trunk/styles.css
-
-    ;)
+/* ----------- INTERACTIVE MAP ------------- */
+.ie #map {
+    left: 300%;
+    overflow: hidden;
+    .panel-wrap{
+        height: 100%;
+        overflow: hidden;
+        overflow: auto;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        background: url('assets/img/map-bg.jpg') top left no-repeat;
+        @include background-size(cover);
  
-    They cover everything what you see on first three steps of the demo.
-*/
-.slide {
-    display: block;
+    }
 
-    width: 900px;
-    height: 700px;
-    padding: 40px 60px;
-    font-size: 20px;
+    .map-intro{
+        padding: 10% 0% 0% 0%; position:relative; z-index: 1000;
+        h1{ 
+            color: $white; display: inline; float:left;  @include animate(0.3);
+            a{color:white; text-decoration:none; &:hover{text-decoration:none; }}
+            padding: 10% 10% 10% 10%; width: 80%;
+        }
+            
+        .intro-text{
+            width:380px; display: inline; float:left; margin: 0px 0px 0px 30px; padding:10px 10px 0px 10px ;
+            background: rgba(0,0,0,0.7); 
+            p{font:14px/20px $georgia; color: $white; font-style: italic;}
+            padding: 5%; width: 70%;
+            background: rgba(0,0,0,0.3); 
+            margin-bottom: 40px;
  
-    border: 1px solid rgba(0, 0, 0, .3);
-    border-radius: 10px;
+
+        }
  
+
+    }
+
+    .zoom-out{
  
-}
-span.number{color: #ffcc00; font-family: georgia; font-size: 150px; -webkit-transition: all .5s ease-in;}
-
-div.content{opacity: 0;-webkit-transition: all .5s ease-in;}
-.impress-enabled .step.active div.content{ opacity: 1; -webkit-transition: all 2s ease-in;}
-
-/*
-    Now, when we have all the steps styled let's give users a hint how to navigate
-    around the presentation.
-
-    The best way to do this would be to use JavaScript, show a delayed hint for a
-    first time users, then hide it and store a status in cookie or localStorage...
-
-    But I wanted to have some CSS fun and avoid additional scripting...
-
-    Let me explain it first, so maybe the transition magic will be more readable
-    when you read the code.
-
-    First of all I wanted the hint to appear only when user is idle for a while.
-    You can't detect the 'idle' state in CSS, but I delayed a appearing of the
-    hint by 5s using transition-delay.
-
-    You also can't detect in CSS if the user is a first-time visitor, so I had to
-    make an assumption that I'll only show the hint on the first step. And when
-    the step is changed hide the hint, because I can assume that user already
-    knows how to navigate.
-
-    To summarize it - hint is shown when the user is on the first step for longer
-    than 5 seconds.
-
-    The other problem I had was caused by the fact that I wanted the hint to fade
-    in and out. It can be easily achieved by transitioning the opacity property.
-    But that also meant that the hint was always on the screen, even if totally
-    transparent. It covered part of the screen and you couldn't correctly clicked
-    through it.
-    Unfortunately you cannot transition between display `block` and `none` in pure
-    CSS, so I needed a way to not only fade out the hint but also move it out of
-    the screen.
-
-    I solved this problem by positioning the hint below the bottom of the screen
-    with CSS transform and moving it up to show it. But I also didn't want this move
-    to be visible. I wanted the hint only to fade in and out visually, so I delayed
-    the fade in transition, so it starts when the hint is already in its correct
-    position on the screen.
-
-    I know, it sounds complicated ... maybe it would be easier with the code?
-*/
+          display: none;
  
-/*
-    And as the last thing there is a workaround for quite strange bug.
-    It happens a lot in Chrome. I don't remember if I've seen it in Firefox.
-
-    Sometimes the element positioned in 3D (especially when it's moved back
-    along Z axis) is not clickable, because it falls 'behind' the <body>
-    element.
-
-    To prevent this, I decided to make <body> non clickable by setting
-    pointer-events property to `none` value.
-    Value if this property is inherited, so to make everything else clickable
-    I bring it back on the #impress element.
-
-    If you want to know more about `pointer-events` here are some docs:
-    https://developer.mozilla.org/en/CSS/pointer-events
-
-    There is one very important thing to notice about this workaround - it makes
-    everything 'unclickable' except what's in #impress element.
-
-    So use it wisely ... or don't use at all.
-*/
-.impress-enabled          { pointer-events: none }
-.impress-enabled #impress { pointer-events: auto }
-
-/*
-    There is one funny thing I just realized.
-
-    Thanks to this workaround above everything except #impress element is invisible
-    for click events. That means that the hint element is also not clickable.
-    So basically all of this transforms and delayed transitions trickery was probably
-    not needed at all...
-
-    But it was fun to learn about it, wasn't it?
-*/
-
-/*
-    That's all I have for you in this file.
-    Thanks for reading. I hope you enjoyed it at least as much as I enjoyed writing it
-    for you.
-*/
+    }
 
 
-.hint {
-    /*
-        We hide the hint until presentation is started and from browsers not supporting
-        impress.js, as they will have a linear scrollable view ...
-    */
-    display: none;
 
-    /*
-        ... and give it some fixed position and nice styles.
-    */
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 200px;
+    .step {
+        position: relative;
+        //width: 900px;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing:    border-box;
+        -ms-box-sizing:     border-box;
+        -o-box-sizing:      border-box;
+        box-sizing:         border-box;
+       // font-family: 'PT Serif', georgia, serif;
+        //font-size: 48px;
+        //line-height: 1.5;
+        
+    }
+    .impress-enabled .step {
+        margin: 0;
+        /*opacity: 0.3;*/
+        opacity: 1;
 
-    background: rgba(0,0,0,0.5);
-    color: #EEE;
-    text-align: center;
+        -webkit-transition: opacity 1s;
+        -moz-transition:    opacity 1s;
+        -ms-transition:     opacity 1s;
+        -o-transition:      opacity 1s;
+        transition:         opacity 1s;
+    }
 
-    font-size: 50px;
-    padding: 20px;
+    .impress-enabled .step.active { opacity: 1 }
 
-    z-index: 100;
-
-    /*
-        By default we don't want the hint to be visible, so we make it transparent ...
-    */
-    opacity: 0;
-
-    /*
-        ... and position it below the bottom of the screen (relative to it's fixed position)
-    */
-    -webkit-transform: translateY(400px);
-    -moz-transform:    translateY(400px);
-    -ms-transform:     translateY(400px);
-    -o-transform:      translateY(400px);
-    transform:         translateY(400px);
-
-    /*
-        Now let's imagine that the hint is visible and we want to fade it out and move out
-        of the screen.
-
-        So we define the transition on the opacity property with 1s duration and another
-        transition on transform property delayed by 1s so it will happen after the fade out
-        on opacity finished.
-
-        This way user will not see the hint moving down.
-    */
-    -webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
-    -moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
-    -ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
-    -o-transition:      opacity 1s,      -o-transform 0.5s 1s;
-    transition:         opacity 1s,         transform 0.5s 1s;
-}
-
+    
+    .slide {
+        display: block;
+ 
   
-	
+        max-height: 230px;
+ 
+        span:hover{opacity: 0.7; cursor: pointer;}
+        z-index: 23;
+        -webkit-transition: max-height 0.8s;
+        -moz-transition: max-height 0.8s;
+        transition: max-height 0.8s;
+
+        padding: 10%;
+        width: 90%;
+        max-height: 80%;
+        font-size: 14px; line-height:20px;
+ 
+
+    }
+    span.number{
+        color: $gold; font-family: georgia; font-size: 110px; line-height:135px; 
+        @include animate(0.2);
+        position:relative; 
+        z-index: 10000; 
+ 
+            font-size:40px; line-height:45px; width:100%;  float: left;
+ 
+    }
+    .active span.number:hover,.active span.subtext:hover{@include opacity(1); cursor: default; }
+    span.subtext{
+        font:26px/30px $cabin; font-weight:bold; color: $gold; display:block;  
+        text-transform:uppercase; -webkit-transition: all .5s ease-in; 
+
+            font:16px/20px $cabin;    
+    }
+    
+
+    .number-wrap{
+        display:inline; float:left;   text-align: right; 
+         text-align: left; width: 100%;position:relative; z-index: 2; padding: 0px 0px 10px 0px;  
+    }
+
+    .single-state{
+        display:block; z-index: 0; position:relative; margin-top:-100px; padding: 0 0 0 30px; 
+    }
+   
+    
+    
+    .content{
+        width: 500px;
+        display: inline;
+        float:left;
+        opacity: 0;
+        
+        margin-left: 40px;
+        -webkit-transition: all .5s ease-in;
+        p{
+            color: $white;
+            font-size:16px;
+            line-height: 26px;
+        }
+        img{max-width: 100%; margin: 10px 0px 10px 0px;}
 
 
+        
+          padding: 0%;
+          margin-left: 0;
+          width: 100%;
+          max-height: 80%;
+          opacity: 1;
+          margin-bottom: 100px;
+          p{
+                font-size: 14px; line-height:20px;
+          }
+  
+    }
 
+    #wa {
+        .number-wrap{ width: 100%; padding: 0px 0px 10px 0px; }
+        .content{ padding: 0%; width: 100%;}
+    }
+    #oh {
+        .number-wrap{ width: 100%; padding: 0px 0px 10px 0px;}
+        .content{ padding: 0%; width: 100%;}
+    }
 
+    #usa{
+        .number-wrap{width: 900px; display:block; width: 100%; padding: 0px 0px 10px 0px; }
+        .content{width: 500px; margin-left:100px; display:block;  padding: 0%; margin:0; margin-bottom:100px; width: 100%; }
+         span.number{font-size: 170px;  font-size: 40px }
+
+    }
+ 
+    .step.active div.content{ opacity: 1; -webkit-transition: all 2s ease-in;} 
+
+    .left-nav{
+        position: absolute; height: 0px; width: 30%; top:92%; left: 12%; float:left; 
+        a{position: relative;  left: 7%;}
+        .fa{font-size: 45px; position:relative; top: 8px; right: 5px;}
+     
+            position: relative; height: 0px; width: 50%; top:-80px; float:left; left: 10px; 
+            font-size:13px;
+    }
+
+ 
+  .right-nav{
+ 
+    a{float: right; position: relative;  right: 25%;}
+    .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}
+    position: relative; height: 0px;  width: 50%;  top:-80px; float: right; 
+    font-size:13px; 
+  } 
 }

@@ -1,41 +1,88 @@
 /* ----------- NICU ------------- */
 #nicu {
   left: 400%;
-
+  overflow-x: hidden;
   .panel-wrap{
     background: url('assets/img/nicu-bg.jpg') top left no-repeat;
     @include background-size(cover);
     height: 9000px;
+
   }
 
+  a{color:$black; text-decoration: underline;}
+  a:hover{@include opacity(0.7)}
   .panel-left, .panel-right{display:inline; float:left;}
+ 
   .sub-panel{width:100%; position:relative; }
   .sub-panel:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
 
-  h1{font:48px/50px $georgia ; color: $white; width: 600px; padding: 120px 0px 30px 120px; text-transform: uppercase; }
-  h2{font:32px/36px $georgia ; color: $black; }
-  h3{font:12px/17px $cabin ; color: $gold; text-transform:uppercase; padding-bottom:20px;}
-
+  h1{
+    font:48px/50px $georgia ; color: $white; width: 600px; padding: 120px 0px 30px 120px; text-transform: uppercase; 
+    @include breakpoint(small) {
+        font:24px/30px $georgia; padding: 80px 0px 30px 10%; width:50%; 
+    }
+  }
+  h2{font:32px/36px $georgia ; color: $black; 
+    @include breakpoint(small) {
+      font-size: 20px; line-height: 24px; 
+    }
+  }
+  h3{font:12px/17px $cabin ; color: $gold; text-transform:uppercase; padding-bottom:20px;
+    @include breakpoint(small) {
+       
+    }
+  }
+   h4{font:12px/17px $cabin ; color: $black; text-transform:uppercase; ; font-weight: bold;
+    @include breakpoint(small) {
+       
+    }
+  }
+  p.small-italic{font-size:12px; line-height:20px; font-style:italic;}
   .panel-one{
     background: url('assets/img/nicu-1.jpg') top right no-repeat;
     //@include background-size(cover);
-    background-color: #171711;
+    background-color: #121212;
     p{color: $gray; font-style: italic; width: 330px; padding: 0px 0px 20px 120px;}
     p:last-child{padding-bottom: 150px;}
     margin-bottom: 80px;
+    
+    @include breakpoint(small) {
+       @include background-size(contain);
+       p{width:50%; padding: 0px 10% 18px 10%; }
+       p:last-child{padding-bottom: 30px;}
+       margin-bottom: 0px;
+    }
+
+    .fa-angle-down{
+      padding: 0px 0px 0px 280px;
+      font-size: 50px; color: $white;
+       @include breakpoint(small) {
+        padding: 0px 0px 90px 47%;
+        font-size: 30px;
+       }
+    }
+    
   }
 
   .panel-two{
     background: url('assets/img/nicu-2.jpg') top right no-repeat;
     @include background-size(cover);
     .panel-text{
-      h2{
-      color: $white;}
+      h2{color: $white; @include breakpoint(small) {width: 50%; padding-top: 100%; color:$black}}
       width: 390px;
       padding: 450px 0px 80px 45px; 
-      p{color: $white;} 
+      p,a{color: $white;} 
     }
     margin-bottom: 80px;
+
+    @include breakpoint(small) {
+       @include background-size(contain);
+    
+       h3{width: 50%;}
+       .panel-text{ 
+         p,a{color: $black}
+       }
+    }
   }
 
   .panel-three{
@@ -46,11 +93,16 @@
     .panel-right{
       padding: 40px 0px 20px 70px; 
       width: 380px;
+
     }
     margin-bottom: 80px;
-    //height:640px;
- 
+    @include breakpoint(small) {margin-bottom: 10px;}
   }
+
+
+
+
+
   .panel-four{
     .panel-left{
       padding: 0px 0px 10px 45px; 
@@ -59,27 +111,24 @@
     .panel-right{
       padding: 90px 0px 0px 50px; 
       width: 600px;
-      .panel-text{
-          padding: 30px 0px 180px 20px; 
-          width: 380px;
-      }
-
+        @media only screen and (max-width: 1170px){ width: 500px; }
+        @media only screen and (max-width: 1070px){ width: 400px; }
+    }
+    .panel-text{
+      padding: 30px 0px 180px 20px; 
+      width: 380px;
     }
     margin-bottom: 20px;
-    //height:800px;
   }
 
   .panel-five{
-    background: url('assets/img/nicu-5.jpg') top left no-repeat;
-    //@include background-size(cover);
+    background: url('assets/img/nicu-5.png') top left no-repeat;
     .panel-text{
       width: 390px;
       padding: 615px 0px 80px 530px; 
       overflow-y: visible;
- 
+      @include breakpoint(small) {padding-top: 70% !important;}
     }
- 
- 
   }
 
   .panel-six{
@@ -87,11 +136,13 @@
       padding: 0px 0px 10px 45px; 
       width: 420px;
       .panel-text{
-        width: 380px;
- 
+        width: 80%;
         p.small-italic{font-size:12px; line-height:20px; font-style:italic;}
       }
-      img{margin: -10px 0px 0px 30px;}
+      img{
+        margin: -10px 0px 0px 30px;
+        @include breakpoint(small) {margin: 0;}
+      }
 
     }
     .panel-right{
@@ -103,15 +154,18 @@
   }
 
   .panel-seven{
-    background: url('assets/img/nicu-7.jpg') top right no-repeat;
+    background: url('assets/img/nicu-7.jpg') top left no-repeat;
     @include background-size(cover);
     .panel-text{
-      h2{
-      color: $white;}
+      h2{color: $white; @include breakpoint(small) {color: $black;}}
       width: 390px;
       padding: 50px 0px 80px 45px; 
-      p{color: $white;}
+      p,a{
+        color: $white;
+        @include breakpoint(small) {color: $black;}
+      }
       blockquote{color: $gold;}
+      @include breakpoint(small) {padding-top: 67% !important;}
     }
     margin-bottom: 80px;
  
@@ -122,11 +176,16 @@
       padding: 100px 0px 10px 45px; 
       width: 420px;
       .panel-text{
-        width: 380px;
+        width: 80%;
+
         padding: 30px 0px 0px 0px ;
         p.small-italic{font-size:12px; line-height:20px; font-style:italic;}
+        @include breakpoint(small){padding: 30px 10% 0 10% ;}
       }
-      img{margin: -10px 0px 0px 30px;}
+      img{
+        margin: -10px 0px 0px 30px;
+        @include breakpoint(small) {margin: 0;}
+      }
 
     }
     .panel-right{
@@ -134,27 +193,34 @@
       padding: 00px 0px 0px 45px; 
     }
     margin-bottom: 150px;
+    @include breakpoint(small) {margin-bottom:10px;}
    
   }
 
   .panel-nine{
-    background: url('assets/img/nicu-9.jpg') top right no-repeat;
+    background: url('assets/img/nicu-9.jpg') bottom right no-repeat;
     @include background-size(cover);
 
     .panel-full1{
-     
       padding: 30px 0px 0px 600px; 
       width: 380px;
+      @include breakpoint(small) {padding: 0 0 18px 0; width: 100%;}
+      @include breakpoint(small) {padding-top: 67% !important;}
+      @media only screen and (min-width: 1400px){padding-left:800px;}
+      @media only screen and (min-width: 1900px){padding-left:900px;}
     }
 
     .panel-full2{
-       blockquote{color: $gold;}
-      p{color: $white;}
+      blockquote{color: $gold;}
+      p,a{color: $white; @include breakpoint(small) {color:$black;} }
       padding: 80px 0px 80px 45px; 
       width: 380px;
+      @include breakpoint(small) {padding: 0 0 18px 0; width: 100%;}
     }
  
     margin-bottom: 130px;
+    @include breakpoint(small) {
+      background: url('assets/img/nicu-9.jpg') top right no-repeat; margin-bottom: 10px;}
  
   }
 
@@ -168,6 +234,7 @@
       width: 400px;
     }
     margin-bottom: 150px;
+    @include breakpoint(small) { margin-bottom: 40px;}
  
   }
 
@@ -176,15 +243,19 @@
     @include background-size(cover);
     .panel-left{
       blockquote{color: $gold;}
-      p{color: $white;}
-      padding: 130px 0px 30px 45px; 
+      p,a{color: $white; @include breakpoint(small) {color:$black;} }
+      padding: 130px 0px 30px 45px;
+      margin-left: -800px; 
+      @include breakpoint(small) {margin-left: 0px;  }
       width: 360px;
+      
     }
     .panel-right{
-      h2{color: $white;}
-      p{color: $white;}
-      padding: 650px 0px 30px 45px; 
+      h2{color: $white; @include breakpoint(small) {color:$black;}}
+      p,a{color: $white; @include breakpoint(small) {color:$black;}}
+      padding: 650px 0px 30px 420px; 
       width: 380px;
+      @include breakpoint(small) {padding-top: 70% !important;}
     }
     margin-bottom: 80px;
   }
@@ -198,9 +269,20 @@
       padding: 0px 0px 10px 45px; 
       width: 580px;
     }
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+  }
+  
+  .panel-one,  .panel-two,  .panel-three,  .panel-four,  .panel-five,
+  .panel-six,   .panel-seven,  .panel-eight,  .panel-nine,  .panel-ten,
+  .panel-eleven,  .panel-twelve
+  {
+    @include breakpoint(small) {
+      .panel-left,.panel-right{width:100%; padding: 0; img{max-width: 100%; margin-bottom:10px}}
+      .panel-text{padding: 0 10% 18px 10%; width: 80%;}
+      @include background-size(contain);
+    }
   }
 
-
+  .left-nav a, .right-nav a{text-decoration: none;}
 
  }  

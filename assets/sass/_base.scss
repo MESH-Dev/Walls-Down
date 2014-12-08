@@ -30,6 +30,8 @@ $gray: #c2c2c2;
 $darkgray: #3a3a3a;
 $white: #ffffff;
 $teal: #4b7a82;
+$stategray:#474644;
+$statedark:#2b2a29;
  
  /* #CSS Animation Mixins
 ================================================== */
@@ -39,6 +41,7 @@ $teal: #4b7a82;
     -ms-transition: all $time;
     -o-transition: all $time;
     transition: all $time; 
+    //-webkit-transform: translateZ(0);
 }
  
 /* #Breakpoint Mixins
@@ -51,15 +54,24 @@ $teal: #4b7a82;
   @if $point == smallscreen {
     @media only screen and (min-width: 768px) and (max-width: 1399px){ @content; }
   }
-  @else if $point == tablet  {
-    @media only screen and (max-width: 767px){ @content; }
+  //@else if $point == tablet  {
+    //@media only screen and (max-width: 767px){ @content; }
+  //}
+  @else if $point == nomap {
+    @media only screen and (max-width: 767px), (min-device-width : 768px) and (max-device-width : 1024px) { @content; }
   }
-  @else if $point == landscape {
-    @media only screen and (min-width: 480px) and (max-width: 767px)  { @content; }
+  //@else if $point == phone {
+    //@media only screen and (min-width: 480px)   { @content; }
+  //}
+  @else if $point == small{
+    //@media only screen and (max-width: 320px)  { @content; }
+    @media only screen and (max-width: 800px){ @content; }
   }
-  @else if $point == portrait{
-    @media only screen and (max-width: 479px) { @content; }
+
+   @else if $point == tablet{
+    @media only screen and (min-device-width : 768px) and (max-device-width : 1024px){ @content; }
   }
+ 
 }
 //fonts
  
@@ -75,8 +87,9 @@ a{text-decoration:none;}
 strong{font-weight:bold;}
 em{text-style:italic;}
 
-.hide{display:none;}
+.hide{display:none; }
 .show{display:block;}
+.hideme{@include opacity(0); @include breakpoint(small) {@include opacity(1);}}
 
 
 /* #Buttons

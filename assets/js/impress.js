@@ -179,7 +179,7 @@
                           // but some mobile devices need to be blacklisted,
                           // because their CSS 3D support or hardware is not
                           // good enough to run impress.js properly, sorry...
-                           ( ua.search(/(iphone)|(ipod)|(android)/) === -1 );
+                           ( ua.search(/(iphone)|(ipad)|(ipod)|(android)/) === -1 );
     
     if (!impressSupported) {
         // we can't be sure that `classList` is supported
@@ -681,11 +681,12 @@
         // KEYBOARD NAVIGATION HANDLERS
         
         // Prevent default keydown action when one of supported key is pressed.
+       /*
         document.addEventListener("keydown", function ( event ) {
             if ( event.keyCode === 9 || ( event.keyCode >= 32 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) ) {
                 event.preventDefault();
             }
-        }, false);
+        }, false);*/
         
         // Trigger impress action (next or prev) on keyup.
         
@@ -702,6 +703,8 @@
         //   positioning. I didn't want to just prevent this default action, so I used [tab]
         //   as another way to moving to next step... And yes, I know that for the sake of
         //   consistency I should add [shift+tab] as opposite action...
+
+        /*
         document.addEventListener("keyup", function ( event ) {
             if ( event.keyCode === 9 || ( event.keyCode >= 32 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) ) {
                 switch( event.keyCode ) {
@@ -722,6 +725,7 @@
                 event.preventDefault();
             }
         }, false);
+        */
         
         // delegated handler for clicking on the links to presentation steps
         document.addEventListener("click", function ( event ) {
@@ -749,18 +753,22 @@
         }, false);
         
         // delegated handler for clicking on step elements
+     
         document.addEventListener("click", function ( event ) {
             var target = event.target;
+            target = target.parentNode;
+ 
             // find closest step element that is not active
-            while ( !(target.classList.contains("step") && !target.classList.contains("active")) &&
-                    (target !== document.documentElement) ) {
+            while ((target.classList.contains("number-wrap") && !target.classList.contains("active"))&&(target !== document.documentElement) ) {
+ 
                 target = target.parentNode;
+ 
             }
-            
             if ( api.goto(target) ) {
                 event.preventDefault();
             }
         }, false);
+         
         
         // touch handler to detect taps on the left and right side of the screen
         // based on awesome work of @hakimel: https://github.com/hakimel/reveal.js

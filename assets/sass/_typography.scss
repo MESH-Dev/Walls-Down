@@ -11,13 +11,13 @@ span.underline{text-decoration: underline;}
 
 
 //headings
-h1{font:54px/60px $georgia ; color: $black; }
+h1{font:48px/50px $georgia ; color: $black; text-transform:uppercase;}
 h2{font:32px/36px $georgia ; color: $black; }
 h3{font:24px/30px $cabin ; color: $gold;  text-transform:uppercase;}
-h4{font:14px/17px $cabin ; color: $black; letter-spacing: 0.2em; text-transform:uppercase;}
+h4{font:14px/17px $cabin ; color: $black; text-transform:uppercase;}
 h5{font:10px/17px $cabin ; color: $gold;  text-transform:uppercase;}
  
- 
+em{font-style:italic;}
 
 //paragraphs
 p{font:14px/20px $georgia; padding-bottom: 20px; color: $black; }

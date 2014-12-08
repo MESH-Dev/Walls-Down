@@ -2,50 +2,92 @@
 
 #timeline{ 
 
-  left: 200%;
+  left: 200%; 
   .panel-wrap{
-    height: 100%px;
+   
     background: url('assets/img/timeline-bg.jpg') top left no-repeat;
     @include background-size(cover);
+    @include breakpoint(nomap) {
+      width: 100%;
+      //background-size: contain;
+    }
   }
  
-  h1{padding: 75px 0px 10px 0px; width: 390px;}
-  h3{font:14px/20px $georgia; color: $black; font-style: italic; width:350px; text-transform: none;  }
+  h1{
+    padding: 75px 0px 10px 0px; width: 420px;
+    
+    @include breakpoint(nomap) {
+      padding: 80px 0% 20px 0%; width: 100%;
+    }
+
+  }
+  h3{font:14px/20px $georgia; color: $black; font-style: italic; width:350px; text-transform: none; 
+    
+    @include breakpoint(nomap) {
+      padding: 0px 0% 40px 0%; width: 100%;
+    }
+  }
  
   .time-block{
     width: 550px;
     padding: 0px 0px 0px 100px;
-    h2{font:24px/40px $cabin ; color: $gold; letter-spacing: 0.1em;  text-transform:uppercase; font-weight: bold; text-align: center; padding: 0px 0px 10px 0px}
+    h2{font:24px/30px $cabin ; color: $gold; letter-spacing: 0.1em;  text-transform:uppercase; font-weight: bold; text-align: center; padding: 0px 0px 10px 0px}
     h4{text-align: center;}
     h5{font:14px/20px $cabin ; color: $gold; letter-spacing: 0.1em;  text-transform:uppercase; font-weight: bold; text-align: left; padding: 0px 0px 0px 0px}
+    a{color: $black; text-decoration: underline; }
+    a:hover{@include opacity(0.7)}
+
+    @include breakpoint(nomap) {
+      padding: 10px 10% 10px 10%; width: 80%;
+    }
   }
+
+  .timeline-title .vertical-line{@include breakpoint(nomap) {display:none; height:0}}
 
   .even{
     padding-left:340px;
     .vertical-line{
-      margin: 10px 0px 10px 20px ;
+       margin: 10px 0px 10px 20px;
+       @include breakpoint(nomap) {
+        margin: 10px 0px 10px 50% ;
+      }
+    }
+    @include breakpoint(nomap) {
+      padding-left: 10%;
     }
   }
 
   .odd{
     .vertical-line{
       margin: 10px 0px 10px 540px ;
+      @include breakpoint(nomap) {
+        margin: 10px 0px 10px 50% ;
+      }
     }
   }
-  .line-title{background: url('assets/img/line-2.png') top left no-repeat; height: 183px; margin: 10px 0px 10px 280px;}
-  .line-1{ background: url('assets/img/line-1.png') top left no-repeat; height: 91px; }
-  .line-2{ background: url('assets/img/line-2.png') top left no-repeat; height: 183px;}
-  .line-3{ background: url('assets/img/line-3.png') top left no-repeat; height: 74px; }
-  .line-4{ background: url('assets/img/line-4.png') top left no-repeat; height: 116px;}
+  .line-title{background: url('assets/img/line-2.png') top left no-repeat; height: 183px; margin: 10px 0px 10px 280px; 
+      @include breakpoint(nomap) {
+        margin: 10px 0px 10px 50% ;
+      }
+  }
+  .line-1{ background: url('assets/img/line-1.png') top left no-repeat; height: 91px; height: 0;  }
+  .line-2{ background: url('assets/img/line-4.png') top left no-repeat; height: 183px; height: 0; }
+  .line-3{ background: url('assets/img/line-3.png') top left no-repeat; height: 74px; height: 0; }
+  .line-4{ background: url('assets/img/line-4.png') top left no-repeat; height: 116px; height: 0; }
+  .timeline-title .line-1{background: none; height:91px;}
+  .first-block .line-1{height:91px;}
 
   .callout h3{
     font:20px/30px $georgia; color: $black; font-style: italic; 
     padding-top:100px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     width: 550px;
+    @include breakpoint(nomap) {
+        padding: 10% 10% 10% 10%; width: 80%;
+    }
+
   }
 
-    @include breakpoint(widescreen){
-       
-    }
- }
+  .left-nav a, .right-nav a{color:$black;}
+ 
+  } 
