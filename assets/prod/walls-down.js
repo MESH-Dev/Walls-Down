@@ -827,7 +827,7 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
  
   $(function() {
 
-    
+
     window.onpopstate = function(event)
      {
        var hash = window.location.hash;
@@ -840,7 +840,7 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
        });
      };
 
-    
+
     $('html, body').each(function () {
       var initScrollLeft = $(this).attr('scrollLeft');
 
@@ -1190,19 +1190,24 @@ $(function() {
             if( bottom_of_window > bottom_of_object ){
                 $(this).animate({'opacity':'1'},500);
                 $(this).children('.vertical-line').animate({'height':'120px'},1500);
-            } 
+            }
         });
     });
 
+  var playit = 1;
   $('#grady').scroll( function(){
         /* Check the location of each desired element */
         var $audio = $('#brahms');
-            
+        
         var bottom_of_object = $audio.position().top + $audio.outerHeight();
         var bottom_of_window = $(window).scrollTop() + $(window).height();
         /* If the object is completely visible in the window, fade it it */
         if( bottom_of_window > bottom_of_object ){
+          if(playit == 1){
             $audio.trigger('play');
+            playit = 0;
+          }
+           
         } 
        
     });
