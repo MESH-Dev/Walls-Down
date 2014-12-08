@@ -234,6 +234,7 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
   height:100%;
   top: 0;
   overflow: auto; 
+  overflow-x: hidden;
    
 }
 
