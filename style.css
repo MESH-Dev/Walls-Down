@@ -3242,16 +3242,21 @@ body.pml-open #open {
 }
 
 /* line 36, assets/sass/_states.scss */
+.ie #map .stately {
+  display: none;
+}
+
+/* line 38, assets/sass/_states.scss */
 .single-state {
   display: none;
 }
 @media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 36, assets/sass/_states.scss */
+  /* line 38, assets/sass/_states.scss */
   .single-state {
     display: inline;
     float: left;
   }
-  /* line 40, assets/sass/_states.scss */
+  /* line 42, assets/sass/_states.scss */
   .single-state span {
     position: relative;
     top: -50px;
@@ -3259,7 +3264,7 @@ body.pml-open #open {
   }
 }
 
-/* line 44, assets/sass/_states.scss */
+/* line 49, assets/sass/_states.scss */
 .stately li {
   float: left;
   margin: -5% 0 0 -100%;
@@ -3279,7 +3284,7 @@ body.pml-open #open {
 
 /** Style customizations
 *************************************/
-/* line 67, assets/sass/_states.scss */
+/* line 72, assets/sass/_states.scss */
 #plain li.inactive {
   color: #2b2a29;
 }

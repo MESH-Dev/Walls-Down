@@ -33,6 +33,8 @@
   }
 }
 
+.ie #map .stately{display:none;}
+
 .single-state{
   display: none;
   @include breakpoint(nomap) {
@@ -40,6 +42,9 @@
      span{position:relative; top:-50px; left: 100px;}
   }
 }
+
+//.ie #map .single-state{display: inline; float:left; span{position:relative; top:-50px; left: 100px;}}
+
 
 .stately li {
     float: left;

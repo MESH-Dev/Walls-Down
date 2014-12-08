@@ -1,7 +1,7 @@
   /*------------------PANEL SCROLLING-----------------*/
  var scrollElement = 'html, body';
   var $scrollElement;
-
+ 
   $(function() {
     $('html, body').each(function () {
       var initScrollLeft = $(this).attr('scrollLeft');
