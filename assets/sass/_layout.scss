@@ -55,6 +55,9 @@ body.pml-open nav.menu{
       }
       img{margin: 20px 0px 20px 20px }
 
+      .social-title a{font: 14px/20px $georgia; color: white; text-transform:none; padding-left:7px; padding-top:10px; position:relative; top: 15px;  }
+        .social-title a:hover{text-decoration:underline;}
+
     }
 
 }
