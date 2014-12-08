@@ -1153,6 +1153,7 @@ $(function() {
       $(".secondary-menu li").removeClass('menu-active');
       $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
       $('.secondary-menu li a[href="'+ hash +'"]').parent("li").addClass('menu-active');
+      $('#brahms').trigger('pause');
    }, false);
 });
 
@@ -1180,7 +1181,7 @@ $(function() {
         var bottom_of_window = $(window).scrollTop() + $(window).height();
         /* If the object is completely visible in the window, fade it it */
         if( bottom_of_window > bottom_of_object ){
-            //$audio.trigger('play');
+            $audio.trigger('play');
         } 
        
     });
