@@ -215,14 +215,9 @@
         width: 100%;
         position: relative;
         z-index: 1;
-        background: #ffcc00;
+        background: url('assets/img/map-bg.jpg') top left no-repeat;
         @include background-size(cover);
-        @include breakpoint(nomap)  {
-            overflow: auto;
-            width: 100%;
-            position: relative;
-            z-index: 1;
-        }
+ 
     }
 
     .map-intro{
@@ -230,36 +225,27 @@
         h1{ 
             color: $white; display: inline; float:left;  @include animate(0.3);
             a{color:white; text-decoration:none; &:hover{text-decoration:none; }}
-            @include breakpoint(nomap)  {padding: 10% 10% 10% 10%; width: 80%;} }
+            padding: 10% 10% 10% 10%; width: 80%;
+        }
+            
         .intro-text{
             width:380px; display: inline; float:left; margin: 0px 0px 0px 30px; padding:10px 10px 0px 10px ;
             background: rgba(0,0,0,0.7); 
             p{font:14px/20px $georgia; color: $white; font-style: italic;}
-            @include breakpoint(nomap)  {
-                padding: 5%; width: 70%;
-                background: rgba(0,0,0,0.3); 
-                margin-bottom: 40px;
-            }
+            padding: 5%; width: 70%;
+            background: rgba(0,0,0,0.3); 
+            margin-bottom: 40px;
+ 
 
         }
-        @include breakpoint(nomap)  {
-            padding: 10% 0% 0% 0%;
-          
-        }
+ 
 
     }
 
     .zoom-out{
-        position: relative;
  
-        padding: 0 0 10px 0px;
-        width:500px;
-        text-align: right;
-        a{color: white;}
-        a:hover{text-decoration: underline;}
-        @include breakpoint(nomap)  {
           display: none;
-        }
+ 
     }
 
 
@@ -296,24 +282,21 @@
     
     .slide {
         display: block;
-        width: 960px;
-        padding: 0px;
+ 
+  
         max-height: 230px;
-        font-size: 20px;
+ 
         span:hover{opacity: 0.7; cursor: pointer;}
         z-index: 23;
         -webkit-transition: max-height 0.8s;
         -moz-transition: max-height 0.8s;
         transition: max-height 0.8s;
 
-
-        @include breakpoint(nomap)  {
-            padding: 10%;
-            width: 90%;
-            max-height: 80%;
-            font-size: 14px; line-height:20px;
-        }
-
+        padding: 10%;
+        width: 90%;
+        max-height: 80%;
+        font-size: 14px; line-height:20px;
+ 
 
     }
     span.number{
@@ -321,25 +304,26 @@
         @include animate(0.2);
         position:relative; 
         z-index: 10000; 
-        @include breakpoint(nomap) {font-size:40px; line-height:45px; width:100%;  float: left;}
+ 
+            font-size:40px; line-height:45px; width:100%;  float: left;
+ 
     }
     .active span.number:hover,.active span.subtext:hover{@include opacity(1); cursor: default; }
     span.subtext{
         font:26px/30px $cabin; font-weight:bold; color: $gold; display:block;  
         text-transform:uppercase; -webkit-transition: all .5s ease-in; 
 
-        @include breakpoint(nomap) {font:16px/20px $cabin;   }
+            font:16px/20px $cabin;    
     }
     
 
     .number-wrap{
-        display:inline; float:left; width: 350px; text-align: right; 
-        @include breakpoint(nomap) { text-align: left; width: 100%;position:relative; z-index: 2; padding: 0px 0px 10px 0px; } 
+        display:inline; float:left;   text-align: right; 
+         text-align: left; width: 100%;position:relative; z-index: 2; padding: 0px 0px 10px 0px;  
     }
 
     .single-state{
-        display: none;
-        @include breakpoint(nomap) {display:block; z-index: 0; position:relative; margin-top:-100px; padding: 0 0 0 30px;}
+        display:block; z-index: 0; position:relative; margin-top:-100px; padding: 0 0 0 30px; 
     }
    
     
@@ -360,7 +344,7 @@
         img{max-width: 100%; margin: 10px 0px 10px 0px;}
 
 
-        @include breakpoint(nomap)  {
+        
           padding: 0%;
           margin-left: 0;
           width: 100%;
@@ -370,46 +354,44 @@
           p{
                 font-size: 14px; line-height:20px;
           }
-        }
+  
     }
 
     #wa {
-        .number-wrap{width: 400px; @include breakpoint(nomap) {width: 100%; padding: 0px 0px 10px 0px;} }
-        .content{width: 450px; @include breakpoint(nomap) {padding: 0%; width: 100%;}}
+        .number-wrap{ width: 100%; padding: 0px 0px 10px 0px; }
+        .content{ padding: 0%; width: 100%;}
     }
     #oh {
-        .number-wrap{width: 400px; @include breakpoint(nomap) {width: 100%; padding: 0px 0px 10px 0px;}}
-        .content{width: 450px; @include breakpoint(nomap) {padding: 0%; width: 100%;}}
+        .number-wrap{ width: 100%; padding: 0px 0px 10px 0px;}
+        .content{ padding: 0%; width: 100%;}
     }
 
     #usa{
-        .number-wrap{width: 900px; display:block; @include breakpoint(nomap) {width: 100%; padding: 0px 0px 10px 0px;}}
-        .content{width: 500px; margin-left:100px; display:block; @include breakpoint(nomap) {padding: 0%; margin:0; margin-bottom:100px; width: 100%;}}
-         span.number{font-size: 170px; @include breakpoint(nomap) {font-size: 40px}}
+        .number-wrap{width: 900px; display:block; width: 100%; padding: 0px 0px 10px 0px; }
+        .content{width: 500px; margin-left:100px; display:block;  padding: 0%; margin:0; margin-bottom:100px; width: 100%; }
+         span.number{font-size: 170px;  font-size: 40px }
 
     }
  
     .step.active div.content{ opacity: 1; -webkit-transition: all 2s ease-in;} 
 
- .left-nav{
-    position: absolute; height: 0px; width: 30%; top:92%; left: 12%; float:left; 
-    a{position: relative;  left: 7%;}
-    .fa{font-size: 45px; position:relative; top: 8px; right: 5px;}
-
-    @include breakpoint(nomap) {
-        position: relative; height: 0px; width: 50%; top:-80px; float:left; left: 10px; 
-        font-size:13px;
+    .left-nav{
+        position: absolute; height: 0px; width: 30%; top:92%; left: 12%; float:left; 
+        a{position: relative;  left: 7%;}
+        .fa{font-size: 45px; position:relative; top: 8px; right: 5px;}
+     
+            position: relative; height: 0px; width: 50%; top:-80px; float:left; left: 10px; 
+            font-size:13px;
     }
 
-  }
+ 
   .right-nav{
     position: absolute; height: 0px; top:92%; right: 1%;  float: right;
     a{float: right; position: relative;  right: 10%;}
     .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}
-    @include breakpoint(nomap) {
+    
         position: relative; height: 0px;  width: 50%;  top:-80px; float: right; 
         font-size:13px;
-    }
+     
   } 
 }
-

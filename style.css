@@ -2914,28 +2914,19 @@ body.pml-open #open {
   width: 100%;
   position: relative;
   z-index: 1;
-  background: #ffcc00;
+  background: url("assets/img/map-bg.jpg") top left no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 211, assets/sass/_map.scss */
-  .ie #map .panel-wrap {
-    overflow: auto;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-  }
-}
-/* line 228, assets/sass/_map.scss */
+/* line 223, assets/sass/_map.scss */
 .ie #map .map-intro {
   padding: 10% 0% 0% 0%;
   position: relative;
   z-index: 1000;
 }
-/* line 230, assets/sass/_map.scss */
+/* line 225, assets/sass/_map.scss */
 .ie #map .map-intro h1 {
   color: white;
   display: inline;
@@ -2945,24 +2936,19 @@ body.pml-open #open {
   -ms-transition: all 0.3;
   -o-transition: all 0.3;
   transition: all 0.3;
+  padding: 10% 10% 10% 10%;
+  width: 80%;
 }
-/* line 232, assets/sass/_map.scss */
+/* line 227, assets/sass/_map.scss */
 .ie #map .map-intro h1 a {
   color: white;
   text-decoration: none;
 }
-/* line 232, assets/sass/_map.scss */
+/* line 227, assets/sass/_map.scss */
 .ie #map .map-intro h1 a:hover {
   text-decoration: none;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 230, assets/sass/_map.scss */
-  .ie #map .map-intro h1 {
-    padding: 10% 10% 10% 10%;
-    width: 80%;
-  }
-}
-/* line 234, assets/sass/_map.scss */
+/* line 231, assets/sass/_map.scss */
 .ie #map .map-intro .intro-text {
   width: 380px;
   display: inline;
@@ -2970,50 +2956,22 @@ body.pml-open #open {
   margin: 0px 0px 0px 30px;
   padding: 10px 10px 0px 10px;
   background: rgba(0, 0, 0, 0.7);
+  padding: 5%;
+  width: 70%;
+  background: rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
 }
-/* line 237, assets/sass/_map.scss */
+/* line 234, assets/sass/_map.scss */
 .ie #map .map-intro .intro-text p {
   font: 14px/20px Georgia, Times, "Times New Roman", serif;
   color: white;
   font-style: italic;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 234, assets/sass/_map.scss */
-  .ie #map .map-intro .intro-text {
-    padding: 5%;
-    width: 70%;
-    background: rgba(0, 0, 0, 0.3);
-    margin-bottom: 40px;
-  }
-}
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 228, assets/sass/_map.scss */
-  .ie #map .map-intro {
-    padding: 10% 0% 0% 0%;
-  }
-}
-/* line 252, assets/sass/_map.scss */
+/* line 245, assets/sass/_map.scss */
 .ie #map .zoom-out {
-  position: relative;
-  padding: 0 0 10px 0px;
-  width: 500px;
-  text-align: right;
+  display: none;
 }
-/* line 258, assets/sass/_map.scss */
-.ie #map .zoom-out a {
-  color: white;
-}
-/* line 259, assets/sass/_map.scss */
-.ie #map .zoom-out a:hover {
-  text-decoration: underline;
-}
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 252, assets/sass/_map.scss */
-  .ie #map .zoom-out {
-    display: none;
-  }
-}
-/* line 267, assets/sass/_map.scss */
+/* line 253, assets/sass/_map.scss */
 .ie #map .step {
   position: relative;
   padding: 0px;
@@ -3024,7 +2982,7 @@ body.pml-open #open {
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 282, assets/sass/_map.scss */
+/* line 268, assets/sass/_map.scss */
 .ie #map .impress-enabled .step {
   margin: 0;
   /*opacity: 0.3;*/
@@ -3035,38 +2993,30 @@ body.pml-open #open {
   -o-transition: opacity 1s;
   transition: opacity 1s;
 }
-/* line 294, assets/sass/_map.scss */
+/* line 280, assets/sass/_map.scss */
 .ie #map .impress-enabled .step.active {
   opacity: 1;
 }
-/* line 297, assets/sass/_map.scss */
+/* line 283, assets/sass/_map.scss */
 .ie #map .slide {
   display: block;
-  width: 960px;
-  padding: 0px;
   max-height: 230px;
-  font-size: 20px;
   z-index: 23;
   -webkit-transition: max-height 0.8s;
   -moz-transition: max-height 0.8s;
   transition: max-height 0.8s;
+  padding: 10%;
+  width: 90%;
+  max-height: 80%;
+  font-size: 14px;
+  line-height: 20px;
 }
-/* line 303, assets/sass/_map.scss */
+/* line 289, assets/sass/_map.scss */
 .ie #map .slide span:hover {
   opacity: 0.7;
   cursor: pointer;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 297, assets/sass/_map.scss */
-  .ie #map .slide {
-    padding: 10%;
-    width: 90%;
-    max-height: 80%;
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
-/* line 319, assets/sass/_map.scss */
+/* line 302, assets/sass/_map.scss */
 .ie #map span.number {
   color: #d29c0e;
   font-family: georgia;
@@ -3079,23 +3029,18 @@ body.pml-open #open {
   transition: all 0.2;
   position: relative;
   z-index: 10000;
+  font-size: 40px;
+  line-height: 45px;
+  width: 100%;
+  float: left;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 319, assets/sass/_map.scss */
-  .ie #map span.number {
-    font-size: 40px;
-    line-height: 45px;
-    width: 100%;
-    float: left;
-  }
-}
-/* line 326, assets/sass/_map.scss */
+/* line 311, assets/sass/_map.scss */
 .ie #map .active span.number:hover, .ie #map .active span.subtext:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   cursor: default;
 }
-/* line 327, assets/sass/_map.scss */
+/* line 312, assets/sass/_map.scss */
 .ie #map span.subtext {
   font: 26px/30px "Cabin", sans-serif;
   font-weight: bold;
@@ -3103,45 +3048,28 @@ body.pml-open #open {
   display: block;
   text-transform: uppercase;
   -webkit-transition: all .5s ease-in;
+  font: 16px/20px "Cabin", sans-serif;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 327, assets/sass/_map.scss */
-  .ie #map span.subtext {
-    font: 16px/20px "Cabin", sans-serif;
-  }
-}
-/* line 335, assets/sass/_map.scss */
+/* line 320, assets/sass/_map.scss */
 .ie #map .number-wrap {
   display: inline;
   float: left;
-  width: 350px;
   text-align: right;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 0px 0px 10px 0px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 335, assets/sass/_map.scss */
-  .ie #map .number-wrap {
-    text-align: left;
-    width: 100%;
-    position: relative;
-    z-index: 2;
-    padding: 0px 0px 10px 0px;
-  }
-}
-/* line 340, assets/sass/_map.scss */
+/* line 325, assets/sass/_map.scss */
 .ie #map .single-state {
-  display: none;
+  display: block;
+  z-index: 0;
+  position: relative;
+  margin-top: -100px;
+  padding: 0 0 0 30px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 340, assets/sass/_map.scss */
-  .ie #map .single-state {
-    display: block;
-    z-index: 0;
-    position: relative;
-    margin-top: -100px;
-    padding: 0 0 0 30px;
-  }
-}
-/* line 347, assets/sass/_map.scss */
+/* line 331, assets/sass/_map.scss */
 .ie #map .content {
   width: 500px;
   display: inline;
@@ -3149,121 +3077,77 @@ body.pml-open #open {
   opacity: 0;
   margin-left: 40px;
   -webkit-transition: all .5s ease-in;
+  padding: 0%;
+  margin-left: 0;
+  width: 100%;
+  max-height: 80%;
+  opacity: 1;
+  margin-bottom: 100px;
 }
-/* line 355, assets/sass/_map.scss */
+/* line 339, assets/sass/_map.scss */
 .ie #map .content p {
   color: white;
   font-size: 16px;
   line-height: 26px;
 }
-/* line 360, assets/sass/_map.scss */
+/* line 344, assets/sass/_map.scss */
 .ie #map .content img {
   max-width: 100%;
   margin: 10px 0px 10px 0px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 347, assets/sass/_map.scss */
-  .ie #map .content {
-    padding: 0%;
-    margin-left: 0;
-    width: 100%;
-    max-height: 80%;
-    opacity: 1;
-    margin-bottom: 100px;
-  }
-  /* line 370, assets/sass/_map.scss */
-  .ie #map .content p {
-    font-size: 14px;
-    line-height: 20px;
-  }
+/* line 354, assets/sass/_map.scss */
+.ie #map .content p {
+  font-size: 14px;
+  line-height: 20px;
 }
-/* line 377, assets/sass/_map.scss */
+/* line 361, assets/sass/_map.scss */
 .ie #map #wa .number-wrap {
-  width: 400px;
+  width: 100%;
+  padding: 0px 0px 10px 0px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 377, assets/sass/_map.scss */
-  .ie #map #wa .number-wrap {
-    width: 100%;
-    padding: 0px 0px 10px 0px;
-  }
-}
-/* line 378, assets/sass/_map.scss */
+/* line 362, assets/sass/_map.scss */
 .ie #map #wa .content {
-  width: 450px;
+  padding: 0%;
+  width: 100%;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 378, assets/sass/_map.scss */
-  .ie #map #wa .content {
-    padding: 0%;
-    width: 100%;
-  }
-}
-/* line 381, assets/sass/_map.scss */
+/* line 365, assets/sass/_map.scss */
 .ie #map #oh .number-wrap {
-  width: 400px;
+  width: 100%;
+  padding: 0px 0px 10px 0px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 381, assets/sass/_map.scss */
-  .ie #map #oh .number-wrap {
-    width: 100%;
-    padding: 0px 0px 10px 0px;
-  }
-}
-/* line 382, assets/sass/_map.scss */
+/* line 366, assets/sass/_map.scss */
 .ie #map #oh .content {
-  width: 450px;
+  padding: 0%;
+  width: 100%;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 382, assets/sass/_map.scss */
-  .ie #map #oh .content {
-    padding: 0%;
-    width: 100%;
-  }
-}
-/* line 386, assets/sass/_map.scss */
+/* line 370, assets/sass/_map.scss */
 .ie #map #usa .number-wrap {
   width: 900px;
   display: block;
+  width: 100%;
+  padding: 0px 0px 10px 0px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 386, assets/sass/_map.scss */
-  .ie #map #usa .number-wrap {
-    width: 100%;
-    padding: 0px 0px 10px 0px;
-  }
-}
-/* line 387, assets/sass/_map.scss */
+/* line 371, assets/sass/_map.scss */
 .ie #map #usa .content {
   width: 500px;
   margin-left: 100px;
   display: block;
+  padding: 0%;
+  margin: 0;
+  margin-bottom: 100px;
+  width: 100%;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 387, assets/sass/_map.scss */
-  .ie #map #usa .content {
-    padding: 0%;
-    margin: 0;
-    margin-bottom: 100px;
-    width: 100%;
-  }
-}
-/* line 388, assets/sass/_map.scss */
+/* line 372, assets/sass/_map.scss */
 .ie #map #usa span.number {
   font-size: 170px;
+  font-size: 40px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 388, assets/sass/_map.scss */
-  .ie #map #usa span.number {
-    font-size: 40px;
-  }
-}
-/* line 392, assets/sass/_map.scss */
+/* line 376, assets/sass/_map.scss */
 .ie #map .step.active div.content {
   opacity: 1;
   -webkit-transition: all 2s ease-in;
 }
-/* line 394, assets/sass/_map.scss */
+/* line 378, assets/sass/_map.scss */
 .ie #map .left-nav {
   position: absolute;
   height: 0px;
@@ -3271,62 +3155,52 @@ body.pml-open #open {
   top: 92%;
   left: 12%;
   float: left;
+  position: relative;
+  height: 0px;
+  width: 50%;
+  top: -80px;
+  float: left;
+  left: 10px;
+  font-size: 13px;
 }
-/* line 396, assets/sass/_map.scss */
+/* line 380, assets/sass/_map.scss */
 .ie #map .left-nav a {
   position: relative;
   left: 7%;
 }
-/* line 397, assets/sass/_map.scss */
+/* line 381, assets/sass/_map.scss */
 .ie #map .left-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   right: 5px;
 }
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 394, assets/sass/_map.scss */
-  .ie #map .left-nav {
-    position: relative;
-    height: 0px;
-    width: 50%;
-    top: -80px;
-    float: left;
-    left: 10px;
-    font-size: 13px;
-  }
-}
-/* line 405, assets/sass/_map.scss */
+/* line 388, assets/sass/_map.scss */
 .ie #map .right-nav {
   position: absolute;
   height: 0px;
   top: 92%;
   right: 1%;
   float: right;
+  position: relative;
+  height: 0px;
+  width: 50%;
+  top: -80px;
+  float: right;
+  font-size: 13px;
 }
-/* line 407, assets/sass/_map.scss */
+/* line 390, assets/sass/_map.scss */
 .ie #map .right-nav a {
   float: right;
   position: relative;
   right: 10%;
 }
-/* line 408, assets/sass/_map.scss */
+/* line 391, assets/sass/_map.scss */
 .ie #map .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
-}
-@media only screen and (max-width: 767px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 405, assets/sass/_map.scss */
-  .ie #map .right-nav {
-    position: relative;
-    height: 0px;
-    width: 50%;
-    top: -80px;
-    float: right;
-    font-size: 13px;
-  }
 }
 
 /** Stately setup
