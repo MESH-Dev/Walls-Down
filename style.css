@@ -1103,7 +1103,13 @@ body.pml-open #open {
   width: 118px;
   padding: 0;
 }
-/* line 357, assets/sass/_layout.scss */
+@media only screen and (max-width: 800px) {
+  /* line 352, assets/sass/_layout.scss */
+  #home .panel-wrap .instructions {
+    display: none;
+  }
+}
+/* line 358, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav {
   position: absolute;
   width: 100%;
@@ -1112,14 +1118,14 @@ body.pml-open #open {
   right: 2%;
   float: right;
 }
-/* line 359, assets/sass/_layout.scss */
+/* line 360, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
 }
-/* line 360, assets/sass/_layout.scss */
+/* line 361, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav a {
   color: #020202;
 }
