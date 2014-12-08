@@ -3188,7 +3188,7 @@ body.pml-open #open {
 .ie #map .right-nav a {
   float: right;
   position: relative;
-  right: 10%;
+  right: 25%;
 }
 /* line 391, assets/sass/_map.scss */
 .ie #map .right-nav .fa {
