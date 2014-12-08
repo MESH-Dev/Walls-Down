@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7 ]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9 ie"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> 
+<html class="" lang="en"> 
+<!--<![endif]-->
 <head>
 	<meta charset="UTF-8"> 
 	<title>Walls Down</title>
@@ -16,6 +22,13 @@
 	
  
 	<link rel="stylesheet" href="style.css">
+	
+	<!-- IE10 -->
+    <script>
+    if (Function('/*@cc_on return document.documentMode===10@*/')()){
+    	document.documentElement.className+=' ie';
+		}
+  </script>
 
 
 </head>
