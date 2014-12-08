@@ -667,29 +667,41 @@ body.pml-open .panel-wrap {
   /* Increase this value (in negative) for cross-browser compatibility */
   overflow: auto;
 }
-/* line 174, assets/sass/_layout.scss */
+@media only screen and (max-width: 800px) {
+  /* line 165, assets/sass/_layout.scss */
+  .credits-menu-left .credits-wrap {
+    padding: 80px 15px 15px 15px;
+  }
+}
+/* line 175, assets/sass/_layout.scss */
 .credits-menu-left p {
   font-size: 11px;
   line-height: 17px;
   color: white;
   padding-right: 10px;
 }
-/* line 177, assets/sass/_layout.scss */
+/* line 178, assets/sass/_layout.scss */
 .credits-menu-left p.top-one {
   margin-bottom: 80px;
 }
-/* line 178, assets/sass/_layout.scss */
+@media only screen and (max-width: 800px) {
+  /* line 178, assets/sass/_layout.scss */
+  .credits-menu-left p.top-one {
+    margin-bottom: 20px;
+  }
+}
+/* line 179, assets/sass/_layout.scss */
 .credits-menu-left p.top-two {
   margin-bottom: 40px;
 }
-/* line 179, assets/sass/_layout.scss */
+/* line 180, assets/sass/_layout.scss */
 .credits-menu-left h4 {
   font: 11px/17px "Cabin", sans-serif;
   color: white;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-/* line 180, assets/sass/_layout.scss */
+/* line 181, assets/sass/_layout.scss */
 .credits-menu-left a {
   color: white;
   text-decoration: underline;
@@ -701,17 +713,17 @@ body.pml-open .panel-wrap {
   }
 }
 
-/* line 185, assets/sass/_layout.scss */
+/* line 187, assets/sass/_layout.scss */
 body.pml-open.credits-open .credits-menu-left {
   left: 160px;
 }
 
-/* line 189, assets/sass/_layout.scss */
+/* line 191, assets/sass/_layout.scss */
 body.credits-open .credits-menu-left {
   left: 80px;
 }
 
-/* line 196, assets/sass/_layout.scss */
+/* line 198, assets/sass/_layout.scss */
 .close-credits-menu {
   position: absolute;
   top: 10px;
@@ -719,13 +731,13 @@ body.credits-open .credits-menu-left {
   z-index: 20;
   color: white;
 }
-/* line 201, assets/sass/_layout.scss */
+/* line 203, assets/sass/_layout.scss */
 .close-credits-menu:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
 
-/* line 205, assets/sass/_layout.scss */
+/* line 207, assets/sass/_layout.scss */
 .mask {
   position: fixed;
   top: 0;
@@ -734,7 +746,7 @@ body.credits-open .credits-menu-left {
   height: 100%;
 }
 
-/* line 217, assets/sass/_layout.scss */
+/* line 219, assets/sass/_layout.scss */
 #open {
   display: none;
   z-index: 20000;
@@ -748,13 +760,13 @@ body.credits-open .credits-menu-left {
   background: rgba(255, 255, 255, 0.7);
 }
 @media only screen and (max-width: 800px) {
-  /* line 217, assets/sass/_layout.scss */
+  /* line 219, assets/sass/_layout.scss */
   #open {
     display: block;
   }
 }
 
-/* line 226, assets/sass/_layout.scss */
+/* line 228, assets/sass/_layout.scss */
 body.pml-open #open {
   left: 180px;
   -webkit-transition: all 0.3;
@@ -764,7 +776,7 @@ body.pml-open #open {
   transition: all 0.3;
 }
 
-/* line 229, assets/sass/_layout.scss */
+/* line 231, assets/sass/_layout.scss */
 .panel {
   position: absolute;
   width: 100%;
@@ -773,7 +785,7 @@ body.pml-open #open {
   overflow: auto;
 }
 
-/* line 238, assets/sass/_layout.scss */
+/* line 240, assets/sass/_layout.scss */
 .panel-wrap {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -783,18 +795,18 @@ body.pml-open #open {
   margin-left: 80px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 238, assets/sass/_layout.scss */
+  /* line 240, assets/sass/_layout.scss */
   .panel-wrap {
     margin-left: 0px;
   }
 }
 
 /* ------SHARE BUTTONS ---------*/
-/* line 253, assets/sass/_layout.scss */
+/* line 255, assets/sass/_layout.scss */
 .social {
   width: 100%;
 }
-/* line 254, assets/sass/_layout.scss */
+/* line 256, assets/sass/_layout.scss */
 .social .social-title {
   font: 14px/20px "Cabin", sans-serif;
   color: #020202;
@@ -802,12 +814,12 @@ body.pml-open #open {
   padding-left: 4px;
 }
 
-/* line 257, assets/sass/_layout.scss */
+/* line 259, assets/sass/_layout.scss */
 .addthis_toolbox {
   text-align: center;
 }
 
-/* line 258, assets/sass/_layout.scss */
+/* line 260, assets/sass/_layout.scss */
 .addthis_toolbox > a {
   height: 25px;
   width: 25px;
@@ -815,12 +827,12 @@ body.pml-open #open {
   float: left;
 }
 
-/* line 259, assets/sass/_layout.scss */
+/* line 261, assets/sass/_layout.scss */
 .addthis_toolbox.addthis_32x32_style span {
   width: 26px !important;
 }
 
-/* line 260, assets/sass/_layout.scss */
+/* line 262, assets/sass/_layout.scss */
 .addthis_toolbox > a > span {
   height: 25px !important;
   width: 25px !important;
@@ -828,182 +840,195 @@ body.pml-open #open {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
 }
 
-/* line 261, assets/sass/_layout.scss */
+/* line 263, assets/sass/_layout.scss */
 .addthis_toolbox span.at15t_facebook {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -25px 0 !important;
 }
 
-/* line 262, assets/sass/_layout.scss */
+/* line 264, assets/sass/_layout.scss */
 .addthis_toolbox span.at15t_twitter {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -50px 0 !important;
 }
 
-/* line 263, assets/sass/_layout.scss */
+/* line 265, assets/sass/_layout.scss */
 .addthis_toolbox span.at15t_linkedin {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -2px 0 !important;
 }
 
-/* line 264, assets/sass/_layout.scss */
+/* line 266, assets/sass/_layout.scss */
 .addthis_toolbox span.at15t_pinterest_share {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -74px 0 !important;
 }
 
-/* line 265, assets/sass/_layout.scss */
+/* line 267, assets/sass/_layout.scss */
 .addthis_toolbox span.at15t_google_plusone_share {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -124px 0 !important;
 }
 
-/* line 266, assets/sass/_layout.scss */
+/* line 268, assets/sass/_layout.scss */
 .addthis_toolbox span.at15t_email {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -98px 0 !important;
 }
 
-/* line 267, assets/sass/_layout.scss */
+/* line 269, assets/sass/_layout.scss */
 .addthis_toolbox span.at15t_digg {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -176px 0 !important;
   width: 28px !important;
 }
 
-/* line 268, assets/sass/_layout.scss */
+/* line 270, assets/sass/_layout.scss */
 .addthis_toolbox span.at15t_evernote {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -146px 0 !important;
 }
 
-/* line 269, assets/sass/_layout.scss */
+/* line 271, assets/sass/_layout.scss */
 .addthis_toolbox span.at15t_compact {
   background: url(assets/img/social_icons-single.png) no-repeat !important;
   background-position: -204px 0 !important;
 }
 
-/* line 271, assets/sass/_layout.scss */
+/* line 273, assets/sass/_layout.scss */
 .grady-social {
   padding: 20px 0px 0px 200px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 271, assets/sass/_layout.scss */
+  /* line 273, assets/sass/_layout.scss */
   .grady-social {
     padding-left: 10%;
     padding-bottom: 30px;
   }
 }
 
-/* line 278, assets/sass/_layout.scss */
+/* line 280, assets/sass/_layout.scss */
 .grady-social-top {
   padding: 20px 0px 0px 200px;
 }
-/* line 280, assets/sass/_layout.scss */
+/* line 282, assets/sass/_layout.scss */
 .grady-social-top .white-social {
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 278, assets/sass/_layout.scss */
+  /* line 280, assets/sass/_layout.scss */
   .grady-social-top {
     padding-left: 10%;
     padding-bottom: 0px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1060px) {
-  /* line 278, assets/sass/_layout.scss */
+  /* line 280, assets/sass/_layout.scss */
   .grady-social-top {
     padding-left: 50px;
   }
 }
 
-/* line 287, assets/sass/_layout.scss */
+/* line 289, assets/sass/_layout.scss */
 .timeline-social {
   padding: 20px 0px 200px 0px;
 }
 
-/* line 290, assets/sass/_layout.scss */
+/* line 292, assets/sass/_layout.scss */
 .timeline-social-top {
   padding: 20px 0px 0px 0px;
 }
 
-/* line 294, assets/sass/_layout.scss */
+/* line 296, assets/sass/_layout.scss */
 .nicu-social {
   padding: 40px 0px 20px 0px;
 }
+@media only screen and (max-width: 800px) {
+  /* line 296, assets/sass/_layout.scss */
+  .nicu-social {
+    padding-left: 0;
+    padding-bottom: 0px;
+  }
+}
 
-/* line 298, assets/sass/_layout.scss */
+/* line 301, assets/sass/_layout.scss */
 .nicu-social-top {
   padding: 0px 0px 0px 120px;
 }
-/* line 300, assets/sass/_layout.scss */
+/* line 303, assets/sass/_layout.scss */
 .nicu-social-top .white-social {
   color: #c2c2c2;
 }
+@media only screen and (max-width: 800px) {
+  /* line 301, assets/sass/_layout.scss */
+  .nicu-social-top {
+    padding-left: 10%;
+  }
+}
 
-/* line 303, assets/sass/_layout.scss */
+/* line 307, assets/sass/_layout.scss */
 .map-social {
   padding: 0px 0px 20px 0px;
 }
-/* line 305, assets/sass/_layout.scss */
+/* line 309, assets/sass/_layout.scss */
 .map-social .social-title {
   color: white;
 }
 
-/* line 308, assets/sass/_layout.scss */
+/* line 312, assets/sass/_layout.scss */
 .nav-social {
   padding: 0px 0px 20px 10px;
 }
 
-/* line 314, assets/sass/_layout.scss */
+/* line 318, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.at15t_facebook {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -25px 0 !important;
 }
-/* line 315, assets/sass/_layout.scss */
+/* line 319, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.at15t_twitter {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -50px 0 !important;
 }
-/* line 316, assets/sass/_layout.scss */
+/* line 320, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.at15t_linkedin {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -2px 0 !important;
 }
-/* line 317, assets/sass/_layout.scss */
+/* line 321, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.at15t_pinterest_share {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -74px 0 !important;
 }
-/* line 318, assets/sass/_layout.scss */
+/* line 322, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.at15t_google_plusone_share {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -124px 0 !important;
 }
-/* line 319, assets/sass/_layout.scss */
+/* line 323, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.at15t_email {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -98px 0 !important;
 }
-/* line 320, assets/sass/_layout.scss */
+/* line 324, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.at15t_digg {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -176px 0 !important;
   width: 28px !important;
 }
-/* line 321, assets/sass/_layout.scss */
+/* line 325, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.at15t_evernote {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -146px 0 !important;
 }
-/* line 322, assets/sass/_layout.scss */
+/* line 326, assets/sass/_layout.scss */
 .white-social .addthis_toolbox span.at15t_compact {
   background: url(assets/img/social_icons-single-white.png) no-repeat !important;
   background-position: -204px 0 !important;
 }
 
 /* ------END OF STORY NAV ---------*/
-/* line 328, assets/sass/_layout.scss */
+/* line 332, assets/sass/_layout.scss */
 .left-nav {
   position: relative;
   height: 0px;
@@ -1011,13 +1036,13 @@ body.pml-open #open {
   top: -80px;
   float: left;
 }
-/* line 329, assets/sass/_layout.scss */
+/* line 333, assets/sass/_layout.scss */
 .left-nav a {
   position: relative;
   left: 7%;
   font-style: italic;
 }
-/* line 330, assets/sass/_layout.scss */
+/* line 334, assets/sass/_layout.scss */
 .left-nav .fa {
   font-size: 45px;
   position: relative;
@@ -1025,7 +1050,7 @@ body.pml-open #open {
   right: 5px;
 }
 
-/* line 333, assets/sass/_layout.scss */
+/* line 337, assets/sass/_layout.scss */
 .right-nav {
   position: relative;
   height: 0px;
@@ -1033,14 +1058,14 @@ body.pml-open #open {
   top: -80px;
   float: right;
 }
-/* line 334, assets/sass/_layout.scss */
+/* line 338, assets/sass/_layout.scss */
 .right-nav a {
   float: right;
   position: relative;
   right: 10%;
   font-style: italic;
 }
-/* line 335, assets/sass/_layout.scss */
+/* line 339, assets/sass/_layout.scss */
 .right-nav .fa {
   font-size: 45px;
   position: relative;
@@ -1049,7 +1074,7 @@ body.pml-open #open {
 }
 
 /* ----------- Home ------------- */
-/* line 338, assets/sass/_layout.scss */
+/* line 342, assets/sass/_layout.scss */
 #home .panel-wrap {
   background: url("assets/img/cover-large.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1060,12 +1085,12 @@ body.pml-open #open {
   overflow: hidden;
   left: 0;
 }
-/* line 344, assets/sass/_layout.scss */
+/* line 348, assets/sass/_layout.scss */
 #home .panel-wrap img {
   width: 60%;
   padding: 5% 20% 0 20%;
 }
-/* line 346, assets/sass/_layout.scss */
+/* line 350, assets/sass/_layout.scss */
 #home .panel-wrap .instructions {
   position: absolute;
   width: 160px;
@@ -1073,12 +1098,12 @@ body.pml-open #open {
   left: 200px;
   float: left;
 }
-/* line 348, assets/sass/_layout.scss */
+/* line 352, assets/sass/_layout.scss */
 #home .panel-wrap .instructions img {
   width: 118px;
   padding: 0;
 }
-/* line 351, assets/sass/_layout.scss */
+/* line 355, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav {
   position: absolute;
   width: 100%;
@@ -1087,19 +1112,19 @@ body.pml-open #open {
   right: 2%;
   float: right;
 }
-/* line 353, assets/sass/_layout.scss */
+/* line 357, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav .fa {
   font-size: 45px;
   position: relative;
   top: 8px;
   left: 5px;
 }
-/* line 354, assets/sass/_layout.scss */
+/* line 358, assets/sass/_layout.scss */
 #home .panel-wrap .right-nav a {
   color: #020202;
 }
 @media only screen and (max-width: 800px) {
-  /* line 338, assets/sass/_layout.scss */
+  /* line 342, assets/sass/_layout.scss */
   #home .panel-wrap {
     background: url("assets/img/cover-large.jpg") top left no-repeat;
     -webkit-background-size: cover;
@@ -1661,6 +1686,7 @@ body.pml-open #open {
 /* line 2, assets/sass/_nicu.scss */
 #nicu {
   left: 400%;
+  overflow-x: hidden;
 }
 /* line 5, assets/sass/_nicu.scss */
 #nicu .panel-wrap {
@@ -1671,27 +1697,27 @@ body.pml-open #open {
   background-size: cover;
   height: 9000px;
 }
-/* line 11, assets/sass/_nicu.scss */
+/* line 12, assets/sass/_nicu.scss */
 #nicu a {
   color: #020202;
   text-decoration: underline;
 }
-/* line 12, assets/sass/_nicu.scss */
+/* line 13, assets/sass/_nicu.scss */
 #nicu a:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
 }
-/* line 13, assets/sass/_nicu.scss */
+/* line 14, assets/sass/_nicu.scss */
 #nicu .panel-left, #nicu .panel-right {
   display: inline;
   float: left;
 }
-/* line 15, assets/sass/_nicu.scss */
+/* line 16, assets/sass/_nicu.scss */
 #nicu .sub-panel {
   width: 100%;
   position: relative;
 }
-/* line 16, assets/sass/_nicu.scss */
+/* line 17, assets/sass/_nicu.scss */
 #nicu .sub-panel:after {
   content: "\0020";
   display: block;
@@ -1699,7 +1725,7 @@ body.pml-open #open {
   clear: both;
   visibility: hidden;
 }
-/* line 18, assets/sass/_nicu.scss */
+/* line 19, assets/sass/_nicu.scss */
 #nicu h1 {
   font: 48px/50px Georgia, Times, "Times New Roman", serif;
   color: white;
@@ -1708,64 +1734,64 @@ body.pml-open #open {
   text-transform: uppercase;
 }
 @media only screen and (max-width: 800px) {
-  /* line 18, assets/sass/_nicu.scss */
+  /* line 19, assets/sass/_nicu.scss */
   #nicu h1 {
     font: 24px/30px Georgia, Times, "Times New Roman", serif;
-    padding: 30px 0px 30px 10%;
+    padding: 80px 0px 30px 10%;
     width: 50%;
   }
 }
-/* line 24, assets/sass/_nicu.scss */
+/* line 25, assets/sass/_nicu.scss */
 #nicu h2 {
   font: 32px/36px Georgia, Times, "Times New Roman", serif;
   color: #020202;
 }
 @media only screen and (max-width: 800px) {
-  /* line 24, assets/sass/_nicu.scss */
+  /* line 25, assets/sass/_nicu.scss */
   #nicu h2 {
     font-size: 20px;
     line-height: 24px;
   }
 }
-/* line 29, assets/sass/_nicu.scss */
+/* line 30, assets/sass/_nicu.scss */
 #nicu h3 {
   font: 12px/17px "Cabin", sans-serif;
   color: #d29c0e;
   text-transform: uppercase;
   padding-bottom: 20px;
 }
-/* line 34, assets/sass/_nicu.scss */
+/* line 35, assets/sass/_nicu.scss */
 #nicu h4 {
   font: 12px/17px "Cabin", sans-serif;
   color: #020202;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 39, assets/sass/_nicu.scss */
+/* line 40, assets/sass/_nicu.scss */
 #nicu p.small-italic {
   font-size: 12px;
   line-height: 20px;
   font-style: italic;
 }
-/* line 40, assets/sass/_nicu.scss */
+/* line 41, assets/sass/_nicu.scss */
 #nicu .panel-one {
   background: url("assets/img/nicu-1.jpg") top right no-repeat;
   background-color: #121212;
   margin-bottom: 80px;
 }
-/* line 44, assets/sass/_nicu.scss */
+/* line 45, assets/sass/_nicu.scss */
 #nicu .panel-one p {
   color: #c2c2c2;
   font-style: italic;
   width: 330px;
   padding: 0px 0px 20px 120px;
 }
-/* line 45, assets/sass/_nicu.scss */
+/* line 46, assets/sass/_nicu.scss */
 #nicu .panel-one p:last-child {
   padding-bottom: 150px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 40, assets/sass/_nicu.scss */
+  /* line 41, assets/sass/_nicu.scss */
   #nicu .panel-one {
     -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -1773,30 +1799,30 @@ body.pml-open #open {
     background-size: contain;
     margin-bottom: 0px;
   }
-  /* line 50, assets/sass/_nicu.scss */
+  /* line 51, assets/sass/_nicu.scss */
   #nicu .panel-one p {
-    width: 60%;
+    width: 50%;
     padding: 0px 10% 18px 10%;
   }
-  /* line 51, assets/sass/_nicu.scss */
+  /* line 52, assets/sass/_nicu.scss */
   #nicu .panel-one p:last-child {
     padding-bottom: 30px;
   }
 }
-/* line 55, assets/sass/_nicu.scss */
+/* line 56, assets/sass/_nicu.scss */
 #nicu .panel-one .fa-angle-down {
   padding: 0px 0px 0px 280px;
   font-size: 50px;
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 55, assets/sass/_nicu.scss */
+  /* line 56, assets/sass/_nicu.scss */
   #nicu .panel-one .fa-angle-down {
     padding: 0px 0px 90px 47%;
     font-size: 30px;
   }
 }
-/* line 66, assets/sass/_nicu.scss */
+/* line 67, assets/sass/_nicu.scss */
 #nicu .panel-two {
   background: url("assets/img/nicu-2.jpg") top right no-repeat;
   -webkit-background-size: cover;
@@ -1805,137 +1831,146 @@ body.pml-open #open {
   background-size: cover;
   margin-bottom: 80px;
 }
-/* line 69, assets/sass/_nicu.scss */
+/* line 70, assets/sass/_nicu.scss */
 #nicu .panel-two .panel-text {
   width: 390px;
   padding: 450px 0px 80px 45px;
 }
-/* line 70, assets/sass/_nicu.scss */
+/* line 71, assets/sass/_nicu.scss */
 #nicu .panel-two .panel-text h2 {
   color: white;
 }
-/* line 73, assets/sass/_nicu.scss */
+@media only screen and (max-width: 800px) {
+  /* line 71, assets/sass/_nicu.scss */
+  #nicu .panel-two .panel-text h2 {
+    width: 50%;
+    padding-top: 100%;
+    color: #020202;
+  }
+}
+/* line 74, assets/sass/_nicu.scss */
 #nicu .panel-two .panel-text p, #nicu .panel-two .panel-text a {
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 66, assets/sass/_nicu.scss */
+  /* line 67, assets/sass/_nicu.scss */
   #nicu .panel-two {
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
   }
-  /* line 79, assets/sass/_nicu.scss */
-  #nicu .panel-two h2 {
-    width: 50%;
-    padding-top: 80%;
-  }
-  /* line 80, assets/sass/_nicu.scss */
+  /* line 81, assets/sass/_nicu.scss */
   #nicu .panel-two h3 {
     width: 50%;
   }
-  /* line 82, assets/sass/_nicu.scss */
+  /* line 83, assets/sass/_nicu.scss */
   #nicu .panel-two .panel-text p, #nicu .panel-two .panel-text a {
     color: #020202;
   }
 }
-/* line 87, assets/sass/_nicu.scss */
+/* line 88, assets/sass/_nicu.scss */
 #nicu .panel-three {
   margin-bottom: 80px;
 }
-/* line 88, assets/sass/_nicu.scss */
+/* line 89, assets/sass/_nicu.scss */
 #nicu .panel-three .panel-left {
   padding: 0px 0px 0px 45px;
   width: 380px;
 }
-/* line 92, assets/sass/_nicu.scss */
+/* line 93, assets/sass/_nicu.scss */
 #nicu .panel-three .panel-right {
   padding: 40px 0px 20px 70px;
   width: 380px;
 }
-/* line 103, assets/sass/_nicu.scss */
+@media only screen and (max-width: 800px) {
+  /* line 88, assets/sass/_nicu.scss */
+  #nicu .panel-three {
+    margin-bottom: 10px;
+  }
+}
+/* line 106, assets/sass/_nicu.scss */
 #nicu .panel-four {
   margin-bottom: 20px;
 }
-/* line 104, assets/sass/_nicu.scss */
+/* line 107, assets/sass/_nicu.scss */
 #nicu .panel-four .panel-left {
   padding: 0px 0px 10px 45px;
   width: 380px;
 }
-/* line 108, assets/sass/_nicu.scss */
+/* line 111, assets/sass/_nicu.scss */
 #nicu .panel-four .panel-right {
   padding: 90px 0px 0px 50px;
   width: 600px;
 }
 @media only screen and (max-width: 1170px) {
-  /* line 108, assets/sass/_nicu.scss */
+  /* line 111, assets/sass/_nicu.scss */
   #nicu .panel-four .panel-right {
     width: 500px;
   }
 }
 @media only screen and (max-width: 1070px) {
-  /* line 108, assets/sass/_nicu.scss */
+  /* line 111, assets/sass/_nicu.scss */
   #nicu .panel-four .panel-right {
     width: 400px;
   }
 }
-/* line 114, assets/sass/_nicu.scss */
+/* line 117, assets/sass/_nicu.scss */
 #nicu .panel-four .panel-text {
   padding: 30px 0px 180px 20px;
   width: 380px;
 }
-/* line 121, assets/sass/_nicu.scss */
+/* line 124, assets/sass/_nicu.scss */
 #nicu .panel-five {
   background: url("assets/img/nicu-5.png") top left no-repeat;
 }
-/* line 123, assets/sass/_nicu.scss */
+/* line 126, assets/sass/_nicu.scss */
 #nicu .panel-five .panel-text {
   width: 390px;
   padding: 615px 0px 80px 530px;
   overflow-y: visible;
 }
 @media only screen and (max-width: 800px) {
-  /* line 123, assets/sass/_nicu.scss */
+  /* line 126, assets/sass/_nicu.scss */
   #nicu .panel-five .panel-text {
-    padding-top: 67% !important;
+    padding-top: 70% !important;
   }
 }
-/* line 131, assets/sass/_nicu.scss */
+/* line 134, assets/sass/_nicu.scss */
 #nicu .panel-six {
   margin-bottom: 80px;
 }
-/* line 132, assets/sass/_nicu.scss */
+/* line 135, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-left {
   padding: 0px 0px 10px 45px;
   width: 420px;
 }
-/* line 135, assets/sass/_nicu.scss */
+/* line 138, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-left .panel-text {
   width: 80%;
 }
-/* line 137, assets/sass/_nicu.scss */
+/* line 140, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-left .panel-text p.small-italic {
   font-size: 12px;
   line-height: 20px;
   font-style: italic;
 }
-/* line 139, assets/sass/_nicu.scss */
+/* line 142, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-left img {
   margin: -10px 0px 0px 30px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 139, assets/sass/_nicu.scss */
+  /* line 142, assets/sass/_nicu.scss */
   #nicu .panel-six .panel-left img {
     margin: 0;
   }
 }
-/* line 145, assets/sass/_nicu.scss */
+/* line 148, assets/sass/_nicu.scss */
 #nicu .panel-six .panel-right {
   width: 400px;
   padding: 220px 0px 0px 45px;
 }
-/* line 153, assets/sass/_nicu.scss */
+/* line 156, assets/sass/_nicu.scss */
 #nicu .panel-seven {
   background: url("assets/img/nicu-7.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -1944,83 +1979,89 @@ body.pml-open #open {
   background-size: cover;
   margin-bottom: 80px;
 }
-/* line 156, assets/sass/_nicu.scss */
+/* line 159, assets/sass/_nicu.scss */
 #nicu .panel-seven .panel-text {
   width: 390px;
   padding: 50px 0px 80px 45px;
 }
-/* line 157, assets/sass/_nicu.scss */
+/* line 160, assets/sass/_nicu.scss */
 #nicu .panel-seven .panel-text h2 {
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 157, assets/sass/_nicu.scss */
+  /* line 160, assets/sass/_nicu.scss */
   #nicu .panel-seven .panel-text h2 {
     color: #020202;
   }
 }
-/* line 160, assets/sass/_nicu.scss */
+/* line 163, assets/sass/_nicu.scss */
 #nicu .panel-seven .panel-text p, #nicu .panel-seven .panel-text a {
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 160, assets/sass/_nicu.scss */
+  /* line 163, assets/sass/_nicu.scss */
   #nicu .panel-seven .panel-text p, #nicu .panel-seven .panel-text a {
     color: #020202;
   }
 }
-/* line 164, assets/sass/_nicu.scss */
+/* line 167, assets/sass/_nicu.scss */
 #nicu .panel-seven .panel-text blockquote {
   color: #d29c0e;
 }
 @media only screen and (max-width: 800px) {
-  /* line 156, assets/sass/_nicu.scss */
+  /* line 159, assets/sass/_nicu.scss */
   #nicu .panel-seven .panel-text {
     padding-top: 67% !important;
   }
 }
-/* line 171, assets/sass/_nicu.scss */
+/* line 174, assets/sass/_nicu.scss */
 #nicu .panel-eight {
   margin-bottom: 150px;
 }
-/* line 172, assets/sass/_nicu.scss */
+/* line 175, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-left {
   padding: 100px 0px 10px 45px;
   width: 420px;
 }
-/* line 175, assets/sass/_nicu.scss */
+/* line 178, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-left .panel-text {
   width: 80%;
   padding: 30px 0px 0px 0px;
 }
-/* line 179, assets/sass/_nicu.scss */
+/* line 182, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-left .panel-text p.small-italic {
   font-size: 12px;
   line-height: 20px;
   font-style: italic;
 }
 @media only screen and (max-width: 800px) {
-  /* line 175, assets/sass/_nicu.scss */
+  /* line 178, assets/sass/_nicu.scss */
   #nicu .panel-eight .panel-left .panel-text {
     padding: 30px 10% 0 10%;
   }
 }
-/* line 182, assets/sass/_nicu.scss */
+/* line 185, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-left img {
   margin: -10px 0px 0px 30px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 182, assets/sass/_nicu.scss */
+  /* line 185, assets/sass/_nicu.scss */
   #nicu .panel-eight .panel-left img {
     margin: 0;
   }
 }
-/* line 188, assets/sass/_nicu.scss */
+/* line 191, assets/sass/_nicu.scss */
 #nicu .panel-eight .panel-right {
   width: 400px;
   padding: 00px 0px 0px 45px;
 }
-/* line 196, assets/sass/_nicu.scss */
+@media only screen and (max-width: 800px) {
+  /* line 174, assets/sass/_nicu.scss */
+  #nicu .panel-eight {
+    margin-bottom: 10px;
+  }
+}
+/* line 200, assets/sass/_nicu.scss */
 #nicu .panel-nine {
   background: url("assets/img/nicu-9.jpg") bottom right no-repeat;
   -webkit-background-size: cover;
@@ -2029,83 +2070,90 @@ body.pml-open #open {
   background-size: cover;
   margin-bottom: 130px;
 }
-/* line 200, assets/sass/_nicu.scss */
+/* line 204, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full1 {
   padding: 30px 0px 0px 600px;
   width: 380px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 200, assets/sass/_nicu.scss */
+  /* line 204, assets/sass/_nicu.scss */
   #nicu .panel-nine .panel-full1 {
     padding: 0 0 18px 0;
     width: 100%;
   }
 }
 @media only screen and (max-width: 800px) {
-  /* line 200, assets/sass/_nicu.scss */
+  /* line 204, assets/sass/_nicu.scss */
   #nicu .panel-nine .panel-full1 {
     padding-top: 67% !important;
   }
 }
 @media only screen and (min-width: 1400px) {
-  /* line 200, assets/sass/_nicu.scss */
+  /* line 204, assets/sass/_nicu.scss */
   #nicu .panel-nine .panel-full1 {
     padding-left: 800px;
   }
 }
 @media only screen and (min-width: 1900px) {
-  /* line 200, assets/sass/_nicu.scss */
+  /* line 204, assets/sass/_nicu.scss */
   #nicu .panel-nine .panel-full1 {
     padding-left: 900px;
   }
 }
-/* line 209, assets/sass/_nicu.scss */
+/* line 213, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full2 {
   padding: 80px 0px 80px 45px;
   width: 380px;
 }
-/* line 210, assets/sass/_nicu.scss */
+/* line 214, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full2 blockquote {
   color: #d29c0e;
 }
-/* line 211, assets/sass/_nicu.scss */
+/* line 215, assets/sass/_nicu.scss */
 #nicu .panel-nine .panel-full2 p, #nicu .panel-nine .panel-full2 a {
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 211, assets/sass/_nicu.scss */
+  /* line 215, assets/sass/_nicu.scss */
   #nicu .panel-nine .panel-full2 p, #nicu .panel-nine .panel-full2 a {
     color: #020202;
   }
 }
 @media only screen and (max-width: 800px) {
-  /* line 209, assets/sass/_nicu.scss */
+  /* line 213, assets/sass/_nicu.scss */
   #nicu .panel-nine .panel-full2 {
     padding: 0 0 18px 0;
     width: 100%;
   }
 }
-/* line 221, assets/sass/_nicu.scss */
+@media only screen and (max-width: 800px) {
+  /* line 200, assets/sass/_nicu.scss */
+  #nicu .panel-nine {
+    background: url("assets/img/nicu-9.jpg") top right no-repeat;
+    margin-bottom: 10px;
+  }
+}
+/* line 227, assets/sass/_nicu.scss */
 #nicu .panel-ten {
   margin-bottom: 150px;
 }
-/* line 222, assets/sass/_nicu.scss */
+/* line 228, assets/sass/_nicu.scss */
 #nicu .panel-ten .panel-left {
   padding: 50px 0px 10px 45px;
   width: 460px;
 }
-/* line 226, assets/sass/_nicu.scss */
+/* line 232, assets/sass/_nicu.scss */
 #nicu .panel-ten .panel-right {
   padding: 0px 0px 10px 15px;
   width: 400px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 221, assets/sass/_nicu.scss */
+  /* line 227, assets/sass/_nicu.scss */
   #nicu .panel-ten {
-    padding-top: 67% !important;
+    margin-bottom: 40px;
   }
 }
-/* line 235, assets/sass/_nicu.scss */
+/* line 241, assets/sass/_nicu.scss */
 #nicu .panel-eleven {
   background: url("assets/img/nicu-11.jpg") top right no-repeat;
   -webkit-background-size: cover;
@@ -2114,72 +2162,79 @@ body.pml-open #open {
   background-size: cover;
   margin-bottom: 80px;
 }
-/* line 238, assets/sass/_nicu.scss */
+/* line 244, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-left {
   padding: 130px 0px 30px 45px;
+  margin-left: -800px;
   width: 360px;
 }
-/* line 239, assets/sass/_nicu.scss */
+/* line 245, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-left blockquote {
   color: #d29c0e;
 }
-/* line 240, assets/sass/_nicu.scss */
+/* line 246, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-left p, #nicu .panel-eleven .panel-left a {
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 240, assets/sass/_nicu.scss */
+  /* line 246, assets/sass/_nicu.scss */
   #nicu .panel-eleven .panel-left p, #nicu .panel-eleven .panel-left a {
     color: #020202;
   }
 }
 @media only screen and (max-width: 800px) {
-  /* line 238, assets/sass/_nicu.scss */
+  /* line 244, assets/sass/_nicu.scss */
   #nicu .panel-eleven .panel-left {
-    padding-top: 67% !important;
+    margin-left: 0px;
   }
 }
-/* line 245, assets/sass/_nicu.scss */
+/* line 253, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-right {
-  padding: 650px 0px 30px 45px;
+  padding: 650px 0px 30px 420px;
   width: 380px;
 }
-/* line 246, assets/sass/_nicu.scss */
+/* line 254, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-right h2 {
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 246, assets/sass/_nicu.scss */
+  /* line 254, assets/sass/_nicu.scss */
   #nicu .panel-eleven .panel-right h2 {
     color: #020202;
   }
 }
-/* line 247, assets/sass/_nicu.scss */
+/* line 255, assets/sass/_nicu.scss */
 #nicu .panel-eleven .panel-right p, #nicu .panel-eleven .panel-right a {
   color: white;
 }
 @media only screen and (max-width: 800px) {
-  /* line 247, assets/sass/_nicu.scss */
+  /* line 255, assets/sass/_nicu.scss */
   #nicu .panel-eleven .panel-right p, #nicu .panel-eleven .panel-right a {
     color: #020202;
   }
 }
-/* line 254, assets/sass/_nicu.scss */
+@media only screen and (max-width: 800px) {
+  /* line 253, assets/sass/_nicu.scss */
+  #nicu .panel-eleven .panel-right {
+    padding-top: 70% !important;
+  }
+}
+/* line 263, assets/sass/_nicu.scss */
 #nicu .panel-twelve {
   margin-bottom: 100px;
 }
-/* line 255, assets/sass/_nicu.scss */
+/* line 264, assets/sass/_nicu.scss */
 #nicu .panel-twelve .panel-left {
   padding: 0px 0px 0px 45px;
   width: 380px;
 }
-/* line 259, assets/sass/_nicu.scss */
+/* line 268, assets/sass/_nicu.scss */
 #nicu .panel-twelve .panel-right {
   padding: 0px 0px 10px 45px;
   width: 580px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 269, assets/sass/_nicu.scss */
+  /* line 278, assets/sass/_nicu.scss */
   #nicu .panel-one, #nicu .panel-two, #nicu .panel-three, #nicu .panel-four, #nicu .panel-five,
   #nicu .panel-six, #nicu .panel-seven, #nicu .panel-eight, #nicu .panel-nine, #nicu .panel-ten,
   #nicu .panel-eleven, #nicu .panel-twelve {
@@ -2188,7 +2243,7 @@ body.pml-open #open {
     -o-background-size: contain;
     background-size: contain;
   }
-  /* line 271, assets/sass/_nicu.scss */
+  /* line 280, assets/sass/_nicu.scss */
   #nicu .panel-one .panel-left, #nicu .panel-one .panel-right, #nicu .panel-two .panel-left, #nicu .panel-two .panel-right, #nicu .panel-three .panel-left, #nicu .panel-three .panel-right, #nicu .panel-four .panel-left, #nicu .panel-four .panel-right, #nicu .panel-five .panel-left, #nicu .panel-five .panel-right,
   #nicu .panel-six .panel-left,
   #nicu .panel-six .panel-right, #nicu .panel-seven .panel-left, #nicu .panel-seven .panel-right, #nicu .panel-eight .panel-left, #nicu .panel-eight .panel-right, #nicu .panel-nine .panel-left, #nicu .panel-nine .panel-right, #nicu .panel-ten .panel-left, #nicu .panel-ten .panel-right,
@@ -2197,7 +2252,7 @@ body.pml-open #open {
     width: 100%;
     padding: 0;
   }
-  /* line 271, assets/sass/_nicu.scss */
+  /* line 280, assets/sass/_nicu.scss */
   #nicu .panel-one .panel-left img, #nicu .panel-one .panel-right img, #nicu .panel-two .panel-left img, #nicu .panel-two .panel-right img, #nicu .panel-three .panel-left img, #nicu .panel-three .panel-right img, #nicu .panel-four .panel-left img, #nicu .panel-four .panel-right img, #nicu .panel-five .panel-left img, #nicu .panel-five .panel-right img,
   #nicu .panel-six .panel-left img,
   #nicu .panel-six .panel-right img, #nicu .panel-seven .panel-left img, #nicu .panel-seven .panel-right img, #nicu .panel-eight .panel-left img, #nicu .panel-eight .panel-right img, #nicu .panel-nine .panel-left img, #nicu .panel-nine .panel-right img, #nicu .panel-ten .panel-left img, #nicu .panel-ten .panel-right img,
@@ -2206,7 +2261,7 @@ body.pml-open #open {
     max-width: 100%;
     margin-bottom: 10px;
   }
-  /* line 272, assets/sass/_nicu.scss */
+  /* line 281, assets/sass/_nicu.scss */
   #nicu .panel-one .panel-text, #nicu .panel-two .panel-text, #nicu .panel-three .panel-text, #nicu .panel-four .panel-text, #nicu .panel-five .panel-text,
   #nicu .panel-six .panel-text, #nicu .panel-seven .panel-text, #nicu .panel-eight .panel-text, #nicu .panel-nine .panel-text, #nicu .panel-ten .panel-text,
   #nicu .panel-eleven .panel-text, #nicu .panel-twelve .panel-text {
@@ -2214,7 +2269,7 @@ body.pml-open #open {
     width: 80%;
   }
 }
-/* line 277, assets/sass/_nicu.scss */
+/* line 286, assets/sass/_nicu.scss */
 #nicu .left-nav a, #nicu .right-nav a {
   text-decoration: none;
 }
@@ -2933,24 +2988,30 @@ body.pml-open #open {
   top: 30px;
   left: -160px;
 }
-/* line 5, assets/sass/_letters.scss */
+@media only screen and (max-width: 800px) {
+  /* line 4, assets/sass/_letters.scss */
+  #ceo-letter .left-nav {
+    left: -10px;
+  }
+}
+/* line 11, assets/sass/_letters.scss */
 #ceo-letter .panel-wrap {
   min-height: 800px;
   height: 100%;
 }
 
 /* ----------- EDITOR LETTER ------------- */
-/* line 9, assets/sass/_letters.scss */
+/* line 15, assets/sass/_letters.scss */
 #editor-letter {
   left: 500%;
 }
-/* line 11, assets/sass/_letters.scss */
+/* line 17, assets/sass/_letters.scss */
 #editor-letter .text-container {
   padding-bottom: 150px;
 }
 
 /* ----------- LETTER ------------- */
-/* line 16, assets/sass/_letters.scss */
+/* line 22, assets/sass/_letters.scss */
 .letter .panel-wrap {
   background: url("assets/img/letter-bg.jpg") top left no-repeat;
   -webkit-background-size: cover;
@@ -2960,13 +3021,13 @@ body.pml-open #open {
   background-color: #020202;
 }
 @media only screen and (max-width: 800px) {
-  /* line 16, assets/sass/_letters.scss */
+  /* line 22, assets/sass/_letters.scss */
   .letter .panel-wrap {
     width: 80%;
     padding: 0 10% 0 10%;
   }
 }
-/* line 29, assets/sass/_letters.scss */
+/* line 35, assets/sass/_letters.scss */
 .letter h1 {
   font-size: 26px;
   line-height: 30px;
@@ -2978,20 +3039,20 @@ body.pml-open #open {
   padding: 0px 0px 40px 0px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 29, assets/sass/_letters.scss */
+  /* line 35, assets/sass/_letters.scss */
   .letter h1 {
     width: 100%;
-    padding: 50px 0 20px 0;
+    padding: 80px 0 20px 0;
   }
 }
-/* line 42, assets/sass/_letters.scss */
+/* line 48, assets/sass/_letters.scss */
 .letter .text-container {
   width: 500px;
   padding-left: 200px;
   padding-top: 90px;
 }
 @media only screen and (max-width: 800px) {
-  /* line 42, assets/sass/_letters.scss */
+  /* line 48, assets/sass/_letters.scss */
   .letter .text-container {
     width: 100%;
     padding: 0 0 100px 0;

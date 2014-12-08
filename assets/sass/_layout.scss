@@ -170,16 +170,18 @@ body.pml-open{
       left: 0px;
       right: -15px; /* Increase this value (in negative) for cross-browser compatibility */
       overflow: auto;
+      @include breakpoint(small) {padding: 80px 15px 15px 15px;}
     } 
     p{
       font-size: 11px; line-height: 17px; color: $white; padding-right:10px;
     }
-    p.top-one{margin-bottom: 80px;}
+    p.top-one{margin-bottom: 80px; @include breakpoint(small) {margin-bottom: 20px;}}
     p.top-two{margin-bottom: 40px;}
     h4{font:11px/17px $cabin ; color: $white; letter-spacing: 0.1em; text-transform:uppercase;}
     a{color:$white; text-decoration:underline;}
     @include breakpoint(small) {
        left: -250px;
+
     }
 }
 body.pml-open.credits-open .credits-menu-left{
@@ -293,11 +295,13 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
 
 .nicu-social{
   padding: 40px 0px 20px 0px;
+  @include breakpoint(small) { padding-left: 0; padding-bottom:  0px;   }
 }
 
 .nicu-social-top{
   padding: 0px 0px 0px 120px; 
   .white-social{color:$gray;}
+  @include breakpoint(small) { padding-left: 10%;   }
 }
 
 .map-social{

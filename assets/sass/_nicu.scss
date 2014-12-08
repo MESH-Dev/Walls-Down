@@ -1,11 +1,12 @@
 /* ----------- NICU ------------- */
 #nicu {
   left: 400%;
-
+  overflow-x: hidden;
   .panel-wrap{
     background: url('assets/img/nicu-bg.jpg') top left no-repeat;
     @include background-size(cover);
     height: 9000px;
+
   }
 
   a{color:$black; text-decoration: underline;}
@@ -18,7 +19,7 @@
   h1{
     font:48px/50px $georgia ; color: $white; width: 600px; padding: 120px 0px 30px 120px; text-transform: uppercase; 
     @include breakpoint(small) {
-        font:24px/30px $georgia; padding: 30px 0px 30px 10%; width:50%; 
+        font:24px/30px $georgia; padding: 80px 0px 30px 10%; width:50%; 
     }
   }
   h2{font:32px/36px $georgia ; color: $black; 
@@ -47,7 +48,7 @@
     
     @include breakpoint(small) {
        @include background-size(contain);
-       p{width:60%; padding: 0px 10% 18px 10%; }
+       p{width:50%; padding: 0px 10% 18px 10%; }
        p:last-child{padding-bottom: 30px;}
        margin-bottom: 0px;
     }
@@ -67,7 +68,7 @@
     background: url('assets/img/nicu-2.jpg') top right no-repeat;
     @include background-size(cover);
     .panel-text{
-      h2{color: $white;}
+      h2{color: $white; @include breakpoint(small) {width: 50%; padding-top: 100%; color:$black}}
       width: 390px;
       padding: 450px 0px 80px 45px; 
       p,a{color: $white;} 
@@ -76,7 +77,7 @@
 
     @include breakpoint(small) {
        @include background-size(contain);
-       h2{width: 50%; padding-top: 80%;}
+    
        h3{width: 50%;}
        .panel-text{ 
          p,a{color: $black}
@@ -92,8 +93,10 @@
     .panel-right{
       padding: 40px 0px 20px 70px; 
       width: 380px;
+
     }
     margin-bottom: 80px;
+    @include breakpoint(small) {margin-bottom: 10px;}
   }
 
 
@@ -124,7 +127,7 @@
       width: 390px;
       padding: 615px 0px 80px 530px; 
       overflow-y: visible;
-      @include breakpoint(small) {padding-top: 67% !important;}
+      @include breakpoint(small) {padding-top: 70% !important;}
     }
   }
 
@@ -190,6 +193,7 @@
       padding: 00px 0px 0px 45px; 
     }
     margin-bottom: 150px;
+    @include breakpoint(small) {margin-bottom:10px;}
    
   }
 
@@ -215,6 +219,8 @@
     }
  
     margin-bottom: 130px;
+    @include breakpoint(small) {
+      background: url('assets/img/nicu-9.jpg') top right no-repeat; margin-bottom: 10px;}
  
   }
 
@@ -228,7 +234,7 @@
       width: 400px;
     }
     margin-bottom: 150px;
-    @include breakpoint(small) {padding-top: 67% !important;}
+    @include breakpoint(small) { margin-bottom: 40px;}
  
   }
 
@@ -238,15 +244,18 @@
     .panel-left{
       blockquote{color: $gold;}
       p,a{color: $white; @include breakpoint(small) {color:$black;} }
-      padding: 130px 0px 30px 45px; 
+      padding: 130px 0px 30px 45px;
+      margin-left: -800px; 
+      @include breakpoint(small) {margin-left: 0px;  }
       width: 360px;
-      @include breakpoint(small) {padding-top: 67% !important;}
+      
     }
     .panel-right{
       h2{color: $white; @include breakpoint(small) {color:$black;}}
       p,a{color: $white; @include breakpoint(small) {color:$black;}}
-      padding: 650px 0px 30px 45px; 
+      padding: 650px 0px 30px 420px; 
       width: 380px;
+      @include breakpoint(small) {padding-top: 70% !important;}
     }
     margin-bottom: 80px;
   }
