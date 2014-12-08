@@ -3177,11 +3177,6 @@ body.pml-open #open {
 }
 /* line 388, assets/sass/_map.scss */
 .ie #map .right-nav {
-  position: absolute;
-  height: 0px;
-  top: 92%;
-  right: 1%;
-  float: right;
   position: relative;
   height: 0px;
   width: 50%;
@@ -3262,6 +3257,18 @@ body.pml-open #open {
     top: -50px;
     left: 100px;
   }
+}
+
+/* line 46, assets/sass/_states.scss */
+.ie #map .single-state {
+  display: inline;
+  float: left;
+}
+/* line 46, assets/sass/_states.scss */
+.ie #map .single-state span {
+  position: relative;
+  top: -50px;
+  left: 100px;
 }
 
 /* line 49, assets/sass/_states.scss */
