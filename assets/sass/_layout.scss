@@ -7,56 +7,6 @@ body {
 
 //NAVIGATION MENU
 
-/* --- Small Menu Desktop ---
-nav.menu {
-    position: fixed;
-    z-index: 20;
-    background-color: $black;
-    //overflow: hidden;
-
-    @include animate(.3s);
-
-    #logo img{margin: 30px 10px 15px 15px; width:70% }
-    .tagline{display: none;}
-    
-    .main-menu{
-      margin-top:75px;
-    }
-    .menu-item{
-      margin-bottom: 30px; padding: 3px 5px 3px 10px; width:100%; position:relative;  overflow: hidden; ; 
-      .text{width: 80px; position:relative; top: 0px;  z-index:12; }
-      span.num{display: none; }
-      span.title{display: inline-block; width: 65px; font-size: 13px; color: $white; line-height: 15px; color: $white;  }
-      img{display:none; ;}
-      
-    }
-
-    //.menu-active{background-color: $gold;}
-    
-    .secondary-menu{
-      //position: fixed; bottom: 0px;
-      margin-top: 100px;
-      ul{
-        margin: 20px 0px 20px 0px;
-        li{
-          list-style-type: none; font-size: 13px; color: $white; line-height: 15px; color: $white;padding: 3px 5px 3px 10px; width: 65px;  @include animate(0.3s);
-          a{color: $white} 
-          a:hover{text-decoration: none;}
-          &:hover{background-color: $gold;}
-        }
-        li:nth-child(2){letter-spacing:.5px;}
-      }
-      img{width: 80%; margin: 20px 10px 20px 10px;  @include animate(0.3s); }
-
-    }
-
-    @include breakpoint(phone) {
-      
-    }
- 
-}
- */
-
 /* --- Open Menu Desktop --- */
 body.pml-open nav.menu{
   @include animate(.3s);
@@ -381,7 +331,9 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
   }
 }
 
-//html.ie8 .panel{display: none;}
+html.ie8 nav{display: none;}
+html.ie8 .menu{display: none;}
+html.ie8 .panel{display: none;}
 
 /* --------- PANEL IMPORTS --------------*/
  
