@@ -65,7 +65,7 @@ $statedark:#2b2a29;
   //}
   @else if $point == small{
     //@media only screen and (max-width: 320px)  { @content; }
-    @media only screen and (max-width: 800px){ @content; }
+    @media only screen and (max-width: 767px){ @content; }
   }
 
    @else if $point == tablet{
