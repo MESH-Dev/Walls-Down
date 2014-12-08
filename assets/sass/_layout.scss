@@ -217,10 +217,11 @@ body.credits-open .credits-menu-left{
 
 
 #open{
-  display:none; z-index: 20000; color:$black;
+    z-index: 20000; color:$black;
   position: fixed; top: 20px; left:20px;
   font-family: $cabin; font-weight:bold;
   padding: 5px; background: rgba(255,255,255,0.7);
+  -webkit-transform: translate3d(0,0,0);
   @include breakpoint(small) {
       display:block;
        -webkit-transform:translateZ(1px);
