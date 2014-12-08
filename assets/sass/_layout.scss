@@ -319,7 +319,7 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
   }
  
   .instructions{
-    position: absolute; width:160px;  bottom:2%; left:200px;; float: left;
+    position: absolute; width:210px;  bottom:2%; left:200px;; float: left;
     img{width: 118px; padding: 0;}
     @include breakpoint(small) {display:none;}
   }

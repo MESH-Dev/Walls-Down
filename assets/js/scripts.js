@@ -3,6 +3,21 @@
   var $scrollElement;
  
   $(function() {
+
+    
+    window.onpopstate = function(event)
+     {
+       var hash = window.location.hash;
+       var $panel = $(hash);
+
+       $scrollElement.stop().animate({
+         scrollLeft: $panel.offset().left
+       }, 500, 'swing', function() {
+         window.location.hash = hash;
+       });
+     };
+
+    
     $('html, body').each(function () {
       var initScrollLeft = $(this).attr('scrollLeft');
 
@@ -87,7 +102,13 @@
         e.preventDefault();
       }
       
-    });  
+    });
+
+
+
+
+
+
   });
 
 

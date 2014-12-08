@@ -826,6 +826,21 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
   var $scrollElement;
  
   $(function() {
+
+    
+    window.onpopstate = function(event)
+     {
+       var hash = window.location.hash;
+       var $panel = $(hash);
+
+       $scrollElement.stop().animate({
+         scrollLeft: $panel.offset().left
+       }, 500, 'swing', function() {
+         window.location.hash = hash;
+       });
+     };
+
+    
     $('html, body').each(function () {
       var initScrollLeft = $(this).attr('scrollLeft');
 
@@ -910,7 +925,13 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
         e.preventDefault();
       }
       
-    });  
+    });
+
+
+
+
+
+
   });
 
 
