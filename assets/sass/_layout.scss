@@ -379,10 +379,9 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
     .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}
     a{color:$black}
   }
-
- 
-
 }
+
+html.ie8{display: none;}
 
 /* --------- PANEL IMPORTS --------------*/
  
