@@ -381,7 +381,7 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
   }
 }
 
-html.ie8{display: none;}
+html.ie8 .panel{display: none;}
 
 /* --------- PANEL IMPORTS --------------*/
  
