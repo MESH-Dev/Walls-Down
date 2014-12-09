@@ -191,12 +191,14 @@ $(function() {
  
   if( isDesktop && viewportwidth >767){
     var map = impress();
-    map.init();
+    
     if (window.location.hash == "#map") {
+      map.init();
       map.goto(0);
     }
     window.addEventListener("hashchange", function () {
       if (window.location.hash == "#map") {
+        map.init();
           map.goto(0);
           $('#plain li').removeClass('inactive');
           $('.intro-text').removeClass('inactive');
