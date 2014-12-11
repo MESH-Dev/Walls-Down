@@ -319,6 +319,7 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
   left: 0;
   img{width: 60%; padding: 10% 20% 0 20%;
     @include breakpoint(small) {padding: 20% 5% 0% 5%; width:90%;}
+  
   }
  
   .instructions{
@@ -332,6 +333,7 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
     .fa{font-size: 45px; position:relative; top: 8px; left: 5px;}
     a{color:$black}
   }
+  h1{display:none;}
 }
 
 html.ie8 nav{display: none;}
