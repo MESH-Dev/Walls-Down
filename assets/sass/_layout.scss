@@ -124,7 +124,7 @@ body.pml-open{
     height: 100%;
     background-color: $darkgray;
     left: -150px;
-    z-index: 10;
+    z-index: 11;
     color: $white;
     .credits-wrap{ 
       padding: 30px 15px 15px 15px;
@@ -317,7 +317,7 @@ body.pml-open #open{left: 180px; @include animate(0.3)}
   height: 100%;
   overflow: hidden;
   left: 0;
-  img{width: 60%; padding: 5% 20% 0 20%;
+  img{width: 60%; padding: 10% 20% 0 20%;
     @include breakpoint(small) {padding: 20% 5% 0% 5%; width:90%;}
   }
  

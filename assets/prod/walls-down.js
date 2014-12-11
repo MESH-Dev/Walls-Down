@@ -905,6 +905,7 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
         }
         e.preventDefault();
       }
+ 
       if(e.which == 39) //right ARROW
       {
         var hash = window.location.hash ? window.location.hash : '#home';
@@ -1177,6 +1178,7 @@ $(function() {
       $('.main-menu a[href="'+ hash +'"]').children(".menu-item").addClass('menu-active');
       $('.secondary-menu li a[href="'+ hash +'"]').parent("li").addClass('menu-active');
       $('#brahms').trigger('pause');
+      $('body').removeClass("credits-open");
    }, false);
 });
 
